@@ -1,54 +1,54 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="monospace,Arial,sans-serif">
-  <rect width="900" height="500" fill="#0f172a" rx="8"/>
+  <rect width="900" height="500" fill="#ffffff" rx="8"/>
   <defs>
-    <marker id="ab" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#60a5fa"/></marker>
-    <marker id="ag" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#34d399"/></marker>
-    <marker id="av" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#a78bfa"/></marker>
-    <marker id="ao" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#fb923c"/></marker>
+    <marker id="ab" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#2563eb"/></marker>
+    <marker id="ag" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#059669"/></marker>
+    <marker id="av" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#7c3aed"/></marker>
+    <marker id="ao" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#ea580c"/></marker>
   </defs>
-  <text x="450" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#f1f5f9">Full Optics Hierarchy (Profunctor Encoding)</text>
-  <rect x="360" y="45" width="180" height="46" fill="#1e293b" stroke="#f1f5f9" stroke-width="1.5" rx="6"/>
-  <text x="450" y="66" text-anchor="middle" font-size="13" fill="#f1f5f9">Iso</text>
-  <text x="450" y="82" text-anchor="middle" font-size="10" fill="#94a3b8">forall p. Profunctor p =&gt;</text>
-  <rect x="130" y="140" width="160" height="46" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5" rx="6"/>
-  <text x="210" y="161" text-anchor="middle" font-size="13" fill="#60a5fa">Lens</text>
-  <text x="210" y="177" text-anchor="middle" font-size="10" fill="#94a3b8">forall p. Strong p =&gt;</text>
-  <rect x="610" y="140" width="160" height="46" fill="#1e293b" stroke="#34d399" stroke-width="1.5" rx="6"/>
-  <text x="690" y="161" text-anchor="middle" font-size="13" fill="#34d399">Prism</text>
-  <text x="690" y="177" text-anchor="middle" font-size="10" fill="#94a3b8">forall p. Choice p =&gt;</text>
-  <rect x="370" y="140" width="160" height="46" fill="#1e293b" stroke="#a78bfa" stroke-width="1.5" rx="6"/>
-  <text x="450" y="161" text-anchor="middle" font-size="13" fill="#a78bfa">Grate</text>
-  <text x="450" y="177" text-anchor="middle" font-size="10" fill="#94a3b8">forall p. Closed p =&gt;</text>
-  <line x1="410" y1="91" x2="250" y2="138" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#ab)"/>
-  <line x1="450" y1="91" x2="450" y2="138" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#av)"/>
-  <line x1="490" y1="91" x2="650" y2="138" stroke="#34d399" stroke-width="1.5" marker-end="url(#ag)"/>
-  <rect x="240" y="245" width="180" height="46" fill="#1e293b" stroke="#fb923c" stroke-width="1.5" rx="6"/>
-  <text x="330" y="266" text-anchor="middle" font-size="13" fill="#fb923c">Traversal</text>
-  <text x="330" y="282" text-anchor="middle" font-size="10" fill="#94a3b8">forall p. Wander p =&gt;</text>
-  <rect x="480" y="245" width="180" height="46" fill="#1e293b" stroke="#60a5fa" stroke-width="1" rx="6" stroke-dasharray="4,2"/>
-  <text x="570" y="266" text-anchor="middle" font-size="12" fill="#60a5fa">AffineTraversal</text>
-  <text x="570" y="282" text-anchor="middle" font-size="10" fill="#94a3b8">Strong + Choice</text>
-  <line x1="240" y1="186" x2="305" y2="243" stroke="#fb923c" stroke-width="1.5" marker-end="url(#ao)"/>
-  <line x1="640" y1="186" x2="395" y2="243" stroke="#fb923c" stroke-width="1.5" marker-end="url(#ao)"/>
-  <line x1="210" y1="186" x2="500" y2="243" stroke="#60a5fa" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#ab)"/>
-  <line x1="690" y1="186" x2="620" y2="243" stroke="#60a5fa" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#ab)"/>
-  <rect x="130" y="355" width="160" height="46" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5" rx="6"/>
-  <text x="210" y="376" text-anchor="middle" font-size="13" fill="#94a3b8">Setter</text>
-  <text x="210" y="392" text-anchor="middle" font-size="10" fill="#475569">forall p. Mapping p =&gt;</text>
-  <rect x="370" y="355" width="160" height="46" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5" rx="6"/>
-  <text x="450" y="376" text-anchor="middle" font-size="13" fill="#94a3b8">Fold</text>
-  <text x="450" y="392" text-anchor="middle" font-size="10" fill="#475569">forall p. Bicontravariant p =&gt;</text>
-  <rect x="610" y="355" width="160" height="46" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5" rx="6"/>
-  <text x="690" y="376" text-anchor="middle" font-size="13" fill="#94a3b8">Getter</text>
-  <text x="690" y="392" text-anchor="middle" font-size="10" fill="#475569">Forget r (read-only)</text>
-  <line x1="290" y1="291" x2="230" y2="353" stroke="#94a3b8" stroke-width="1" marker-end="url(#ab)"/>
-  <line x1="350" y1="291" x2="430" y2="353" stroke="#94a3b8" stroke-width="1" marker-end="url(#ab)"/>
-  <line x1="480" y1="291" x2="650" y2="353" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#ab)"/>
-  <rect x="20" y="435" width="860" height="52" fill="#1e293b" rx="4"/>
-  <text x="40" y="454" font-size="11" font-weight="bold" fill="#f1f5f9">Profunctor constraints:</text>
-  <text x="40" y="472" font-size="11" fill="#60a5fa">Strong: first :: p a b -&gt; p (a,c) (b,c)</text>
-  <text x="280" y="472" font-size="11" fill="#34d399">Choice: left :: p a b -&gt; p (Either a c) (Either b c)</text>
-  <text x="570" y="472" font-size="11" fill="#a78bfa">Closed: closed :: p a b -&gt; p (x-&gt;a) (x-&gt;b)</text>
-  <text x="200" y="454" font-size="11" fill="#fb923c">Wander = Strong + Choice + traverse-like</text>
-  <text x="550" y="454" font-size="11" fill="#94a3b8">solid = is-a  |  dashed = combination</text>
+  <text x="450" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Full Optics Hierarchy (Profunctor Encoding)</text>
+  <rect x="360" y="45" width="180" height="46" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.5" rx="6"/>
+  <text x="450" y="66" text-anchor="middle" font-size="13" fill="#0f172a">Iso</text>
+  <text x="450" y="82" text-anchor="middle" font-size="10" fill="#64748b">forall p. Profunctor p =&gt;</text>
+  <rect x="130" y="140" width="160" height="46" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5" rx="6"/>
+  <text x="210" y="161" text-anchor="middle" font-size="13" fill="#2563eb">Lens</text>
+  <text x="210" y="177" text-anchor="middle" font-size="10" fill="#64748b">forall p. Strong p =&gt;</text>
+  <rect x="610" y="140" width="160" height="46" fill="#f1f5f9" stroke="#059669" stroke-width="1.5" rx="6"/>
+  <text x="690" y="161" text-anchor="middle" font-size="13" fill="#059669">Prism</text>
+  <text x="690" y="177" text-anchor="middle" font-size="10" fill="#64748b">forall p. Choice p =&gt;</text>
+  <rect x="370" y="140" width="160" height="46" fill="#f1f5f9" stroke="#7c3aed" stroke-width="1.5" rx="6"/>
+  <text x="450" y="161" text-anchor="middle" font-size="13" fill="#7c3aed">Grate</text>
+  <text x="450" y="177" text-anchor="middle" font-size="10" fill="#64748b">forall p. Closed p =&gt;</text>
+  <line x1="410" y1="91" x2="250" y2="138" stroke="#2563eb" stroke-width="1.5" marker-end="url(#ab)"/>
+  <line x1="450" y1="91" x2="450" y2="138" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#av)"/>
+  <line x1="490" y1="91" x2="650" y2="138" stroke="#059669" stroke-width="1.5" marker-end="url(#ag)"/>
+  <rect x="240" y="245" width="180" height="46" fill="#f1f5f9" stroke="#ea580c" stroke-width="1.5" rx="6"/>
+  <text x="330" y="266" text-anchor="middle" font-size="13" fill="#ea580c">Traversal</text>
+  <text x="330" y="282" text-anchor="middle" font-size="10" fill="#64748b">forall p. Wander p =&gt;</text>
+  <rect x="480" y="245" width="180" height="46" fill="#f1f5f9" stroke="#2563eb" stroke-width="1" rx="6" stroke-dasharray="4,2"/>
+  <text x="570" y="266" text-anchor="middle" font-size="12" fill="#2563eb">AffineTraversal</text>
+  <text x="570" y="282" text-anchor="middle" font-size="10" fill="#64748b">Strong + Choice</text>
+  <line x1="240" y1="186" x2="305" y2="243" stroke="#ea580c" stroke-width="1.5" marker-end="url(#ao)"/>
+  <line x1="640" y1="186" x2="395" y2="243" stroke="#ea580c" stroke-width="1.5" marker-end="url(#ao)"/>
+  <line x1="210" y1="186" x2="500" y2="243" stroke="#2563eb" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#ab)"/>
+  <line x1="690" y1="186" x2="620" y2="243" stroke="#2563eb" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#ab)"/>
+  <rect x="130" y="355" width="160" height="46" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5" rx="6"/>
+  <text x="210" y="376" text-anchor="middle" font-size="13" fill="#64748b">Setter</text>
+  <text x="210" y="392" text-anchor="middle" font-size="10" fill="#64748b">forall p. Mapping p =&gt;</text>
+  <rect x="370" y="355" width="160" height="46" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5" rx="6"/>
+  <text x="450" y="376" text-anchor="middle" font-size="13" fill="#64748b">Fold</text>
+  <text x="450" y="392" text-anchor="middle" font-size="10" fill="#64748b">forall p. Bicontravariant p =&gt;</text>
+  <rect x="610" y="355" width="160" height="46" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5" rx="6"/>
+  <text x="690" y="376" text-anchor="middle" font-size="13" fill="#64748b">Getter</text>
+  <text x="690" y="392" text-anchor="middle" font-size="10" fill="#64748b">Forget r (read-only)</text>
+  <line x1="290" y1="291" x2="230" y2="353" stroke="#64748b" stroke-width="1" marker-end="url(#ab)"/>
+  <line x1="350" y1="291" x2="430" y2="353" stroke="#64748b" stroke-width="1" marker-end="url(#ab)"/>
+  <line x1="480" y1="291" x2="650" y2="353" stroke="#64748b" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#ab)"/>
+  <rect x="20" y="435" width="860" height="52" fill="#f1f5f9" rx="4"/>
+  <text x="40" y="454" font-size="11" font-weight="bold" fill="#0f172a">Profunctor constraints:</text>
+  <text x="40" y="472" font-size="11" fill="#2563eb">Strong: first :: p a b -&gt; p (a,c) (b,c)</text>
+  <text x="280" y="472" font-size="11" fill="#059669">Choice: left :: p a b -&gt; p (Either a c) (Either b c)</text>
+  <text x="570" y="472" font-size="11" fill="#7c3aed">Closed: closed :: p a b -&gt; p (x-&gt;a) (x-&gt;b)</text>
+  <text x="200" y="454" font-size="11" fill="#ea580c">Wander = Strong + Choice + traverse-like</text>
+  <text x="550" y="454" font-size="11" fill="#64748b">solid = is-a  |  dashed = combination</text>
 </svg>

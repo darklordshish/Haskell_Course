@@ -1,40 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" font-family="monospace,sans-serif">
   <defs>
     <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <polygon points="0 0,8 3,0 6" fill="#64748b"/>
+      <polygon points="0 0,8 3,0 6" fill="#94a3b8"/>
     </marker>
   </defs>
-  <rect width="720" height="300" fill="#0f172a" rx="8"/>
-  <text x="360" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#e2e8f0">Итоговая категорная картина</text>
+  <rect width="720" height="300" fill="#ffffff" rx="8"/>
+  <text x="360" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#334155">Итоговая категорная картина</text>
 
   <!-- FOLDABLE box -->
-  <rect x="30" y="42" width="300" height="220" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="180" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#93c5fd">FOLDABLE</text>
-  <rect x="50" y="74" width="260" height="32" rx="5" fill="#1e3a5f"/>
-  <text x="180" y="94" text-anchor="middle" font-size="12" fill="#93c5fd">t a -&gt; b</text>
-  <text x="180" y="114" text-anchor="middle" font-size="10" fill="#64748b">сломать форму</text>
-  <text x="180" y="132" text-anchor="middle" font-size="10" fill="#64748b">foldMap :: (a-&gt;m) -&gt; t a -&gt; m</text>
-  <text x="180" y="150" text-anchor="middle" font-size="10" fill="#475569">Монадический: нет</text>
-  <text x="180" y="166" text-anchor="middle" font-size="10" fill="#475569">Нужен: Foldable</text>
-  <text x="180" y="184" text-anchor="middle" font-size="10" fill="#64748b">foldr = катаморфизм</text>
-  <text x="180" y="200" text-anchor="middle" font-size="10" fill="#64748b">(уничтожает структуру)</text>
-  <text x="180" y="218" text-anchor="middle" font-size="10" fill="#64748b">unfoldr = анаморфизм</text>
-  <text x="180" y="236" text-anchor="middle" font-size="10" fill="#475569">(создаёт структуру)</text>
-  <text x="180" y="252" text-anchor="middle" font-size="9" fill="#3b82f6">только чтение</text>
+  <rect x="30" y="42" width="300" height="220" rx="8" fill="#f1f5f9" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="180" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e40af">FOLDABLE</text>
+  <rect x="50" y="74" width="260" height="32" rx="5" fill="#dbeafe"/>
+  <text x="180" y="94" text-anchor="middle" font-size="12" fill="#1e40af">t a -&gt; b</text>
+  <text x="180" y="114" text-anchor="middle" font-size="10" fill="#94a3b8">сломать форму</text>
+  <text x="180" y="132" text-anchor="middle" font-size="10" fill="#94a3b8">foldMap :: (a-&gt;m) -&gt; t a -&gt; m</text>
+  <text x="180" y="150" text-anchor="middle" font-size="10" fill="#64748b">Монадический: нет</text>
+  <text x="180" y="166" text-anchor="middle" font-size="10" fill="#64748b">Нужен: Foldable</text>
+  <text x="180" y="184" text-anchor="middle" font-size="10" fill="#94a3b8">foldr = катаморфизм</text>
+  <text x="180" y="200" text-anchor="middle" font-size="10" fill="#94a3b8">(уничтожает структуру)</text>
+  <text x="180" y="218" text-anchor="middle" font-size="10" fill="#94a3b8">unfoldr = анаморфизм</text>
+  <text x="180" y="236" text-anchor="middle" font-size="10" fill="#64748b">(создаёт структуру)</text>
+  <text x="180" y="252" text-anchor="middle" font-size="9" fill="#1d4ed8">только чтение</text>
 
   <!-- TRAVERSABLE box -->
-  <rect x="390" y="42" width="300" height="220" rx="8" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="540" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#86efac">TRAVERSABLE</text>
+  <rect x="390" y="42" width="300" height="220" rx="8" fill="#f1f5f9" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="540" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">TRAVERSABLE</text>
   <rect x="410" y="74" width="260" height="32" rx="5" fill="#14532d"/>
-  <text x="540" y="94" text-anchor="middle" font-size="12" fill="#86efac">t a -&gt; f (t b)</text>
-  <text x="540" y="114" text-anchor="middle" font-size="10" fill="#64748b">сохранить форму + эффект</text>
-  <text x="540" y="132" text-anchor="middle" font-size="10" fill="#64748b">traverse :: (a-&gt;f b) -&gt; t a -&gt; f (t b)</text>
-  <text x="540" y="150" text-anchor="middle" font-size="10" fill="#475569">Монадический: да (mapM)</text>
-  <text x="540" y="166" text-anchor="middle" font-size="10" fill="#475569">Нужен: Functor + Foldable</text>
-  <text x="540" y="184" text-anchor="middle" font-size="10" fill="#64748b">sequenceA :: t (f a) -&gt; f (t a)</text>
-  <text x="540" y="200" text-anchor="middle" font-size="10" fill="#64748b">(перестановка эффектов)</text>
-  <text x="540" y="218" text-anchor="middle" font-size="10" fill="#64748b">каждый Traversable - Foldable</text>
-  <text x="540" y="236" text-anchor="middle" font-size="10" fill="#475569">обратное неверно</text>
+  <text x="540" y="94" text-anchor="middle" font-size="12" fill="#15803d">t a -&gt; f (t b)</text>
+  <text x="540" y="114" text-anchor="middle" font-size="10" fill="#94a3b8">сохранить форму + эффект</text>
+  <text x="540" y="132" text-anchor="middle" font-size="10" fill="#94a3b8">traverse :: (a-&gt;f b) -&gt; t a -&gt; f (t b)</text>
+  <text x="540" y="150" text-anchor="middle" font-size="10" fill="#64748b">Монадический: да (mapM)</text>
+  <text x="540" y="166" text-anchor="middle" font-size="10" fill="#64748b">Нужен: Functor + Foldable</text>
+  <text x="540" y="184" text-anchor="middle" font-size="10" fill="#94a3b8">sequenceA :: t (f a) -&gt; f (t a)</text>
+  <text x="540" y="200" text-anchor="middle" font-size="10" fill="#94a3b8">(перестановка эффектов)</text>
+  <text x="540" y="218" text-anchor="middle" font-size="10" fill="#94a3b8">каждый Traversable - Foldable</text>
+  <text x="540" y="236" text-anchor="middle" font-size="10" fill="#64748b">обратное неверно</text>
   <text x="540" y="252" text-anchor="middle" font-size="9" fill="#22c55e">чтение + запись формы</text>
 
   <!-- Arrow -->
@@ -42,5 +42,5 @@
   <text x="360" y="146" text-anchor="middle" font-size="9" fill="#818cf8">сильнее</text>
 
   <!-- Bottom border -->
-  <text x="360" y="292" text-anchor="middle" font-size="9" fill="#475569">Закон: fmap f = runIdentity . traverse (Identity . f)</text>
+  <text x="360" y="292" text-anchor="middle" font-size="9" fill="#64748b">Закон: fmap f = runIdentity . traverse (Identity . f)</text>
 </svg>

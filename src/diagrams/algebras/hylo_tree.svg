@@ -1,44 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="180" font-family="monospace,Arial,sans-serif">
   <defs>
-    <marker id="arr2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/></marker>
-    <marker id="arrb" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa"/></marker>
-    <marker id="arrr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#f87171"/></marker>
-    <marker id="arrp" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/></marker>
+    <marker id="arr2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/></marker>
+    <marker id="arrb" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/></marker>
+    <marker id="arrr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#dc2626"/></marker>
+    <marker id="arrp" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/></marker>
   </defs>
-  <rect width="500" height="180" fill="#0f172a" rx="8"/>
+  <rect width="500" height="180" fill="#ffffff" rx="8"/>
 
   <!-- A (source) -->
-  <rect x="15" y="72" width="80" height="38" rx="6" fill="#052e16" stroke="#34d399" stroke-width="1.5"/>
-  <text x="55" y="96" text-anchor="middle" font-size="16" font-style="italic" fill="#86efac">A</text>
+  <rect x="15" y="72" width="80" height="38" rx="6" fill="#052e16" stroke="#059669" stroke-width="1.5"/>
+  <text x="55" y="96" text-anchor="middle" font-size="16" font-style="italic" fill="#15803d">A</text>
 
   <!-- muF (intermediate tree) -->
-  <rect x="200" y="50" width="100" height="82" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
-  <text x="250" y="74" text-anchor="middle" font-size="13" fill="#e2e8f0">muF</text>
-  <circle cx="250" cy="96" r="5" fill="#94a3b8"/>
-  <circle cx="230" cy="114" r="4" fill="#475569"/>
-  <circle cx="270" cy="114" r="4" fill="#475569"/>
-  <line x1="250" y1="101" x2="234" y2="110" stroke="#475569" stroke-width="1"/>
-  <line x1="250" y1="101" x2="266" y2="110" stroke="#475569" stroke-width="1"/>
-  <text x="250" y="132" text-anchor="middle" font-size="9" fill="#64748b">(intermediate)</text>
+  <rect x="200" y="50" width="100" height="82" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <text x="250" y="74" text-anchor="middle" font-size="13" fill="#334155">muF</text>
+  <circle cx="250" cy="96" r="5" fill="#64748b"/>
+  <circle cx="230" cy="114" r="4" fill="#64748b"/>
+  <circle cx="270" cy="114" r="4" fill="#64748b"/>
+  <line x1="250" y1="101" x2="234" y2="110" stroke="#64748b" stroke-width="1"/>
+  <line x1="250" y1="101" x2="266" y2="110" stroke="#64748b" stroke-width="1"/>
+  <text x="250" y="132" text-anchor="middle" font-size="9" fill="#94a3b8">(intermediate)</text>
 
   <!-- B (result) -->
-  <rect x="405" y="72" width="80" height="38" rx="6" fill="#1e1b4b" stroke="#a78bfa" stroke-width="1.5"/>
-  <text x="445" y="96" text-anchor="middle" font-size="16" font-style="italic" fill="#c4b5fd">B</text>
+  <rect x="405" y="72" width="80" height="38" rx="6" fill="#1e1b4b" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="445" y="96" text-anchor="middle" font-size="16" font-style="italic" fill="#6d28d9">B</text>
 
   <!-- Arrow A -> muF: ana/unfold -->
-  <line x1="97" y1="91" x2="198" y2="91" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrb)"/>
-  <text x="148" y="81" text-anchor="middle" font-size="11" fill="#60a5fa">ana / unfold</text>
-  <text x="148" y="106" text-anchor="middle" font-size="9" fill="#94a3b8">(coalgebra)</text>
+  <line x1="97" y1="91" x2="198" y2="91" stroke="#2563eb" stroke-width="2" marker-end="url(#arrb)"/>
+  <text x="148" y="81" text-anchor="middle" font-size="11" fill="#2563eb">ana / unfold</text>
+  <text x="148" y="106" text-anchor="middle" font-size="9" fill="#64748b">(coalgebra)</text>
 
   <!-- Arrow muF -> B: cata/fold -->
-  <line x1="302" y1="91" x2="403" y2="91" stroke="#f87171" stroke-width="2" marker-end="url(#arrr)"/>
-  <text x="353" y="81" text-anchor="middle" font-size="11" fill="#f87171">cata / fold</text>
-  <text x="353" y="106" text-anchor="middle" font-size="9" fill="#94a3b8">(algebra)</text>
+  <line x1="302" y1="91" x2="403" y2="91" stroke="#dc2626" stroke-width="2" marker-end="url(#arrr)"/>
+  <text x="353" y="81" text-anchor="middle" font-size="11" fill="#dc2626">cata / fold</text>
+  <text x="353" y="106" text-anchor="middle" font-size="9" fill="#64748b">(algebra)</text>
 
   <!-- Curved arrow: hylo = cata . ana -->
-  <path d="M 55 72 C 55 25, 445 25, 445 72" stroke="#a78bfa" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arrp)"/>
-  <text x="250" y="18" text-anchor="middle" font-size="12" fill="#a78bfa">hylo = cata . ana</text>
+  <path d="M 55 72 C 55 25, 445 25, 445 72" stroke="#7c3aed" stroke-width="1.5" fill="none" stroke-dasharray="5,3" marker-end="url(#arrp)"/>
+  <text x="250" y="18" text-anchor="middle" font-size="12" fill="#7c3aed">hylo = cata . ana</text>
 
   <!-- Bottom note -->
-  <text x="250" y="168" text-anchor="middle" font-size="11" fill="#64748b">Hylomorphism deforests the intermediate tree</text>
+  <text x="250" y="168" text-anchor="middle" font-size="11" fill="#94a3b8">Hylomorphism deforests the intermediate tree</text>
 </svg>

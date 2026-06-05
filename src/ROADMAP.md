@@ -2,7 +2,7 @@
 
 > Документ разработки: хронология, технические решения, актуальный статус и планы на будущее.
 > Путеводитель по содержанию ноутбуков — в README.ipynb.
-> Последнее обновление: 2026-06-03
+> Последнее обновление: 2026-06-05
 
 ---
 
@@ -20,6 +20,7 @@
 | Monads.ipynb | 137 | — | |
 | MonadTransformers.ipynb | 71 | 2 | mt_stack.svg, mt_diagram.svg |
 | Comonads.ipynb | 86 | 1 | cm_comonad.svg |
+| ComonadTransformers.ipynb | 23 | 2 | ../diagrams/comonads/ct_diagram.svg, ../diagrams/comonads/ct_stack.svg |
 | Uncertainty.ipynb | 22 | 1 | uncertainty_overview.svg |
 | FoldableTraversable.ipynb | 56 | 2 | ft_foldable.svg, ft_compare.svg |
 | AlgebrasCoalgebras.ipynb | 49 | 3 | initial_alg.svg, hylo_tree.svg, falgebra_diagram.svg |
@@ -31,7 +32,7 @@
 | Adjunctions.ipynb | 32 | 1 | adj_adjunction.svg |
 | MetaProgramming.ipynb | 27 | 2 | mp_th_stages.svg, mp_generics.svg |
 
-**Итого Фаза 1:** 603 ячейки, 31 SVG-файл, 0 ошибок. (+Toposes.ipynb: 23 ячейки, 10 SVG, diagrams/topos/)
+**Итого Фаза 1:** 626 ячеек, 33 SVG-файла, 0 ошибок. (+ComonadTransformers.ipynb: 23 ячейки, 2 SVG) (+Toposes.ipynb: 23 ячейки, 10 SVG, diagrams/topos/)
 
 ---
 
@@ -77,9 +78,9 @@
 
 ---
 
-## ✅ Фаза 4 — Обновление SVG на тёмную тему (2026-06-03)
+## ✅ Фаза 4 — Обновление SVG на светлую тему (2026-06-05)
 
-Все 30 SVG-диаграмм приведены к единой тёмной палитре (#0f172a фон).
+Все 30 SVG-диаграмм приведены к единой светлой палитре (#ffffff фон).
 
 Обновлено за сессию: yo_yoneda.svg, dimap_square.svg, initial_alg.svg,
 hylo_tree.svg, falgebra_diagram.svg, mp_th_stages.svg, mp_generics.svg,
@@ -87,6 +88,16 @@ kan/*.svg (6 файлов), dist_landscape.svg, gpu_landscape.svg,
 conc_landscape.svg, hask_circle.svg.
 
 FoldableTraversable.ipynb: исправлена запись — 2 SVG (ft_foldable.svg + ft_compare.svg).
+
+
+
+### ComonadTransformers.ipynb — выполнено (2026-06-05)
+- ✅ 23 ячейки, 9 секций: Мотивация, ComonadTrans, EnvT, StoreT, TracedT, Стеки, Практика, ComonadT+MonadT, Связь
+- ✅ 2 SVG: `ct_diagram.svg` (MonadTrans vs ComonadTrans duality), `ct_stack.svg` (стеки и порядок)
+- ✅ Дуальность: lift ↔ lower, return ↔ extract, join ↔ duplicate
+- ✅ Три основных трансформера: EnvT (dual ReaderT), StoreT (dual StateT, основа Lens), TracedT (dual WriterT)
+- ✅ Секция 8: Комбинация ComonadT+MonadT, порядок композиции и эффекты
+- ✅ Секция 9: Связь с Adjunctions, Lens, Corecursion
 
 ## ⚠️ Критические правила (не нарушать никогда)
 
@@ -225,24 +236,24 @@ FoldableTraversable.ipynb: исправлена запись — 2 SVG (ft_folda
 
 ---
 
-## 🌑 Правила тёмных SVG-диаграмм (введено 2026-05-31)
+## 🌑 Правила светлых SVG-диаграмм (введено 2026-05-31)
 
 ### Палитра (обязательная, единая для всех SVG)
 
 | Роль | HEX | Использование |
 |------|-----|---------------|
-| **Фон** | `#0f172a` | rect background (весь SVG) |
-| **Фон карточки** | `#1e293b` | rect внутри (узлы, блоки) |
-| **Граница карточки** | `#334155` | stroke вокруг блоков |
-| **Текст основной** | `#e2e8f0` | все подписи |
-| **Текст вторичный** | `#94a3b8` | метки стрелок, пояснения |
-| **Акцент синий** | `#60a5fa` | ключевые узлы, заголовки |
+| **Фон** | `#ffffff` | rect background (весь SVG) |
+| **Фон карточки** | `#f1f5f9` | rect внутри (узлы, блоки) |
+| **Граница карточки** | `#cbd5e1` | stroke вокруг блоков |
+| **Текст основной** | `#0f172a` | все подписи |
+| **Текст вторичный** | `#64748b` | метки стрелок, пояснения |
+| **Акцент синий** | `#2563eb` | ключевые узлы, заголовки |
 | **Акцент зелёный** | `#34d399` | вторая категория / результат |
 | **Акцент фиолет.** | `#a78bfa` | третья категория / специал. |
 | **Акцент оранж.** | `#fb923c` | выделение / предупреждение |
-| **Стрелки** | `#60a5fa` | основные морфизмы |
+| **Стрелки** | `#2563eb` | основные морфизмы |
 | **Стрелки пунктир** | `#475569` | вспомогательные связи |
-| **Заголовок SVG** | `#f1f5f9` | title текст диаграммы |
+| **Заголовок SVG** | `#0f172a` | title текст диаграммы |
 
 ### Типографика SVG
 
@@ -272,7 +283,7 @@ font-family="monospace, 'JetBrains Mono', 'Cascadia Code', Arial, sans-serif"
      font-family="monospace,Arial,sans-serif">
 
   <!-- Background -->
-  <rect width="800" height="400" fill="#0f172a" rx="8"/>
+  <rect width="800" height="400" fill="#ffffff" rx="8"/>
 
   <!-- Arrow markers -->
   <defs>
@@ -288,15 +299,15 @@ font-family="monospace, 'JetBrains Mono', 'Cascadia Code', Arial, sans-serif"
 
   <!-- Title -->
   <text x="400" y="30" text-anchor="middle"
-        font-size="16" font-weight="bold" fill="#f1f5f9">
+        font-size="16" font-weight="bold" fill="#0f172a">
     Название диаграммы
   </text>
 
   <!-- Node example -->
   <rect x="60" y="80" width="140" height="50"
-        fill="#1e293b" stroke="#334155" stroke-width="1" rx="6"/>
+        fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" rx="6"/>
   <text x="130" y="110" text-anchor="middle"
-        font-size="14" fill="#60a5fa">Узел A</text>
+        font-size="14" fill="#2563eb">Узел A</text>
 
   <!-- Arrow example -->
   <line x1="200" y1="105" x2="340" y2="105"
@@ -309,7 +320,7 @@ font-family="monospace, 'JetBrains Mono', 'Cascadia Code', Arial, sans-serif"
 
 ### Что нужно переделать (список SVG для обновления)
 
-Все 29 существующих SVG-диаграмм нужно привести к тёмной палитре.
+Все 29 существующих SVG-диаграмм нужно привести к светлой палитре.
 Приоритет переделки — при следующем редактировании соответствующего ноутбука.
 
 | SVG-файл | Текущий фон | Статус |

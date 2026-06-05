@@ -1,72 +1,72 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="740" height="360" font-family="monospace,sans-serif">
   <defs>
     <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <polygon points="0 0,8 3,0 6" fill="#64748b"/>
+      <polygon points="0 0,8 3,0 6" fill="#94a3b8"/>
     </marker>
   </defs>
-  <rect width="740" height="360" fill="#0f172a" rx="8"/>
+  <rect width="740" height="360" fill="#ffffff" rx="8"/>
   <!-- Title -->
-  <text x="370" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#e2e8f0">Foldable vs Traversable</text>
+  <text x="370" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#334155">Foldable vs Traversable</text>
 
   <!-- === LEFT: Foldable === -->
-  <rect x="20" y="42" width="330" height="300" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="185" y="66" text-anchor="middle" font-size="14" font-weight="bold" fill="#93c5fd">Foldable t</text>
+  <rect x="20" y="42" width="330" height="300" rx="8" fill="#f1f5f9" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="185" y="66" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e40af">Foldable t</text>
 
   <!-- Type box -->
   <rect x="40" y="76" width="290" height="44" rx="6" fill="#172554"/>
-  <text x="185" y="94" text-anchor="middle" font-size="11" fill="#93c5fd">t a -&gt; [a]  (свёртка в список)</text>
-  <text x="185" y="112" text-anchor="middle" font-size="10" fill="#64748b">(гомоморфизм в моноид)</text>
+  <text x="185" y="94" text-anchor="middle" font-size="11" fill="#1e40af">t a -&gt; [a]  (свёртка в список)</text>
+  <text x="185" y="112" text-anchor="middle" font-size="10" fill="#94a3b8">(гомоморфизм в моноид)</text>
 
   <!-- foldr -->
   <rect x="40" y="128" width="290" height="44" rx="6" fill="#172554"/>
-  <text x="185" y="146" text-anchor="middle" font-size="10" fill="#93c5fd">foldr :: (a -&gt; b -&gt; b) -&gt; b -&gt; t a -&gt; b</text>
-  <text x="185" y="162" text-anchor="middle" font-size="9" fill="#64748b">(структурная рекурсия)</text>
+  <text x="185" y="146" text-anchor="middle" font-size="10" fill="#1e40af">foldr :: (a -&gt; b -&gt; b) -&gt; b -&gt; t a -&gt; b</text>
+  <text x="185" y="162" text-anchor="middle" font-size="9" fill="#94a3b8">(структурная рекурсия)</text>
 
   <!-- Operations -->
   <rect x="40" y="180" width="290" height="30" rx="4" fill="#0c2340"/>
-  <text x="185" y="199" text-anchor="middle" font-size="10" fill="#64748b">sum, product, length, elem, toList, ...</text>
+  <text x="185" y="199" text-anchor="middle" font-size="10" fill="#94a3b8">sum, product, length, elem, toList, ...</text>
 
   <!-- Instances -->
   <rect x="40" y="218" width="290" height="30" rx="4" fill="#0c2340"/>
-  <text x="185" y="237" text-anchor="middle" font-size="10" fill="#64748b">Tree, [], Maybe, Map, Set, Seq</text>
+  <text x="185" y="237" text-anchor="middle" font-size="10" fill="#94a3b8">Tree, [], Maybe, Map, Set, Seq</text>
 
   <!-- Output type -->
-  <rect x="80" y="262" width="210" height="40" rx="6" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5"/>
-  <text x="185" y="278" text-anchor="middle" font-size="12" font-weight="bold" fill="#93c5fd">t a -&gt; b</text>
-  <text x="185" y="294" text-anchor="middle" font-size="10" fill="#64748b">сломать форму</text>
+  <rect x="80" y="262" width="210" height="40" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="185" y="278" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e40af">t a -&gt; b</text>
+  <text x="185" y="294" text-anchor="middle" font-size="10" fill="#94a3b8">сломать форму</text>
 
   <!-- === RIGHT: Traversable === -->
-  <rect x="390" y="42" width="330" height="300" rx="8" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="555" y="66" text-anchor="middle" font-size="14" font-weight="bold" fill="#86efac">Traversable t</text>
+  <rect x="390" y="42" width="330" height="300" rx="8" fill="#f1f5f9" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="555" y="66" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">Traversable t</text>
 
   <!-- Type box -->
   <rect x="410" y="76" width="290" height="44" rx="6" fill="#052e16"/>
-  <text x="555" y="94" text-anchor="middle" font-size="11" fill="#86efac">t a -&gt; f (t b)  (обход с эффектами)</text>
-  <text x="555" y="112" text-anchor="middle" font-size="10" fill="#64748b">требует: Applicative f</text>
+  <text x="555" y="94" text-anchor="middle" font-size="11" fill="#15803d">t a -&gt; f (t b)  (обход с эффектами)</text>
+  <text x="555" y="112" text-anchor="middle" font-size="10" fill="#94a3b8">требует: Applicative f</text>
 
   <!-- traverse -->
   <rect x="410" y="128" width="290" height="44" rx="6" fill="#052e16"/>
-  <text x="555" y="146" text-anchor="middle" font-size="10" fill="#86efac">traverse :: (a -&gt; f b) -&gt; t a -&gt; f (t b)</text>
-  <text x="555" y="162" text-anchor="middle" font-size="9" fill="#64748b">sequenceA :: t (f a) -&gt; f (t a)</text>
+  <text x="555" y="146" text-anchor="middle" font-size="10" fill="#15803d">traverse :: (a -&gt; f b) -&gt; t a -&gt; f (t b)</text>
+  <text x="555" y="162" text-anchor="middle" font-size="9" fill="#94a3b8">sequenceA :: t (f a) -&gt; f (t a)</text>
 
   <!-- Operations -->
   <rect x="410" y="180" width="290" height="30" rx="4" fill="#0c2d1a"/>
-  <text x="555" y="199" text-anchor="middle" font-size="10" fill="#64748b">mapM, forM, mapAccumL, ...</text>
+  <text x="555" y="199" text-anchor="middle" font-size="10" fill="#94a3b8">mapM, forM, mapAccumL, ...</text>
 
   <!-- Instances -->
   <rect x="410" y="218" width="290" height="30" rx="4" fill="#0c2d1a"/>
-  <text x="555" y="237" text-anchor="middle" font-size="10" fill="#64748b">требует: Functor + Foldable</text>
+  <text x="555" y="237" text-anchor="middle" font-size="10" fill="#94a3b8">требует: Functor + Foldable</text>
 
   <!-- Output type -->
   <rect x="450" y="262" width="210" height="40" rx="6" fill="#14532d" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="555" y="278" text-anchor="middle" font-size="12" font-weight="bold" fill="#86efac">t a -&gt; f (t b)</text>
-  <text x="555" y="294" text-anchor="middle" font-size="10" fill="#64748b">сохранить форму + эффект</text>
+  <text x="555" y="278" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803d">t a -&gt; f (t b)</text>
+  <text x="555" y="294" text-anchor="middle" font-size="10" fill="#94a3b8">сохранить форму + эффект</text>
 
   <!-- Arrow: Traversable is stronger -->
   <line x1="350" y1="190" x2="390" y2="190" stroke="#818cf8" stroke-width="2" marker-end="url(#arr)"/>
   <text x="370" y="183" text-anchor="middle" font-size="9" fill="#818cf8">сильнее</text>
 
   <!-- Laws at bottom -->
-  <rect x="20" y="350" width="700" height="4" rx="2" fill="#1e293b"/>
-  <text x="370" y="348" text-anchor="middle" font-size="9" fill="#475569">fmap f = runIdentity . traverse (Identity . f)  |  foldMap f = getConst . traverse (Const . f)</text>
+  <rect x="20" y="350" width="700" height="4" rx="2" fill="#f1f5f9"/>
+  <text x="370" y="348" text-anchor="middle" font-size="9" fill="#64748b">fmap f = runIdentity . traverse (Identity . f)  |  foldMap f = getConst . traverse (Const . f)</text>
 </svg>

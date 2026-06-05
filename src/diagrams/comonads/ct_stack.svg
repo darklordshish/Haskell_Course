@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="480" viewBox="0 0 860 480" font-family="monospace,Arial,sans-serif">
+  <rect width="860" height="480" fill="#ffffff" rx="8"/>
+  <defs>
+    <marker id="a1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="a2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#059669"/>
+    </marker>
+  </defs>
+  <text x="430" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">ComonadTrans Stacks: Order and Effects</text>
+  <!-- Column labels -->
+  <text x="155" y="60" text-anchor="middle" font-size="12" fill="#64748b">Stack</text>
+  <text x="430" y="60" text-anchor="middle" font-size="12" fill="#64748b">Type</text>
+  <text x="680" y="60" text-anchor="middle" font-size="12" fill="#64748b">Use Case</text>
+  <!-- Row 1: EnvT + Store -->
+  <rect x="20" y="75" width="260" height="80" fill="#f1f5f9" stroke="#cbd5e1" rx="5"/>
+  <rect x="25" y="80" width="248" height="34" fill="#ffffff" stroke="#7c3aed" rx="4"/>
+  <text x="149" y="102" text-anchor="middle" font-size="12" fill="#7c3aed">EnvT e</text>
+  <rect x="35" y="116" width="228" height="34" fill="#ffffff" stroke="#059669" rx="4"/>
+  <text x="149" y="138" text-anchor="middle" font-size="12" fill="#059669">Store s</text>
+  <text x="149" y="163" text-anchor="middle" font-size="10" fill="#64748b">outer=global, inner=local</text>
+  <!-- Type col -->
+  <rect x="295" y="75" width="260" height="80" fill="#f1f5f9" stroke="#cbd5e1" rx="5"/>
+  <text x="425" y="102" text-anchor="middle" font-size="11" fill="#2563eb">(e, Store s a)</text>
+  <text x="425" y="125" text-anchor="middle" font-size="10" fill="#64748b">ask = read config</text>
+  <text x="425" y="143" text-anchor="middle" font-size="10" fill="#64748b">pos/peek = navigate</text>
+  <!-- Use case -->
+  <rect x="570" y="75" width="270" height="80" fill="#f1f5f9" stroke="#cbd5e1" rx="5"/>
+  <text x="705" y="105" text-anchor="middle" font-size="11" fill="#0f172a">UI with theme + cursor</text>
+  <text x="705" y="125" text-anchor="middle" font-size="10" fill="#64748b">CA with ruleset + grid</text>
+  <text x="705" y="145" text-anchor="middle" font-size="10" fill="#64748b">Annotated data stream</text>
+  <!-- Row 2: EnvT + Traced -->
+  <rect x="20" y="175" width="260" height="80" fill="#f1f5f9" stroke="#cbd5e1" rx="5"/>
+  <rect x="25" y="180" width="248" height="34" fill="#ffffff" stroke="#7c3aed" rx="4"/>
+  <text x="149" y="202" text-anchor="middle" font-size="12" fill="#7c3aed">EnvT e</text>
+  <rect x="35" y="216" width="228" height="34" fill="#ffffff" stroke="#ea580c" rx="4"/>
+  <text x="149" y="238" text-anchor="middle" font-size="12" fill="#ea580c">Traced m</text>
+  <text x="149" y="263" text-anchor="middle" font-size="10" fill="#64748b">scenario + time</text>
+  <!-- Type -->
+  <rect x="295" y="175" width="260" height="80" fill="#f1f5f9" stroke="#cbd5e1" rx="5"/>
+  <text x="425" y="202" text-anchor="middle" font-size="11" fill="#2563eb">(e, m -&gt; a)</text>
+  <text x="425" y="225" text-anchor="middle" font-size="10" fill="#64748b">ask = read scenario</text>
+  <text x="425" y="243" text-anchor="middle" font-size="10" fill="#64748b">trace = read at time t</text>
+  <!-- Use case -->
+  <rect x="570" y="175" width="270" height="80" fill="#f1f5f9" stroke="#cbd5e1" rx="5"/>
+  <text x="705" y="205" text-anchor="middle" font-size="11" fill="#0f172a">Animation with phase</text>
+  <text x="705" y="225" text-anchor="middle" font-size="10" fill="#64748b">Simulation scenario</text>
+  <text x="705" y="245" text-anchor="middle" font-size="10" fill="#64748b">Phased rendering</text>
+  <!-- Row 3: TracedT + Store -->
+  <rect x="20" y="275" width="260" height="80" fill="#f1f5f9" stroke="#cbd5e1" rx="5"/>
+  <rect x="25" y="280" width="248" height="34" fill="#ffffff" stroke="#ea580c" rx="4"/>
+  <text x="149" y="302" text-anchor="middle" font-size="12" fill="#ea580c">TracedT m</text>
+  <rect x="35" y="316" width="228" height="34" fill="#ffffff" stroke="#059669" rx="4"/>
+  <text x="149" y="338" text-anchor="middle" font-size="12" fill="#059669">Store s</text>
+  <text x="149" y="363" text-anchor="middle" font-size="10" fill="#64748b">space + time</text>
+  <!-- Type -->
+  <rect x="295" y="275" width="260" height="80" fill="#f1f5f9" stroke="#cbd5e1" rx="5"/>
+  <text x="425" y="302" text-anchor="middle" font-size="11" fill="#2563eb">Store s (m -&gt; a)</text>
+  <text x="425" y="325" text-anchor="middle" font-size="10" fill="#64748b">pos = current position</text>
+  <text x="425" y="343" text-anchor="middle" font-size="10" fill="#64748b">trace = read at time</text>
+  <!-- Use case -->
+  <rect x="570" y="275" width="270" height="80" fill="#f1f5f9" stroke="#cbd5e1" rx="5"/>
+  <text x="705" y="305" text-anchor="middle" font-size="11" fill="#0f172a">2D cellular automaton</text>
+  <text x="705" y="325" text-anchor="middle" font-size="10" fill="#64748b">Spacetime simulation</text>
+  <text x="705" y="345" text-anchor="middle" font-size="10" fill="#64748b">History at each pos</text>
+  <!-- lower arrows -->
+  <text x="149" y="395" text-anchor="middle" font-size="11" fill="#64748b">lower :: t w a -&gt; w a</text>
+  <text x="149" y="415" text-anchor="middle" font-size="10" fill="#64748b">(drops outer layer)</text>
+  <text x="430" y="395" text-anchor="middle" font-size="11" fill="#2563eb">Outer = global context</text>
+  <text x="430" y="415" text-anchor="middle" font-size="10" fill="#2563eb">Inner = local context</text>
+  <text x="680" y="395" text-anchor="middle" font-size="10" fill="#64748b">Order matters in composition!</text>
+  <text x="680" y="415" text-anchor="middle" font-size="10" fill="#ea580c">Swap layers = different semantics</text>
+</svg>

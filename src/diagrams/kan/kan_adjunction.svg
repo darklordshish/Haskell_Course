@@ -13,7 +13,7 @@
     <polygon points="0 0, 10 3.5, 0 7" fill="#cc7700"/>
   </marker>
 </defs>
-<rect width="700" height="420" fill="#0f172a" rx="10"/>
+<rect width="700" height="420" fill="#ffffff" rx="10"/>
 <text x="350" y="32" text-anchor="middle" font-family="monospace" font-size="16" fill="#e0e0ff" font-weight="bold">&#1057;&#1086;&#1087;&#1088;&#1103;&#1078;&#1077;&#1085;&#1080;&#1103; &#1095;&#1077;&#1088;&#1077;&#1079; &#1088;&#1072;&#1089;&#1096;&#1080;&#1088;&#1077;&#1085;&#1080;&#1103; &#1050;&#1072;&#1085;&#1072;: f &#8867; g</text>
 
 <!-- Left column: Adjunction -->

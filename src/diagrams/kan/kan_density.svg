@@ -10,7 +10,7 @@
     <polygon points="0 0, 10 3.5, 0 7" fill="#228844"/>
   </marker>
 </defs>
-<rect width="660" height="340" fill="#0f172a" rx="10"/>
+<rect width="660" height="340" fill="#ffffff" rx="10"/>
 <text x="330" y="30" text-anchor="middle" font-family="monospace" font-size="15" fill="#e0e0ff" font-weight="bold">&#1050;&#1086;&#1084;&#1086;&#1085;&#1072;&#1076;&#1072; &#1087;&#1083;&#1086;&#1090;&#1085;&#1086;&#1089;&#1090;&#1080; (Density = Lan f f)</text>
 <text x="330" y="52" text-anchor="middle" font-family="monospace" font-size="12" fill="#8888aa">data Density f a = forall b. Density (f b -&gt; a) (f b)</text>
 

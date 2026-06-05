@@ -1,22 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="480" height="280" viewBox="0 0 480 280" font-family="monospace,Arial,sans-serif">
-<rect width="480" height="280" fill="#0f172a" stroke="#1e293b" rx="8"/>
+<rect width="480" height="280" fill="#ffffff" stroke="#f1f5f9" rx="8"/>
 
 <!-- Outer: transformer t m a -->
-<rect x="30" y="30" width="420" height="220" fill="#0d2137" stroke="#3b82f6" stroke-width="2" rx="10"/>
-<text x="240" y="55" text-anchor="middle" font-size="13" font-weight="bold" fill="#93c5fd">t m a  (трансформер)</text>
+<rect x="30" y="30" width="420" height="220" fill="#e0f2fe" stroke="#1d4ed8" stroke-width="2" rx="10"/>
+<text x="240" y="55" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">t m a  (трансформер)</text>
 
 <!-- Middle: base monad m a -->
-<rect x="80" y="80" width="320" height="140" fill="#0d2a1a" stroke="#22c55e" stroke-width="2" rx="8"/>
-<text x="240" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#86efac">m a  (базовая монада)</text>
+<rect x="80" y="80" width="320" height="140" fill="#dcfce7" stroke="#22c55e" stroke-width="2" rx="8"/>
+<text x="240" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#15803d">m a  (базовая монада)</text>
 
 <!-- Inner: value a -->
-<rect x="170" y="125" width="140" height="60" fill="#2d2a04" stroke="#f59e0b" stroke-width="2" rx="6"/>
-<text x="240" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill="#fcd34d">a</text>
-<text x="240" y="170" text-anchor="middle" font-size="10" fill="#64748b">(значение)</text>
+<rect x="170" y="125" width="140" height="60" fill="#2d2a04" stroke="#b45309" stroke-width="2" rx="6"/>
+<text x="240" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">a</text>
+<text x="240" y="170" text-anchor="middle" font-size="10" fill="#94a3b8">(значение)</text>
 
 <!-- lift label -->
-<text x="22" y="145" font-size="10" font-weight="bold" fill="#64748b">lift</text>
+<text x="22" y="145" font-size="10" font-weight="bold" fill="#94a3b8">lift</text>
 
 <!-- Footer -->
-<text x="240" y="265" text-anchor="middle" font-size="10" fill="#475569">lift :: m a -&gt; t m a   (морфизм монад)</text>
+<text x="240" y="265" text-anchor="middle" font-size="10" fill="#64748b">lift :: m a -&gt; t m a   (морфизм монад)</text>
 </svg>

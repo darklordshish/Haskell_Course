@@ -19,7 +19,7 @@
     <polygon points="0 0, 10 3.5, 0 7" fill="#ccaa00"/>
   </marker>
 </defs>
-<rect width="600" height="380" fill="#0f172a" rx="10"/>
+<rect width="600" height="380" fill="#ffffff" rx="10"/>
 <text x="300" y="35" text-anchor="middle" font-family="monospace" font-size="17" fill="#e0e0ff" font-weight="bold">&#1055;&#1088;&#1072;&#1074;&#1086;&#1077; &#1088;&#1072;&#1089;&#1096;&#1080;&#1088;&#1077;&#1085;&#1080;&#1077; &#1050;&#1072;&#1085;&#1072; (Ran)</text>
 <text x="300" y="55" text-anchor="middle" font-family="monospace" font-size="13" fill="#8888aa">Nat(f&#183;g, h) &#8773; Nat(f, Ran g h)</text>
 <rect x="60" y="100" width="90" height="46" rx="8" fill="#0f3460" stroke="#4488dd" stroke-width="2"/>

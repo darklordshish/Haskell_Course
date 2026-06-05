@@ -1,31 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="270" style="background:#0f172a;border-radius:12px">
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="270" style="background:#ffffff;border-radius:12px">
   <defs>
-    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#60a5fa"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#2563eb"/></marker>
   </defs>
-  <text x="350" y="32" text-anchor="middle" font-family="monospace" font-size="14" fill="#e2e8f0" font-weight="bold">Predstavimye funktory (Representable)</text>
-  <rect x="20" y="55" width="200" height="110" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
-  <text x="120" y="78" text-anchor="middle" font-family="monospace" font-size="12" fill="#a78bfa" font-weight="bold">Representable f</text>
-  <text x="120" y="98" text-anchor="middle" font-family="monospace" font-size="10" fill="#e2e8f0">type Rep f  -- index</text>
-  <text x="120" y="115" text-anchor="middle" font-family="monospace" font-size="9" fill="#e2e8f0">tabulate :: (Rep f -&gt; a) -&gt; f a</text>
-  <text x="120" y="132" text-anchor="middle" font-family="monospace" font-size="9" fill="#e2e8f0">index :: f a -&gt; Rep f -&gt; a</text>
-  <text x="120" y="155" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748b">tabulate . index = id</text>
-  <line x1="220" y1="110" x2="280" y2="110" stroke="#60a5fa" stroke-width="2" marker-end="url(#arr)"/>
-  <text x="250" y="102" text-anchor="middle" font-family="monospace" font-size="11" fill="#60a5fa">~</text>
-  <rect x="280" y="55" width="160" height="110" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
-  <text x="360" y="78" text-anchor="middle" font-family="monospace" font-size="12" fill="#34d399" font-weight="bold">(-&gt;) r</text>
-  <text x="360" y="100" text-anchor="middle" font-family="monospace" font-size="10" fill="#e2e8f0">Rep ((-&gt;) r) = r</text>
-  <text x="360" y="118" text-anchor="middle" font-family="monospace" font-size="10" fill="#94a3b8">tabulate = id</text>
-  <text x="360" y="135" text-anchor="middle" font-family="monospace" font-size="10" fill="#94a3b8">index = id</text>
-  <rect x="460" y="55" width="220" height="175" rx="8" fill="#1e293b" stroke="#fb923c" stroke-width="1.5"/>
-  <text x="570" y="78" text-anchor="middle" font-family="monospace" font-size="11" fill="#fb923c" font-weight="bold">Primery Representable</text>
-  <text x="570" y="100" text-anchor="middle" font-family="monospace" font-size="10" fill="#e2e8f0">Identity  (Rep = ())</text>
-  <text x="570" y="118" text-anchor="middle" font-family="monospace" font-size="10" fill="#e2e8f0">(-&gt;) r     (Rep = r)</text>
-  <text x="570" y="136" text-anchor="middle" font-family="monospace" font-size="10" fill="#e2e8f0">Stream a  (Rep = Int)</text>
-  <text x="570" y="154" text-anchor="middle" font-family="monospace" font-size="10" fill="#e2e8f0">Vec n a   (Rep = Fin n)</text>
-  <text x="570" y="176" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748b">-- Ne predstavimye:</text>
-  <text x="570" y="192" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748b">Maybe, [], Either a</text>
-  <text x="570" y="208" text-anchor="middle" font-family="monospace" font-size="9" fill="#64748b">(net odnoznachnogo indeksa)</text>
-  <rect x="20" y="185" width="420" height="50" rx="8" fill="#0f2336" stroke="#60a5fa" stroke-width="1"/>
-  <text x="230" y="207" text-anchor="middle" font-family="monospace" font-size="10" fill="#60a5fa" font-weight="bold">Svjaz s Jonedoj:</text>
-  <text x="230" y="225" text-anchor="middle" font-family="monospace" font-size="10" fill="#e2e8f0">f predstavim &lt;=&gt; f ~ Hom(Rep f, -)</text>
+  <text x="350" y="32" text-anchor="middle" font-family="monospace" font-size="14" fill="#334155" font-weight="bold">Predstavimye funktory (Representable)</text>
+  <rect x="20" y="55" width="200" height="110" rx="8" fill="#f1f5f9" stroke="#7c3aed" stroke-width="2"/>
+  <text x="120" y="78" text-anchor="middle" font-family="monospace" font-size="12" fill="#7c3aed" font-weight="bold">Representable f</text>
+  <text x="120" y="98" text-anchor="middle" font-family="monospace" font-size="10" fill="#334155">type Rep f  -- index</text>
+  <text x="120" y="115" text-anchor="middle" font-family="monospace" font-size="9" fill="#334155">tabulate :: (Rep f -&gt; a) -&gt; f a</text>
+  <text x="120" y="132" text-anchor="middle" font-family="monospace" font-size="9" fill="#334155">index :: f a -&gt; Rep f -&gt; a</text>
+  <text x="120" y="155" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">tabulate . index = id</text>
+  <line x1="220" y1="110" x2="280" y2="110" stroke="#2563eb" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="250" y="102" text-anchor="middle" font-family="monospace" font-size="11" fill="#2563eb">~</text>
+  <rect x="280" y="55" width="160" height="110" rx="8" fill="#f1f5f9" stroke="#059669" stroke-width="2"/>
+  <text x="360" y="78" text-anchor="middle" font-family="monospace" font-size="12" fill="#059669" font-weight="bold">(-&gt;) r</text>
+  <text x="360" y="100" text-anchor="middle" font-family="monospace" font-size="10" fill="#334155">Rep ((-&gt;) r) = r</text>
+  <text x="360" y="118" text-anchor="middle" font-family="monospace" font-size="10" fill="#64748b">tabulate = id</text>
+  <text x="360" y="135" text-anchor="middle" font-family="monospace" font-size="10" fill="#64748b">index = id</text>
+  <rect x="460" y="55" width="220" height="175" rx="8" fill="#f1f5f9" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="570" y="78" text-anchor="middle" font-family="monospace" font-size="11" fill="#ea580c" font-weight="bold">Primery Representable</text>
+  <text x="570" y="100" text-anchor="middle" font-family="monospace" font-size="10" fill="#334155">Identity  (Rep = ())</text>
+  <text x="570" y="118" text-anchor="middle" font-family="monospace" font-size="10" fill="#334155">(-&gt;) r     (Rep = r)</text>
+  <text x="570" y="136" text-anchor="middle" font-family="monospace" font-size="10" fill="#334155">Stream a  (Rep = Int)</text>
+  <text x="570" y="154" text-anchor="middle" font-family="monospace" font-size="10" fill="#334155">Vec n a   (Rep = Fin n)</text>
+  <text x="570" y="176" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">-- Ne predstavimye:</text>
+  <text x="570" y="192" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">Maybe, [], Either a</text>
+  <text x="570" y="208" text-anchor="middle" font-family="monospace" font-size="9" fill="#94a3b8">(net odnoznachnogo indeksa)</text>
+  <rect x="20" y="185" width="420" height="50" rx="8" fill="#0f2336" stroke="#2563eb" stroke-width="1"/>
+  <text x="230" y="207" text-anchor="middle" font-family="monospace" font-size="10" fill="#2563eb" font-weight="bold">Svjaz s Jonedoj:</text>
+  <text x="230" y="225" text-anchor="middle" font-family="monospace" font-size="10" fill="#334155">f predstavim &lt;=&gt; f ~ Hom(Rep f, -)</text>
 </svg>

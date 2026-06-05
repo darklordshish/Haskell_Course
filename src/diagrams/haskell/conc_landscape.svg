@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" font-family="monospace" font-size="13">
-  <rect width="720" height="420" fill="#0f172a" rx="10"/>
+  <rect width="720" height="420" fill="#ffffff" rx="10"/>
 
   <!-- Title -->
   <text x="360" y="30" fill="#e6edf3" font-size="16" font-weight="bold" text-anchor="middle">&#x41B;&#x430;&#x43D;&#x434;&#x448;&#x430;&#x444;&#x442; &#x438;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43C;&#x435;&#x43D;&#x442;&#x43E;&#x432; &#x43A;&#x43E;&#x43D;&#x43A;&#x443;&#x440;&#x435;&#x43D;&#x442;&#x43D;&#x43E;&#x441;&#x442;&#x438; Haskell</text>

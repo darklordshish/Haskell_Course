@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="300" height="150" font-family="monospace,Arial,sans-serif">
-  <rect width="300" height="150" fill="#0f172a" rx="8"/>
-  <circle cx="150" cy="75" r="60" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
-  <text x="150" y="70" text-anchor="middle" font-size="16" font-weight="bold" fill="#93c5fd">Hask</text>
-  <text x="150" y="88" text-anchor="middle" font-size="11" fill="#64748b">category</text>
+  <rect width="300" height="150" fill="#ffffff" rx="8"/>
+  <circle cx="150" cy="75" r="60" fill="#f1f5f9" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="150" y="70" text-anchor="middle" font-size="16" font-weight="bold" fill="#1e40af">Hask</text>
+  <text x="150" y="88" text-anchor="middle" font-size="11" fill="#94a3b8">category</text>
 </svg>
