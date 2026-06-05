@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="420">
+<defs>
+  <marker id="arrd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#334466"/>
+  </marker>
+  <marker id="arrRd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#cc4444"/>
+  </marker>
+  <marker id="arrGd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#228844"/>
+  </marker>
+  <marker id="arrOd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#cc7700"/>
+  </marker>
+</defs>
+<rect width="700" height="420" fill="#0f172a" rx="10"/>
+<text x="350" y="32" text-anchor="middle" font-family="monospace" font-size="16" fill="#e0e0ff" font-weight="bold">&#1057;&#1086;&#1087;&#1088;&#1103;&#1078;&#1077;&#1085;&#1080;&#1103; &#1095;&#1077;&#1088;&#1077;&#1079; &#1088;&#1072;&#1089;&#1096;&#1080;&#1088;&#1077;&#1085;&#1080;&#1103; &#1050;&#1072;&#1085;&#1072;: f &#8867; g</text>
+
+<!-- Left column: Adjunction -->
+<rect x="20" y="55" width="300" height="150" rx="8" fill="#0a1830" stroke="#2255aa" stroke-width="1.5"/>
+<text x="170" y="78" text-anchor="middle" font-family="monospace" font-size="14" fill="#6699ff" font-weight="bold">&#1057;&#1086;&#1087;&#1088;&#1103;&#1078;&#1077;&#1085;&#1080;&#1077; f &#8867; g</text>
+<text x="170" y="100" text-anchor="middle" font-family="monospace" font-size="12" fill="#8899bb">Hom(f A, B) &#8773; Hom(A, g B)</text>
+<!-- f arrow C->D -->
+<rect x="50" y="115" width="60" height="36" rx="6" fill="#0f2a50" stroke="#4477bb" stroke-width="1.5"/>
+<text x="80" y="138" text-anchor="middle" font-family="monospace" font-size="16" fill="#88aaff">C</text>
+<rect x="210" y="115" width="60" height="36" rx="6" fill="#0f2a50" stroke="#4477bb" stroke-width="1.5"/>
+<text x="240" y="138" text-anchor="middle" font-family="monospace" font-size="16" fill="#88aaff">D</text>
+<line x1="113" y1="133" x2="205" y2="133" stroke="#cc4444" stroke-width="2" marker-end="url(#arrRd)"/>
+<line x1="205" y1="143" x2="113" y2="143" stroke="#228844" stroke-width="2" marker-end="url(#arrGd)"/>
+<text x="159" y="127" text-anchor="middle" font-family="monospace" font-size="12" fill="#ff8888">f</text>
+<text x="159" y="158" text-anchor="middle" font-family="monospace" font-size="12" fill="#55cc77">g</text>
+<text x="170" y="185" text-anchor="middle" font-family="monospace" font-size="11" fill="#6688aa">&#1079;&#1072;&#1073;&#1099;&#1074;&#1072;&#1102;&#1097;&#1080;&#1081; &#8897; &#1083;&#1077;&#1074;&#1099;&#1081; &#1089;&#1074;&#1086;&#1073;&#1086;&#1076;&#1085;&#1099;&#1081;</text>
+<text x="170" y="198" text-anchor="middle" font-family="monospace" font-size="11" fill="#6688aa">&#1077;&#1076;&#1080;&#1085;&#1080;&#1094;&#1072; &#951; : Id &#8658; g&#183;f, &#1082;&#1086;&#1077;&#1076;&#1080;&#1085;&#1080;&#1094;&#1072; &#949; : f&#183;g &#8658; Id</text>
+
+<!-- Right column: Kan -->
+<rect x="380" y="55" width="300" height="150" rx="8" fill="#0a2010" stroke="#226633" stroke-width="1.5"/>
+<text x="530" y="78" text-anchor="middle" font-family="monospace" font-size="14" fill="#66cc88" font-weight="bold">&#1063;&#1077;&#1088;&#1077;&#1079; Kan:</text>
+<rect x="400" y="92" width="260" height="34" rx="5" fill="#0a3020" stroke="#336644"/>
+<text x="530" y="114" text-anchor="middle" font-family="monospace" font-size="13" fill="#88ffcc">Ran f Id &#8773; g</text>
+<rect x="400" y="136" width="260" height="34" rx="5" fill="#1a1a05" stroke="#665533"/>
+<text x="530" y="158" text-anchor="middle" font-family="monospace" font-size="13" fill="#ffcc66">Lan g Id &#8773; f</text>
+<text x="530" y="192" text-anchor="middle" font-family="monospace" font-size="11" fill="#6688aa">&#1087;&#1088;&#1072;&#1074;&#1099;&#1081; &#1089;&#1086;&#1087;&#1088;&#1103;&#1078;&#1105;&#1085;&#1085;&#1099;&#1081; = &#1087;&#1088;&#1072;&#1074;&#1086;&#1077; Kan Id &#1074;&#1076;&#1086;&#1083;&#1100; f</text>
+<text x="530" y="205" text-anchor="middle" font-family="monospace" font-size="11" fill="#6688aa">&#1083;&#1077;&#1074;&#1099;&#1081; &#1089;&#1086;&#1087;&#1088;&#1103;&#1078;&#1105;&#1085;&#1085;&#1099;&#1081; = &#1083;&#1077;&#1074;&#1086;&#1077; Kan Id &#1074;&#1076;&#1086;&#1083;&#1100; g</text>
+
+<!-- Equivalence arrow -->
+<line x1="323" y1="130" x2="375" y2="130" stroke="#ccaa00" stroke-width="2" marker-end="url(#arrd)"/>
+<text x="349" y="122" text-anchor="middle" font-family="monospace" font-size="13" fill="#ffdd44">&#8773;</text>
+
+<!-- Bottom: Monad from adjunction -->
+<rect x="20" y="240" width="300" height="130" rx="8" fill="#1a0a30" stroke="#664499" stroke-width="1.5"/>
+<text x="170" y="263" text-anchor="middle" font-family="monospace" font-size="14" fill="#cc88ff" font-weight="bold">&#1052;&#1086;&#1085;&#1072;&#1076;&#1072; &#1080;&#1079; &#1089;&#1086;&#1087;&#1088;&#1103;&#1078;&#1077;&#1085;&#1080;&#1103;</text>
+<text x="170" y="284" text-anchor="middle" font-family="monospace" font-size="12" fill="#aa88cc">T = g &#183; f : C &#8594; C</text>
+<text x="170" y="304" text-anchor="middle" font-family="monospace" font-size="11" fill="#8866aa">return = &#951; : Id &#8658; g&#183;f</text>
+<text x="170" y="320" text-anchor="middle" font-family="monospace" font-size="11" fill="#8866aa">join = g&#183;&#949;&#183;f : g&#183;f&#183;g&#183;f &#8658; g&#183;f</text>
+<text x="170" y="344" text-anchor="middle" font-family="monospace" font-size="11" fill="#6655aa">-- &#1087;&#1088;&#1080;&#1084;&#1077;&#1088;: Maybe = Ran Just Id</text>
+<text x="170" y="358" text-anchor="middle" font-family="monospace" font-size="11" fill="#6655aa">-- [] = Lan singleton Id</text>
+
+<!-- Bottom right: Codensity -->
+<rect x="380" y="240" width="300" height="130" rx="8" fill="#0a1a30" stroke="#224477" stroke-width="1.5"/>
+<text x="530" y="263" text-anchor="middle" font-family="monospace" font-size="14" fill="#88bbff" font-weight="bold">Codensity = &#1084;&#1086;&#1085;&#1072;&#1076;&#1072;</text>
+<text x="530" y="284" text-anchor="middle" font-family="monospace" font-size="12" fill="#6699cc">Codensity f &#8773; Ran f f</text>
+<text x="530" y="304" text-anchor="middle" font-family="monospace" font-size="11" fill="#5577aa">-- &#1083;&#1102;&#1073;&#1086;&#1081; &#1092;&#1091;&#1085;&#1082;&#1090;&#1086;&#1088; &#8594; &#1084;&#1086;&#1085;&#1072;&#1076;&#1072;</text>
+<text x="530" y="320" text-anchor="middle" font-family="monospace" font-size="11" fill="#5577aa">newtype Codensity f a =</text>
+<text x="530" y="336" text-anchor="middle" font-family="monospace" font-size="11" fill="#5577aa">  Cod { forall b.(a-&gt;f b)-&gt;f b }</text>
+<text x="530" y="354" text-anchor="middle" font-family="monospace" font-size="11" fill="#5577aa">-- &#1091;&#1083;&#1091;&#1095;&#1096;&#1072;&#1077;&#1090; &#1072;&#1089;&#1080;&#1084;&#1087;&#1090;&#1086;&#1090;&#1080;&#1082;&#1091; &#1084;&#1086;&#1085;&#1072;&#1076;</text>
+
+<!-- Bottom middle: arrow showing connection -->
+<line x1="323" y1="305" x2="375" y2="305" stroke="#884499" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arrd)"/>
+<text x="349" y="297" text-anchor="middle" font-family="monospace" font-size="10" fill="#aa66cc">Ran f f</text>
+
+<!-- Title top connection -->
+<line x1="170" y1="207" x2="170" y2="236" stroke="#664499" stroke-width="1.5"/>
+<line x1="530" y1="207" x2="530" y2="236" stroke="#226633" stroke-width="1.5"/>
+</svg>

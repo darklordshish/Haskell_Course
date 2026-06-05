@@ -1,0 +1,8 @@
+services:
+  ihaskell:
+    image: gibiansky/ihaskell
+    ports:
+      - "8889:8888"
+    volumes:
+      - .:/home/jovyan/pwd
+    command: jupyter lab --ip=0.0.0.0 --ServerApp.token=''

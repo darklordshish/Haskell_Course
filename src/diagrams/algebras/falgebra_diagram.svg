@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="260" font-family="monospace,Arial,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/></marker>
+    <marker id="arrb" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#60a5fa"/></marker>
+  </defs>
+  <rect width="380" height="260" fill="#0f172a" rx="8"/>
+  <text x="190" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#f1f5f9">F-Algebra Morphism</text>
+
+  <!-- Top-left: FA -->
+  <rect x="40" y="45" width="80" height="42" rx="6" fill="#0c2340" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="80" y="72" text-anchor="middle" font-size="18" font-style="italic" fill="#93c5fd">FA</text>
+
+  <!-- Top-right: FB -->
+  <rect x="260" y="45" width="80" height="42" rx="6" fill="#0c2340" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="300" y="72" text-anchor="middle" font-size="18" font-style="italic" fill="#93c5fd">FB</text>
+
+  <!-- Bottom-left: A -->
+  <rect x="40" y="175" width="80" height="42" rx="6" fill="#1e1b4b" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="80" y="202" text-anchor="middle" font-size="18" font-style="italic" fill="#c4b5fd">A</text>
+
+  <!-- Bottom-right: B -->
+  <rect x="260" y="175" width="80" height="42" rx="6" fill="#1e1b4b" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="300" y="202" text-anchor="middle" font-size="18" font-style="italic" fill="#c4b5fd">B</text>
+
+  <!-- Top arrow: Ff -->
+  <line x1="122" y1="66" x2="258" y2="66" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrb)"/>
+  <text x="190" y="57" text-anchor="middle" font-size="14" font-style="italic" fill="#60a5fa">Ff</text>
+
+  <!-- Bottom arrow: f -->
+  <line x1="122" y1="196" x2="258" y2="196" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="190" y="188" text-anchor="middle" font-size="14" font-style="italic" fill="#e2e8f0">f</text>
+
+  <!-- Left arrow: alpha (algebra map A) -->
+  <line x1="80" y1="89" x2="80" y2="173" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="55" y="133" text-anchor="middle" font-size="15" font-style="italic" fill="#e2e8f0">alpha</text>
+
+  <!-- Right arrow: beta (algebra map B) -->
+  <line x1="300" y1="89" x2="300" y2="173" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="330" y="133" text-anchor="middle" font-size="15" font-style="italic" fill="#e2e8f0">beta</text>
+
+  <!-- Center label: commutes -->
+  <text x="190" y="132" text-anchor="middle" font-size="12" fill="#94a3b8">commutes</text>
+
+  <!-- Bottom note -->
+  <text x="190" y="247" text-anchor="middle" font-size="10" fill="#64748b">f . alpha = beta . Ff  (algebra morphism)</text>
+</svg>

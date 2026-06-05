@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="380">
+<defs>
+  <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#334466"/>
+  </marker>
+  <marker id="arrR" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#cc4444"/>
+  </marker>
+  <marker id="arrG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#228844"/>
+  </marker>
+  <marker id="arrB" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#2255cc"/>
+  </marker>
+  <marker id="arrP" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#884499"/>
+  </marker>
+  <marker id="arrY" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#ccaa00"/>
+  </marker>
+</defs>
+<rect width="600" height="380" fill="#0f172a" rx="10"/>
+<text x="300" y="35" text-anchor="middle" font-family="monospace" font-size="17" fill="#e0e0ff" font-weight="bold">&#1055;&#1088;&#1072;&#1074;&#1086;&#1077; &#1088;&#1072;&#1089;&#1096;&#1080;&#1088;&#1077;&#1085;&#1080;&#1077; &#1050;&#1072;&#1085;&#1072; (Ran)</text>
+<text x="300" y="55" text-anchor="middle" font-family="monospace" font-size="13" fill="#8888aa">Nat(f&#183;g, h) &#8773; Nat(f, Ran g h)</text>
+<rect x="60" y="100" width="90" height="46" rx="8" fill="#0f3460" stroke="#4488dd" stroke-width="2"/>
+<text x="105" y="128" text-anchor="middle" font-family="monospace" font-size="22" fill="#66aaff" font-weight="bold">C</text>
+<rect x="450" y="100" width="90" height="46" rx="8" fill="#0f3460" stroke="#4488dd" stroke-width="2"/>
+<text x="495" y="128" text-anchor="middle" font-family="monospace" font-size="22" fill="#66aaff" font-weight="bold">D</text>
+<rect x="255" y="290" width="90" height="46" rx="8" fill="#1a0a3e" stroke="#9944dd" stroke-width="2"/>
+<text x="300" y="318" text-anchor="middle" font-family="monospace" font-size="22" fill="#cc88ff" font-weight="bold">E</text>
+<line x1="154" y1="123" x2="445" y2="123" stroke="#4488dd" stroke-width="2.5" marker-end="url(#arrB)"/>
+<text x="300" y="113" text-anchor="middle" font-family="monospace" font-size="15" fill="#88bbff">g</text>
+<line x1="88" y1="148" x2="266" y2="285" stroke="#cc4444" stroke-width="2.5" marker-end="url(#arrR)"/>
+<text x="158" y="227" text-anchor="middle" font-family="monospace" font-size="15" fill="#ff8888">h</text>
+<line x1="508" y1="148" x2="350" y2="285" stroke="#228844" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrG)"/>
+<text x="452" y="224" text-anchor="middle" font-family="monospace" font-size="13" fill="#55cc77">Ran g h</text>
+<line x1="492" y1="148" x2="342" y2="283" stroke="#884499" stroke-width="1.8" stroke-dasharray="4,3" marker-end="url(#arrP)"/>
+<text x="446" y="245" text-anchor="middle" font-family="monospace" font-size="13" fill="#bb66ee">f</text>
+<path d="M 468 198 Q 430 188 415 202" stroke="#ccaa00" stroke-width="1.8" fill="none" marker-end="url(#arrY)"/>
+<text x="440" y="186" text-anchor="middle" font-family="monospace" font-size="13" fill="#ffdd44">&#945; (&#1077;&#1076;&#1080;&#1085;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;)</text>
+<rect x="30" y="205" width="210" height="62" rx="6" fill="#0a1a3a" stroke="#446688" stroke-width="1.2"/>
+<text x="135" y="225" text-anchor="middle" font-family="monospace" font-size="11" fill="#aaccee">&#1091;&#1085;&#1080;&#1074;&#1077;&#1088;&#1089;&#1072;&#1083;&#1100;&#1085;&#1086;&#1077; &#1089;&#1074;&#1086;&#1081;&#1089;&#1090;&#1074;&#1086;:</text>
+<text x="135" y="241" text-anchor="middle" font-family="monospace" font-size="11" fill="#88bbff">Nat(f&#183;g,h) &#8773; Nat(f, Ran g h)</text>
+<text x="135" y="257" text-anchor="middle" font-family="monospace" font-size="10" fill="#6688aa">&#1077;&#1076;&#1080;&#1085;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086; &#1086;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1103;&#1077;&#1090; Ran g h</text>
+<rect x="340" y="205" width="230" height="46" rx="6" fill="#0a2a1a" stroke="#226644" stroke-width="1.2"/>
+<text x="455" y="224" text-anchor="middle" font-family="monospace" font-size="11" fill="#aaffcc">newtype Ran g h a =</text>
+<text x="455" y="240" text-anchor="middle" font-family="monospace" font-size="11" fill="#88eebb">Ran { forall b. (a-&gt;g b)-&gt;h b }</text>
+</svg>

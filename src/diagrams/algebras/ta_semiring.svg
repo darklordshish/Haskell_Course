@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="280" font-family="monospace,sans-serif">
+  <rect width="680" height="280" fill="#0f172a" rx="8"/>
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#e2e8f0">Полукольцо типов Haskell</text>
+  <!-- Header row -->
+  <rect x="30" y="40" width="620" height="36" fill="#1e3a5f" rx="4"/>
+  <text x="130" y="63" text-anchor="middle" font-size="13" fill="#93c5fd" font-weight="bold">Структура</text>
+  <text x="280" y="63" text-anchor="middle" font-size="13" fill="#93c5fd" font-weight="bold">Операция</text>
+  <text x="430" y="63" text-anchor="middle" font-size="13" fill="#93c5fd" font-weight="bold">Haskell</text>
+  <text x="610" y="63" text-anchor="middle" font-size="13" fill="#93c5fd" font-weight="bold">Нейтраль</text>
+  <!-- Col dividers -->
+  <line x1="200" y1="40" x2="200" y2="260" stroke="#1e293b" stroke-width="1"/>
+  <line x1="350" y1="40" x2="350" y2="260" stroke="#1e293b" stroke-width="1"/>
+  <line x1="520" y1="40" x2="520" y2="260" stroke="#1e293b" stroke-width="1"/>
+  <!-- Row 1: Sum -->
+  <rect x="30" y="76" width="620" height="36" fill="#4c0519" rx="2"/>
+  <text x="130" y="99" text-anchor="middle" font-size="12" fill="#fda4af">Сумма</text>
+  <text x="280" y="99" text-anchor="middle" font-size="12" fill="#fda4af">A + B</text>
+  <text x="430" y="99" text-anchor="middle" font-size="12" fill="#fda4af">Either a b</text>
+  <text x="610" y="99" text-anchor="middle" font-size="12" fill="#fda4af">Void</text>
+  <!-- Row 2: Product -->
+  <rect x="30" y="112" width="620" height="36" fill="#14532d" rx="2"/>
+  <text x="130" y="135" text-anchor="middle" font-size="12" fill="#86efac">Произведение</text>
+  <text x="280" y="135" text-anchor="middle" font-size="12" fill="#86efac">A &#215; B</text>
+  <text x="430" y="135" text-anchor="middle" font-size="12" fill="#86efac">(a, b)</text>
+  <text x="610" y="135" text-anchor="middle" font-size="12" fill="#86efac">()</text>
+  <!-- Row 3: Exponential -->
+  <rect x="30" y="148" width="620" height="36" fill="#422006" rx="2"/>
+  <text x="130" y="171" text-anchor="middle" font-size="12" fill="#fcd34d">Экспонента</text>
+  <text x="280" y="171" text-anchor="middle" font-size="12" fill="#fcd34d">B^A</text>
+  <text x="430" y="171" text-anchor="middle" font-size="12" fill="#fcd34d">a -&gt; b</text>
+  <text x="610" y="171" text-anchor="middle" font-size="12" fill="#fcd34d">&#8212;</text>
+  <!-- Row 4: Iso -->
+  <rect x="30" y="184" width="620" height="36" fill="#1e1b4b" rx="2"/>
+  <text x="130" y="207" text-anchor="middle" font-size="12" fill="#a5b4fc">Изоморфизм</text>
+  <text x="280" y="207" text-anchor="middle" font-size="12" fill="#a5b4fc">A &#8773; B</text>
+  <text x="430" y="207" text-anchor="middle" font-size="12" fill="#a5b4fc">Iso a b</text>
+  <text x="610" y="207" text-anchor="middle" font-size="12" fill="#a5b4fc">закон равн-ва</text>
+  <!-- Laws row -->
+  <rect x="30" y="224" width="620" height="36" fill="#0f2336" rx="4"/>
+  <text x="340" y="242" text-anchor="middle" font-size="10" fill="#64748b">0 + A &#8773; A &#8226; 1 &#215; A &#8773; A &#8226; (A+B)&#215;C &#8773; A&#215;C + B&#215;C</text>
+  <text x="340" y="256" text-anchor="middle" font-size="10" fill="#64748b">B^(A+C) &#8773; B^A &#215; B^C &#8226; (B&#215;C)^A &#8773; B^A &#215; C^A</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="260" font-family="monospace,Arial,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/></marker>
+    <marker id="arrr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#f87171"/></marker>
+  </defs>
+  <rect width="420" height="260" fill="#0f172a" rx="8"/>
+  <text x="210" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#f1f5f9">Initial Algebra: Universality</text>
+
+  <!-- Top row -->
+  <!-- muF (initial algebra carrier) -->
+  <rect x="40" y="45" width="100" height="42" rx="6" fill="#0c2340" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="90" y="71" text-anchor="middle" font-size="16" font-style="italic" fill="#93c5fd">muF</text>
+
+  <!-- A (arbitrary algebra carrier) -->
+  <rect x="280" y="45" width="100" height="42" rx="6" fill="#1e1b4b" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="330" y="71" text-anchor="middle" font-size="16" font-style="italic" fill="#c4b5fd">A</text>
+
+  <!-- Bottom row -->
+  <!-- F(muF) -->
+  <rect x="40" y="175" width="100" height="42" rx="6" fill="#0c2340" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="90" y="200" text-anchor="middle" font-size="13" fill="#93c5fd">F(muF)</text>
+
+  <!-- F(A) -->
+  <rect x="280" y="175" width="100" height="42" rx="6" fill="#1e1b4b" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="330" y="200" text-anchor="middle" font-size="13" fill="#c4b5fd">F(A)</text>
+
+  <!-- Top arrow: cata alg (unique!) -->
+  <line x1="142" y1="66" x2="278" y2="66" stroke="#f87171" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrr)"/>
+  <text x="210" y="57" text-anchor="middle" font-size="11" fill="#f87171">cata alg</text>
+  <text x="210" y="80" text-anchor="middle" font-size="10" fill="#94a3b8">(unique!)</text>
+
+  <!-- Bottom arrow: F(cata alg) -->
+  <line x1="142" y1="196" x2="278" y2="196" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="210" y="189" text-anchor="middle" font-size="10" fill="#94a3b8">F(cata alg)</text>
+
+  <!-- Left arrow: in (structure map) -->
+  <line x1="90" y1="173" x2="90" y2="89" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="58" y="133" text-anchor="middle" font-size="11" fill="#e2e8f0">in</text>
+
+  <!-- Right arrow: alg -->
+  <line x1="330" y1="173" x2="330" y2="89" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="358" y="133" text-anchor="middle" font-size="11" fill="#e2e8f0">alg</text>
+
+  <!-- Center label -->
+  <text x="210" y="135" text-anchor="middle" font-size="12" fill="#94a3b8">commutes</text>
+
+  <!-- Bottom note -->
+  <text x="210" y="245" text-anchor="middle" font-size="11" fill="#64748b">Universality of initial F-algebra</text>
+</svg>

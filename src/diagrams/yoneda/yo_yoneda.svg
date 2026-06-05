@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="340" viewBox="0 0 740 340" font-family="monospace,Arial,sans-serif">
+  <defs>
+    <marker id="arrB" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#60a5fa"/></marker>
+    <marker id="arrB2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/></marker>
+    <marker id="arrG" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#34d399"/></marker>
+    <marker id="arrG2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/></marker>
+    <marker id="arrGr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#4ade80"/></marker>
+  </defs>
+  <rect width="740" height="340" fill="#0f172a" rx="8"/>
+  <text x="370" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#f1f5f9">Lemma Yoneda: Nat(Hom(a,-), F) ~ F a</text>
+
+  <!-- Left: Hom functor -->
+  <rect x="20" y="50" width="300" height="200" rx="8" fill="#1e293b" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="170" y="74" text-anchor="middle" font-size="13" font-weight="bold" fill="#93c5fd">Functor Hom(a, -)</text>
+  <text x="170" y="90" text-anchor="middle" font-size="11" fill="#94a3b8">b -&gt; Hom(a, b) = (a -&gt; b)</text>
+
+  <circle cx="100" cy="145" r="8" fill="#3b82f6"/>
+  <text x="100" y="137" text-anchor="middle" font-size="11" fill="#93c5fd">b</text>
+  <circle cx="240" cy="145" r="8" fill="#3b82f6"/>
+  <text x="240" y="137" text-anchor="middle" font-size="11" fill="#93c5fd">b'</text>
+
+  <rect x="65" y="158" width="70" height="32" rx="4" fill="#0c2340" stroke="#3b82f6" stroke-width="1"/>
+  <text x="100" y="178" text-anchor="middle" font-size="10" fill="#93c5fd">Hom(a,b)</text>
+  <rect x="205" y="158" width="70" height="32" rx="4" fill="#0c2340" stroke="#3b82f6" stroke-width="1"/>
+  <text x="240" y="178" text-anchor="middle" font-size="10" fill="#93c5fd">Hom(a,b')</text>
+
+  <line x1="108" y1="145" x2="232" y2="145" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrB)"/>
+  <text x="170" y="139" text-anchor="middle" font-size="10" fill="#60a5fa">f : b -&gt; b'</text>
+  <line x1="135" y1="174" x2="205" y2="174" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrB2)"/>
+  <text x="170" y="196" text-anchor="middle" font-size="9" fill="#94a3b8">(- . f) = fmap f</text>
+
+  <text x="170" y="228" text-anchor="middle" font-size="11" fill="#93c5fd">Hom(a,-) :: C -&gt; Set</text>
+  <text x="170" y="244" text-anchor="middle" font-size="11" fill="#94a3b8">Representable: F ~ Hom(r,-)</text>
+
+  <!-- Isomorphism -->
+  <text x="370" y="158" text-anchor="middle" font-size="28" fill="#4ade80">~</text>
+  <text x="370" y="176" text-anchor="middle" font-size="10" fill="#4ade80">isomorphism</text>
+  <line x1="330" y1="150" x2="420" y2="150" stroke="#4ade80" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- Right: Functor F -->
+  <rect x="420" y="50" width="300" height="200" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="570" y="74" text-anchor="middle" font-size="13" font-weight="bold" fill="#86efac">Functor F</text>
+  <text x="570" y="90" text-anchor="middle" font-size="11" fill="#94a3b8">arbitrary F : C -&gt; Set</text>
+
+  <circle cx="500" cy="145" r="8" fill="#22c55e"/>
+  <text x="500" y="137" text-anchor="middle" font-size="11" fill="#86efac">Fb</text>
+  <circle cx="640" cy="145" r="8" fill="#22c55e"/>
+  <text x="640" y="137" text-anchor="middle" font-size="11" fill="#86efac">Fb'</text>
+
+  <rect x="460" y="158" width="80" height="32" rx="4" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
+  <text x="500" y="178" text-anchor="middle" font-size="10" fill="#86efac">F b</text>
+  <rect x="600" y="158" width="80" height="32" rx="4" fill="#052e16" stroke="#22c55e" stroke-width="1"/>
+  <text x="640" y="178" text-anchor="middle" font-size="10" fill="#86efac">F b'</text>
+
+  <line x1="508" y1="145" x2="632" y2="145" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <text x="570" y="139" text-anchor="middle" font-size="10" fill="#34d399">f : b -&gt; b'</text>
+  <line x1="540" y1="174" x2="600" y2="174" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrG2)"/>
+  <text x="570" y="196" text-anchor="middle" font-size="9" fill="#94a3b8">fmap f = F f</text>
+
+  <text x="570" y="228" text-anchor="middle" font-size="11" fill="#86efac">Key point: F a</text>
+  <text x="570" y="244" text-anchor="middle" font-size="11" fill="#94a3b8">(Nat(Hom(a,-), F) ~ F a)</text>
+
+  <!-- Bottom: natural transformation -->
+  <rect x="20" y="268" width="700" height="58" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="370" y="286" text-anchor="middle" font-size="12" font-weight="bold" fill="#a78bfa">Natural transformation alpha</text>
+  <text x="370" y="303" text-anchor="middle" font-size="10" fill="#e2e8f0">alpha_b :: Hom(a,b) -&gt; F b  |  toYoneda :: F a -&gt; Nat(Hom(a,-), F)  |  fromYoneda :: Nat -&gt; F a</text>
+  <text x="370" y="318" text-anchor="middle" font-size="10" fill="#94a3b8">Every alpha is determined by alpha_a(id_a) in F a</text>
+</svg>

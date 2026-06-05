@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" font-family="monospace,Arial,sans-serif">
+  <rect width="900" height="500" fill="#0f172a" rx="8"/>
+  <defs>
+    <marker id="ab" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#60a5fa"/></marker>
+    <marker id="ag" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#34d399"/></marker>
+    <marker id="ao" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#fb923c"/></marker>
+    <marker id="av" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#a78bfa"/></marker>
+  </defs>
+
+  <text x="450" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#f1f5f9">Arrow Dataflow Combinators</text>
+
+  <!-- === SECTION 1: (***) fan-out === -->
+  <text x="30" y="72" font-size="12" font-weight="bold" fill="#60a5fa">(***) :: a~&gt;b -&gt; c~&gt;d -&gt; (a,c)~&gt;(b,d)</text>
+
+  <!-- input (a,c) -->
+  <rect x="30" y="85" width="80" height="36" fill="#1e293b" stroke="#334155" rx="5"/>
+  <text x="70" y="108" text-anchor="middle" font-size="13" fill="#e2e8f0">(a, c)</text>
+
+  <!-- fork point -->
+  <circle cx="175" cy="103" r="6" fill="#60a5fa"/>
+  <line x1="110" y1="103" x2="168" y2="103" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#ab)"/>
+
+  <!-- f box -->
+  <rect x="195" y="78" width="70" height="36" fill="#1e293b" stroke="#60a5fa" rx="5"/>
+  <text x="230" y="101" text-anchor="middle" font-size="14" fill="#60a5fa">f</text>
+
+  <!-- g box -->
+  <rect x="195" y="118" width="70" height="36" fill="#1e293b" stroke="#34d399" rx="5"/>
+  <text x="230" y="141" text-anchor="middle" font-size="14" fill="#34d399">g</text>
+
+  <!-- lines from fork to f and g -->
+  <line x1="175" y1="103" x2="175" y2="96" stroke="#60a5fa" stroke-width="1.5"/>
+  <line x1="175" y1="96" x2="193" y2="96" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#ab)"/>
+  <line x1="175" y1="103" x2="175" y2="136" stroke="#34d399" stroke-width="1.5"/>
+  <line x1="175" y1="136" x2="193" y2="136" stroke="#34d399" stroke-width="1.5" marker-end="url(#ag)"/>
+
+  <!-- merge point -->
+  <circle cx="320" cy="103" r="6" fill="#60a5fa"/>
+  <line x1="265" y1="96" x2="320" y2="103" stroke="#60a5fa" stroke-width="1.5"/>
+  <line x1="265" y1="136" x2="320" y2="103" stroke="#34d399" stroke-width="1.5"/>
+
+  <!-- output (b,d) -->
+  <rect x="335" y="85" width="80" height="36" fill="#1e293b" stroke="#334155" rx="5"/>
+  <text x="375" y="108" text-anchor="middle" font-size="13" fill="#e2e8f0">(b, d)</text>
+  <line x1="326" y1="103" x2="333" y2="103" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#ab)"/>
+
+  <!-- === SECTION 2: (&&&) fan-out duplicate === -->
+  <text x="30" y="185" font-size="12" font-weight="bold" fill="#34d399">(&amp;&amp;&amp;) :: a~&gt;b -&gt; a~&gt;c -&gt; a~&gt;(b,c)</text>
+
+  <rect x="30" y="198" width="60" height="36" fill="#1e293b" stroke="#334155" rx="5"/>
+  <text x="60" y="221" text-anchor="middle" font-size="13" fill="#e2e8f0">a</text>
+
+  <circle cx="150" cy="216" r="6" fill="#34d399"/>
+  <line x1="90" y1="216" x2="143" y2="216" stroke="#34d399" stroke-width="1.5" marker-end="url(#ag)"/>
+
+  <rect x="170" y="191" width="70" height="36" fill="#1e293b" stroke="#60a5fa" rx="5"/>
+  <text x="205" y="214" text-anchor="middle" font-size="14" fill="#60a5fa">f</text>
+  <rect x="170" y="231" width="70" height="36" fill="#1e293b" stroke="#34d399" rx="5"/>
+  <text x="205" y="254" text-anchor="middle" font-size="14" fill="#34d399">g</text>
+
+  <line x1="150" y1="216" x2="150" y2="209" stroke="#60a5fa" stroke-width="1.5"/>
+  <line x1="150" y1="209" x2="168" y2="209" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#ab)"/>
+  <line x1="150" y1="216" x2="150" y2="249" stroke="#34d399" stroke-width="1.5"/>
+  <line x1="150" y1="249" x2="168" y2="249" stroke="#34d399" stroke-width="1.5" marker-end="url(#ag)"/>
+
+  <circle cx="300" cy="216" r="6" fill="#34d399"/>
+  <line x1="240" y1="209" x2="300" y2="216" stroke="#60a5fa" stroke-width="1.5"/>
+  <line x1="240" y1="249" x2="300" y2="216" stroke="#34d399" stroke-width="1.5"/>
+
+  <rect x="315" y="198" width="80" height="36" fill="#1e293b" stroke="#334155" rx="5"/>
+  <text x="355" y="221" text-anchor="middle" font-size="13" fill="#e2e8f0">(b, c)</text>
+  <line x1="306" y1="216" x2="313" y2="216" stroke="#34d399" stroke-width="1.5" marker-end="url(#ag)"/>
+
+  <!-- === SECTION 3: (+++) choice === -->
+  <text x="480" y="72" font-size="12" font-weight="bold" fill="#a78bfa">(+++) :: a~&gt;b -&gt; c~&gt;d -&gt; Either a c ~&gt; Either b d</text>
+
+  <rect x="480" y="85" width="110" height="36" fill="#1e293b" stroke="#334155" rx="5"/>
+  <text x="535" y="108" text-anchor="middle" font-size="12" fill="#e2e8f0">Either a c</text>
+
+  <!-- diamond choice node -->
+  <polygon points="650,103 665,118 680,103 665,88" fill="#1e293b" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="665" y="107" text-anchor="middle" font-size="10" fill="#a78bfa">?</text>
+  <line x1="590" y1="103" x2="647" y2="103" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#av)"/>
+
+  <rect x="695" y="78" width="60" height="36" fill="#1e293b" stroke="#60a5fa" rx="5"/>
+  <text x="725" y="101" text-anchor="middle" font-size="14" fill="#60a5fa">f</text>
+  <rect x="695" y="118" width="60" height="36" fill="#1e293b" stroke="#34d399" rx="5"/>
+  <text x="725" y="141" text-anchor="middle" font-size="14" fill="#34d399">g</text>
+
+  <line x1="680" y1="96" x2="693" y2="96" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#ab)"/>
+  <line x1="680" y1="110" x2="693" y2="128" stroke="#34d399" stroke-width="1.5" marker-end="url(#ag)"/>
+
+  <rect x="770" y="85" width="110" height="36" fill="#1e293b" stroke="#334155" rx="5"/>
+  <text x="825" y="108" text-anchor="middle" font-size="12" fill="#e2e8f0">Either b d</text>
+  <line x1="755" y1="96" x2="768" y2="96" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#ab)"/>
+  <line x1="755" y1="136" x2="825" y2="121" stroke="#34d399" stroke-width="1.5" marker-end="url(#ag)"/>
+
+  <!-- === SECTION 4: loop (ArrowLoop) === -->
+  <text x="30" y="320" font-size="12" font-weight="bold" fill="#fb923c">loop :: (a,c) ~&gt; (b,c) -&gt; a ~&gt; b   (traced monoidal)</text>
+
+  <rect x="30" y="335" width="60" height="36" fill="#1e293b" stroke="#334155" rx="5"/>
+  <text x="60" y="358" text-anchor="middle" font-size="13" fill="#e2e8f0">a</text>
+
+  <!-- loop body box -->
+  <rect x="200" y="320" width="140" height="66" fill="#1e293b" stroke="#fb923c" stroke-width="1.5" rx="6"/>
+  <text x="270" y="345" text-anchor="middle" font-size="13" fill="#fb923c">f</text>
+  <text x="270" y="363" text-anchor="middle" font-size="11" fill="#94a3b8">(a,c) ~&gt; (b,c)</text>
+
+  <line x1="90" y1="353" x2="198" y2="353" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#ab)"/>
+
+  <rect x="460" y="335" width="60" height="36" fill="#1e293b" stroke="#334155" rx="5"/>
+  <text x="490" y="358" text-anchor="middle" font-size="13" fill="#e2e8f0">b</text>
+  <line x1="340" y1="353" x2="458" y2="353" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#ab)"/>
+
+  <!-- feedback c loop -->
+  <path d="M340,386 Q340,430 270,430 Q200,430 200,386" fill="none" stroke="#fb923c" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#ao)"/>
+  <text x="270" y="448" text-anchor="middle" font-size="11" fill="#fb923c">feedback c (internal state)</text>
+
+  <!-- >>> composition -->
+  <text x="480" y="320" font-size="12" font-weight="bold" fill="#60a5fa">&gt;&gt;&gt; :: a~&gt;b -&gt; b~&gt;c -&gt; a~&gt;c</text>
+  <rect x="480" y="335" width="60" height="36" fill="#1e293b" stroke="#334155" rx="5"/>
+  <text x="510" y="358" text-anchor="middle" font-size="13" fill="#e2e8f0">a</text>
+  <rect x="595" y="335" width="60" height="36" fill="#1e293b" stroke="#60a5fa" rx="5"/>
+  <text x="625" y="358" text-anchor="middle" font-size="14" fill="#60a5fa">f</text>
+  <rect x="710" y="335" width="60" height="36" fill="#1e293b" stroke="#34d399" rx="5"/>
+  <text x="740" y="358" text-anchor="middle" font-size="14" fill="#34d399">g</text>
+  <rect x="825" y="335" width="60" height="36" fill="#1e293b" stroke="#334155" rx="5"/>
+  <text x="855" y="358" text-anchor="middle" font-size="13" fill="#e2e8f0">c</text>
+  <line x1="540" y1="353" x2="593" y2="353" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#ab)"/>
+  <line x1="655" y1="353" x2="708" y2="353" stroke="#34d399" stroke-width="1.5" marker-end="url(#ag)"/>
+  <line x1="770" y1="353" x2="823" y2="353" stroke="#34d399" stroke-width="1.5" marker-end="url(#ag)"/>
+  <text x="672" y="348" text-anchor="middle" font-size="11" fill="#94a3b8">&gt;&gt;&gt;</text>
+
+  <!-- bottom legend -->
+  <rect x="30" y="460" width="840" height="28" fill="#1e293b" rx="4"/>
+  <text x="50" y="478" font-size="11" fill="#60a5fa">(***) = parallel</text>
+  <text x="180" y="478" font-size="11" fill="#34d399">(&amp;&amp;&amp;) = fanout</text>
+  <text x="310" y="478" font-size="11" fill="#a78bfa">(+++) = choice</text>
+  <text x="450" y="478" font-size="11" fill="#fb923c">loop = feedback</text>
+  <text x="580" y="478" font-size="11" fill="#60a5fa">&gt;&gt;&gt; = sequential</text>
+  <text x="730" y="478" font-size="11" fill="#94a3b8">(|||) = merge</text>
+</svg>
