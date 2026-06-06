@@ -2,7 +2,7 @@
 
 > Документ разработки: хронология, технические решения, актуальный статус и планы на будущее.
 > Путеводитель по содержанию ноутбуков — в README.ipynb.
-> Последнее обновление: 2026-06-05
+> Последнее обновление: 2026-06-05 (сессия 2)
 
 ---
 
@@ -98,6 +98,85 @@ FoldableTraversable.ipynb: исправлена запись — 2 SVG (ft_folda
 - ✅ Три основных трансформера: EnvT (dual ReaderT), StoreT (dual StateT, основа Lens), TracedT (dual WriterT)
 - ✅ Секция 8: Комбинация ComonadT+MonadT, порядок композиции и эффекты
 - ✅ Секция 9: Связь с Adjunctions, Lens, Corecursion
+
+---
+
+## 🔄 Фаза 5 — Углублённый синтез SubjectiveModeling (выполнено, 2026-06-05)
+
+
+
+---
+
+## Faza 6 -- Ispravleniye SVG-diagramm (v plane)
+
+> Audit pokazal: bolshinstvo SVG sozdany v starom stile (bez #0f172a, s temnym fonom)
+> i narushayut pravilo ASCII-only (kirillica pryamo v SVG XML).
+> Nuzhno peresozdanie ~50 SVG v 9 papkakh.
+
+### 6.1 topos/ -- vse 11 SVG (kiriллица + staryy stil)
+- Status: PLAN
+- bitopos_classifier, bitopos_zoo, geom_morph, logic_lattice, mitchell_benabou,
+  omega_pullback, project_map, sheaf_gluing, test_omega, three_faces, topos_axioms
+
+### 6.2 kan/ -- vse 7 SVG (staryy stil, net svetloy palitry)
+- Status: PLAN
+- kan_adjunction, kan_codensity, kan_density, kan_examples, kan_yoneda,
+  lan_diagram, ran_diagram
+
+### 6.3 monads/ + functors/ + haskell/ + algebras/ (20+ SVG)
+- Status: PLAN  
+- monads: 6/6 bad, functors: 3/3 bad, haskell: 5/5 bad, algebras: 6/8 bad
+
+### 6.4 comonads/ + misc/ + optics/ + yoneda/ + subj/ (chastichnoe)
+- Status: PLAN
+- comonads: 3/5, misc: 2/3, optics: 2/6, yoneda: 4/5, subj: 6/6
+
+---
+
+## Faza 7 -- Kontent: svyazi i biblioteki (v plane)
+
+### 7.1 Uncertainty.ipynb -- Razdel 9: svyaz s SubjectiveModeling
+- Status: PLAN
+- Dobavit kratkiy razdel o teorii Pityeva kak most mezhdu neopredelyonnostyu i
+  subektivnym modelirovanием
+- 1 SVG: uncertainty_to_subj.svg (skhema perekhoda)
+
+### 7.2 SubjectiveModeling.ipynb -- opyaniye na KanExtensions i Toposes
+- Status: PLAN  
+- Dobavit Razdel 0 (Vvedeniye): yavnyye ssylki na KanExtensions.ipynb i Toposes.ipynb
+- Dobavit cross-reference tablitsu: ponyatiye -> otkuda
+- 1 SVG: subj_deps.svg (skhema zavisimostey)
+
+### 7.3 Toposes.ipynb -- Razdel T9: Haskell-biblioteki po toposam
+- Status: PLAN
+- Issledovat Hackage: heyting (HeytingAlgebra typeclass), subhask,
+  categories package, lens/optics kak toposnyye struktury
+- Pokazat chto dostupno v IHaskell srede
+- 1 SVG: topos_libraries.svg
+
+
+### 19. SubjectiveModeling.ipynb — Раздел 15: три сравнительных примера
+
+**Цель:** показать единство подходов Пытьева, битопологического и Кана на трёх примерах с разной градацией сложности.
+
+| Пример | Сложность | Суть |
+|--------|-----------|------|
+| Пример 1 | Простой | X = {low, medium, high}, монотонная τ. Оба подхода совпадают тривиально — точка отсчёта |
+| Пример 2 | Средний | X → Y через φ: X→Y. Битопос требует проталкивания топологии; Кан даёт `Lan_φ τ(y) = sup τ` естественно |
+| Пример 3 | Сложный | X — poset, [0,1]-обогащённая категория (не дискретная). Обогащённый Кан vs Scott-топология на poset |
+
+**SVG:** `subj_example1.svg`, `subj_example2.svg`, `subj_example3.svg` (`diagrams/subjective/`)
+
+**Статус:** ✅ выполнено (2026-06-06)
+
+**Результаты:**
+- Пример 1: Pl(битопос) == Lan_J tau на дискретном X — точка отсчёта ✅
+- Пример 2: tau_Y(y) = sup_{phi(x)=y} tau(x) (формула раздела 3 Пытьева) = Lan_phi tau — автоматически ✅
+- Пример 3: poset X с тремя вариантами обогащения — Lan(poset{0,1}) == Pl(flat), Lan(непрерыв) — потенциально расходится ✅
+- 3 новых SVG: subj_example1.svg, subj_example2.svg, subj_example3.svg
+- SubjectiveModeling.ipynb: 16 → 30 ячеек
+
+---
 
 ## ⚠️ Критические правила (не нарушать никогда)
 

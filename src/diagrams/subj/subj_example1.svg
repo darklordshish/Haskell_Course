@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="380" viewBox="0 0 860 380"
+     font-family="monospace,Arial,sans-serif">
+  <rect width="860" height="380" fill="#ffffff" rx="8"/>
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arr2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
+    </marker>
+  </defs>
+
+  <text x="430" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">
+    Пример 1: X = {low, mid, high}, tau монотонна
+  </text>
+
+  <!-- X nodes -->
+  <text x="80" y="65" text-anchor="middle" font-size="13" font-weight="bold" fill="#64748b">X</text>
+  <rect x="30" y="80" width="100" height="40" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" rx="6"/>
+  <text x="80" y="105" text-anchor="middle" font-size="13" fill="#2563eb">low</text>
+  <rect x="30" y="145" width="100" height="40" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" rx="6"/>
+  <text x="80" y="170" text-anchor="middle" font-size="13" fill="#2563eb">mid</text>
+  <rect x="30" y="210" width="100" height="40" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" rx="6"/>
+  <text x="80" y="235" text-anchor="middle" font-size="13" fill="#2563eb">high</text>
+
+  <!-- tau values -->
+  <text x="180" y="65" text-anchor="middle" font-size="13" font-weight="bold" fill="#64748b">tau(x)</text>
+  <text x="180" y="105" text-anchor="middle" font-size="14" fill="#0f172a">0.3</text>
+  <text x="180" y="170" text-anchor="middle" font-size="14" fill="#0f172a">0.7</text>
+  <text x="180" y="235" text-anchor="middle" font-size="14" fill="#0f172a">1.0</text>
+  <line x1="140" y1="100" x2="160" y2="100" stroke="#64748b" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="140" y1="165" x2="160" y2="165" stroke="#64748b" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="140" y1="230" x2="160" y2="230" stroke="#64748b" stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- Divider -->
+  <line x1="230" y1="55" x2="230" y2="295" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Bitopological approach -->
+  <text x="420" y="65" text-anchor="middle" font-size="13" font-weight="bold" fill="#34d399">Битопологический подход</text>
+  <rect x="260" y="78" width="320" height="52" fill="#f0fdf4" stroke="#34d399" stroke-width="1" rx="6"/>
+  <text x="420" y="97" text-anchor="middle" font-size="12" fill="#0f172a">T-up открытые: (t,1] прообразы</text>
+  <text x="420" y="114" text-anchor="middle" font-size="11" fill="#64748b">{high} при t=0.7,  {mid,high} при t=0.3,  X при t=0</text>
+  <rect x="260" y="140" width="320" height="52" fill="#f0fdf4" stroke="#34d399" stroke-width="1" rx="6"/>
+  <text x="420" y="159" text-anchor="middle" font-size="12" fill="#0f172a">T-down открытые: [0,t) прообразы</text>
+  <text x="420" y="176" text-anchor="middle" font-size="11" fill="#64748b">{low} при t=0.7,  {low,mid} при t=1.0</text>
+  <rect x="260" y="202" width="320" height="40" fill="#f0fdf4" stroke="#34d399" stroke-width="1" rx="6"/>
+  <text x="420" y="218" text-anchor="middle" font-size="12" fill="#0f172a">Pl(E) = Int_{T-up}(E) = sup tau(x), x in E</text>
+  <text x="420" y="233" text-anchor="middle" font-size="11" fill="#64748b">Bel(E) = Cl_{T-down}(E) = inf tau-bar(x), x not in E</text>
+
+  <!-- Divider 2 -->
+  <line x1="595" y1="55" x2="595" y2="295" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Kan extension approach -->
+  <text x="725" y="65" text-anchor="middle" font-size="13" font-weight="bold" fill="#a78bfa">Расширение Кана</text>
+  <rect x="615" y="78" width="220" height="52" fill="#faf5ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
+  <text x="725" y="97" text-anchor="middle" font-size="12" fill="#0f172a">J: X -&gt; P(X)  включение</text>
+  <text x="725" y="114" text-anchor="middle" font-size="11" fill="#64748b">x |--&gt; {x} как одноточечн. мн-во</text>
+  <rect x="615" y="140" width="220" height="52" fill="#faf5ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
+  <text x="725" y="159" text-anchor="middle" font-size="12" fill="#0f172a">Lan_J tau (E) = coend</text>
+  <text x="725" y="176" text-anchor="middle" font-size="11" fill="#64748b">= sup_{x in E} min(1, tau(x))</text>
+  <rect x="615" y="202" width="220" height="40" fill="#faf5ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
+  <text x="725" y="218" text-anchor="middle" font-size="12" fill="#0f172a">= sup_{x in E} tau(x) = Pl(E)</text>
+  <text x="725" y="233" text-anchor="middle" font-size="11" fill="#64748b">совпадает точно</text>
+
+  <!-- Result -->
+  <rect x="200" y="305" width="460" height="40" fill="#fef3c7" stroke="#fb923c" stroke-width="1.5" rx="6"/>
+  <text x="430" y="321" text-anchor="middle" font-size="12" fill="#0f172a">Вывод: на дискретном X оба подхода дают</text>
+  <text x="430" y="336" text-anchor="middle" font-size="12" fill="#0f172a">одну и ту же формулу. Точка отсчёта. </text>
+</svg>
