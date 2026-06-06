@@ -14,7 +14,7 @@
   </defs>
 
   <text x="430" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">
-    Пример 2: проталкивание tau вдоль phi: X -&gt; Y
+    Example 2: pushing tau along phi: X -&gt; Y
   </text>
 
   <!-- X nodes -->
@@ -53,35 +53,35 @@
   <line x1="420" y1="50" x2="420" y2="380" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,3"/>
 
   <!-- Bitopological approach -->
-  <text x="570" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#34d399">Битопологический</text>
+  <text x="570" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#34d399">Bitopological</text>
   <rect x="435" y="70" width="270" height="64" fill="#f0fdf4" stroke="#34d399" stroke-width="1" rx="6"/>
-  <text x="570" y="88" text-anchor="middle" font-size="12" fill="#0f172a">Топология T-up на X по tau:</text>
+  <text x="570" y="88" text-anchor="middle" font-size="12" fill="#0f172a">Topology T-up on X by tau:</text>
   <text x="570" y="104" text-anchor="middle" font-size="11" fill="#64748b">{temp=low} at t=0.7,  {temp=low,vib=low} at t=0.5</text>
   <text x="570" y="120" text-anchor="middle" font-size="11" fill="#64748b">{X\vib=high} at t=0.3,  X at t=0</text>
   <rect x="435" y="144" width="270" height="50" fill="#f0fdf4" stroke="#34d399" stroke-width="1" rx="6"/>
-  <text x="570" y="162" text-anchor="middle" font-size="12" fill="#0f172a">Прямой образ топологии phi_*(T-up):</text>
-  <text x="570" y="178" text-anchor="middle" font-size="11" fill="#64748b">нетривиален, нужно проверять открытость</text>
+  <text x="570" y="162" text-anchor="middle" font-size="12" fill="#0f172a">Direct image topology phi_*(T-up):</text>
+  <text x="570" y="178" text-anchor="middle" font-size="11" fill="#64748b">non-trivial, openness must be verified</text>
   <rect x="435" y="204" width="270" height="50" fill="#f0fdf4" stroke="#34d399" stroke-width="1" rx="6"/>
-  <text x="570" y="222" text-anchor="middle" font-size="12" fill="#0f172a">Pl_Y(Normal) через phi_*(T-up):</text>
-  <text x="570" y="238" text-anchor="middle" font-size="11" fill="#64748b">требует вычисления прямого образа</text>
+  <text x="570" y="222" text-anchor="middle" font-size="12" fill="#0f172a">Pl_Y(Normal) via phi_*(T-up):</text>
+  <text x="570" y="238" text-anchor="middle" font-size="11" fill="#64748b">requires computing the direct image</text>
 
   <!-- Kan approach -->
-  <text x="760" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#a78bfa">Расширение Кана</text>
-  <rect x="720" y="70" width="120" height="36" fill="#faf5ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
+  <text x="760" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#a78bfa">Kan Extension</text>
+  <rect x="720" y="70" width="120" height="36" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
   <text x="780" y="88" text-anchor="middle" font-size="11" fill="#0f172a">Lan_phi tau (y)</text>
-  <text x="780" y="101" text-anchor="middle" font-size="10" fill="#64748b">= coend по X</text>
-  <rect x="720" y="116" width="120" height="50" fill="#faf5ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
+  <text x="780" y="101" text-anchor="middle" font-size="10" fill="#64748b">= coend over X</text>
+  <rect x="720" y="116" width="120" height="50" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
   <text x="780" y="134" text-anchor="middle" font-size="11" fill="#0f172a">= sup_{phi(x)=y}</text>
   <text x="780" y="150" text-anchor="middle" font-size="11" fill="#0f172a">tau(x)</text>
-  <rect x="720" y="176" width="120" height="50" fill="#faf5ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
+  <rect x="720" y="176" width="120" height="50" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
   <text x="780" y="193" text-anchor="middle" font-size="11" fill="#2563eb">Normal:</text>
   <text x="780" y="209" text-anchor="middle" font-size="11" fill="#0f172a">sup(0.9, 0.5) = 0.9</text>
-  <rect x="720" y="236" width="120" height="50" fill="#faf5ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
+  <rect x="720" y="236" width="120" height="50" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
   <text x="780" y="253" text-anchor="middle" font-size="11" fill="#2563eb">Fault:</text>
   <text x="780" y="269" text-anchor="middle" font-size="11" fill="#0f172a">sup(0.7, 0.3) = 0.7</text>
 
   <!-- Result -->
   <rect x="100" y="345" width="660" height="50" fill="#fef3c7" stroke="#fb923c" stroke-width="1.5" rx="6"/>
-  <text x="430" y="363" text-anchor="middle" font-size="12" fill="#0f172a">Вывод: формула раздела 3 (tau-tilde) — это в точности Lan_phi tau.</text>
-  <text x="430" y="380" text-anchor="middle" font-size="12" fill="#0f172a">Кан даёт её автоматически; битопологический подход требует дополнительной работы.</text>
+  <text x="430" y="363" text-anchor="middle" font-size="12" fill="#0f172a">Conclusion: the formula from section 3 (tau-tilde) is exactly Lan_phi tau.</text>
+  <text x="430" y="380" text-anchor="middle" font-size="12" fill="#0f172a">Kan gives it automatically; the bitopological approach requires additional work.</text>
 </svg>

@@ -1,1 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="660" height="310" style="background:#f8f9fa;font-family:Georgia,serif"><defs><marker id="arrL" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#334466"/></marker><marker id="arrR" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto"><polygon points="8 0,0 3,8 6" fill="#885500"/></marker></defs><text x="330" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#334466">Геометрический морфизм: f* ⊣ f₊ (расширения Кана)</text><rect x="55" y="100" width="185" height="56" rx="10" fill="#334466"/><text x="147" y="133" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Sh(X) = ℱ</text><rect x="420" y="100" width="185" height="56" rx="10" fill="#885500"/><text x="512" y="133" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Sh(Y) = ℰ</text><path d="M 242 116 Q 330 72 418 116" fill="none" stroke="#334466" stroke-width="2" marker-end="url(#arrL)"/><text x="330" y="82" text-anchor="middle" font-size="13" fill="#334466">f* = Lan_f  (левый сопр.)</text><path d="M 418 140 Q 330 184 242 140" fill="none" stroke="#885500" stroke-width="2" marker-end="url(#arrR)"/><text x="330" y="178" text-anchor="middle" font-size="13" fill="#885500">f₊ = Ran_f  (правый сопр.)</text><text x="330" y="222" text-anchor="middle" font-size="12" fill="#334466">f*(F)(V) = F(f⁻¹(V)) = Ran_f(F)</text><text x="330" y="244" text-anchor="middle" font-size="12" fill="#885500">f*(G)(U) = colim_{V⊇f(U)} G(V) = Lan_f(G)</text><rect x="155" y="262" width="350" height="32" rx="8" fill="#f0f0ff" stroke="#334466" stroke-width="1.2"/><text x="330" y="283" text-anchor="middle" font-size="12" fill="#334466">Геом. морф. = (Lan_f, Ran_f) на пучках</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="280" viewBox="0 0 600 280"
+     font-family="monospace,Arial,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34d399"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="280" fill="#ffffff" rx="8"/>
+
+  <!-- Title -->
+  <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Geometric Morphism: f* &#8904; f&#8314;</text>
+
+  <!-- Topos E box -->
+  <rect x="50" y="100" width="170" height="60" rx="8" fill="#f1f5f9" stroke="#2563eb" stroke-width="2"/>
+  <text x="135" y="126" text-anchor="middle" font-size="15" font-weight="bold" fill="#2563eb">E</text>
+  <text x="135" y="148" text-anchor="middle" font-size="11" fill="#64748b">source topos</text>
+
+  <!-- Topos F box -->
+  <rect x="380" y="100" width="170" height="60" rx="8" fill="#f1f5f9" stroke="#34d399" stroke-width="2"/>
+  <text x="465" y="126" text-anchor="middle" font-size="15" font-weight="bold" fill="#34d399">F</text>
+  <text x="465" y="148" text-anchor="middle" font-size="11" fill="#64748b">target topos</text>
+
+  <!-- f* arrow: F -> E (inverse image, top arc) -->
+  <path d="M 378 118 Q 300 68 222 118" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="300" y="80" text-anchor="middle" font-size="12" fill="#2563eb">f* (inverse image) = Lan_f</text>
+  <text x="300" y="95" text-anchor="middle" font-size="10" fill="#64748b">left adjoint, preserves finite limits</text>
+
+  <!-- f+ arrow: E -> F (direct image, bottom arc) -->
+  <path d="M 222 142 Q 300 192 378 142" fill="none" stroke="#34d399" stroke-width="2" marker-end="url(#arrG)"/>
+  <text x="300" y="180" text-anchor="middle" font-size="12" fill="#34d399">f&#8314; (direct image) = Ran_f</text>
+  <text x="300" y="195" text-anchor="middle" font-size="10" fill="#64748b">right adjoint</text>
+
+  <!-- Adjunction symbol -->
+  <text x="300" y="132" text-anchor="middle" font-size="18" font-weight="bold" fill="#a78bfa">&#8867;</text>
+
+  <!-- Footer -->
+  <rect x="40" y="226" width="520" height="36" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="300" y="241" text-anchor="middle" font-size="11" fill="#0f172a">Geom. morph. = (Lan_f, Ran_f) on sheaves</text>
+  <text x="300" y="255" text-anchor="middle" font-size="10" fill="#64748b">f* &#8867; f&#8314;  means  Hom_E(f*(G), H) &#8773; Hom_F(G, f&#8314;(H))</text>
+</svg>

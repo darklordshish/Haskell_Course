@@ -1,1 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="340" style="background:#f8f9fa;font-family:Georgia,serif"><defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#334466"/></marker></defs><text x="360" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#334466">Зоопарк топосов</text><rect x="18" y="48" width="155" height="72" rx="10" fill="#334466"/><text x="95" y="72" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Set</text><text x="95" y="92" text-anchor="middle" font-size="11" fill="#b0c8e8">Ω = {F,T}, класс.</text><rect x="192" y="48" width="155" height="72" rx="10" fill="#885500"/><text x="269" y="72" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Sh(X)</text><text x="269" y="92" text-anchor="middle" font-size="11" fill="#ffe0a0">Ω = Open, инт.</text><rect x="366" y="48" width="155" height="72" rx="10" fill="#663366"/><text x="443" y="72" text-anchor="middle" font-size="14" font-weight="bold" fill="white">[C, Set]</text><text x="443" y="92" text-anchor="middle" font-size="11" fill="#f0d0f0">предпучки</text><rect x="540" y="48" width="162" height="72" rx="10" fill="#336633"/><text x="621" y="72" text-anchor="middle" font-size="14" font-weight="bold" fill="white">BG (групп)</text><text x="621" y="92" text-anchor="middle" font-size="11" fill="#c0f0c0">G-множества</text><line x1="95"  y1="120" x2="200" y2="190" stroke="#334466" stroke-width="1.5" marker-end="url(#arr)"/><line x1="269" y1="120" x2="238" y2="190" stroke="#885500" stroke-width="1.5" marker-end="url(#arr)"/><line x1="443" y1="120" x2="478" y2="190" stroke="#663366" stroke-width="1.5" marker-end="url(#arr)"/><rect x="98" y="194" width="240" height="80" rx="10" fill="#553388"/><text x="218" y="218" text-anchor="middle" font-size="13" font-weight="bold" fill="white">BiTopos(Set)</text><text x="218" y="238" text-anchor="middle" font-size="11" fill="#e0d0ff">Ω₊={F,T}, Ω₋={F,T}</text><text x="218" y="258" text-anchor="middle" font-size="11" fill="#e0d0ff">4-значная логика</text><rect x="382" y="194" width="262" height="80" rx="10" fill="#2d5c2d"/><text x="513" y="218" text-anchor="middle" font-size="13" font-weight="bold" fill="white">BiTopos([0,1]) = Пытьев</text><text x="513" y="238" text-anchor="middle" font-size="11" fill="#c0f0c0">Ω₊ = Pl = Lan_J(τ)</text><text x="513" y="258" text-anchor="middle" font-size="11" fill="#c0f0c0">Ω₋ = Bel = Ran_J(τ)</text><text x="360" y="305" text-anchor="middle" font-size="11" fill="#885500" font-style="italic">Стрелка вниз: один классификатор → два = два мира истинности</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="360" viewBox="0 0 700 360"
+     font-family="monospace,Arial,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="360" fill="#ffffff" rx="8"/>
+
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Topos Zoo</text>
+
+  <!-- Row 1: four topos examples -->
+
+  <!-- Set -->
+  <rect x="18" y="50" width="148" height="74" rx="8" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="92" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563eb">Set</text>
+  <text x="92" y="93" text-anchor="middle" font-size="11" fill="#0f172a">&#937; = {F, T}</text>
+  <text x="92" y="110" text-anchor="middle" font-size="10" fill="#64748b">classical logic</text>
+
+  <!-- Sh(X) -->
+  <rect x="184" y="50" width="148" height="74" rx="8" fill="#f1f5f9" stroke="#34d399" stroke-width="1.8"/>
+  <text x="258" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#34d399">Sh(X)</text>
+  <text x="258" y="93" text-anchor="middle" font-size="11" fill="#0f172a">&#937; = Open(-)</text>
+  <text x="258" y="110" text-anchor="middle" font-size="10" fill="#64748b">intuitionistic</text>
+
+  <!-- [C, Set] -->
+  <rect x="350" y="50" width="148" height="74" rx="8" fill="#f1f5f9" stroke="#a78bfa" stroke-width="1.8"/>
+  <text x="424" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#a78bfa">[C, Set]</text>
+  <text x="424" y="93" text-anchor="middle" font-size="11" fill="#0f172a">presheaves</text>
+  <text x="424" y="110" text-anchor="middle" font-size="10" fill="#64748b">&#937; = Sub functor</text>
+
+  <!-- BG -->
+  <rect x="516" y="50" width="164" height="74" rx="8" fill="#f1f5f9" stroke="#fb923c" stroke-width="1.8"/>
+  <text x="598" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#fb923c">BG (groups)</text>
+  <text x="598" y="93" text-anchor="middle" font-size="11" fill="#0f172a">G-sets</text>
+  <text x="598" y="110" text-anchor="middle" font-size="10" fill="#64748b">equivariant logic</text>
+
+  <!-- Arrows down -->
+  <line x1="92"  y1="124" x2="185" y2="188" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="258" y1="124" x2="228" y2="188" stroke="#34d399" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="424" y1="124" x2="440" y2="188" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- Row 2: BiTopos examples -->
+
+  <!-- BiTopos(Set) -->
+  <rect x="80" y="192" width="248" height="82" rx="8" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.8"/>
+  <text x="204" y="216" text-anchor="middle" font-size="13" font-weight="bold" fill="#2563eb">BiTopos(Set)</text>
+  <text x="204" y="236" text-anchor="middle" font-size="11" fill="#0f172a">&#937;&#8314; = {F,T},  &#937;&#8315; = {F,T}</text>
+  <text x="204" y="254" text-anchor="middle" font-size="10" fill="#64748b">4-valued logic</text>
+
+  <!-- BiTopos([0,1]) = Pytiev -->
+  <rect x="368" y="192" width="270" height="82" rx="8" fill="#f1f5f9" stroke="#fb923c" stroke-width="1.8"/>
+  <text x="503" y="216" text-anchor="middle" font-size="13" font-weight="bold" fill="#fb923c">BiTopos([0,1]) = Pytev</text>
+  <text x="503" y="236" text-anchor="middle" font-size="11" fill="#0f172a">&#937;&#8314; = Pl = Lan_J(&#964;)</text>
+  <text x="503" y="254" text-anchor="middle" font-size="11" fill="#0f172a">&#937;&#8315; = Bel = Ran_J(&#964;)</text>
+
+  <!-- Arrow label -->
+  <text x="350" y="175" text-anchor="middle" font-size="11" fill="#64748b" font-style="italic">one classifier &#8594; two = two truth worlds</text>
+
+  <!-- Footer -->
+  <rect x="18" y="300" width="664" height="44" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="350" y="319" text-anchor="middle" font-size="11" fill="#0f172a" font-weight="bold">Key insight:</text>
+  <text x="350" y="337" text-anchor="middle" font-size="11" fill="#64748b">Splitting one classifier &#937; into &#937;&#8314; and &#937;&#8315; gives two truth worlds (belief / plausibility)</text>
+</svg>

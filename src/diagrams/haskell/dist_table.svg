@@ -1,50 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="220" font-family="monospace,'JetBrains Mono',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="220" font-family="monospace,Arial,sans-serif">
   <rect width="700" height="220" fill="#ffffff" rx="8"/>
 
-  <!-- Заголовок -->
+  <!-- Header -->
   <rect x="0" y="0" width="700" height="36" fill="#f1f5f9" rx="8"/>
   <rect x="0" y="28" width="700" height="8" fill="#f1f5f9"/>
-  <text x="350" y="23" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">Kategornyj vzglyad: edinaya kartina</text>
+  <text x="350" y="23" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">Categorical View: Unified Picture</text>
 
-  <!-- Zagolovki kolonok -->
-  <rect x="10" y="44" width="215" height="28" fill="#172554" rx="4"/>
-  <text x="117" y="62" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Kontseptsiya</text>
+  <!-- Column headers -->
+  <rect x="10" y="44" width="215" height="28" fill="#dbeafe" rx="4"/>
+  <text x="117" y="62" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Concept</text>
 
-  <rect x="235" y="44" width="215" height="28" fill="#172554" rx="4"/>
-  <text x="342" y="62" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Kategornyj ob"ekt</text>
+  <rect x="235" y="44" width="215" height="28" fill="#dbeafe" rx="4"/>
+  <text x="342" y="62" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Categorical Object</text>
 
-  <rect x="460" y="44" width="228" height="28" fill="#172554" rx="4"/>
-  <text x="574" y="62" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Kategornyj morfizm</text>
+  <rect x="460" y="44" width="228" height="28" fill="#dbeafe" rx="4"/>
+  <text x="574" y="62" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Categorical Morphism</text>
 
-  <!-- Stroka 1 -->
+  <!-- Row 1 -->
   <rect x="10" y="80" width="215" height="28" fill="#f1f5f9" rx="3"/>
-  <text x="117" y="98" text-anchor="middle" font-size="11" fill="#7c3aed">Pi-ischislenie</text>
+  <text x="117" y="98" text-anchor="middle" font-size="11" fill="#a78bfa">Pi-calculus</text>
   <rect x="235" y="80" width="215" height="28" fill="#f1f5f9" rx="3"/>
-  <text x="342" y="98" text-anchor="middle" font-size="10" fill="#64748b">tipy kanalov</text>
+  <text x="342" y="98" text-anchor="middle" font-size="10" fill="#64748b">channel types</text>
   <rect x="460" y="80" width="228" height="28" fill="#f1f5f9" rx="3"/>
-  <text x="574" y="98" text-anchor="middle" font-size="10" fill="#64748b">protsessy</text>
+  <text x="574" y="98" text-anchor="middle" font-size="10" fill="#64748b">processes</text>
 
-  <!-- Stroka 2 -->
-  <rect x="10" y="116" width="215" height="28" fill="#172554" rx="3"/>
-  <text x="117" y="134" text-anchor="middle" font-size="11" fill="#7c3aed">Cloud Haskell</text>
-  <rect x="235" y="116" width="215" height="28" fill="#172554" rx="3"/>
-  <text x="342" y="134" text-anchor="middle" font-size="10" fill="#64748b">aktory (ProcessId)</text>
-  <rect x="460" y="116" width="228" height="28" fill="#172554" rx="3"/>
-  <text x="574" y="134" text-anchor="middle" font-size="10" fill="#64748b">soobshcheniya</text>
+  <!-- Row 2 -->
+  <rect x="10" y="116" width="215" height="28" fill="#e0f2fe" rx="3"/>
+  <text x="117" y="134" text-anchor="middle" font-size="11" fill="#a78bfa">Cloud Haskell</text>
+  <rect x="235" y="116" width="215" height="28" fill="#e0f2fe" rx="3"/>
+  <text x="342" y="134" text-anchor="middle" font-size="10" fill="#64748b">actors (ProcessId)</text>
+  <rect x="460" y="116" width="228" height="28" fill="#e0f2fe" rx="3"/>
+  <text x="574" y="134" text-anchor="middle" font-size="10" fill="#64748b">messages</text>
 
-  <!-- Stroka 3 -->
+  <!-- Row 3 -->
   <rect x="10" y="152" width="215" height="28" fill="#f1f5f9" rx="3"/>
-  <text x="117" y="170" text-anchor="middle" font-size="11" fill="#7c3aed">CRDT</text>
+  <text x="117" y="170" text-anchor="middle" font-size="11" fill="#a78bfa">CRDT</text>
   <rect x="235" y="152" width="215" height="28" fill="#f1f5f9" rx="3"/>
-  <text x="342" y="170" text-anchor="middle" font-size="10" fill="#64748b">sostoyaniya uzlov</text>
+  <text x="342" y="170" text-anchor="middle" font-size="10" fill="#64748b">node states</text>
   <rect x="460" y="152" width="228" height="28" fill="#f1f5f9" rx="3"/>
-  <text x="574" y="170" text-anchor="middle" font-size="10" fill="#64748b">merge (polureshyotka)</text>
+  <text x="574" y="170" text-anchor="middle" font-size="10" fill="#64748b">merge (semilattice)</text>
 
-  <!-- Stroka 4 -->
-  <rect x="10" y="188" width="215" height="28" fill="#172554" rx="3"/>
-  <text x="117" y="206" text-anchor="middle" font-size="11" fill="#7c3aed">MapReduce</text>
-  <rect x="235" y="188" width="215" height="28" fill="#172554" rx="3"/>
-  <text x="342" y="206" text-anchor="middle" font-size="10" fill="#64748b">shardy dannykh</text>
-  <rect x="460" y="188" width="228" height="28" fill="#172554" rx="3"/>
-  <text x="574" y="206" text-anchor="middle" font-size="10" fill="#64748b">mapper o reducer</text>
+  <!-- Row 4 -->
+  <rect x="10" y="188" width="215" height="28" fill="#e0f2fe" rx="3"/>
+  <text x="117" y="206" text-anchor="middle" font-size="11" fill="#a78bfa">MapReduce</text>
+  <rect x="235" y="188" width="215" height="28" fill="#e0f2fe" rx="3"/>
+  <text x="342" y="206" text-anchor="middle" font-size="10" fill="#64748b">data shards</text>
+  <rect x="460" y="188" width="228" height="28" fill="#e0f2fe" rx="3"/>
+  <text x="574" y="206" text-anchor="middle" font-size="10" fill="#64748b">mapper and reducer</text>
 </svg>

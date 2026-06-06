@@ -8,21 +8,21 @@
 
   <!-- Top row -->
   <!-- muF (initial algebra carrier) -->
-  <rect x="40" y="45" width="100" height="42" rx="6" fill="#0c2340" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="90" y="71" text-anchor="middle" font-size="16" font-style="italic" fill="#1e40af">muF</text>
+  <rect x="40" y="45" width="100" height="42" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="90" y="71" text-anchor="middle" font-size="16" font-style="italic" fill="#2563eb">muF</text>
 
   <!-- A (arbitrary algebra carrier) -->
-  <rect x="280" y="45" width="100" height="42" rx="6" fill="#1e1b4b" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="330" y="71" text-anchor="middle" font-size="16" font-style="italic" fill="#6d28d9">A</text>
+  <rect x="280" y="45" width="100" height="42" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="330" y="71" text-anchor="middle" font-size="16" font-style="italic" fill="#a78bfa">A</text>
 
   <!-- Bottom row -->
   <!-- F(muF) -->
-  <rect x="40" y="175" width="100" height="42" rx="6" fill="#0c2340" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="90" y="200" text-anchor="middle" font-size="13" fill="#1e40af">F(muF)</text>
+  <rect x="40" y="175" width="100" height="42" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="90" y="200" text-anchor="middle" font-size="13" fill="#2563eb">F(muF)</text>
 
   <!-- F(A) -->
-  <rect x="280" y="175" width="100" height="42" rx="6" fill="#1e1b4b" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="330" y="200" text-anchor="middle" font-size="13" fill="#6d28d9">F(A)</text>
+  <rect x="280" y="175" width="100" height="42" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="330" y="200" text-anchor="middle" font-size="13" fill="#a78bfa">F(A)</text>
 
   <!-- Top arrow: cata alg (unique!) -->
   <line x1="142" y1="66" x2="278" y2="66" stroke="#dc2626" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrr)"/>
@@ -35,15 +35,15 @@
 
   <!-- Left arrow: in (structure map) -->
   <line x1="90" y1="173" x2="90" y2="89" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="58" y="133" text-anchor="middle" font-size="11" fill="#334155">in</text>
+  <text x="58" y="133" text-anchor="middle" font-size="11" fill="#0f172a">in</text>
 
   <!-- Right arrow: alg -->
   <line x1="330" y1="173" x2="330" y2="89" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="358" y="133" text-anchor="middle" font-size="11" fill="#334155">alg</text>
+  <text x="358" y="133" text-anchor="middle" font-size="11" fill="#0f172a">alg</text>
 
   <!-- Center label -->
   <text x="210" y="135" text-anchor="middle" font-size="12" fill="#64748b">commutes</text>
 
   <!-- Bottom note -->
-  <text x="210" y="245" text-anchor="middle" font-size="11" fill="#94a3b8">Universality of initial F-algebra</text>
+  <text x="210" y="245" text-anchor="middle" font-size="11" fill="#64748b">Universality of initial F-algebra</text>
 </svg>

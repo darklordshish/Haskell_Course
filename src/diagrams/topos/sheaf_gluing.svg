@@ -1,1 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="660" height="330" style="background:#f8f9fa;font-family:Georgia,serif"><defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#334466"/></marker></defs><text x="330" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#334466">Условие склейки пучка</text><rect x="145" y="34" width="370" height="36" rx="7" fill="#f0e8ff" stroke="#663366" stroke-width="1.2"/><text x="330" y="57" text-anchor="middle" font-size="12" font-weight="bold" fill="#663366">U₁ ∩ U₂:  s₁|_{U₁∩U₂} = s₂|_{U₁∩U₂}</text><ellipse cx="215" cy="158" rx="158" ry="82" fill="#cce0ff" stroke="#334466" stroke-width="1.5" opacity="0.88"/><text x="148" y="148" text-anchor="middle" font-size="16" font-weight="bold" fill="#334466">U₁</text><text x="148" y="170" text-anchor="middle" font-size="12" fill="#885500">s₁ ∈ F(U₁)</text><ellipse cx="445" cy="158" rx="158" ry="82" fill="#ffe5cc" stroke="#885500" stroke-width="1.5" opacity="0.88"/><text x="516" y="148" text-anchor="middle" font-size="16" font-weight="bold" fill="#885500">U₂</text><text x="516" y="170" text-anchor="middle" font-size="12" fill="#885500">s₂ ∈ F(U₂)</text><line x1="330" y1="248" x2="330" y2="272" stroke="#334466" stroke-width="2" marker-end="url(#arr)"/><text x="352" y="264" font-size="11" fill="#334466">склейка</text><rect x="140" y="276" width="380" height="38" rx="8" fill="#334466"/><text x="330" y="301" text-anchor="middle" font-size="13" fill="white">∃! s ∈ F(U),  s|_{Uᵢ} = sᵢ</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300" viewBox="0 0 600 300"
+     font-family="monospace,Arial,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="300" fill="#ffffff" rx="8"/>
+
+  <!-- Title -->
+  <text x="300" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#0f172a">Sheaf Gluing Condition</text>
+
+  <!-- Agreement condition banner -->
+  <rect x="120" y="42" width="360" height="30" rx="6" fill="#f1f5f9" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="300" y="62" text-anchor="middle" font-size="12" fill="#a78bfa">Agreement: s&#8321;|_{U&#8321;&#8745;U&#8322;} = s&#8322;|_{U&#8321;&#8745;U&#8322;}</text>
+
+  <!-- U1 ellipse (left) -->
+  <ellipse cx="190" cy="155" rx="148" ry="72" fill="#dbeafe" stroke="#2563eb" stroke-width="1.8" opacity="0.85"/>
+  <text x="120" y="145" text-anchor="middle" font-size="17" font-weight="bold" fill="#2563eb">U&#8321;</text>
+  <text x="120" y="168" text-anchor="middle" font-size="12" fill="#1d4ed8">s&#8321; &#8712; F(U&#8321;)</text>
+
+  <!-- U2 ellipse (right) -->
+  <ellipse cx="410" cy="155" rx="148" ry="72" fill="#dcfce7" stroke="#34d399" stroke-width="1.8" opacity="0.85"/>
+  <text x="480" y="145" text-anchor="middle" font-size="17" font-weight="bold" fill="#34d399">U&#8322;</text>
+  <text x="480" y="168" text-anchor="middle" font-size="12" fill="#16a34a">s&#8322; &#8712; F(U&#8322;)</text>
+
+  <!-- Intersection label -->
+  <text x="300" y="148" text-anchor="middle" font-size="11" font-weight="bold" fill="#a78bfa">U&#8321;&#8745;U&#8322;</text>
+  <text x="300" y="165" text-anchor="middle" font-size="10" fill="#64748b">overlap</text>
+
+  <!-- Arrow down to global section -->
+  <line x1="300" y1="232" x2="300" y2="256" stroke="#2563eb" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="322" y="248" font-size="10" fill="#64748b">gluing</text>
+
+  <!-- Global section box -->
+  <rect x="120" y="260" width="360" height="32" rx="8" fill="#2563eb" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="300" y="281" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">&#8707;! s &#8712; F(U),  s|_{U&#7522;} = s&#7522;</text>
+
+  <!-- Cover label -->
+  <text x="300" y="228" text-anchor="middle" font-size="11" fill="#64748b">Cover: U = U&#8321; &#8746; U&#8322;</text>
+</svg>

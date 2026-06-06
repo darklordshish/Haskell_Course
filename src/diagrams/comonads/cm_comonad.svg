@@ -1,35 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="740" height="350" font-family="monospace,sans-serif">
-  <defs><marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#94a3b8"/></marker></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="350" font-family="monospace,Arial,sans-serif">
+  <defs><marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/></marker></defs>
   <rect width="740" height="350" fill="#ffffff" rx="8"/>
-  <text x="370" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#334155">Монада vs Комонада: двойственность</text>
-  <rect x="20" y="38" width="310" height="260" rx="8" fill="#14532d" stroke="#22c55e" stroke-width="2"/>
-  <text x="175" y="60" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">Монада M</text>
-  <rect x="38" y="70" width="274" height="40" rx="6" fill="#052e16"/>
-  <text x="175" y="86" text-anchor="middle" font-size="11" fill="#15803d">return :: a &#8594; M a</text>
-  <text x="175" y="102" text-anchor="middle" font-size="10" fill="#94a3b8">(inject / pure)</text>
-  <rect x="38" y="118" width="274" height="40" rx="6" fill="#052e16"/>
-  <text x="175" y="134" text-anchor="middle" font-size="11" fill="#15803d">(&gt;&gt;=) :: M a &#8594; (a &#8594; M b) &#8594; M b</text>
-  <text x="175" y="150" text-anchor="middle" font-size="10" fill="#94a3b8">(join :: M (M a) &#8594; M a)</text>
-  <rect x="38" y="166" width="274" height="30" rx="5" fill="#0c2d1a"/>
-  <text x="175" y="185" text-anchor="middle" font-size="10" fill="#94a3b8">&#951; : Id &#8594; M | &#956; : M&#178; &#8594; M (join)</text>
-  <rect x="38" y="202" width="274" height="30" rx="5" fill="#0c2d1a"/>
-  <text x="175" y="221" text-anchor="middle" font-size="10" fill="#94a3b8">Maybe, List, IO, State, ...</text>
-  <text x="175" y="268" text-anchor="middle" font-size="10" fill="#22c55e">&#956; &#8728; &#951;M = id = &#956; &#8728; M&#951;</text>
-  <text x="370" y="168" text-anchor="middle" font-size="24" fill="#818cf8">&#8596;</text>
-  <text x="370" y="188" text-anchor="middle" font-size="9" fill="#818cf8">двойств.</text>
-  <rect x="410" y="38" width="310" height="260" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
-  <text x="565" y="60" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e40af">Комонада W</text>
-  <rect x="428" y="70" width="274" height="40" rx="6" fill="#0c2340"/>
-  <text x="565" y="86" text-anchor="middle" font-size="11" fill="#1e40af">extract :: W a &#8594; a</text>
-  <text x="565" y="102" text-anchor="middle" font-size="10" fill="#94a3b8">(project / counit)</text>
-  <rect x="428" y="118" width="274" height="40" rx="6" fill="#0c2340"/>
-  <text x="565" y="134" text-anchor="middle" font-size="11" fill="#1e40af">extend :: W a &#8594; (W a &#8594; b) &#8594; W b</text>
-  <text x="565" y="150" text-anchor="middle" font-size="10" fill="#94a3b8">(duplicate :: W a &#8594; W (W a))</text>
-  <rect x="428" y="166" width="274" height="30" rx="5" fill="#0c1e3a"/>
-  <text x="565" y="185" text-anchor="middle" font-size="10" fill="#94a3b8">&#949; : W &#8594; Id | &#948; : W &#8594; W&#178; (dup)</text>
-  <rect x="428" y="202" width="274" height="30" rx="5" fill="#0c1e3a"/>
-  <text x="565" y="221" text-anchor="middle" font-size="10" fill="#94a3b8">Store, Stream, Env, Traced, Zipper</text>
-  <text x="565" y="268" text-anchor="middle" font-size="10" fill="#1d4ed8">extract . extend f = f</text>
-  <rect x="20" y="308" width="700" height="30" rx="5" fill="#1e1b4b"/>
-  <text x="370" y="326" text-anchor="middle" font-size="10" fill="#a5b4fc">W = G&#8728;F, M = F&#8728;G -- любое сопряжение порождает пару (монада, комонада)</text>
+  <text x="370" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Monad vs Comonad: duality</text>
+  <rect x="20" y="38" width="310" height="260" rx="8" fill="#f0fdf4" stroke="#34d399" stroke-width="2"/>
+  <text x="175" y="60" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f172a">Monad M</text>
+  <rect x="38" y="70" width="274" height="40" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="175" y="86" text-anchor="middle" font-size="11" fill="#0f172a">return :: a &#8594; M a</text>
+  <text x="175" y="102" text-anchor="middle" font-size="10" fill="#64748b">(inject / pure)</text>
+  <rect x="38" y="118" width="274" height="40" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="175" y="134" text-anchor="middle" font-size="11" fill="#0f172a">(&gt;&gt;=) :: M a &#8594; (a &#8594; M b) &#8594; M b</text>
+  <text x="175" y="150" text-anchor="middle" font-size="10" fill="#64748b">(join :: M (M a) &#8594; M a)</text>
+  <rect x="38" y="166" width="274" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="175" y="185" text-anchor="middle" font-size="10" fill="#64748b">&#951; : Id &#8594; M | &#956; : M&#178; &#8594; M (join)</text>
+  <rect x="38" y="202" width="274" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="175" y="221" text-anchor="middle" font-size="10" fill="#64748b">Maybe, List, IO, State, ...</text>
+  <text x="175" y="268" text-anchor="middle" font-size="10" fill="#34d399">&#956; &#8728; &#951;M = id = &#956; &#8728; M&#951;</text>
+  <text x="370" y="168" text-anchor="middle" font-size="24" fill="#a78bfa">&#8596;</text>
+  <text x="370" y="188" text-anchor="middle" font-size="9" fill="#a78bfa">dual</text>
+  <rect x="410" y="38" width="310" height="260" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="565" y="60" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f172a">Comonad W</text>
+  <rect x="428" y="70" width="274" height="40" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="565" y="86" text-anchor="middle" font-size="11" fill="#0f172a">extract :: W a &#8594; a</text>
+  <text x="565" y="102" text-anchor="middle" font-size="10" fill="#64748b">(project / counit)</text>
+  <rect x="428" y="118" width="274" height="40" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="565" y="134" text-anchor="middle" font-size="11" fill="#0f172a">extend :: W a &#8594; (W a &#8594; b) &#8594; W b</text>
+  <text x="565" y="150" text-anchor="middle" font-size="10" fill="#64748b">(duplicate :: W a &#8594; W (W a))</text>
+  <rect x="428" y="166" width="274" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="565" y="185" text-anchor="middle" font-size="10" fill="#64748b">&#949; : W &#8594; Id | &#948; : W &#8594; W&#178; (dup)</text>
+  <rect x="428" y="202" width="274" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="565" y="221" text-anchor="middle" font-size="10" fill="#64748b">Store, Stream, Env, Traced, Zipper</text>
+  <text x="565" y="268" text-anchor="middle" font-size="10" fill="#2563eb">extract . extend f = f</text>
+  <rect x="20" y="308" width="700" height="30" rx="5" fill="#f1f5f9" stroke="#cbd5e1"/>
+  <text x="370" y="326" text-anchor="middle" font-size="10" fill="#64748b">W = G&#8728;F, M = F&#8728;G -- any adjunction generates a (monad, comonad) pair</text>
 </svg>

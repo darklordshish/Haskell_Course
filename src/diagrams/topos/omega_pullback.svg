@@ -1,1 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="660" height="300" style="background:#f8f9fa;font-family:Georgia,serif"><defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#334466"/></marker><marker id="arrP" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#663366"/></marker></defs><text x="330" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#334466">Классификатор подобъектов Ω:  Hom(A,Ω) ≅ Sub(A)</text><rect x="100" y="52" width="80" height="38" rx="8" fill="#334466"/><text x="140" y="76" text-anchor="middle" font-size="16" font-weight="bold" fill="white">S</text><rect x="310" y="52" width="80" height="38" rx="8" fill="#885500"/><text x="350" y="76" text-anchor="middle" font-size="16" font-weight="bold" fill="white">1</text><rect x="100" y="182" width="80" height="38" rx="8" fill="#334466"/><text x="140" y="206" text-anchor="middle" font-size="16" font-weight="bold" fill="white">A</text><rect x="310" y="182" width="80" height="38" rx="8" fill="#663366"/><text x="350" y="206" text-anchor="middle" font-size="16" font-weight="bold" fill="white">Ω</text><line x1="182" y1="71" x2="308" y2="71" stroke="#334466" stroke-width="1.8" marker-end="url(#arr)"/><text x="245" y="63" text-anchor="middle" font-size="12" fill="#334466">!_S</text><line x1="140" y1="92" x2="140" y2="180" stroke="#334466" stroke-width="1.8" marker-end="url(#arr)"/><text x="118" y="142" text-anchor="middle" font-size="12" fill="#334466">m</text><line x1="350" y1="92" x2="350" y2="180" stroke="#663366" stroke-width="1.8" marker-end="url(#arrP)"/><text x="368" y="142" text-anchor="middle" font-size="12" fill="#663366">true</text><line x1="182" y1="201" x2="308" y2="201" stroke="#663366" stroke-width="1.8" marker-end="url(#arrP)"/><text x="245" y="219" text-anchor="middle" font-size="12" fill="#663366">χ_m</text><rect x="150" y="93" width="13" height="13" fill="none" stroke="#334466" stroke-width="1.3"/><text x="432" y="62" font-size="13" font-weight="bold" fill="#334466">Set:</text><text x="432" y="81" font-size="12" fill="#334466">Ω = {F,T}</text><text x="432" y="100" font-size="12" fill="#334466">χ_S(a) = T ➺ a ∈ S</text><text x="432" y="129" font-size="13" font-weight="bold" fill="#885500">Sh(X):</text><text x="432" y="148" font-size="12" fill="#885500">Ω_X(U) = Open(U)</text><text x="432" y="167" font-size="12" fill="#885500">true_U = U</text><text x="432" y="196" font-size="13" font-weight="bold" fill="#663366">Sub.Mod:</text><text x="432" y="215" font-size="12" fill="#663366">Ω = [0,1]</text><text x="432" y="234" font-size="12" fill="#663366">τ: X → [0,1]</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="320" viewBox="0 0 500 320"
+     font-family="monospace,Arial,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrP" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="320" fill="#ffffff" rx="8"/>
+
+  <!-- Title -->
+  <text x="250" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f172a">Subobject Classifier &#937;: Hom(A,&#937;) &#8773; Sub(A)</text>
+
+  <!-- Pullback square nodes -->
+  <!-- S top-left -->
+  <rect x="80" y="60" width="70" height="38" rx="6" fill="#2563eb" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="115" y="84" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">S</text>
+
+  <!-- 1 top-right -->
+  <rect x="280" y="60" width="70" height="38" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="315" y="84" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">1</text>
+
+  <!-- A bottom-left -->
+  <rect x="80" y="200" width="70" height="38" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="115" y="224" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">A</text>
+
+  <!-- Omega bottom-right -->
+  <rect x="280" y="200" width="70" height="38" rx="6" fill="#a78bfa" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="315" y="224" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">&#937;</text>
+
+  <!-- Arrows -->
+  <!-- S -> 1 (top) -->
+  <line x1="152" y1="79" x2="278" y2="79" stroke="#2563eb" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="215" y="70" text-anchor="middle" font-size="11" fill="#64748b">!_S</text>
+
+  <!-- S -> A (left, mono m) -->
+  <line x1="115" y1="100" x2="115" y2="198" stroke="#2563eb" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="96" y="154" text-anchor="middle" font-size="11" fill="#2563eb">m</text>
+
+  <!-- 1 -> Omega (right, true) -->
+  <line x1="315" y1="100" x2="315" y2="198" stroke="#a78bfa" stroke-width="1.8" marker-end="url(#arrP)"/>
+  <text x="334" y="154" text-anchor="middle" font-size="11" fill="#a78bfa">true</text>
+
+  <!-- A -> Omega (bottom, chi_m) -->
+  <line x1="152" y1="219" x2="278" y2="219" stroke="#a78bfa" stroke-width="1.8" marker-end="url(#arrP)"/>
+  <text x="215" y="238" text-anchor="middle" font-size="11" fill="#a78bfa">&#967;_m</text>
+
+  <!-- Corner mark at S (pullback corner) -->
+  <rect x="125" y="100" width="13" height="13" fill="none" stroke="#2563eb" stroke-width="1.3"/>
+
+  <!-- Examples panel -->
+  <rect x="390" y="55" width="98" height="190" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="439" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">Examples</text>
+  <line x1="395" y1="80" x2="483" y2="80" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="398" y="96" font-size="10" font-weight="bold" fill="#2563eb">Set:</text>
+  <text x="398" y="111" font-size="10" fill="#0f172a">&#937; = {F, T}</text>
+  <text x="398" y="126" font-size="9" fill="#64748b">&#967;_S(a)=T &#8660; a&#8712;S</text>
+  <line x1="395" y1="133" x2="483" y2="133" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="398" y="148" font-size="10" font-weight="bold" fill="#34d399">Sh(X):</text>
+  <text x="398" y="163" font-size="9" fill="#0f172a">&#937;(U)=Open(U)</text>
+  <text x="398" y="178" font-size="9" fill="#64748b">true_U = U</text>
+  <line x1="395" y1="185" x2="483" y2="185" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="398" y="200" font-size="10" font-weight="bold" fill="#a78bfa">Subj.:</text>
+  <text x="398" y="215" font-size="9" fill="#0f172a">&#937; = [0,1]</text>
+  <text x="398" y="230" font-size="9" fill="#64748b">&#964;: X &#8594; [0,1]</text>
+
+  <!-- Footer -->
+  <rect x="20" y="268" width="460" height="38" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="250" y="283" text-anchor="middle" font-size="11" fill="#0f172a">&#967;_m: A &#8594; &#937;  is the unique characteristic map</text>
+  <text x="250" y="298" text-anchor="middle" font-size="10" fill="#64748b">m: S &#8618; A is a mono  &#8660;  pullback of true along &#967;_m</text>
+</svg>

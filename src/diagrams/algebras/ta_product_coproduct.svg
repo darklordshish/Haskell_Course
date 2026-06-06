@@ -1,69 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="340" font-family="monospace,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="340" font-family="monospace,Arial,sans-serif">
   <defs>
-    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <polygon points="0 0,8 3,0 6" fill="#94a3b8"/>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
     </marker>
   </defs>
-  <!-- Background -->
   <rect width="700" height="340" fill="#ffffff" rx="8"/>
   <!-- Title -->
-  <text x="350" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#334155">Произведение (A&#215;B) и Копроизведение (A+B)</text>
+  <text x="350" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Product (A&#215;B) and Coproduct (A+B)</text>
 
   <!-- === LEFT: Product === -->
-  <text x="175" y="55" text-anchor="middle" font-size="13" fill="#64748b">Произведение</text>
+  <text x="175" y="55" text-anchor="middle" font-size="13" fill="#64748b">Product</text>
   <!-- A x B (center top) -->
-  <rect x="130" y="70" width="90" height="36" rx="6" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
-  <text x="175" y="94" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">A &#215; B</text>
+  <rect x="130" y="70" width="90" height="36" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="175" y="94" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">A &#215; B</text>
   <!-- A (bottom left) -->
-  <rect x="60" y="170" width="60" height="36" rx="6" fill="#14532d" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="90" y="194" text-anchor="middle" font-size="13" fill="#15803d">A</text>
+  <rect x="60" y="170" width="60" height="36" rx="6" fill="#f1f5f9" stroke="#34d399" stroke-width="1.5"/>
+  <text x="90" y="194" text-anchor="middle" font-size="13" fill="#0f172a">A</text>
   <!-- B (bottom right) -->
-  <rect x="220" y="170" width="60" height="36" rx="6" fill="#4c0519" stroke="#be123c" stroke-width="1.5"/>
-  <text x="250" y="194" text-anchor="middle" font-size="13" fill="#fda4af">B</text>
+  <rect x="220" y="170" width="60" height="36" rx="6" fill="#f1f5f9" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="250" y="194" text-anchor="middle" font-size="13" fill="#0f172a">B</text>
   <!-- C (source) -->
-  <rect x="130" y="250" width="90" height="36" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="130" y="250" width="90" height="36" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="175" y="274" text-anchor="middle" font-size="13" fill="#64748b">C</text>
   <!-- Arrows -->
-  <line x1="155" y1="106" x2="100" y2="168" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="108" y="142" font-size="10" fill="#94a3b8">fst</text>
-  <line x1="195" y1="106" x2="240" y2="168" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="228" y="142" font-size="10" fill="#94a3b8">snd</text>
-  <line x1="175" y1="250" x2="175" y2="110" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
-  <text x="181" y="183" font-size="10" fill="#818cf8">(f,g)</text>
-  <line x1="155" y1="250" x2="100" y2="210" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arr)"/>
-  <text x="104" y="234" font-size="9" fill="#94a3b8">f</text>
-  <line x1="195" y1="250" x2="240" y2="210" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arr)"/>
-  <text x="228" y="234" font-size="9" fill="#94a3b8">g</text>
+  <line x1="155" y1="106" x2="100" y2="168" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="108" y="142" font-size="10" fill="#64748b">fst</text>
+  <line x1="195" y1="106" x2="240" y2="168" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="228" y="142" font-size="10" fill="#64748b">snd</text>
+  <line x1="175" y1="250" x2="175" y2="110" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="181" y="183" font-size="10" fill="#a78bfa">(f,g)</text>
+  <line x1="155" y1="250" x2="100" y2="210" stroke="#64748b" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="104" y="234" font-size="9" fill="#64748b">f</text>
+  <line x1="195" y1="250" x2="240" y2="210" stroke="#64748b" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="228" y="234" font-size="9" fill="#64748b">g</text>
   <text x="175" y="316" text-anchor="middle" font-size="9" fill="#64748b">(a,b) :: Type</text>
 
   <!-- Divider -->
-  <line x1="350" y1="45" x2="350" y2="320" stroke="#f1f5f9" stroke-width="1.5"/>
+  <line x1="350" y1="45" x2="350" y2="320" stroke="#cbd5e1" stroke-width="1.5"/>
 
   <!-- === RIGHT: Coproduct === -->
-  <text x="525" y="55" text-anchor="middle" font-size="13" fill="#64748b">Копроизведение</text>
+  <text x="525" y="55" text-anchor="middle" font-size="13" fill="#64748b">Coproduct</text>
   <!-- A + B (center top) -->
-  <rect x="480" y="70" width="90" height="36" rx="6" fill="#422006" stroke="#b45309" stroke-width="2"/>
-  <text x="525" y="94" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">A + B</text>
+  <rect x="480" y="70" width="90" height="36" rx="6" fill="#f1f5f9" stroke="#fb923c" stroke-width="2"/>
+  <text x="525" y="94" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">A + B</text>
   <!-- A (bottom left) -->
-  <rect x="410" y="170" width="60" height="36" rx="6" fill="#14532d" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="440" y="194" text-anchor="middle" font-size="13" fill="#15803d">A</text>
+  <rect x="410" y="170" width="60" height="36" rx="6" fill="#f1f5f9" stroke="#34d399" stroke-width="1.5"/>
+  <text x="440" y="194" text-anchor="middle" font-size="13" fill="#0f172a">A</text>
   <!-- B (bottom right) -->
-  <rect x="570" y="170" width="60" height="36" rx="6" fill="#4c0519" stroke="#be123c" stroke-width="1.5"/>
-  <text x="600" y="194" text-anchor="middle" font-size="13" fill="#fda4af">B</text>
+  <rect x="570" y="170" width="60" height="36" rx="6" fill="#f1f5f9" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="600" y="194" text-anchor="middle" font-size="13" fill="#0f172a">B</text>
   <!-- D (target) -->
-  <rect x="480" y="250" width="90" height="36" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="480" y="250" width="90" height="36" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="525" y="274" text-anchor="middle" font-size="13" fill="#64748b">D</text>
   <!-- Arrows (reversed - injections go into A+B) -->
-  <line x1="460" y1="168" x2="498" y2="108" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="458" y="142" font-size="10" fill="#94a3b8">Left</text>
-  <line x1="590" y1="168" x2="552" y2="108" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="556" y="142" font-size="10" fill="#94a3b8">Right</text>
+  <line x1="460" y1="168" x2="498" y2="108" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="458" y="142" font-size="10" fill="#64748b">Left</text>
+  <line x1="590" y1="168" x2="552" y2="108" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="556" y="142" font-size="10" fill="#64748b">Right</text>
   <!-- either f g dashed -->
-  <line x1="525" y1="108" x2="525" y2="248" stroke="#818cf8" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
-  <text x="530" y="183" font-size="10" fill="#818cf8">either f g</text>
-  <line x1="460" y1="208" x2="498" y2="252" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arr)"/>
-  <text x="452" y="234" font-size="9" fill="#94a3b8">f</text>
-  <line x1="590" y1="208" x2="552" y2="252" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arr)"/>
-  <text x="556" y="234" font-size="9" fill="#94a3b8">g</text>
+  <line x1="525" y1="108" x2="525" y2="248" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="530" y="183" font-size="10" fill="#a78bfa">either f g</text>
+  <line x1="460" y1="208" x2="498" y2="252" stroke="#64748b" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="452" y="234" font-size="9" fill="#64748b">f</text>
+  <line x1="590" y1="208" x2="552" y2="252" stroke="#64748b" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="556" y="234" font-size="9" fill="#64748b">g</text>
   <text x="525" y="316" text-anchor="middle" font-size="9" fill="#64748b">Either a b :: Type</text>
 </svg>

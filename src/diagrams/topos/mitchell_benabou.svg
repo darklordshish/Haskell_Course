@@ -1,1 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="660" height="320" style="background:#f8f9fa;font-family:Georgia,serif"><defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><polygon points="0 0,8 3,0 6" fill="#334466"/></marker></defs><text x="330" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#334466">Внутренний язык Mitchell–Benabou</text><circle cx="330" cy="105" r="38" fill="#334466"/><text x="330" y="110" text-anchor="middle" font-size="14" font-weight="bold" fill="white">Топос</text><circle cx="110" cy="230" r="36" fill="#885500"/><text x="110" y="235" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Типы</text><circle cx="550" cy="230" r="36" fill="#663366"/><text x="550" y="235" text-anchor="middle" font-size="13" font-weight="bold" fill="white">Логика</text><line x1="297" y1="134" x2="140" y2="200" stroke="#885500" stroke-width="1.8" marker-end="url(#arr)"/><line x1="363" y1="134" x2="520" y2="200" stroke="#663366" stroke-width="1.8" marker-end="url(#arr)"/><line x1="146" y1="240" x2="514" y2="240" stroke="#334466" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr)"/><text x="190" y="168" text-anchor="middle" font-size="11" fill="#885500">Объекты = Типы</text><text x="472" y="168" text-anchor="middle" font-size="11" fill="#663366">Стрелки A→Ω = Предикаты</text><text x="330" y="233" text-anchor="middle" font-size="11" fill="#334466">Термы = Морфизмы</text><text x="130" y="284" text-anchor="middle" font-size="11" fill="#885500">∀x.P(x) = Ran_π(P)</text><text x="130" y="300" text-anchor="middle" font-size="11" fill="#885500">∃x.P(x) = Lan_π(P)</text><text x="330" y="284" text-anchor="middle" font-size="11" fill="#334466">π: Γ×A → Γ (проекция)</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300"
+     font-family="monospace,Arial,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34d399"/>
+    </marker>
+    <marker id="arrP" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="560" height="300" fill="#ffffff" rx="8"/>
+
+  <!-- Title -->
+  <text x="280" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#0f172a">Mitchell-Benabou Internal Language</text>
+
+  <!-- Topos circle (top center) -->
+  <circle cx="280" cy="100" r="42" fill="#2563eb" stroke="#1d4ed8" stroke-width="1.5"/>
+  <text x="280" y="96" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Topos</text>
+  <text x="280" y="113" text-anchor="middle" font-size="10" fill="#bfdbfe">category</text>
+
+  <!-- Types circle (bottom left) -->
+  <circle cx="110" cy="220" r="42" fill="#f1f5f9" stroke="#34d399" stroke-width="2"/>
+  <text x="110" y="216" text-anchor="middle" font-size="13" font-weight="bold" fill="#34d399">Types</text>
+  <text x="110" y="233" text-anchor="middle" font-size="10" fill="#64748b">objects</text>
+
+  <!-- Logic circle (bottom right) -->
+  <circle cx="450" cy="220" r="42" fill="#f1f5f9" stroke="#a78bfa" stroke-width="2"/>
+  <text x="450" y="216" text-anchor="middle" font-size="13" font-weight="bold" fill="#a78bfa">Logic</text>
+  <text x="450" y="233" text-anchor="middle" font-size="10" fill="#64748b">predicates</text>
+
+  <!-- Arrow: Topos -> Types -->
+  <line x1="244" y1="134" x2="146" y2="184" stroke="#34d399" stroke-width="1.8" marker-end="url(#arrG)"/>
+  <text x="180" y="152" text-anchor="middle" font-size="10" fill="#34d399">Objects = Types</text>
+
+  <!-- Arrow: Topos -> Logic -->
+  <line x1="316" y1="134" x2="414" y2="184" stroke="#a78bfa" stroke-width="1.8" marker-end="url(#arrP)"/>
+  <text x="378" y="152" text-anchor="middle" font-size="10" fill="#a78bfa">A&#8594;&#937; = Predicates</text>
+
+  <!-- Arrow: Types -> Logic (dashed) -->
+  <line x1="152" y1="228" x2="408" y2="228" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr)"/>
+  <text x="280" y="222" text-anchor="middle" font-size="10" fill="#2563eb">Terms = Morphisms</text>
+
+  <!-- Center note box -->
+  <rect x="196" y="248" width="168" height="42" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <text x="280" y="264" text-anchor="middle" font-size="10" fill="#0f172a">&#960;: &#915;&#215;A &#8594; &#915; (projection)</text>
+  <text x="280" y="280" text-anchor="middle" font-size="10" fill="#64748b">&#8704;x.P = Ran_&#960;(P),  &#8707;x.P = Lan_&#960;(P)</text>
+</svg>

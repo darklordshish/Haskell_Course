@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" font-family="monospace,Arial,sans-serif">
 
   <!-- Background -->
-  <rect width="900" height="520" fill="#ffffff" rx="10"/>
+  <rect width="900" height="520" fill="#ffffff" rx="8"/>
 
   <!-- Title -->
-  <text x="450" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Dark Theme — Palette Reference</text>
-  <text x="450" y="52" text-anchor="middle" font-size="12" fill="#64748b">Единая цветовая схема для всех SVG-диаграмм курса</text>
+  <text x="450" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Light Theme — Palette Reference</text>
+  <text x="450" y="52" text-anchor="middle" font-size="12" fill="#64748b">Unified color scheme for all SVG diagrams</text>
 
   <!-- Divider -->
   <line x1="30" y1="62" x2="870" y2="62" stroke="#cbd5e1" stroke-width="1"/>
 
   <!-- === COLOR SWATCHES === -->
-  <text x="30" y="85" font-size="12" font-weight="bold" fill="#64748b">ПАЛИТРА:</text>
+  <text x="30" y="85" font-size="12" font-weight="bold" fill="#64748b">PALETTE:</text>
 
   <!-- bg card -->
   <rect x="30" y="92" width="110" height="44" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" rx="5"/>
-  <text x="85" y="110" text-anchor="middle" font-size="11" fill="#334155">#f1f5f9</text>
+  <text x="85" y="110" text-anchor="middle" font-size="11" fill="#0f172a">#f1f5f9</text>
   <text x="85" y="125" text-anchor="middle" font-size="10" fill="#64748b">card bg</text>
 
   <!-- blue -->
@@ -24,18 +24,18 @@
   <text x="210" y="125" text-anchor="middle" font-size="10" fill="#64748b">accent blue</text>
 
   <!-- green -->
-  <rect x="280" y="92" width="110" height="44" fill="#f1f5f9" stroke="#059669" stroke-width="2" rx="5"/>
-  <text x="335" y="110" text-anchor="middle" font-size="11" fill="#059669">#059669</text>
+  <rect x="280" y="92" width="110" height="44" fill="#f1f5f9" stroke="#34d399" stroke-width="2" rx="5"/>
+  <text x="335" y="110" text-anchor="middle" font-size="11" fill="#34d399">#34d399</text>
   <text x="335" y="125" text-anchor="middle" font-size="10" fill="#64748b">accent green</text>
 
   <!-- violet -->
-  <rect x="405" y="92" width="110" height="44" fill="#f1f5f9" stroke="#7c3aed" stroke-width="2" rx="5"/>
-  <text x="460" y="110" text-anchor="middle" font-size="11" fill="#7c3aed">#7c3aed</text>
-  <text x="460" y="125" text-anchor="middle" font-size="10" fill="#64748b">accent violet</text>
+  <rect x="405" y="92" width="110" height="44" fill="#f1f5f9" stroke="#a78bfa" stroke-width="2" rx="5"/>
+  <text x="460" y="110" text-anchor="middle" font-size="11" fill="#a78bfa">#a78bfa</text>
+  <text x="460" y="125" text-anchor="middle" font-size="10" fill="#64748b">accent purple</text>
 
   <!-- orange -->
-  <rect x="530" y="92" width="110" height="44" fill="#f1f5f9" stroke="#ea580c" stroke-width="2" rx="5"/>
-  <text x="585" y="110" text-anchor="middle" font-size="11" fill="#ea580c">#ea580c</text>
+  <rect x="530" y="92" width="110" height="44" fill="#f1f5f9" stroke="#fb923c" stroke-width="2" rx="5"/>
+  <text x="585" y="110" text-anchor="middle" font-size="11" fill="#fb923c">#fb923c</text>
   <text x="585" y="125" text-anchor="middle" font-size="10" fill="#64748b">accent orange</text>
 
   <!-- secondary text -->
@@ -45,13 +45,13 @@
 
   <!-- main text -->
   <rect x="780" y="92" width="100" height="44" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1" rx="5"/>
-  <text x="830" y="110" text-anchor="middle" font-size="11" fill="#334155">#334155</text>
+  <text x="830" y="110" text-anchor="middle" font-size="11" fill="#0f172a">#0f172a</text>
   <text x="830" y="125" text-anchor="middle" font-size="10" fill="#64748b">main text</text>
 
   <line x1="30" y1="148" x2="870" y2="148" stroke="#cbd5e1" stroke-width="1"/>
 
   <!-- === DEMO DIAGRAM: Functor category diagram === -->
-  <text x="30" y="170" font-size="12" font-weight="bold" fill="#64748b">ПРИМЕР ДИАГРАММЫ — Функтор F : C &#8594; D:</text>
+  <text x="30" y="170" font-size="12" font-weight="bold" fill="#64748b">DIAGRAM EXAMPLE — Functor F : C &#8594; D:</text>
 
   <!-- Arrow markers -->
   <defs>
@@ -59,10 +59,10 @@
       <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
     </marker>
     <marker id="arrG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#059669"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34d399"/>
     </marker>
     <marker id="arrV" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
     </marker>
     <marker id="arrD" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
       <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
@@ -75,10 +75,10 @@
 
   <!-- Objects in C -->
   <rect x="70" y="215" width="80" height="40" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="6"/>
-  <text x="110" y="240" text-anchor="middle" font-size="13" fill="#334155">A</text>
+  <text x="110" y="240" text-anchor="middle" font-size="13" fill="#0f172a">A</text>
 
   <rect x="250" y="215" width="80" height="40" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" rx="6"/>
-  <text x="290" y="240" text-anchor="middle" font-size="13" fill="#334155">B</text>
+  <text x="290" y="240" text-anchor="middle" font-size="13" fill="#0f172a">B</text>
 
   <!-- Morphism f in C -->
   <line x1="152" y1="235" x2="248" y2="235" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrB)"/>
@@ -92,8 +92,8 @@
   <text x="290" y="182" text-anchor="middle" font-size="11" fill="#64748b">id&#8337;</text>
 
   <!-- Composition g.f -->
-  <rect x="160" y="340" width="80" height="40" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5" rx="6"/>
-  <text x="200" y="365" text-anchor="middle" font-size="12" fill="#7c3aed">A&#8594;C</text>
+  <rect x="160" y="340" width="80" height="40" fill="#ffffff" stroke="#a78bfa" stroke-width="1.5" rx="6"/>
+  <text x="200" y="365" text-anchor="middle" font-size="12" fill="#a78bfa">A&#8594;C</text>
   <line x1="130" y1="270" x2="175" y2="338" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrD)"/>
   <line x1="270" y1="270" x2="225" y2="338" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrD)"/>
   <text x="142" y="310" font-size="11" fill="#64748b">g</text>
@@ -101,45 +101,45 @@
 
   <!-- Category D box -->
   <rect x="560" y="178" width="300" height="240" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5" rx="8"/>
-  <text x="710" y="200" text-anchor="middle" font-size="14" font-weight="bold" fill="#059669">D</text>
+  <text x="710" y="200" text-anchor="middle" font-size="14" font-weight="bold" fill="#34d399">D</text>
 
   <!-- Objects in D (images under F) -->
-  <rect x="590" y="215" width="80" height="40" fill="#ffffff" stroke="#059669" stroke-width="1.5" rx="6"/>
-  <text x="630" y="240" text-anchor="middle" font-size="13" fill="#334155">F A</text>
+  <rect x="590" y="215" width="80" height="40" fill="#ffffff" stroke="#34d399" stroke-width="1.5" rx="6"/>
+  <text x="630" y="240" text-anchor="middle" font-size="13" fill="#0f172a">F A</text>
 
-  <rect x="770" y="215" width="80" height="40" fill="#ffffff" stroke="#059669" stroke-width="1.5" rx="6"/>
-  <text x="810" y="240" text-anchor="middle" font-size="13" fill="#334155">F B</text>
+  <rect x="770" y="215" width="80" height="40" fill="#ffffff" stroke="#34d399" stroke-width="1.5" rx="6"/>
+  <text x="810" y="240" text-anchor="middle" font-size="13" fill="#0f172a">F B</text>
 
   <!-- Morphism F(f) in D -->
-  <line x1="672" y1="235" x2="768" y2="235" stroke="#059669" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <line x1="672" y1="235" x2="768" y2="235" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrG)"/>
   <text x="720" y="226" text-anchor="middle" font-size="12" fill="#64748b">F f</text>
 
   <!-- Composition F(g.f) = F(g).F(f) -->
-  <rect x="680" y="340" width="80" height="40" fill="#ffffff" stroke="#7c3aed" stroke-width="1.5" rx="6"/>
-  <text x="720" y="365" text-anchor="middle" font-size="12" fill="#7c3aed">F(A&#8594;C)</text>
+  <rect x="680" y="340" width="80" height="40" fill="#ffffff" stroke="#a78bfa" stroke-width="1.5" rx="6"/>
+  <text x="720" y="365" text-anchor="middle" font-size="12" fill="#a78bfa">F(A&#8594;C)</text>
   <line x1="650" y1="270" x2="695" y2="338" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrD)"/>
   <line x1="790" y1="270" x2="745" y2="338" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrD)"/>
 
   <!-- Functor arrow F in the middle -->
-  <line x1="345" y1="250" x2="558" y2="250" stroke="#ea580c" stroke-width="2.5" marker-end="url(#arrV)"/>
-  <rect x="400" y="226" width="102" height="28" fill="#ffffff" stroke="#ea580c" stroke-width="1" rx="4"/>
-  <text x="451" y="244" text-anchor="middle" font-size="13" font-weight="bold" fill="#ea580c">F</text>
+  <line x1="345" y1="250" x2="558" y2="250" stroke="#fb923c" stroke-width="2.5" marker-end="url(#arrV)"/>
+  <rect x="400" y="226" width="102" height="28" fill="#ffffff" stroke="#fb923c" stroke-width="1" rx="4"/>
+  <text x="451" y="244" text-anchor="middle" font-size="13" font-weight="bold" fill="#fb923c">F</text>
 
   <!-- Legend -->
   <line x1="30" y1="432" x2="870" y2="432" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="30" y="452" font-size="11" font-weight="bold" fill="#64748b">ЛЕГЕНДА:</text>
+  <text x="30" y="452" font-size="11" font-weight="bold" fill="#64748b">LEGEND:</text>
   <line x1="100" y1="449" x2="140" y2="449" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrB)"/>
-  <text x="148" y="453" font-size="11" fill="#2563eb">объекты/морфизмы C</text>
-  <line x1="320" y1="449" x2="360" y2="449" stroke="#059669" stroke-width="1.5" marker-end="url(#arrG)"/>
-  <text x="368" y="453" font-size="11" fill="#059669">объекты/морфизмы D</text>
-  <line x1="540" y1="449" x2="580" y2="449" stroke="#ea580c" stroke-width="2" marker-end="url(#arrV)"/>
-  <text x="588" y="453" font-size="11" fill="#ea580c">функтор F</text>
+  <text x="148" y="453" font-size="11" fill="#2563eb">objects/morphisms C</text>
+  <line x1="320" y1="449" x2="360" y2="449" stroke="#34d399" stroke-width="1.5" marker-end="url(#arrG)"/>
+  <text x="368" y="453" font-size="11" fill="#34d399">objects/morphisms D</text>
+  <line x1="540" y1="449" x2="580" y2="449" stroke="#fb923c" stroke-width="2" marker-end="url(#arrV)"/>
+  <text x="588" y="453" font-size="11" fill="#fb923c">functor F</text>
   <line x1="680" y1="449" x2="720" y2="449" stroke="#64748b" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#arrD)"/>
-  <text x="728" y="453" font-size="11" fill="#64748b">вспомог.</text>
+  <text x="728" y="453" font-size="11" fill="#64748b">auxiliary</text>
 
   <!-- Laws -->
-  <text x="30" y="478" font-size="11" fill="#64748b">Законы: </text>
-  <text x="88" y="478" font-size="11" fill="#334155">F(id&#8336;) = id&#8497;&#8336;  |  F(g &#8728; f) = F(g) &#8728; F(f)</text>
+  <text x="30" y="478" font-size="11" fill="#64748b">Laws: </text>
+  <text x="78" y="478" font-size="11" fill="#0f172a">F(id&#8336;) = id&#8497;&#8336;  |  F(g &#8728; f) = F(g) &#8728; F(f)</text>
 
-  <text x="450" y="505" text-anchor="middle" font-size="10" fill="#64748b">design_dark_template.svg — образцовый шаблон тёмной диаграммы</text>
+  <text x="450" y="505" text-anchor="middle" font-size="10" fill="#64748b">design_dark_template.svg — palette reference for light diagrams</text>
 </svg>

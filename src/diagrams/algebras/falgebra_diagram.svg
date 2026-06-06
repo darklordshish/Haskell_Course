@@ -7,20 +7,20 @@
   <text x="190" y="22" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f172a">F-Algebra Morphism</text>
 
   <!-- Top-left: FA -->
-  <rect x="40" y="45" width="80" height="42" rx="6" fill="#0c2340" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="80" y="72" text-anchor="middle" font-size="18" font-style="italic" fill="#1e40af">FA</text>
+  <rect x="40" y="45" width="80" height="42" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="80" y="72" text-anchor="middle" font-size="18" font-style="italic" fill="#2563eb">FA</text>
 
   <!-- Top-right: FB -->
-  <rect x="260" y="45" width="80" height="42" rx="6" fill="#0c2340" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="300" y="72" text-anchor="middle" font-size="18" font-style="italic" fill="#1e40af">FB</text>
+  <rect x="260" y="45" width="80" height="42" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="300" y="72" text-anchor="middle" font-size="18" font-style="italic" fill="#2563eb">FB</text>
 
   <!-- Bottom-left: A -->
-  <rect x="40" y="175" width="80" height="42" rx="6" fill="#1e1b4b" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="80" y="202" text-anchor="middle" font-size="18" font-style="italic" fill="#6d28d9">A</text>
+  <rect x="40" y="175" width="80" height="42" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="80" y="202" text-anchor="middle" font-size="18" font-style="italic" fill="#a78bfa">A</text>
 
   <!-- Bottom-right: B -->
-  <rect x="260" y="175" width="80" height="42" rx="6" fill="#1e1b4b" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="300" y="202" text-anchor="middle" font-size="18" font-style="italic" fill="#6d28d9">B</text>
+  <rect x="260" y="175" width="80" height="42" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="300" y="202" text-anchor="middle" font-size="18" font-style="italic" fill="#a78bfa">B</text>
 
   <!-- Top arrow: Ff -->
   <line x1="122" y1="66" x2="258" y2="66" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arrb)"/>
@@ -28,19 +28,19 @@
 
   <!-- Bottom arrow: f -->
   <line x1="122" y1="196" x2="258" y2="196" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="190" y="188" text-anchor="middle" font-size="14" font-style="italic" fill="#334155">f</text>
+  <text x="190" y="188" text-anchor="middle" font-size="14" font-style="italic" fill="#0f172a">f</text>
 
   <!-- Left arrow: alpha (algebra map A) -->
   <line x1="80" y1="89" x2="80" y2="173" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="55" y="133" text-anchor="middle" font-size="15" font-style="italic" fill="#334155">alpha</text>
+  <text x="55" y="133" text-anchor="middle" font-size="15" font-style="italic" fill="#0f172a">alpha</text>
 
   <!-- Right arrow: beta (algebra map B) -->
   <line x1="300" y1="89" x2="300" y2="173" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="330" y="133" text-anchor="middle" font-size="15" font-style="italic" fill="#334155">beta</text>
+  <text x="330" y="133" text-anchor="middle" font-size="15" font-style="italic" fill="#0f172a">beta</text>
 
   <!-- Center label: commutes -->
   <text x="190" y="132" text-anchor="middle" font-size="12" fill="#64748b">commutes</text>
 
   <!-- Bottom note -->
-  <text x="190" y="247" text-anchor="middle" font-size="10" fill="#94a3b8">f . alpha = beta . Ff  (algebra morphism)</text>
+  <text x="190" y="247" text-anchor="middle" font-size="10" fill="#64748b">f . alpha = beta . Ff  (algebra morphism)</text>
 </svg>

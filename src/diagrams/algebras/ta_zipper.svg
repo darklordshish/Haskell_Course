@@ -1,56 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="220" font-family="monospace,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="220" font-family="monospace,Arial,sans-serif">
   <defs>
-    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <polygon points="0 0,8 3,0 6" fill="#94a3b8"/>
-    </marker>
-    <marker id="arrl" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
-      <polygon points="8 0,0 3,8 6" fill="#94a3b8"/>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
     </marker>
   </defs>
   <rect width="680" height="220" fill="#ffffff" rx="8"/>
   <!-- Title -->
-  <text x="340" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#334155">Zipper списка = производная типа List</text>
-  <text x="340" y="44" text-anchor="middle" font-size="11" fill="#94a3b8">L(A) = 1 + A &#215; L(A) &#8658; dL/dA = L(A)&#178; = [A] &#215; [A]</text>
+  <text x="340" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="#0f172a">List Zipper = derivative of List type</text>
+  <text x="340" y="44" text-anchor="middle" font-size="11" fill="#64748b">L(A) = 1 + A &#215; L(A) &#8658; dL/dA = L(A)&#178; = [A] &#215; [A]</text>
 
   <!-- Left context label -->
-  <text x="130" y="70" text-anchor="middle" font-size="11" fill="#64748b">Левый контекст</text>
+  <text x="130" y="70" text-anchor="middle" font-size="11" fill="#64748b">Left context</text>
   <!-- Focus label -->
-  <text x="340" y="70" text-anchor="middle" font-size="11" fill="#92400e">Фокус</text>
+  <text x="340" y="70" text-anchor="middle" font-size="11" fill="#fb923c">Focus</text>
   <!-- Right context label -->
-  <text x="550" y="70" text-anchor="middle" font-size="11" fill="#64748b">Правый контекст</text>
+  <text x="550" y="70" text-anchor="middle" font-size="11" fill="#64748b">Right context</text>
 
   <!-- Left context boxes (green) -->
-  <rect x="20" y="80" width="46" height="36" rx="5" fill="#14532d" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="43" y="103" text-anchor="middle" font-size="13" fill="#15803d">a&#8321;</text>
-  <rect x="74" y="80" width="46" height="36" rx="5" fill="#14532d" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="97" y="103" text-anchor="middle" font-size="13" fill="#15803d">a&#8322;</text>
-  <rect x="128" y="80" width="46" height="36" rx="5" fill="#14532d" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="151" y="103" text-anchor="middle" font-size="13" fill="#15803d">a&#8323;</text>
+  <rect x="20" y="80" width="46" height="36" rx="5" fill="#f0fdf4" stroke="#34d399" stroke-width="1.5"/>
+  <text x="43" y="103" text-anchor="middle" font-size="13" fill="#0f172a">a&#8321;</text>
+  <rect x="74" y="80" width="46" height="36" rx="5" fill="#f0fdf4" stroke="#34d399" stroke-width="1.5"/>
+  <text x="97" y="103" text-anchor="middle" font-size="13" fill="#0f172a">a&#8322;</text>
+  <rect x="128" y="80" width="46" height="36" rx="5" fill="#f0fdf4" stroke="#34d399" stroke-width="1.5"/>
+  <text x="151" y="103" text-anchor="middle" font-size="13" fill="#0f172a">a&#8323;</text>
 
   <!-- Focus box (amber, larger) -->
-  <rect x="290" y="74" width="100" height="48" rx="8" fill="#422006" stroke="#b45309" stroke-width="2.5"/>
-  <text x="340" y="103" text-anchor="middle" font-size="16" font-weight="bold" fill="#92400e">a&#8324;</text>
+  <rect x="290" y="74" width="100" height="48" rx="8" fill="#fff7ed" stroke="#fb923c" stroke-width="2.5"/>
+  <text x="340" y="103" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">a&#8324;</text>
 
-  <!-- Right context boxes (red) -->
-  <rect x="416" y="80" width="46" height="36" rx="5" fill="#4c0519" stroke="#be123c" stroke-width="1.5"/>
-  <text x="439" y="103" text-anchor="middle" font-size="13" fill="#fda4af">a&#8325;</text>
-  <rect x="470" y="80" width="46" height="36" rx="5" fill="#4c0519" stroke="#be123c" stroke-width="1.5"/>
-  <text x="493" y="103" text-anchor="middle" font-size="13" fill="#fda4af">a&#8326;</text>
-  <rect x="524" y="80" width="46" height="36" rx="5" fill="#4c0519" stroke="#be123c" stroke-width="1.5"/>
-  <text x="547" y="103" text-anchor="middle" font-size="13" fill="#fda4af">a&#8327;</text>
-  <rect x="578" y="80" width="46" height="36" rx="5" fill="#4c0519" stroke="#be123c" stroke-width="1.5"/>
-  <text x="601" y="103" text-anchor="middle" font-size="13" fill="#fda4af">a&#8328;</text>
+  <!-- Right context boxes -->
+  <rect x="416" y="80" width="46" height="36" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="439" y="103" text-anchor="middle" font-size="13" fill="#0f172a">a&#8325;</text>
+  <rect x="470" y="80" width="46" height="36" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="493" y="103" text-anchor="middle" font-size="13" fill="#0f172a">a&#8326;</text>
+  <rect x="524" y="80" width="46" height="36" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="547" y="103" text-anchor="middle" font-size="13" fill="#0f172a">a&#8327;</text>
+  <rect x="578" y="80" width="46" height="36" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="601" y="103" text-anchor="middle" font-size="13" fill="#0f172a">a&#8328;</text>
 
   <!-- Navigation arrows -->
-  <line x1="285" y1="98" x2="182" y2="98" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="232" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&#8592;</text>
-  <line x1="395" y1="98" x2="410" y2="98" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="448" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&#8594;</text>
+  <line x1="285" y1="98" x2="182" y2="98" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="232" y="92" text-anchor="middle" font-size="11" fill="#2563eb">&#8592;</text>
+  <line x1="395" y1="98" x2="410" y2="98" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="448" y="92" text-anchor="middle" font-size="11" fill="#2563eb">&#8594;</text>
 
   <!-- Code -->
-  <text x="340" y="148" text-anchor="middle" font-size="12" fill="#1e40af">data ListZipper a = LZ [a] a [a]</text>
-  <text x="340" y="167" text-anchor="middle" font-size="11" fill="#94a3b8">goLeft, goRight :: ListZipper a -&gt; Maybe (ListZipper a)</text>
+  <text x="340" y="148" text-anchor="middle" font-size="12" fill="#2563eb">data ListZipper a = LZ [a] a [a]</text>
+  <text x="340" y="167" text-anchor="middle" font-size="11" fill="#64748b">goLeft, goRight :: ListZipper a -&gt; Maybe (ListZipper a)</text>
   <!-- Law -->
   <rect x="30" y="178" width="620" height="28" rx="4" fill="#f1f5f9"/>
-  <text x="340" y="196" text-anchor="middle" font-size="11" fill="#a5b4fc">|LZ(A)| = |[A]| &#215; |A| &#215; |[A]| = L(A)&#178; = dL/dA &#10003;</text>
+  <text x="340" y="196" text-anchor="middle" font-size="11" fill="#a78bfa">|LZ(A)| = |[A]| &#215; |A| &#215; |[A]| = L(A)&#178; = dL/dA &#10003;</text>
 </svg>
