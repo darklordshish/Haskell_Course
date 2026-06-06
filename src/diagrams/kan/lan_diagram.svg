@@ -20,29 +20,29 @@
   </marker>
 </defs>
 <rect width="600" height="380" fill="#ffffff" rx="10"/>
-<text x="300" y="35" text-anchor="middle" font-family="monospace" font-size="17" fill="#e0e0ff" font-weight="bold">&#1051;&#1077;&#1074;&#1086;&#1077; &#1088;&#1072;&#1089;&#1096;&#1080;&#1088;&#1077;&#1085;&#1080;&#1077; &#1050;&#1072;&#1085;&#1072; (Lan)</text>
-<text x="300" y="55" text-anchor="middle" font-family="monospace" font-size="13" fill="#8888aa">Nat(h, f&#183;g) &#8773; Nat(Lan g h, f)</text>
-<rect x="60" y="100" width="90" height="46" rx="8" fill="#0f3460" stroke="#4488dd" stroke-width="2"/>
-<text x="105" y="128" text-anchor="middle" font-family="monospace" font-size="22" fill="#66aaff" font-weight="bold">C</text>
-<rect x="450" y="100" width="90" height="46" rx="8" fill="#0f3460" stroke="#4488dd" stroke-width="2"/>
-<text x="495" y="128" text-anchor="middle" font-family="monospace" font-size="22" fill="#66aaff" font-weight="bold">D</text>
-<rect x="255" y="290" width="90" height="46" rx="8" fill="#1a0a3e" stroke="#9944dd" stroke-width="2"/>
-<text x="300" y="318" text-anchor="middle" font-family="monospace" font-size="22" fill="#cc88ff" font-weight="bold">E</text>
+<text x="300" y="35" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="17" fill="#1a2a6a" font-weight="bold">Left Kan Extension (Lan)</text>
+<text x="300" y="55" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="13" fill="#556688">Nat(h, f&#183;g) &#8773; Nat(Lan g h, f)</text>
+<rect x="60" y="100" width="90" height="46" rx="8" fill="#dbeafe" stroke="#4488dd" stroke-width="2"/>
+<text x="105" y="128" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="22" fill="#1a4488" font-weight="bold">C</text>
+<rect x="450" y="100" width="90" height="46" rx="8" fill="#dbeafe" stroke="#4488dd" stroke-width="2"/>
+<text x="495" y="128" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="22" fill="#1a4488" font-weight="bold">D</text>
+<rect x="255" y="290" width="90" height="46" rx="8" fill="#ede9fe" stroke="#9944dd" stroke-width="2"/>
+<text x="300" y="318" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="22" fill="#6622aa" font-weight="bold">E</text>
 <line x1="154" y1="123" x2="445" y2="123" stroke="#4488dd" stroke-width="2.5" marker-end="url(#arrB)"/>
-<text x="300" y="113" text-anchor="middle" font-family="monospace" font-size="15" fill="#88bbff">g</text>
+<text x="300" y="113" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="15" fill="#2255cc">g</text>
 <line x1="88" y1="148" x2="266" y2="285" stroke="#cc4444" stroke-width="2.5" marker-end="url(#arrR)"/>
-<text x="152" y="224" text-anchor="middle" font-family="monospace" font-size="15" fill="#ff8888">h</text>
+<text x="152" y="224" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="15" fill="#cc4444">h</text>
 <line x1="508" y1="148" x2="350" y2="285" stroke="#cc7700" stroke-width="2.5" stroke-dasharray="8,4" marker-end="url(#arrO)"/>
-<text x="448" y="222" text-anchor="middle" font-family="monospace" font-size="13" fill="#ffaa44">Lan g h</text>
+<text x="448" y="222" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="13" fill="#cc7700">Lan g h</text>
 <line x1="492" y1="148" x2="342" y2="283" stroke="#884499" stroke-width="1.8" stroke-dasharray="4,3" marker-end="url(#arrP)"/>
-<text x="449" y="248" text-anchor="middle" font-family="monospace" font-size="13" fill="#bb66ee">f</text>
+<text x="449" y="248" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="13" fill="#884499">f</text>
 <path d="M 368 210 Q 408 198 428 210" stroke="#ccaa00" stroke-width="1.8" fill="none" marker-end="url(#arrY)"/>
-<text x="394" y="196" text-anchor="middle" font-family="monospace" font-size="13" fill="#ffdd44">&#946; (&#1077;&#1076;&#1080;&#1085;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;)</text>
-<rect x="30" y="205" width="210" height="62" rx="6" fill="#0a1a3a" stroke="#446688" stroke-width="1.2"/>
-<text x="135" y="225" text-anchor="middle" font-family="monospace" font-size="11" fill="#aaccee">&#1091;&#1085;&#1080;&#1074;&#1077;&#1088;&#1089;&#1072;&#1083;&#1100;&#1085;&#1086;&#1077; &#1089;&#1074;&#1086;&#1081;&#1089;&#1090;&#1074;&#1086;:</text>
-<text x="135" y="241" text-anchor="middle" font-family="monospace" font-size="11" fill="#ffaa44">Nat(h,f&#183;g) &#8773; Nat(Lan g h, f)</text>
-<text x="135" y="257" text-anchor="middle" font-family="monospace" font-size="10" fill="#6688aa">&#1077;&#1076;&#1080;&#1085;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086; &#1086;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1103;&#1077;&#1090; Lan g h</text>
-<rect x="340" y="205" width="232" height="46" rx="6" fill="#2a1a0a" stroke="#664422" stroke-width="1.2"/>
-<text x="456" y="224" text-anchor="middle" font-family="monospace" font-size="11" fill="#ffd088">data Lan g h a =</text>
-<text x="456" y="240" text-anchor="middle" font-family="monospace" font-size="11" fill="#ffbb66">forall b. Lan (g b-&gt;a) (h b)</text>
+<text x="394" y="196" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="13" fill="#886600">&#946; (unique)</text>
+<rect x="30" y="205" width="210" height="62" rx="6" fill="#dbeafe" stroke="#446688" stroke-width="1.2"/>
+<text x="135" y="225" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#1a3a5a">universal property:</text>
+<text x="135" y="241" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#cc7700">Nat(h,f&#183;g) &#8773; Nat(Lan g h, f)</text>
+<text x="135" y="257" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#334466">uniquely determines Lan g h</text>
+<rect x="340" y="205" width="232" height="46" rx="6" fill="#fef9c3" stroke="#aa8800" stroke-width="1.2"/>
+<text x="456" y="224" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#664400">data Lan g h a =</text>
+<text x="456" y="240" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#995500">forall b. Lan (g b-&gt;a) (h b)</text>
 </svg>

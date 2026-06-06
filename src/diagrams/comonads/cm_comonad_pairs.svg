@@ -1,44 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="260" font-family="monospace,'JetBrains Mono',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="260" font-family="monospace,Arial,sans-serif">
   <rect width="700" height="260" fill="#ffffff" rx="8"/>
-  <text x="350" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">Konkretnye dual&#39;nye pary: Monada vs Komonada</text>
+  <text x="350" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">Concrete Dual Pairs: Monad vs Comonad</text>
 
-  <!-- Zagolovki -->
-  <rect x="10" y="36" width="220" height="26" rx="4" fill="#172554"/>
-  <text x="120" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">MONADA</text>
-  <rect x="240" y="36" width="220" height="26" rx="4" fill="#172554"/>
-  <text x="350" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#059669">KOMONADA</text>
-  <rect x="470" y="36" width="220" height="26" rx="4" fill="#172554"/>
-  <text x="580" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#64748b">Otkuda</text>
+  <!-- Headers -->
+  <rect x="10" y="36" width="220" height="26" rx="4" fill="#dbeafe"/>
+  <text x="120" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e40af">MONAD</text>
+  <rect x="240" y="36" width="220" height="26" rx="4" fill="#d1fae5"/>
+  <text x="350" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#065f46">COMONAD</text>
+  <rect x="470" y="36" width="220" height="26" rx="4" fill="#f1f5f9"/>
+  <text x="580" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#334155">Source</text>
 
-  <!-- Stroki -->
+  <!-- Row 1: Maybe -->
   <rect x="10" y="68" width="220" height="28" rx="3" fill="#f1f5f9"/>
   <text x="120" y="85" text-anchor="middle" font-size="11" fill="#2563eb">Maybe</text>
   <rect x="240" y="68" width="220" height="28" rx="3" fill="#f1f5f9"/>
-  <text x="350" y="85" text-anchor="middle" font-size="10" fill="#64748b">net dual&#39;a (Maybe &#8775; kom.)</text>
+  <text x="350" y="85" text-anchor="middle" font-size="10" fill="#64748b">no dual (Maybe &#8775; com.)</text>
   <rect x="470" y="68" width="220" height="28" rx="3" fill="#f1f5f9"/>
-  <text x="580" y="85" text-anchor="middle" font-size="9" fill="#64748b">net chistogo dual&#39;a</text>
+  <text x="580" y="85" text-anchor="middle" font-size="9" fill="#64748b">no clean dual</text>
 
-  <rect x="10" y="100" width="220" height="28" rx="3" fill="#172554"/>
+  <!-- Row 2: Either -->
+  <rect x="10" y="100" width="220" height="28" rx="3" fill="#e0f2fe"/>
   <text x="120" y="117" text-anchor="middle" font-size="11" fill="#2563eb">Either e</text>
-  <rect x="240" y="100" width="220" height="28" rx="3" fill="#172554"/>
-  <text x="350" y="117" text-anchor="middle" font-size="10" fill="#64748b">net dual&#39;a</text>
-  <rect x="470" y="100" width="220" height="28" rx="3" fill="#172554"/>
-  <text x="580" y="117" text-anchor="middle" font-size="9" fill="#64748b">net chistogo dual&#39;a</text>
+  <rect x="240" y="100" width="220" height="28" rx="3" fill="#e0f2fe"/>
+  <text x="350" y="117" text-anchor="middle" font-size="10" fill="#64748b">no dual</text>
+  <rect x="470" y="100" width="220" height="28" rx="3" fill="#e0f2fe"/>
+  <text x="580" y="117" text-anchor="middle" font-size="9" fill="#64748b">no clean dual</text>
 
+  <!-- Row 3: List -->
   <rect x="10" y="132" width="220" height="28" rx="3" fill="#f1f5f9"/>
   <text x="120" y="149" text-anchor="middle" font-size="11" fill="#2563eb">[] (List)</text>
   <rect x="240" y="132" width="220" height="28" rx="3" fill="#f1f5f9"/>
   <text x="350" y="149" text-anchor="middle" font-size="11" fill="#059669">NonEmpty*</text>
   <rect x="470" y="132" width="220" height="28" rx="3" fill="#f1f5f9"/>
-  <text x="580" y="149" text-anchor="middle" font-size="9" fill="#64748b">chastichno (Stream)</text>
+  <text x="580" y="149" text-anchor="middle" font-size="9" fill="#64748b">partial (Stream)</text>
 
-  <rect x="10" y="164" width="220" height="28" rx="3" fill="#172554"/>
+  <!-- Row 4: State / Store -->
+  <rect x="10" y="164" width="220" height="28" rx="3" fill="#e0f2fe"/>
   <text x="120" y="181" text-anchor="middle" font-size="11" fill="#2563eb">State s</text>
-  <rect x="240" y="164" width="220" height="28" rx="3" fill="#172554"/>
+  <rect x="240" y="164" width="220" height="28" rx="3" fill="#e0f2fe"/>
   <text x="350" y="181" text-anchor="middle" font-size="11" fill="#059669">Store s</text>
-  <rect x="470" y="164" width="220" height="28" rx="3" fill="#172554"/>
+  <rect x="470" y="164" width="220" height="28" rx="3" fill="#e0f2fe"/>
   <text x="580" y="181" text-anchor="middle" font-size="9" fill="#64748b">(-&gt;s) &#8868; (s-&gt;)</text>
 
+  <!-- Row 5: Reader / Env -->
   <rect x="10" y="196" width="220" height="28" rx="3" fill="#f1f5f9"/>
   <text x="120" y="213" text-anchor="middle" font-size="11" fill="#2563eb">Reader r</text>
   <rect x="240" y="196" width="220" height="28" rx="3" fill="#f1f5f9"/>
@@ -46,10 +50,11 @@
   <rect x="470" y="196" width="220" height="28" rx="3" fill="#f1f5f9"/>
   <text x="580" y="213" text-anchor="middle" font-size="9" fill="#64748b">&#916; &#8868; &#928; (diagonal-produced)</text>
 
-  <rect x="10" y="228" width="220" height="26" rx="3" fill="#172554"/>
+  <!-- Row 6: Writer / Traced -->
+  <rect x="10" y="228" width="220" height="26" rx="3" fill="#e0f2fe"/>
   <text x="120" y="244" text-anchor="middle" font-size="11" fill="#2563eb">Writer w</text>
-  <rect x="240" y="228" width="220" height="26" rx="3" fill="#172554"/>
+  <rect x="240" y="228" width="220" height="26" rx="3" fill="#e0f2fe"/>
   <text x="350" y="244" text-anchor="middle" font-size="11" fill="#059669">Traced w</text>
-  <rect x="470" y="228" width="220" height="26" rx="3" fill="#172554"/>
-  <text x="580" y="244" text-anchor="middle" font-size="9" fill="#64748b">w -> a (Monoid w)</text>
+  <rect x="470" y="228" width="220" height="26" rx="3" fill="#e0f2fe"/>
+  <text x="580" y="244" text-anchor="middle" font-size="9" fill="#64748b">w -&gt; a (Monoid w)</text>
 </svg>

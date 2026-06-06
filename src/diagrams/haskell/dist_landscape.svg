@@ -1,126 +1,126 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
   <defs>
     <style>
-      text { font-family: 'Courier New', monospace; }
-      .title { font-size: 22px; fill: #e0e0e0; font-weight: bold; }
-      .label { font-size: 13px; fill: #b0b0b0; }
-      .sublabel { font-size: 11px; fill: #888; }
-      .arrow { stroke: #666; stroke-width: 1.5; fill: none; marker-end: url(#arr); }
-      .section { font-size: 11px; fill: #aaa; }
+      text { font-family: monospace,Arial,sans-serif; }
+      .title { font-size: 22px; fill: #2d4a6e; font-weight: bold; }
+      .label { font-size: 13px; fill: #374151; }
+      .sublabel { font-size: 11px; fill: #6b7280; }
+      .arrow { stroke: #9ca3af; stroke-width: 1.5; fill: none; marker-end: url(#arr); }
+      .section { font-size: 11px; fill: #9ca3af; }
     </style>
     <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L8,3 z" fill="#666"/>
+      <path d="M0,0 L0,6 L8,3 z" fill="#9ca3af"/>
     </marker>
   </defs>
   <!-- Background -->
   <rect width="900" height="560" fill="#ffffff"/>
   <!-- Title -->
-  <text x="450" y="38" text-anchor="middle" class="title">&#1044;&#1080;&#1089;&#1090;&#1088;&#1080;&#1073;&#1091;&#1090;&#1080;&#1074;&#1085;&#1099;&#1077; &#1074;&#1099;&#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1080;&#1103; &#1074; Haskell: &#1082;&#1072;&#1090;&#1077;&#1075;&#1086;&#1088;&#1085;&#1099;&#1081; &#1074;&#1079;&#1075;&#1083;&#1103;&#1076;</text>
+  <text x="450" y="38" text-anchor="middle" class="title">Distributed Computing in Haskell: Categorical View</text>
 
   <!-- Layer: Math foundations -->
-  <text x="30" y="75" class="section" fill="#888">&#1052;&#1072;&#1090;&#1077;&#1084;&#1072;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1077; &#1086;&#1089;&#1085;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103;</text>
-  <line x1="30" y1="80" x2="870" y2="80" stroke="#333" stroke-width="1"/>
+  <text x="30" y="75" class="section">Mathematical Foundations</text>
+  <line x1="30" y1="80" x2="870" y2="80" stroke="#e5e7eb" stroke-width="1"/>
 
   <!-- Pi-calculus box -->
-  <rect x="30" y="90" width="190" height="80" rx="10" fill="#1a2744" stroke="#4477cc" stroke-width="2"/>
-  <text x="125" y="115" text-anchor="middle" class="label" fill="#6699ee">&#928;-&#1080;&#1089;&#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1080;&#1077;</text>
-  <text x="125" y="133" text-anchor="middle" class="sublabel">P | Q  &#8212; &#1087;&#1072;&#1088;&#1072;&#1083;&#1083;&#1077;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1100;</text>
-  <text x="125" y="149" text-anchor="middle" class="sublabel">&#957;x.P  &#8212; &#1085;&#1086;&#1074;&#1099;&#1081; &#1082;&#1072;&#1085;&#1072;&#1083;</text>
-  <text x="125" y="163" text-anchor="middle" class="sublabel">x(y).P  &#8212; &#1087;&#1088;&#1080;&#1077;&#1084;</text>
+  <rect x="30" y="90" width="190" height="80" rx="10" fill="#eef4ff" stroke="#6699ee" stroke-width="2"/>
+  <text x="125" y="115" text-anchor="middle" class="label" fill="#2a50a0">&#928;-Calculus</text>
+  <text x="125" y="133" text-anchor="middle" class="sublabel">P | Q  &#8212; parallelism</text>
+  <text x="125" y="149" text-anchor="middle" class="sublabel">&#957;x.P  &#8212; new channel</text>
+  <text x="125" y="163" text-anchor="middle" class="sublabel">x(y).P  &#8212; receive</text>
 
   <!-- Category of processes -->
-  <rect x="250" y="90" width="190" height="80" rx="10" fill="#1a2744" stroke="#4477cc" stroke-width="2"/>
-  <text x="345" y="115" text-anchor="middle" class="label" fill="#6699ee">&#1050;&#1072;&#1090;&#1077;&#1075;&#1086;&#1088;&#1080;&#1103; Proc</text>
-  <text x="345" y="133" text-anchor="middle" class="sublabel">&#1054;&#1073;&#1098;&#1077;&#1082;&#1090;&#1099;: &#1090;&#1080;&#1087;&#1099; &#1082;&#1072;&#1085;&#1072;&#1083;&#1086;&#1074;</text>
-  <text x="345" y="149" text-anchor="middle" class="sublabel">&#1052;&#1086;&#1088;&#1092;&#1080;&#1079;&#1084;&#1099;: &#1087;&#1088;&#1086;&#1094;&#1077;&#1089;&#1089;&#1099;</text>
-  <text x="345" y="163" text-anchor="middle" class="sublabel">&#1058;&#1077;&#1085;&#1079;&#1086;&#1088;: P &#8855; Q  =  P | Q</text>
+  <rect x="250" y="90" width="190" height="80" rx="10" fill="#eef4ff" stroke="#6699ee" stroke-width="2"/>
+  <text x="345" y="115" text-anchor="middle" class="label" fill="#2a50a0">Category Proc</text>
+  <text x="345" y="133" text-anchor="middle" class="sublabel">Objects: channel types</text>
+  <text x="345" y="149" text-anchor="middle" class="sublabel">Morphisms: processes</text>
+  <text x="345" y="163" text-anchor="middle" class="sublabel">Tensor: P &#8855; Q  =  P | Q</text>
 
   <!-- CRDT / Semilattice -->
-  <rect x="470" y="90" width="190" height="80" rx="10" fill="#1a2744" stroke="#4477cc" stroke-width="2"/>
-  <text x="565" y="115" text-anchor="middle" class="label" fill="#6699ee">CRDT / &#1087;&#1086;&#1083;&#1091;&#1088;&#1077;&#1096;&#1105;&#1090;&#1082;&#1072;</text>
-  <text x="565" y="133" text-anchor="middle" class="sublabel">a &#8744; b = b &#8744; a  (&#1082;&#1086;&#1084;&#1084;&#1091;&#1090;.)</text>
-  <text x="565" y="149" text-anchor="middle" class="sublabel">a &#8744; a = a  (&#1080;&#1076;&#1077;&#1084;&#1087;.)</text>
-  <text x="565" y="163" text-anchor="middle" class="sublabel">&#1052;&#1086;&#1085;&#1086;&#1090;&#1086;&#1085;&#1085;&#1099;&#1081; &#1084;&#1086;&#1085;&#1086;&#1080;&#1076;</text>
+  <rect x="470" y="90" width="190" height="80" rx="10" fill="#eef4ff" stroke="#6699ee" stroke-width="2"/>
+  <text x="565" y="115" text-anchor="middle" class="label" fill="#2a50a0">CRDT / Semilattice</text>
+  <text x="565" y="133" text-anchor="middle" class="sublabel">a &#8744; b = b &#8744; a  (commut.)</text>
+  <text x="565" y="149" text-anchor="middle" class="sublabel">a &#8744; a = a  (idemp.)</text>
+  <text x="565" y="163" text-anchor="middle" class="sublabel">Monotone monoid</text>
 
   <!-- Session types -->
-  <rect x="690" y="90" width="190" height="80" rx="10" fill="#1a2744" stroke="#9966cc" stroke-width="2"/>
-  <text x="785" y="115" text-anchor="middle" class="label" fill="#cc99ff">Session Types</text>
-  <text x="785" y="133" text-anchor="middle" class="sublabel">!T.S  &#8212; &#1086;&#1090;&#1087;&#1088;&#1072;&#1074;&#1080;&#1090;&#1100; T</text>
-  <text x="785" y="149" text-anchor="middle" class="sublabel">?T.S  &#8212; &#1087;&#1086;&#1083;&#1091;&#1095;&#1080;&#1090;&#1100; T</text>
-  <text x="785" y="163" text-anchor="middle" class="sublabel">&#1044;&#1074;&#1086;&#1081;&#1089;&#1090;&#1074;&#1077;&#1085;&#1085;&#1086;&#1089;&#1090;&#1100; &#1074; &#1090;&#1080;&#1087;&#1072;&#1093;</text>
+  <rect x="690" y="90" width="190" height="80" rx="10" fill="#f5f0ff" stroke="#9966cc" stroke-width="2"/>
+  <text x="785" y="115" text-anchor="middle" class="label" fill="#6b21a8">Session Types</text>
+  <text x="785" y="133" text-anchor="middle" class="sublabel">!T.S  &#8212; send T</text>
+  <text x="785" y="149" text-anchor="middle" class="sublabel">?T.S  &#8212; receive T</text>
+  <text x="785" y="163" text-anchor="middle" class="sublabel">Duality in types</text>
 
   <!-- Layer: Cloud Haskell -->
-  <text x="30" y="200" class="section" fill="#888">Cloud Haskell: Process &#1084;&#1086;&#1085;&#1072;&#1076;&#1072;</text>
-  <line x1="30" y1="205" x2="870" y2="205" stroke="#333" stroke-width="1"/>
+  <text x="30" y="200" class="section">Cloud Haskell: Process Monad</text>
+  <line x1="30" y1="205" x2="870" y2="205" stroke="#e5e7eb" stroke-width="1"/>
 
   <!-- Process monad -->
-  <rect x="30" y="215" width="250" height="100" rx="10" fill="#1a3322" stroke="#44aa66" stroke-width="2"/>
-  <text x="155" y="240" text-anchor="middle" class="label" fill="#66cc88">Process &#1084;&#1086;&#1085;&#1072;&#1076;&#1072;</text>
-  <text font-size="9" x="155" y="258" text-anchor="middle" class="sublabel">spawn :: Process()->Process ProcessId</text>
-  <text font-size="9" x="155" y="274" text-anchor="middle" class="sublabel">send :: Serializable a=>PId->a->Process()</text>
-  <text font-size="9" x="155" y="290" text-anchor="middle" class="sublabel">expect :: Serializable a => Process a</text>
-  <text x="155" y="306" text-anchor="middle" class="sublabel">&#1040;&#1082;&#1090;&#1086;&#1088;&#1085;&#1072;&#1103; &#1084;&#1086;&#1076;&#1077;&#1083;&#1100;: &#1087;&#1086;&#1095;&#1090;&#1086;&#1074;&#1099;&#1077; &#1103;&#1097;&#1080;&#1082;&#1080;</text>
+  <rect x="30" y="215" width="250" height="100" rx="10" fill="#f0faf0" stroke="#44aa66" stroke-width="2"/>
+  <text x="155" y="240" text-anchor="middle" class="label" fill="#166534">Process Monad</text>
+  <text font-size="9" x="155" y="258" text-anchor="middle" class="sublabel">spawn :: Process()-&gt;Process ProcessId</text>
+  <text font-size="9" x="155" y="274" text-anchor="middle" class="sublabel">send :: Serializable a=&gt;PId-&gt;a-&gt;Process()</text>
+  <text font-size="9" x="155" y="290" text-anchor="middle" class="sublabel">expect :: Serializable a =&gt; Process a</text>
+  <text x="155" y="306" text-anchor="middle" class="sublabel">Actor model: mailboxes</text>
 
   <!-- Closure / Serializable -->
-  <rect x="310" y="215" width="250" height="100" rx="10" fill="#1a3322" stroke="#44aa66" stroke-width="2"/>
-  <text x="435" y="240" text-anchor="middle" class="label" fill="#66cc88">Closure &amp; Serializable</text>
-  <text x="435" y="258" text-anchor="middle" class="sublabel">Closure a: &#1091;&#1087;&#1072;&#1082;&#1086;&#1074;&#1072;&#1085;&#1085;&#1099;&#1081; &#1090;&#1080;&#1087; + &#1076;&#1072;&#1085;&#1085;&#1099;&#1077;</text>
+  <rect x="310" y="215" width="250" height="100" rx="10" fill="#f0faf0" stroke="#44aa66" stroke-width="2"/>
+  <text x="435" y="240" text-anchor="middle" class="label" fill="#166534">Closure &amp; Serializable</text>
+  <text x="435" y="258" text-anchor="middle" class="sublabel">Closure a: wrapped type + data</text>
   <text x="435" y="274" text-anchor="middle" class="sublabel">$(mkClosure 'f) :: Closure (Process ())</text>
-  <text x="435" y="290" text-anchor="middle" class="sublabel">Static: &#1089;&#1089;&#1099;&#1083;&#1082;&#1072; &#1085;&#1072; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102; &#1073;&#1077;&#1079; &#1079;&#1072;&#1093;&#1074;&#1072;&#1090;&#1072;</text>
-  <text x="435" y="306" text-anchor="middle" class="sublabel">RemoteTable: &#1088;&#1077;&#1077;&#1089;&#1090;&#1088; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1081;</text>
+  <text x="435" y="290" text-anchor="middle" class="sublabel">Static: ref to fn without capture</text>
+  <text x="435" y="306" text-anchor="middle" class="sublabel">RemoteTable: function registry</text>
 
   <!-- Topology -->
-  <rect x="590" y="215" width="280" height="100" rx="10" fill="#1a3322" stroke="#44aa66" stroke-width="2"/>
-  <text x="730" y="240" text-anchor="middle" class="label" fill="#66cc88">&#1058;&#1086;&#1087;&#1086;&#1083;&#1086;&#1075;&#1080;&#1103; &#1091;&#1079;&#1083;&#1086;&#1074;</text>
+  <rect x="590" y="215" width="280" height="100" rx="10" fill="#f0faf0" stroke="#44aa66" stroke-width="2"/>
+  <text x="730" y="240" text-anchor="middle" class="label" fill="#166534">Node Topology</text>
   <text x="730" y="258" text-anchor="middle" class="sublabel">Backend: TCP / InMemory / Custom</text>
   <text x="730" y="274" text-anchor="middle" class="sublabel">NodeId = hostport + TCP identifier</text>
   <text x="730" y="290" text-anchor="middle" class="sublabel">whereisRemoteAsync / nsendRemote</text>
-  <text x="730" y="306" text-anchor="middle" class="sublabel">&#1060;&#1091;&#1085;&#1082;&#1090;&#1086;&#1088;: Process -&gt; IO (&#1089;&#1077;&#1084;&#1072;&#1085;&#1090;&#1080;&#1082;&#1072;)</text>
+  <text x="730" y="306" text-anchor="middle" class="sublabel">Functor: Process -&gt; IO (semantics)</text>
 
   <!-- Arrows layer: math to cloudh -->
   <line x1="125" y1="170" x2="125" y2="213" class="arrow"/>
   <line x1="345" y1="170" x2="345" y2="213" class="arrow"/>
 
   <!-- Layer: Consistency models -->
-  <text x="30" y="345" class="section" fill="#888">&#1052;&#1086;&#1076;&#1077;&#1083;&#1080; &#1089;&#1086;&#1075;&#1083;&#1072;&#1089;&#1086;&#1074;&#1072;&#1085;&#1085;&#1086;&#1089;&#1090;&#1080;</text>
-  <line x1="30" y1="350" x2="870" y2="350" stroke="#333" stroke-width="1"/>
+  <text x="30" y="345" class="section">Consistency Models</text>
+  <line x1="30" y1="350" x2="870" y2="350" stroke="#e5e7eb" stroke-width="1"/>
 
   <!-- Strong consistency -->
-  <rect x="30" y="360" width="190" height="70" rx="8" fill="#2a1a1a" stroke="#cc4444" stroke-width="2"/>
-  <text x="125" y="385" text-anchor="middle" class="label" fill="#ee6666">&#1057;&#1080;&#1083;&#1100;&#1085;&#1072;&#1103;</text>
+  <rect x="30" y="360" width="190" height="70" rx="8" fill="#fff0f0" stroke="#cc4444" stroke-width="2"/>
+  <text x="125" y="385" text-anchor="middle" class="label" fill="#991b1b">Strong</text>
   <text x="125" y="403" text-anchor="middle" class="sublabel">2PC, Paxos, Raft</text>
-  <text x="125" y="419" text-anchor="middle" class="sublabel">STM &#1074;&#1085;&#1091;&#1090;&#1088;&#1080; &#1091;&#1079;&#1083;&#1072;</text>
+  <text x="125" y="419" text-anchor="middle" class="sublabel">STM within a node</text>
 
   <!-- Eventual consistency -->
-  <rect x="250" y="360" width="190" height="70" rx="8" fill="#2a1a2a" stroke="#aa44cc" stroke-width="2"/>
-  <text x="345" y="385" text-anchor="middle" class="label" fill="#cc66ee">&#1053;&#1077;&#1075;&#1086;&#1090;&#1086;&#1074;&#1072;&#1103;</text>
+  <rect x="250" y="360" width="190" height="70" rx="8" fill="#fdf0ff" stroke="#aa44cc" stroke-width="2"/>
+  <text x="345" y="385" text-anchor="middle" class="label" fill="#6b21a8">Eventual</text>
   <text x="345" y="403" text-anchor="middle" class="sublabel">Eventual consistency</text>
   <text x="345" y="419" text-anchor="middle" class="sublabel">CRDT: G-Set, LWW, PN-Counter</text>
 
   <!-- CAP theorem -->
-  <rect x="470" y="360" width="190" height="70" rx="8" fill="#1a1a2a" stroke="#4466cc" stroke-width="2"/>
-  <text x="565" y="385" text-anchor="middle" class="label" fill="#6688ee">&#1058;&#1077;&#1086;&#1088;&#1077;&#1084;&#1072; CAP</text>
-  <text x="565" y="403" text-anchor="middle" class="sublabel">C + A + P: &#1074;&#1099;&#1073;&#1077;&#1088;&#1080; 2 &#1080;&#1079; 3</text>
+  <rect x="470" y="360" width="190" height="70" rx="8" fill="#eef4ff" stroke="#4466cc" stroke-width="2"/>
+  <text x="565" y="385" text-anchor="middle" class="label" fill="#1e3a8a">CAP Theorem</text>
+  <text x="565" y="403" text-anchor="middle" class="sublabel">C + A + P: choose 2 of 3</text>
   <text x="565" y="419" text-anchor="middle" class="sublabel">AP (CRDT) vs CP (Raft)</text>
 
   <!-- Pipes / Conduit -->
-  <rect x="690" y="360" width="190" height="70" rx="8" fill="#1a2a1a" stroke="#44cc44" stroke-width="2"/>
-  <text x="785" y="385" text-anchor="middle" class="label" fill="#66ee66">Pipes / Conduit</text>
-  <text x="785" y="403" text-anchor="middle" class="sublabel">&#1055;&#1086;&#1090;&#1086;&#1082;&#1080; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093; = &#1089;&#1090;&#1088;&#1077;&#1083;&#1082;&#1080;</text>
+  <rect x="690" y="360" width="190" height="70" rx="8" fill="#f0faf0" stroke="#44cc44" stroke-width="2"/>
+  <text x="785" y="385" text-anchor="middle" class="label" fill="#166534">Pipes / Conduit</text>
+  <text x="785" y="403" text-anchor="middle" class="sublabel">Data streams = arrows</text>
   <text x="785" y="419" text-anchor="middle" class="sublabel">await / yield / runEffect</text>
 
   <!-- Layer: Category -->
-  <text x="30" y="460" class="section" fill="#888">&#1050;&#1072;&#1090;&#1077;&#1075;&#1086;&#1088;&#1085;&#1099;&#1081; &#1074;&#1079;&#1075;&#1083;&#1103;&#1076;</text>
-  <line x1="30" y1="465" x2="870" y2="465" stroke="#333" stroke-width="1"/>
+  <text x="30" y="460" class="section">Categorical View</text>
+  <line x1="30" y1="465" x2="870" y2="465" stroke="#e5e7eb" stroke-width="1"/>
 
-  <rect x="30" y="475" width="380" height="60" rx="8" fill="#222233" stroke="#6666aa" stroke-width="1.5"/>
-  <text x="220" y="500" text-anchor="middle" class="label" fill="#9999cc">Process &#1084;&#1086;&#1085;&#1072;&#1076;&#1072; = &#1101;&#1092;&#1092;&#1077;&#1082;&#1090; &#1074; &#1082;&#1072;&#1090;&#1077;&#1075;&#1086;&#1088;&#1080;&#1080; &#1074;&#1099;&#1095;&#1080;&#1089;&#1083;&#1077;&#1085;&#1080;&#1081;</text>
-  <text x="220" y="520" text-anchor="middle" class="sublabel">send/receive = &#1084;&#1086;&#1088;&#1092;&#1080;&#1079;&#1084;&#1099; &#1095;&#1077;&#1088;&#1077;&#1079; &#1082;&#1072;&#1085;&#1072;&#1083;&#1099; (&#1090;&#1077;&#1085;&#1079;&#1086;&#1088;&#1085;&#1072;&#1103; &#1082;&#1072;&#1090;&#1077;&#1075;&#1086;&#1088;&#1080;&#1103;)</text>
+  <rect x="30" y="475" width="380" height="60" rx="8" fill="#f5f0ff" stroke="#8b8bcc" stroke-width="1.5"/>
+  <text x="220" y="500" text-anchor="middle" class="label" fill="#4c4c99">Process monad = effect in category of computations</text>
+  <text x="220" y="520" text-anchor="middle" class="sublabel">send/receive = morphisms through channels (tensor category)</text>
 
-  <rect x="450" y="475" width="420" height="60" rx="8" fill="#222233" stroke="#6666aa" stroke-width="1.5"/>
-  <text x="660" y="500" text-anchor="middle" class="label" fill="#9999cc">CRDT = &#1082;&#1086;&#1084;&#1084;&#1091;&#1090;&#1072;&#1090;&#1080;&#1074;&#1085;&#1099;&#1081; &#1084;&#1086;&#1085;&#1086;&#1080;&#1076; &#1074; &#1082;&#1072;&#1090;&#1077;&#1075;&#1086;&#1088;&#1080;&#1080; Join-Semilattice</text>
-  <text x="660" y="520" text-anchor="middle" class="sublabel">merge = join (&#1085;&#1072;&#1080;&#1084;&#1077;&#1085;&#1100;&#1096;&#1072;&#1103; &#1074;&#1077;&#1088;&#1093;&#1085;&#1103;&#1103; &#1075;&#1088;&#1072;&#1085;&#1100;), &#1074;&#1089;&#1077; &#1085;&#1086;&#1076;&#1099; &#1089;&#1093;&#1086;&#1076;&#1103;&#1090;&#1089;&#1103;</text>
+  <rect x="450" y="475" width="420" height="60" rx="8" fill="#f5f0ff" stroke="#8b8bcc" stroke-width="1.5"/>
+  <text x="660" y="500" text-anchor="middle" class="label" fill="#4c4c99">CRDT = commutative monoid in Join-Semilattice category</text>
+  <text x="660" y="520" text-anchor="middle" class="sublabel">merge = join (least upper bound), all nodes converge</text>
 
   <!-- Footer -->
-  <text x="450" y="550" text-anchor="middle" class="sublabel" fill="#555">&#1044;&#1080;&#1089;&#1090;&#1088;&#1080;&#1073;&#1091;&#1090;&#1080;&#1074;&#1085;&#1099;&#1081; Haskell: Process &#1084;&#1086;&#1085;&#1072;&#1076;&#1072; + CRDT + Cloud Haskell</text>
+  <text x="450" y="550" text-anchor="middle" class="sublabel" fill="#9ca3af">Distributed Haskell: Process Monad + CRDT + Cloud Haskell</text>
 </svg>

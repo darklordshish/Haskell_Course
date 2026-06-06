@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="360" font-family="monospace,'JetBrains Mono',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="360" font-family="monospace,Arial,sans-serif">
   <rect width="680" height="360" fill="#ffffff" rx="10"/>
-  <text x="340" y="26" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">Ierarkhiya skhem rekursii</text>
-  <text x="340" y="44" text-anchor="middle" font-size="10" fill="#64748b">Kazhdaya posleduyushchaya skhema usilyaet predydushchuyu</text>
+  <text x="340" y="26" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">Recursion Schemes Hierarchy</text>
+  <text x="340" y="44" text-anchor="middle" font-size="10" fill="#64748b">Each subsequent scheme extends the previous</text>
 
   <!-- cata -->
-  <rect x="30" y="60" width="120" height="40" rx="5" fill="#172554" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="30" y="60" width="120" height="40" rx="5" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
   <text x="90" y="78" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">cata</text>
   <text x="90" y="93" text-anchor="middle" font-size="9" fill="#64748b">Algebra</text>
 
   <!-- para -->
-  <rect x="190" y="60" width="120" height="40" rx="5" fill="#172554" stroke="#059669" stroke-width="1.5"/>
+  <rect x="190" y="60" width="120" height="40" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
   <text x="250" y="78" text-anchor="middle" font-size="11" font-weight="bold" fill="#059669">para</text>
   <text x="250" y="93" text-anchor="middle" font-size="9" fill="#64748b">RAlgebra</text>
 
@@ -43,7 +43,7 @@
   <text x="480" y="248" text-anchor="middle" font-size="11" font-weight="bold" fill="#ea580c">chrono</text>
   <text x="480" y="263" text-anchor="middle" font-size="9" fill="#64748b">histo . futu</text>
 
-  <!-- Strelki -->
+  <!-- Arrows -->
   <line x1="150" y1="80" x2="188" y2="80" stroke="#cbd5e1" stroke-width="1.5" marker-end="url(#sarr)"/>
   <text x="170" y="73" text-anchor="middle" font-size="8" fill="#64748b">+ orig.</text>
 
@@ -61,11 +61,11 @@
 
   <line x1="415" y1="180" x2="440" y2="228" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4,3" marker-end="url(#sarr)"/>
 
-  <!-- Legenda -->
+  <!-- Legend -->
   <rect x="20" y="295" width="640" height="54" rx="5" fill="#f1f5f9" stroke="#cbd5e1"/>
-  <text x="340" y="314" text-anchor="middle" font-size="10" font-weight="bold" fill="#334155">Gylomorfi zm: hylo alg coalg = cata alg . ana coalg</text>
-  <text x="340" y="330" text-anchor="middle" font-size="9" fill="#64748b">(s optimizaciej: bez promezhutochnoj struktury)</text>
-  <text x="340" y="345" text-anchor="middle" font-size="9" fill="#64748b">Razdelyaet rekursiyu i logiku: cata razrushaet, ana stroit strukturu</text>
+  <text x="340" y="314" text-anchor="middle" font-size="10" font-weight="bold" fill="#334155">Hylomorphism: hylo alg coalg = cata alg . ana coalg</text>
+  <text x="340" y="330" text-anchor="middle" font-size="9" fill="#64748b">(optimised: no intermediate structure materialised)</text>
+  <text x="340" y="345" text-anchor="middle" font-size="9" fill="#64748b">Separates recursion from logic: cata tears down, ana builds up structure</text>
 
   <defs>
     <marker id="sarr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L5,3 L0,6 Z" fill="#cbd5e1"/></marker>

@@ -1,48 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" font-family="monospace,'JetBrains Mono',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" font-family="monospace,Arial,sans-serif">
   <rect width="720" height="480" fill="#ffffff" rx="10"/>
-  <text x="360" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#334155">Ierarkhiya monad v Haskell</text>
+  <text x="360" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#334155">Monad Hierarchy in Haskell</text>
 
-  <!-- Monad (vershina) -->
+  <!-- Monad (top) -->
   <rect x="270" y="45" width="180" height="44" rx="6" fill="#f1f5f9" stroke="#7c3aed" stroke-width="2"/>
   <text x="360" y="63" text-anchor="middle" font-size="12" font-weight="bold" fill="#7c3aed">Monad</text>
   <text x="360" y="80" text-anchor="middle" font-size="9" fill="#64748b">return, &gt;&gt;=, join, &gt;=&gt;</text>
 
-  <!-- Strelki ot Monad -->
+  <!-- Arrows from Monad -->
   <line x1="310" y1="89" x2="160" y2="128" stroke="#cbd5e1" stroke-width="1.5"/>
   <line x1="360" y1="89" x2="360" y2="128" stroke="#cbd5e1" stroke-width="1.5"/>
   <line x1="410" y1="89" x2="560" y2="128" stroke="#cbd5e1" stroke-width="1.5"/>
 
-  <!-- Uroveny 2: Maybe, Either, [] -->
+  <!-- Level 2: Maybe, Either, [] -->
   <rect x="80" y="128" width="150" height="44" rx="5" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5"/>
   <text x="155" y="147" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Maybe</text>
-  <text x="155" y="163" text-anchor="middle" font-size="9" fill="#64748b">1 + a (proval)</text>
+  <text x="155" y="163" text-anchor="middle" font-size="9" fill="#64748b">1 + a (failure)</text>
 
   <rect x="280" y="128" width="160" height="44" rx="5" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5"/>
   <text x="360" y="147" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Either e</text>
-  <text x="360" y="163" text-anchor="middle" font-size="9" fill="#64748b">e + a (s ob"yasneniem)</text>
+  <text x="360" y="163" text-anchor="middle" font-size="9" fill="#64748b">e + a (with info)</text>
 
   <rect x="490" y="128" width="140" height="44" rx="5" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5"/>
   <text x="560" y="147" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">[] (List)</text>
-  <text x="560" y="163" text-anchor="middle" font-size="9" fill="#64748b">P(a) (nedeterminizm)</text>
+  <text x="560" y="163" text-anchor="middle" font-size="9" fill="#64748b">P(a) (nondeterminism)</text>
 
-  <!-- Maybe -> isomorfno Either () a -->
+  <!-- Maybe isomorphic to Either () a -->
   <text x="155" y="188" text-anchor="middle" font-size="9" fill="#64748b">&#8773; Either () a</text>
 
-  <!-- Strelki ot Maybe k State/Reader/Writer -->
+  <!-- Arrows from Maybe to State/Reader/Writer -->
   <line x1="200" y1="172" x2="120" y2="248" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4,3"/>
   <line x1="360" y1="172" x2="360" y2="248" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4,3"/>
   <line x1="490" y1="172" x2="600" y2="248" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="4,3"/>
 
-  <!-- Uroveny 3: State, Reader, Writer -->
-  <rect x="35" y="248" width="145" height="44" rx="5" fill="#172554" stroke="#059669" stroke-width="1.5"/>
+  <!-- Level 3: State, Reader, Writer -->
+  <rect x="35" y="248" width="145" height="44" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
   <text x="112" y="265" text-anchor="middle" font-size="11" font-weight="bold" fill="#059669">State s</text>
   <text x="112" y="281" text-anchor="middle" font-size="9" fill="#64748b">s -&gt; (a, s)</text>
 
-  <rect x="285" y="248" width="150" height="44" rx="5" fill="#172554" stroke="#059669" stroke-width="1.5"/>
+  <rect x="285" y="248" width="150" height="44" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
   <text x="360" y="265" text-anchor="middle" font-size="11" font-weight="bold" fill="#059669">Reader r</text>
   <text x="360" y="281" text-anchor="middle" font-size="9" fill="#64748b">r -&gt; a</text>
 
-  <rect x="540" y="248" width="145" height="44" rx="5" fill="#172554" stroke="#059669" stroke-width="1.5"/>
+  <rect x="540" y="248" width="145" height="44" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
   <text x="612" y="265" text-anchor="middle" font-size="11" font-weight="bold" fill="#059669">Writer w</text>
   <text x="612" y="281" text-anchor="middle" font-size="9" fill="#64748b">(a, w)</text>
 
@@ -67,11 +67,11 @@
 
   <rect x="250" y="390" width="100" height="36" rx="4" fill="#f1f5f9" stroke="#ea580c" stroke-width="1"/>
   <text x="300" y="406" text-anchor="middle" font-size="10" font-weight="bold" fill="#ea580c">STM</text>
-  <text x="300" y="420" text-anchor="middle" font-size="8" fill="#64748b">Atom. transakts.</text>
+  <text x="300" y="420" text-anchor="middle" font-size="8" fill="#64748b">Atom. transact.</text>
 
   <rect x="370" y="390" width="100" height="36" rx="4" fill="#f1f5f9" stroke="#ea580c" stroke-width="1"/>
   <text x="420" y="406" text-anchor="middle" font-size="10" font-weight="bold" fill="#ea580c">Cont r</text>
-  <text x="420" y="420" text-anchor="middle" font-size="8" fill="#64748b">Prodolzheniya</text>
+  <text x="420" y="420" text-anchor="middle" font-size="8" fill="#64748b">Continuations</text>
 
   <rect x="490" y="390" width="100" height="36" rx="4" fill="#f1f5f9" stroke="#ea580c" stroke-width="1"/>
   <text x="540" y="406" text-anchor="middle" font-size="10" font-weight="bold" fill="#ea580c">Free f</text>
@@ -81,8 +81,8 @@
   <text x="655" y="406" text-anchor="middle" font-size="10" font-weight="bold" fill="#ea580c">Parser</text>
   <text x="655" y="420" text-anchor="middle" font-size="8" fill="#64748b">&#8773;StateT Maybe</text>
 
-  <!-- Legenda -->
+  <!-- Footer -->
   <rect x="20" y="445" width="680" height="28" rx="4" fill="#f1f5f9" stroke="#cbd5e1"/>
-  <text x="360" y="458" text-anchor="middle" font-size="9" fill="#64748b">Transformery monad: MaybeT, ExceptT, StateT, ReaderT, WriterT, ContT</text>
-  <text x="360" y="469" text-anchor="middle" font-size="9" fill="#64748b">pozvolyayut kombinirovat effekty v odnom steke</text>
+  <text x="360" y="458" text-anchor="middle" font-size="9" fill="#64748b">Monad transformers: lift effects through the stack</text>
+  <text x="360" y="469" text-anchor="middle" font-size="9" fill="#64748b">MaybeT, ExceptT, StateT, ReaderT, WriterT, ContT</text>
 </svg>

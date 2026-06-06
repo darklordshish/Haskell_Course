@@ -1,51 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="290" font-family="monospace,'JetBrains Mono',Arial,sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="290" font-family="monospace,Arial,sans-serif">
   <rect width="700" height="290" fill="#ffffff" rx="8"/>
-  <text x="350" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">Kogda kakuyu monadu vybrat?</text>
+  <text x="350" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">When to use which monad?</text>
 
-  <!-- Zagolovki -->
-  <rect x="10" y="36" width="380" height="26" rx="4" fill="#172554"/>
-  <text x="200" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Nuzhno...</text>
-  <rect x="400" y="36" width="290" height="26" rx="4" fill="#172554"/>
-  <text x="545" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Ispol&#39;zuj</text>
+  <!-- Headers -->
+  <rect x="10" y="36" width="380" height="26" rx="4" fill="#dbeafe"/>
+  <text x="200" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Need...</text>
+  <rect x="400" y="36" width="290" height="26" rx="4" fill="#dbeafe"/>
+  <text x="545" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Use</text>
 
-  <!-- Stroki -->
+  <!-- Rows -->
   <rect x="10" y="68" width="380" height="24" rx="3" fill="#f1f5f9"/>
-  <text x="20" y="84" font-size="10" fill="#334155">Bezopasnyj dostup / poisk</text>
+  <text x="20" y="84" font-size="10" fill="#334155">Safe access / lookup</text>
   <rect x="400" y="68" width="290" height="24" rx="3" fill="#f1f5f9"/>
   <text x="410" y="84" font-size="10" font-weight="bold" fill="#2563eb">Maybe</text>
 
-  <rect x="10" y="96" width="380" height="24" rx="3" fill="#172554"/>
-  <text x="20" y="112" font-size="10" fill="#334155">Obrabotka oshibok s diagnostikoj</text>
-  <rect x="400" y="96" width="290" height="24" rx="3" fill="#172554"/>
+  <rect x="10" y="96" width="380" height="24" rx="3" fill="#e0f2fe"/>
+  <text x="20" y="112" font-size="10" fill="#334155">Error handling with info</text>
+  <rect x="400" y="96" width="290" height="24" rx="3" fill="#e0f2fe"/>
   <text x="410" y="112" font-size="10" font-weight="bold" fill="#2563eb">Either e</text>
 
   <rect x="10" y="124" width="380" height="24" rx="3" fill="#f1f5f9"/>
-  <text x="20" y="140" font-size="10" fill="#334155">Perebor / kombinatorika</text>
+  <text x="20" y="140" font-size="10" fill="#334155">Backtracking / combinatorics</text>
   <rect x="400" y="124" width="290" height="24" rx="3" fill="#f1f5f9"/>
   <text x="410" y="140" font-size="10" font-weight="bold" fill="#2563eb">[] (List)</text>
 
-  <rect x="10" y="152" width="380" height="24" rx="3" fill="#172554"/>
-  <text x="20" y="168" font-size="10" fill="#334155">Pobochnye effekty / IO</text>
-  <rect x="400" y="152" width="290" height="24" rx="3" fill="#172554"/>
+  <rect x="10" y="152" width="380" height="24" rx="3" fill="#e0f2fe"/>
+  <text x="20" y="168" font-size="10" fill="#334155">Side effects / IO</text>
+  <rect x="400" y="152" width="290" height="24" rx="3" fill="#e0f2fe"/>
   <text x="410" y="168" font-size="10" font-weight="bold" fill="#2563eb">IO</text>
 
   <rect x="10" y="180" width="380" height="24" rx="3" fill="#f1f5f9"/>
-  <text x="20" y="196" font-size="10" fill="#334155">Izmenyaemoe sostoyanie (chistoe)</text>
+  <text x="20" y="196" font-size="10" fill="#334155">Mutable state (pure)</text>
   <rect x="400" y="180" width="290" height="24" rx="3" fill="#f1f5f9"/>
   <text x="410" y="196" font-size="10" font-weight="bold" fill="#059669">State s</text>
 
-  <rect x="10" y="208" width="380" height="24" rx="3" fill="#172554"/>
-  <text x="20" y="224" font-size="10" fill="#334155">Konfiguraciya / okruzhenie</text>
-  <rect x="400" y="208" width="290" height="24" rx="3" fill="#172554"/>
+  <rect x="10" y="208" width="380" height="24" rx="3" fill="#e0f2fe"/>
+  <text x="20" y="224" font-size="10" fill="#334155">Configuration / environment</text>
+  <rect x="400" y="208" width="290" height="24" rx="3" fill="#e0f2fe"/>
   <text x="410" y="224" font-size="10" font-weight="bold" fill="#059669">Reader r</text>
 
   <rect x="10" y="236" width="380" height="24" rx="3" fill="#f1f5f9"/>
-  <text x="20" y="252" font-size="10" fill="#334155">Nakoplenie loga / metrik</text>
+  <text x="20" y="252" font-size="10" fill="#334155">Log / metrics accumulation</text>
   <rect x="400" y="236" width="290" height="24" rx="3" fill="#f1f5f9"/>
   <text x="410" y="252" font-size="10" font-weight="bold" fill="#059669">Writer w</text>
 
-  <rect x="10" y="264" width="380" height="20" rx="3" fill="#172554"/>
-  <text x="20" y="278" font-size="10" fill="#334155">Vsyo srazu: Read + Write + State</text>
-  <rect x="400" y="264" width="290" height="20" rx="3" fill="#172554"/>
+  <rect x="10" y="264" width="380" height="20" rx="3" fill="#e0f2fe"/>
+  <text x="20" y="278" font-size="10" fill="#334155">All at once: Read + Write + State</text>
+  <rect x="400" y="264" width="290" height="20" rx="3" fill="#e0f2fe"/>
   <text x="410" y="278" font-size="10" font-weight="bold" fill="#b45309">RWS</text>
 </svg>
