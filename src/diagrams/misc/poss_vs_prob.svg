@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="420" viewBox="0 0 860 420"
+     font-family="monospace,Arial,sans-serif">
+  <rect width="860" height="420" fill="#ffffff" rx="8"/>
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="430" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#0f172a">
+    Same weights w_n = 1/p^n  (p=2): Probability vs Possibility
+  </text>
+
+  <!-- ===== LEFT: Probability ===== -->
+  <text x="195" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#2563eb">Probability theory</text>
+  <rect x="20" y="60" width="360" height="36" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1"/>
+  <text x="200" y="76" text-anchor="middle" font-size="11" fill="#1e40af">Normalize by SUM:  sum(w_n) = p/(p-1) = 2</text>
+  <text x="200" y="90" text-anchor="middle" font-size="11" fill="#1e40af">p(n) = w_n / sum = (p-1)/p^(n+1)   [geometric]</text>
+
+  <!-- Bars p=2: p(0)=0.5, p(1)=0.25, p(2)=0.125, p(3)=0.0625 -->
+  <text x="55"  y="118" text-anchor="middle" font-size="10" fill="#64748b">n=0</text>
+  <text x="115" y="118" text-anchor="middle" font-size="10" fill="#64748b">n=1</text>
+  <text x="175" y="118" text-anchor="middle" font-size="10" fill="#64748b">n=2</text>
+  <text x="235" y="118" text-anchor="middle" font-size="10" fill="#64748b">n=3</text>
+  <text x="295" y="118" text-anchor="middle" font-size="10" fill="#64748b">n=4</text>
+  <text x="340" y="118" text-anchor="middle" font-size="10" fill="#64748b">...</text>
+
+  <!-- Bar heights scaled: max=0.5 -> 120px -->
+  <rect x="25"  y="128" width="55" height="120" rx="3" fill="#3b82f6"/><!-- 0.5 -->
+  <rect x="85"  y="188" width="55" height="60"  rx="3" fill="#3b82f6"/><!-- 0.25 -->
+  <rect x="145" y="218" width="55" height="30"  rx="3" fill="#3b82f6"/><!-- 0.125 -->
+  <rect x="205" y="233" width="55" height="15"  rx="3" fill="#3b82f6"/><!-- 0.0625 -->
+  <rect x="265" y="240" width="55" height="8"   rx="3" fill="#3b82f6"/><!-- 0.03125 -->
+  <rect x="325" y="244" width="30" height="4"   rx="2" fill="#3b82f6"/>
+
+  <text x="52"  y="126" text-anchor="middle" font-size="9" fill="#1e40af">0.50</text>
+  <text x="112" y="186" text-anchor="middle" font-size="9" fill="#1e40af">0.25</text>
+  <text x="172" y="216" text-anchor="middle" font-size="9" fill="#1e40af">0.125</text>
+  <text x="232" y="231" text-anchor="middle" font-size="9" fill="#1e40af">0.063</text>
+
+  <!-- Baseline -->
+  <line x1="20" y1="248" x2="370" y2="248" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="200" y="264" text-anchor="middle" font-size="11" fill="#059669">Sum = 1  (sigma-additive)</text>
+  <text x="200" y="280" text-anchor="middle" font-size="11" fill="#0f172a">E[N] = 1/(p-1) = 1.0</text>
+  <text x="200" y="294" text-anchor="middle" font-size="11" fill="#0f172a">P(N&gt;=k) = (1/p)^k = 1/2^k</text>
+
+  <!-- Fat tail note -->
+  <rect x="20" y="308" width="360" height="40" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="1"/>
+  <text x="200" y="324" text-anchor="middle" font-size="11" fill="#b91c1c">w_n = 1/n  (harmonic):  sum = infinity</text>
+  <text x="200" y="340" text-anchor="middle" font-size="11" fill="#b91c1c">IMPOSSIBLE as a probability distribution!</text>
+
+  <!-- ===== DIVIDER ===== -->
+  <line x1="430" y1="45" x2="430" y2="380" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="5,4"/>
+
+  <!-- Same data arrow -->
+  <text x="430" y="400" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">same w_n = 1/p^n</text>
+  <line x1="380" y1="390" x2="20"  y2="390" stroke="#64748b" stroke-width="1" marker-end="url(#arrd)"/>
+  <line x1="480" y1="390" x2="840" y2="390" stroke="#64748b" stroke-width="1" marker-end="url(#arrd)"/>
+
+  <!-- ===== RIGHT: Possibility ===== -->
+  <text x="645" y="52" text-anchor="middle" font-size="13" font-weight="bold" fill="#34d399">Possibility theory (Pyt'ev)</text>
+  <rect x="470" y="60" width="360" height="36" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1"/>
+  <text x="650" y="76" text-anchor="middle" font-size="11" fill="#065f46">Normalize by SUP:  sup(w_n) = w_0 = 1</text>
+  <text x="650" y="90" text-anchor="middle" font-size="11" fill="#065f46">tau(n) = w_n  (already normalized!)  [no rescaling]</text>
+
+  <!-- Bars tau(n): 1, 0.5, 0.25, 0.125, 0.0625 -->
+  <text x="505" y="118" text-anchor="middle" font-size="10" fill="#64748b">n=0</text>
+  <text x="565" y="118" text-anchor="middle" font-size="10" fill="#64748b">n=1</text>
+  <text x="625" y="118" text-anchor="middle" font-size="10" fill="#64748b">n=2</text>
+  <text x="685" y="118" text-anchor="middle" font-size="10" fill="#64748b">n=3</text>
+  <text x="745" y="118" text-anchor="middle" font-size="10" fill="#64748b">n=4</text>
+  <text x="790" y="118" text-anchor="middle" font-size="10" fill="#64748b">...</text>
+
+  <rect x="475" y="128" width="55" height="120" rx="3" fill="#34d399"/><!-- 1.0 -->
+  <rect x="535" y="188" width="55" height="60"  rx="3" fill="#34d399"/><!-- 0.5 -->
+  <rect x="595" y="218" width="55" height="30"  rx="3" fill="#34d399"/><!-- 0.25 -->
+  <rect x="655" y="233" width="55" height="15"  rx="3" fill="#34d399"/><!-- 0.125 -->
+  <rect x="715" y="240" width="55" height="8"   rx="3" fill="#34d399"/><!-- 0.0625 -->
+  <rect x="775" y="244" width="30" height="4"   rx="2" fill="#34d399"/>
+
+  <text x="502"  y="126" text-anchor="middle" font-size="9" fill="#065f46">1.00</text>
+  <text x="562"  y="186" text-anchor="middle" font-size="9" fill="#065f46">0.50</text>
+  <text x="622"  y="216" text-anchor="middle" font-size="9" fill="#065f46">0.25</text>
+  <text x="682"  y="231" text-anchor="middle" font-size="9" fill="#065f46">0.125</text>
+
+  <!-- Baseline -->
+  <line x1="470" y1="248" x2="820" y2="248" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="645" y="264" text-anchor="middle" font-size="11" fill="#b91c1c">Sum = p/(p-1) = 2  (SUPER-additive!)</text>
+  <text x="645" y="280" text-anchor="middle" font-size="11" fill="#0f172a">pl(N) = 1/p = 0.5  (Pyt'ev-Sugeno integral)</text>
+  <text x="645" y="294" text-anchor="middle" font-size="11" fill="#f59e0b">Pi(N&gt;=k) = 1/p^k = 1/2^k  (same as P!)</text>
+
+  <!-- Fat tail note -->
+  <rect x="470" y="308" width="360" height="40" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="1"/>
+  <text x="650" y="324" text-anchor="middle" font-size="11" fill="#065f46">w_n = 1/n  (harmonic):  sup = 1  at n=1</text>
+  <text x="650" y="340" text-anchor="middle" font-size="11" fill="#065f46">VALID possibility distribution! (no summability needed)</text>
+</svg>
