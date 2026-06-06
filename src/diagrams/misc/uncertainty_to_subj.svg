@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300" font-family="monospace,Arial,sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrg" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34d399"/>
+    </marker>
+    <marker id="arrp" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="300" fill="#ffffff" rx="8"/>
+
+  <!-- Title -->
+  <text x="400" y="26" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f172a">Additive measure --&gt; Max measure: from Probability to Pytev SubjModel</text>
+
+  <!-- LEFT COLUMN: Probability / Dist monad -->
+  <rect x="20" y="44" width="240" height="180" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="140" y="68" text-anchor="middle" font-size="13" font-weight="bold" fill="#2563eb">Probability (Dist monad)</text>
+  <line x1="30" y1="76" x2="250" y2="76" stroke="#2563eb" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <text x="140" y="96"  text-anchor="middle" font-size="10" fill="#1e40af">normalization:  sum p(x) = 1</text>
+  <text x="140" y="114" text-anchor="middle" font-size="10" fill="#1e40af">event measure:  P(E) = sum p(x)</text>
+  <text x="140" y="132" text-anchor="middle" font-size="10" fill="#64748b">monoid in L:    (+, x)</text>
+  <text x="140" y="150" text-anchor="middle" font-size="10" fill="#64748b">independence:   P(A^B)=P(A)*P(B)</text>
+  <text x="140" y="168" text-anchor="middle" font-size="10" fill="#64748b">dual measure:   none (self-dual)</text>
+  <text x="140" y="186" text-anchor="middle" font-size="10" fill="#64748b">section 2:      Dist a = [(a,Double)]</text>
+  <text x="140" y="207" text-anchor="middle" font-size="9" fill="#2563eb" font-style="italic">Kleisli(Dist) = FinStoch</text>
+
+  <!-- MIDDLE ARROW (horizontal) -->
+  <line x1="265" y1="134" x2="445" y2="134" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arr)"/>
+  <rect x="278" y="110" width="155" height="38" rx="5" fill="#fef9c3" stroke="#ca8a04" stroke-width="1"/>
+  <text x="355" y="126" text-anchor="middle" font-size="9" font-weight="bold" fill="#92400e">normalize by sup</text>
+  <text x="355" y="140" text-anchor="middle" font-size="9" fill="#92400e">instead of sum</text>
+
+  <!-- RIGHT COLUMN: Pytev SubjModel -->
+  <rect x="450" y="44" width="330" height="180" rx="8" fill="#f0fdf4" stroke="#34d399" stroke-width="2"/>
+  <text x="615" y="68" text-anchor="middle" font-size="13" font-weight="bold" fill="#16a34a">Pytev SubjModel</text>
+  <line x1="460" y1="76" x2="770" y2="76" stroke="#34d399" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <text x="615" y="96"  text-anchor="middle" font-size="10" fill="#15803d">normalization:  sup t(x) = 1</text>
+  <text x="615" y="114" text-anchor="middle" font-size="10" fill="#15803d">event measure:  Pl(E) = sup t(x)</text>
+  <text x="615" y="132" text-anchor="middle" font-size="10" fill="#64748b">monoid in L:    (max, min)</text>
+  <text x="615" y="150" text-anchor="middle" font-size="10" fill="#64748b">independence:   Pl(A^B)=min(Pl(A),Pl(B))</text>
+  <text x="615" y="168" text-anchor="middle" font-size="10" fill="#64748b">dual measure:   tau(x), inf tau(x)=0</text>
+  <text x="615" y="186" text-anchor="middle" font-size="10" fill="#64748b">Bel(E) = inf tau(x) on complement</text>
+  <text x="615" y="207" text-anchor="middle" font-size="9" fill="#16a34a" font-style="italic">SubjModel = (plDist, belDist)</text>
+
+  <!-- BOTTOM: fuzzy connection -->
+  <rect x="150" y="246" width="500" height="42" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="400" y="264" text-anchor="middle" font-size="10" font-weight="bold" fill="#7c3aed">Connection to fuzzy math (section 4)</text>
+  <text x="400" y="280" text-anchor="middle" font-size="10" fill="#6d28d9">Pl = Possibility measure (Pi, Zadeh/Dubois-Prade)   |   Bel = Necessity measure (N)</text>
+
+  <!-- Arrow from right column down to fuzzy -->
+  <line x1="615" y1="228" x2="500" y2="244" stroke="#a78bfa" stroke-width="1.2" marker-end="url(#arrp)"/>
+  <!-- Arrow from left column down to fuzzy -->
+  <line x1="140" y1="228" x2="260" y2="244" stroke="#a78bfa" stroke-width="1.2" marker-end="url(#arrp)"/>
+</svg>
