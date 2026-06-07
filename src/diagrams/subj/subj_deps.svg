@@ -40,8 +40,8 @@
   <rect x="620" y="55" width="210" height="70" rx="8" fill="#ffedd5" stroke="#cc6600" stroke-width="2"/>
   <text x="725" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">Uncertainty.ipynb</text>
   <line x1="632" y1="90" x2="818" y2="90" stroke="#cc6600" stroke-width="0.8" stroke-dasharray="4,3"/>
-  <text x="725" y="106" text-anchor="middle" font-size="11" fill="#b45309">Dist,  Giry</text>
-  <text x="725" y="120" text-anchor="middle" font-size="11" fill="#b45309">Fuzzy measures</text>
+  <text x="725" y="106" text-anchor="middle" font-size="11" fill="#b45309">Possibility theory (Pyt'ev)</text>
+  <text x="725" y="120" text-anchor="middle" font-size="11" fill="#b45309">Pi, N;  sup tau = 1  (sec. 9)</text>
 
   <!-- === ARROWS DOWN TO CENTRAL BOX === -->
   <!-- From KanExtensions center bottom -->
@@ -78,6 +78,6 @@
 
   <!-- RIGHT output: orange -->
   <rect x="600" y="286" width="230" height="52" rx="7" fill="#ffedd5" stroke="#cc6600" stroke-width="1.5"/>
-  <text x="715" y="309" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e">sup tau(x) = 1</text>
-  <text x="715" y="328" text-anchor="middle" font-size="10" fill="#b45309">normalization condition</text>
+  <text x="715" y="308" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">Pi = sup tau,  N = inf tauBar</text>
+  <text x="715" y="327" text-anchor="middle" font-size="10" fill="#b45309">possibility / necessity (sup-norm)</text>
 </svg>
