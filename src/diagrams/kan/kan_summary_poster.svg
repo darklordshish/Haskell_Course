@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="460" viewBox="0 0 900 460" font-family="monospace,Arial,sans-serif">
+<defs></defs>
+<rect width="900" height="460" fill="#ffffff"/>
+<text x="450" y="34" text-anchor="middle" font-size="18" fill="#0f172a" font-weight="bold">Map of Kan extensions</text>
+
+<!-- column x positions: 20 | 150 | 330 | 540 | 700 | 880 -->
+<!-- header -->
+<rect x="20" y="50" width="860" height="34" fill="#334466"/>
+<text x="85"  y="72" text-anchor="middle" font-size="12" fill="#ffffff" font-weight="bold">Construction</text>
+<text x="240" y="72" text-anchor="middle" font-size="12" fill="#ffffff" font-weight="bold">Definition</text>
+<text x="435" y="72" text-anchor="middle" font-size="12" fill="#ffffff" font-weight="bold">Haskell type</text>
+<text x="620" y="72" text-anchor="middle" font-size="12" fill="#ffffff" font-weight="bold">Special case / link</text>
+<text x="790" y="72" text-anchor="middle" font-size="12" fill="#ffffff" font-weight="bold">Payoff</text>
+
+<!-- row 1 Ran -->
+<rect x="20" y="84" width="860" height="48" fill="#dbeafe" stroke="#94a3b8" stroke-width="0.7"/>
+<text x="85"  y="113" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Ran g h</text>
+<text x="240" y="113" text-anchor="middle" font-size="11" fill="#334466">right extension, end</text>
+<text x="435" y="113" text-anchor="middle" font-size="11" fill="#1a4488">forall b. (a-&gt;g b)-&gt;h b</text>
+<text x="620" y="113" text-anchor="middle" font-size="11" fill="#334466">base</text>
+<text x="790" y="113" text-anchor="middle" font-size="11" fill="#334466">approx from the right</text>
+
+<!-- row 2 Lan -->
+<rect x="20" y="132" width="860" height="48" fill="#bfdbfe" stroke="#94a3b8" stroke-width="0.7"/>
+<text x="85"  y="161" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Lan g h</text>
+<text x="240" y="161" text-anchor="middle" font-size="11" fill="#334466">left extension, coend</text>
+<text x="435" y="161" text-anchor="middle" font-size="11" fill="#1a4488">exists b. (g b-&gt;a, h b)</text>
+<text x="620" y="161" text-anchor="middle" font-size="11" fill="#334466">base</text>
+<text x="790" y="161" text-anchor="middle" font-size="11" fill="#334466">approx from the left</text>
+
+<!-- row 3 Codensity -->
+<rect x="20" y="180" width="860" height="48" fill="#ede9fe" stroke="#94a3b8" stroke-width="0.7"/>
+<text x="85"  y="209" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Codensity f</text>
+<text x="240" y="209" text-anchor="middle" font-size="11" fill="#5b21b6">Ran f f</text>
+<text x="435" y="209" text-anchor="middle" font-size="11" fill="#5b21b6">forall b. (a-&gt;f b)-&gt;f b</text>
+<text x="620" y="209" text-anchor="middle" font-size="11" fill="#334466">monad from any f</text>
+<text x="790" y="209" text-anchor="middle" font-size="11" fill="#334466">right-assoc &gt;&gt;=</text>
+
+<!-- row 4 Density -->
+<rect x="20" y="228" width="860" height="48" fill="#ddd6fe" stroke="#94a3b8" stroke-width="0.7"/>
+<text x="85"  y="257" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Density f</text>
+<text x="240" y="257" text-anchor="middle" font-size="11" fill="#5b21b6">Lan f f</text>
+<text x="435" y="257" text-anchor="middle" font-size="11" fill="#5b21b6">exists b. (f b-&gt;a, f b)</text>
+<text x="620" y="257" text-anchor="middle" font-size="11" fill="#334466">comonad from any f</text>
+<text x="790" y="257" text-anchor="middle" font-size="11" fill="#334466">contextful comp.</text>
+
+<!-- row 5 Yoneda -->
+<rect x="20" y="276" width="860" height="48" fill="#dcfce7" stroke="#94a3b8" stroke-width="0.7"/>
+<text x="85"  y="305" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Yoneda</text>
+<text x="240" y="305" text-anchor="middle" font-size="11" fill="#166534">Ran Id h &#8773; h</text>
+<text x="435" y="305" text-anchor="middle" font-size="11" fill="#166534">forall b. (a-&gt;b)-&gt;f b</text>
+<text x="620" y="305" text-anchor="middle" font-size="11" fill="#334466">g = Id</text>
+<text x="790" y="305" text-anchor="middle" font-size="11" fill="#334466">fmap fusion</text>
+
+<!-- row 6 Adjoint -->
+<rect x="20" y="324" width="860" height="48" fill="#fef3c7" stroke="#94a3b8" stroke-width="0.7"/>
+<text x="85"  y="353" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Adjoint</text>
+<text x="240" y="353" text-anchor="middle" font-size="11" fill="#92400e">g &#8773; Ran f Id</text>
+<text x="435" y="353" text-anchor="middle" font-size="11" fill="#92400e">--</text>
+<text x="620" y="353" text-anchor="middle" font-size="11" fill="#334466">extension of Id along f</text>
+<text x="790" y="353" text-anchor="middle" font-size="11" fill="#334466">recover adjoints</text>
+
+<!-- row 7 Monad from -| -->
+<rect x="20" y="372" width="860" height="48" fill="#cffafe" stroke="#94a3b8" stroke-width="0.7"/>
+<text x="85"  y="401" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Monad f -| g</text>
+<text x="240" y="401" text-anchor="middle" font-size="11" fill="#155e75">T = g . f</text>
+<text x="435" y="401" text-anchor="middle" font-size="11" fill="#155e75">e.g. s-&gt;(a,s)</text>
+<text x="620" y="401" text-anchor="middle" font-size="11" fill="#334466">f -| g =&gt; monad</text>
+<text x="790" y="401" text-anchor="middle" font-size="11" fill="#334466">State/Maybe/[] origin</text>
+
+<!-- outer border + column separators -->
+<rect x="20" y="50" width="860" height="370" fill="none" stroke="#334466" stroke-width="1.4"/>
+<line x1="150" y1="50" x2="150" y2="420" stroke="#94a3b8" stroke-width="0.7"/>
+<line x1="330" y1="50" x2="330" y2="420" stroke="#94a3b8" stroke-width="0.7"/>
+<line x1="540" y1="50" x2="540" y2="420" stroke="#94a3b8" stroke-width="0.7"/>
+<line x1="700" y1="50" x2="700" y2="420" stroke="#94a3b8" stroke-width="0.7"/>
+
+<text x="450" y="444" text-anchor="middle" font-size="11" fill="#334466">Ran / Lan are the two universal extensions; everything else is a special case.</text>
+</svg>
