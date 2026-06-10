@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="330" viewBox="0 0 660 330" font-family="monospace,Arial,sans-serif">
+<defs>
+  <marker id="tid_a" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#334466"/>
+  </marker>
+</defs>
+<rect width="660" height="330" fill="#ffffff"/>
+<text x="330" y="30" text-anchor="middle" font-size="15" fill="#0f172a" font-weight="bold">Implication and disjunction as classifying arrows</text>
+
+<!-- ===== IMP ===== -->
+<text x="165" y="60" text-anchor="middle" font-size="13" fill="#0e7490" font-weight="bold">Implication  imp = chi(&lt;=)</text>
+<text x="70"  y="92"  text-anchor="middle" font-size="13" fill="#0f172a">( &lt;= )</text>
+<text x="280" y="92"  text-anchor="middle" font-size="14" fill="#0f172a">1</text>
+<text x="55"  y="210" text-anchor="middle" font-size="13" fill="#0f172a">Omega x Omega</text>
+<text x="282" y="210" text-anchor="middle" font-size="14" fill="#0f172a">Omega</text>
+<line x1="92" y1="87" x2="268" y2="87" stroke="#334466" stroke-width="1.6" marker-end="url(#tid_a)"/>
+<text x="180" y="79" text-anchor="middle" font-size="11" fill="#334466">!</text>
+<line x1="70" y1="100" x2="70" y2="196" stroke="#0e7490" stroke-width="1.6" marker-end="url(#tid_a)"/>
+<text x="74" y="152" text-anchor="start" font-size="10" fill="#0e7490">incl</text>
+<line x1="282" y1="100" x2="282" y2="196" stroke="#16a34a" stroke-width="1.6" marker-end="url(#tid_a)"/>
+<text x="288" y="152" text-anchor="start" font-size="11" fill="#16a34a">true</text>
+<line x1="120" y1="205" x2="250" y2="205" stroke="#334466" stroke-width="1.8" marker-end="url(#tid_a)"/>
+<text x="185" y="223" text-anchor="middle" font-size="12" fill="#0e7490" font-weight="bold">imp</text>
+<rect x="92" y="178" width="12" height="12" fill="none" stroke="#94a3b8" stroke-width="1"/>
+<text x="165" y="252" text-anchor="middle" font-size="10" fill="#64748b">(&lt;=) = equalizer(and, pi1)</text>
+<text x="165" y="268" text-anchor="middle" font-size="10" fill="#64748b">= { (x,y) | x /\ y = x }</text>
+
+<line x1="335" y1="48" x2="335" y2="300" stroke="#e2e8f0" stroke-width="1.2"/>
+
+<!-- ===== OR ===== -->
+<text x="500" y="60" text-anchor="middle" font-size="13" fill="#b45309" font-weight="bold">Disjunction  or = chi(im)</text>
+<text x="410" y="92"  text-anchor="middle" font-size="13" fill="#0f172a">im</text>
+<text x="600" y="92"  text-anchor="middle" font-size="14" fill="#0f172a">1</text>
+<text x="395" y="210" text-anchor="middle" font-size="13" fill="#0f172a">Omega x Omega</text>
+<text x="600" y="210" text-anchor="middle" font-size="14" fill="#0f172a">Omega</text>
+<line x1="425" y1="87" x2="588" y2="87" stroke="#334466" stroke-width="1.6" marker-end="url(#tid_a)"/>
+<text x="506" y="79" text-anchor="middle" font-size="11" fill="#334466">!</text>
+<line x1="410" y1="100" x2="410" y2="196" stroke="#b45309" stroke-width="1.6" marker-end="url(#tid_a)"/>
+<text x="414" y="152" text-anchor="start" font-size="10" fill="#b45309">incl</text>
+<line x1="600" y1="100" x2="600" y2="196" stroke="#16a34a" stroke-width="1.6" marker-end="url(#tid_a)"/>
+<text x="606" y="152" text-anchor="start" font-size="11" fill="#16a34a">true</text>
+<line x1="455" y1="205" x2="575" y2="205" stroke="#334466" stroke-width="1.8" marker-end="url(#tid_a)"/>
+<text x="515" y="223" text-anchor="middle" font-size="12" fill="#b45309" font-weight="bold">or</text>
+<rect x="423" y="178" width="12" height="12" fill="none" stroke="#94a3b8" stroke-width="1"/>
+<text x="500" y="252" text-anchor="middle" font-size="10" fill="#64748b">im = image of the two truth-lines</text>
+<text x="500" y="268" text-anchor="middle" font-size="10" fill="#64748b">[ &lt;true,id&gt; , &lt;id,true&gt; ]</text>
+
+<text x="330" y="312" text-anchor="middle" font-size="10" fill="#64748b">each connective classifies its defining subobject of Omega x Omega</text>
+</svg>
