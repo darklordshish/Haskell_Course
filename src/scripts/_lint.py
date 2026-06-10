@@ -2,7 +2,8 @@
 """Lint markdown cells: no \\(...\\) delimiters, balanced $ per cell."""
 import json, sys
 
-PATH = "/home/jovyan/src/notebooks/Uncertainty.ipynb"
+NB = sys.argv[1] if len(sys.argv) > 1 else "Uncertainty.ipynb"
+PATH = "/home/jovyan/src/notebooks/" + NB
 
 def main():
     with open(PATH, encoding="utf-8") as f:
