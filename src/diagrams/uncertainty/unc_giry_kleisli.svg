@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="260" viewBox="0 0 640 260" font-family="monospace,Arial,sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#334466"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2255cc"/>
+    </marker>
+    <marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7733aa"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="640" height="260" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="320" y="26" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Kleisli(G): composition = integration against the kernel</text>
+
+  <!-- Panel -->
+  <rect x="20" y="38" width="600" height="140" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- Object boxes: X, Y, Z -->
+  <rect x="60" y="80" width="54" height="36" rx="5" fill="#e0e8ff" stroke="#2255cc" stroke-width="1.5"/>
+  <text x="87" y="103" text-anchor="middle" font-size="16" font-weight="bold" fill="#2255cc">X</text>
+
+  <rect x="293" y="80" width="54" height="36" rx="5" fill="#e0e8ff" stroke="#2255cc" stroke-width="1.5"/>
+  <text x="320" y="103" text-anchor="middle" font-size="16" font-weight="bold" fill="#2255cc">Y</text>
+
+  <rect x="526" y="80" width="54" height="36" rx="5" fill="#e0e8ff" stroke="#2255cc" stroke-width="1.5"/>
+  <text x="553" y="103" text-anchor="middle" font-size="16" font-weight="bold" fill="#2255cc">Z</text>
+
+  <!-- Arrow k1: X -> Y -->
+  <line x1="115" y1="98" x2="291" y2="98" stroke="#2255cc" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="203" y="90" text-anchor="middle" font-size="11" fill="#2255cc">k1: X -&gt; G(Y)</text>
+
+  <!-- Arrow k2: Y -> Z -->
+  <line x1="349" y1="98" x2="524" y2="98" stroke="#2255cc" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <text x="436" y="90" text-anchor="middle" font-size="11" fill="#2255cc">k2: Y -&gt; G(Z)</text>
+
+  <!-- Curved arrow underneath: X -> Z labeled k2.k1 -->
+  <path d="M 114 116 Q 320 175 524 116" fill="none" stroke="#7733aa" stroke-width="2" marker-end="url(#arrow-purple)"/>
+  <text x="320" y="172" text-anchor="middle" font-size="12" font-weight="bold" fill="#7733aa">k2 . k1</text>
+
+  <!-- Formula line -->
+  <rect x="20" y="192" width="600" height="34" rx="5" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="320" y="214" text-anchor="middle" font-size="12" fill="#0f172a">(k2.k1)(A|x) = SUM_y  k2(A|y) * k1(y|x)</text>
+
+  <!-- Bottom label -->
+  <text x="320" y="250" text-anchor="middle" font-size="10" fill="#334466">Kleisli composition: bind k1 then k2, marginalizing over Y</text>
+</svg>

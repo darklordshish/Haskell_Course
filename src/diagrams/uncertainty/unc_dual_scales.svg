@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="260" viewBox="0 0 620 260" font-family="monospace,Arial,sans-serif">
+  <defs>
+    <marker id="arrowR" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2255cc"/>
+    </marker>
+    <marker id="arrowL" markerWidth="10" markerHeight="7" refX="1" refY="3.5" orient="auto">
+      <polygon points="10 0, 0 3.5, 10 7" fill="#2255cc"/>
+    </marker>
+    <marker id="arrowUp" markerWidth="7" markerHeight="10" refX="3.5" refY="1" orient="auto">
+      <polygon points="0 10, 3.5 0, 7 10" fill="#334466"/>
+    </marker>
+    <marker id="arrowDown" markerWidth="7" markerHeight="10" refX="3.5" refY="9" orient="auto">
+      <polygon points="0 0, 3.5 10, 7 0" fill="#334466"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="620" height="260" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="310" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f172a">Dual scales of possibility theory (Pyt'ev)</text>
+
+  <!-- LEFT SCALE panel -->
+  <rect x="60" y="45" width="170" height="185" rx="6" fill="#f0f4ff" stroke="#2255cc" stroke-width="1.2"/>
+
+  <!-- LEFT scale label -->
+  <text x="145" y="65" text-anchor="middle" font-size="12" font-weight="bold" fill="#2255cc">L = ([0,1], max, min)</text>
+
+  <!-- LEFT scale axis -->
+  <line x1="145" y1="80" x2="145" y2="195" stroke="#334466" stroke-width="2" marker-end="url(#arrowUp)" marker-start="url(#arrowDown)"/>
+
+  <!-- LEFT scale tick marks and labels -->
+  <line x1="138" y1="195" x2="152" y2="195" stroke="#334466" stroke-width="1.5"/>
+  <text x="128" y="199" text-anchor="end" font-size="11" fill="#0f172a">0</text>
+
+  <line x1="138" y1="137" x2="152" y2="137" stroke="#334466" stroke-width="1.2" stroke-dasharray="3,3"/>
+  <text x="128" y="141" text-anchor="end" font-size="11" fill="#0f172a">0.5</text>
+
+  <line x1="138" y1="80" x2="152" y2="80" stroke="#334466" stroke-width="1.5"/>
+  <text x="128" y="84" text-anchor="end" font-size="11" fill="#0f172a">1</text>
+
+  <!-- LEFT annotations -->
+  <text x="165" y="84" font-size="11" fill="#7733aa">Pi = sup tau</text>
+  <text x="165" y="199" font-size="11" fill="#16a34a">join = max</text>
+  <text x="80" y="218" font-size="10" fill="#334466">meet = min</text>
+
+  <!-- RIGHT SCALE panel -->
+  <rect x="390" y="45" width="170" height="185" rx="6" fill="#f5f0ff" stroke="#7733aa" stroke-width="1.2"/>
+
+  <!-- RIGHT scale label -->
+  <text x="475" y="65" text-anchor="middle" font-size="12" font-weight="bold" fill="#7733aa">Lbar = ([0,1], min, max)</text>
+
+  <!-- RIGHT scale axis -->
+  <line x1="475" y1="80" x2="475" y2="195" stroke="#334466" stroke-width="2" marker-end="url(#arrowUp)" marker-start="url(#arrowDown)"/>
+
+  <!-- RIGHT scale tick marks and labels -->
+  <line x1="468" y1="195" x2="482" y2="195" stroke="#334466" stroke-width="1.5"/>
+  <text x="458" y="199" text-anchor="end" font-size="11" fill="#0f172a">0</text>
+
+  <line x1="468" y1="137" x2="482" y2="137" stroke="#334466" stroke-width="1.2" stroke-dasharray="3,3"/>
+  <text x="458" y="141" text-anchor="end" font-size="11" fill="#0f172a">0.5</text>
+
+  <line x1="468" y1="80" x2="482" y2="80" stroke="#334466" stroke-width="1.5"/>
+  <text x="458" y="84" text-anchor="end" font-size="11" fill="#0f172a">1</text>
+
+  <!-- RIGHT annotations -->
+  <text x="492" y="84" font-size="11" fill="#16a34a">join = min</text>
+  <text x="492" y="199" font-size="11" fill="#7733aa">N = inf tauBar</text>
+  <text x="410" y="218" font-size="10" fill="#334466">meet = max</text>
+
+  <!-- Horizontal double arrow between scales -->
+  <line x1="235" y1="137" x2="385" y2="137" stroke="#2255cc" stroke-width="2"
+        marker-end="url(#arrowR)" marker-start="url(#arrowL)"/>
+
+  <!-- Arrow label -->
+  <rect x="263" y="118" width="94" height="16" rx="3" fill="#ffffff" stroke="#2255cc" stroke-width="0.8"/>
+  <text x="310" y="130" text-anchor="middle" font-size="11" font-weight="bold" fill="#2255cc">theta(t) = 1 - t</text>
+
+  <!-- Self-dual note at bottom -->
+  <rect x="195" y="228" width="230" height="22" rx="4" fill="#fffbe6" stroke="#b45309" stroke-width="1"/>
+  <text x="310" y="243" text-anchor="middle" font-size="12" font-weight="bold" fill="#b45309">L ~ L^op  (self-dual)</text>
+</svg>
