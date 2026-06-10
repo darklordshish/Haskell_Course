@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="260" viewBox="0 0 620 260" font-family="monospace,Arial,sans-serif">
+<defs>
+  <marker id="os_arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+    <polygon points="0 0, 10 3.5, 0 7" fill="#334466"/>
+  </marker>
+</defs>
+<rect width="620" height="260" fill="#ffffff"/>
+<text x="310" y="28" text-anchor="middle" font-size="15" fill="#0f172a" font-weight="bold">Lens = coalgebra of the Store comonad</text>
+
+<rect x="40" y="56" width="150" height="44" rx="8" fill="#dbeafe" stroke="#2255cc" stroke-width="1.6"/>
+<text x="115" y="83" text-anchor="middle" font-size="13" fill="#1a4488" font-weight="bold">Lens s a</text>
+
+<line x1="192" y1="78" x2="316" y2="78" stroke="#334466" stroke-width="2" marker-end="url(#os_arr)"/>
+<text x="254" y="70" text-anchor="middle" font-size="11" fill="#334466">is a coalgebra</text>
+
+<rect x="320" y="56" width="260" height="44" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.6"/>
+<text x="450" y="83" text-anchor="middle" font-size="13" fill="#14532d" font-weight="bold">s -&gt; Store a s</text>
+
+<rect x="40" y="120" width="540" height="56" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.2"/>
+<text x="310" y="142" text-anchor="middle" font-size="12" fill="#0f172a">Store a s = (a -&gt; s, a)   :   pos = get,   peek = set</text>
+<text x="310" y="162" text-anchor="middle" font-size="11" fill="#334466">comonad laws (extract / duplicate) &#8596; lens laws (get-put / put-get / put-put)</text>
+
+<rect x="40" y="190" width="540" height="44" rx="6" fill="#ede9fe" stroke="#7733aa" stroke-width="1.4"/>
+<text x="310" y="212" text-anchor="middle" font-size="12" fill="#5b21b6" font-weight="bold">Store &#8866; State</text>
+<text x="310" y="228" text-anchor="middle" font-size="10" fill="#6d28d9">lenses, comonads and adjunctions are three faces of one construction</text>
+</svg>
