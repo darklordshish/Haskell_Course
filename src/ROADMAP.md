@@ -372,8 +372,16 @@ FoldableTraversable.ipynb: исправлена запись — 2 SVG (ft_folda
 
 **Канонический источник:** https://github.com/darklordshish/SubjectiveModeling —
 cabal-пакет (33 теста законов, 2 примера: теория возможностей и субъективное
-моделирование). `src/lib/` здесь — синхронизируемая копия: править В РЕПОЗИТОРИИ,
-затем копировать `*.hs` из его `src/` в `src/lib/`.
+моделирование). `src/lib/` здесь — **git-сабмодуль** этого репозитория (без копий
+и синк-скриптов). Модули лежат в `src/lib/src/*.hs`, ноутбуки грузят их через
+`:load ../lib/src/...`.
+
+Рабочий цикл обновления библиотеки:
+1. Правка в репозитории SubjectiveModeling (можно прямо в `src/lib` — это его клон),
+   `cabal test` или ghc-вариант из его README, commit + push в `main`.
+2. В курсе: `git submodule update --remote src/lib`, перезапуск ядра, Run All,
+   затем закоммитить новый указатель сабмодуля.
+После клонирования курса: `git submodule update --init`.
 
 Модули: Quantale (классы Lattice/Quantale, инстансы UnitInterval и Bool, θ, Γ),
 KanExtension (Lan/Ran, Pl/Bel, Йонеда, Isbell O ⊣ Spec), Bitopos (Скотт, интервальный
