@@ -66,4 +66,7 @@ for (const f of fs.readdirSync(ROOT).filter(f => f.endsWith('.ipynb'))) {
   }
 }
 if (indexMode) console.log(JSON.stringify(index, null, 2));
-else console.log((checkOnly ? 'would change: ' : 'updated: ') + changed);
+else {
+  console.log((checkOnly ? 'would change: ' : 'updated: ') + changed);
+  if (checkOnly && changed) process.exit(1);
+}

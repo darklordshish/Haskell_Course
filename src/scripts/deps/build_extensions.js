@@ -21,9 +21,10 @@ const indexJson = cp.execSync(
 const reverseIndex = JSON.parse(indexJson); // { ExtName: ["Foo.ipynb", ...] }
 
 // Helper: notebook names without .ipynb, comma-separated; "—" if none
+// Extensions.ipynb is filtered out to avoid self-reference.
 function notebookList(extName) {
-  const nbs = reverseIndex[extName];
-  if (!nbs || nbs.length === 0) return '—';
+  const nbs = (reverseIndex[extName] || []).filter(n => n !== 'Extensions.ipynb');
+  if (nbs.length === 0) return '—';
   return nbs.map(n => n.replace(/\.ipynb$/, '')).join(', ');
 }
 
@@ -276,7 +277,7 @@ cells.push(mdCell('ext_deriving_md', `\
 
 ### DeriveFunctor / DeriveFoldable / DeriveTraversable
 **В чём соль:** компилятор автоматически генерирует экземпляры \`Functor\`, \`Foldable\`, \`Traversable\` для пользовательских типов данных, следуя структуре конструкторов. Исключает boilerplate для деревьев, потоков, rose-trees и т.п.
-Ноутбуки-потребители: ${notebookList('DeriveFunctor')} (Functor), ${notebookList('DeriveFoldable')} (Foldable)
+Ноутбуки-потребители: ${notebookList('DeriveFunctor')} (Functor), ${notebookList('DeriveFoldable')} (Foldable), ${notebookList('DeriveTraversable')} (Traversable)
 
 ### DeriveGeneric
 **В чём соль:** генерирует инстанс \`GHC.Generics.Generic\`, открывая доступ к структуре типа на уровне типов. Основа для библиотек \`aeson\`, \`binary\`, \`lens\` (deriving-through-Generic).
@@ -309,12 +310,12 @@ cells.push(mdCell('ext_types_md', `\
 ## Уровень типов
 
 ### TypeOperators
-**В чём соль:** операторы (символьные идентификаторы) могут использоваться как конструкторы типов: \`data f :+: g = ...\`. Используется в GHC.Generics, опtics-библиотеках.
+**В чём соль:** операторы (символьные идентификаторы) могут использоваться как конструкторы типов: \`data f :+: g = ...\`. Используется в GHC.Generics, optics-библиотеках.
 Ноутбуки-потребители: ${notebookList('TypeOperators')}
 
 <a id="typefamilies"></a>
 ### TypeFamilies
-**В чём соль:** функции на уровне типов — \`type family Elem c where Elem [a] = a\`. Позволяют выражать вычисления над типами в style функциональной зависимости, но более мощно и удобно, чем FunctionalDependencies.
+**В чём соль:** функции на уровне типов — \`type family Elem c where Elem [a] = a\`. Позволяют выражать вычисления над типами в стиле функциональной зависимости, но более мощно и удобно, чем FunctionalDependencies.
 Ноутбуки-потребители: ${notebookList('TypeFamilies')}
 
 <a id="gadts"></a>
@@ -415,7 +416,8 @@ cells.push(mdCell('ext_beyond_md', `\
 // Build table programmatically from dictionary
 const tableRows = Object.entries(dict.extensions).map(([extName, info]) => {
   const nbs = notebookList(extName);
-  return `| \`${extName}\` | ${info.blurb} | ${nbs} |`;
+  const blurb = info.blurb.replace(/\|/g, '\\|');
+  return `| \`${extName}\` | ${blurb} | ${nbs} |`;
 }).join('\n');
 
 cells.push(mdCell('ext_table_md', `\
