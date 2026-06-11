@@ -417,6 +417,7 @@ SubjectiveModel (слой Пытьева, residuation-кондициониров
 - **`forkIO + takeMVar` зависает** в IHaskell
 - **`Control.Concurrent.Async`** — не установлен
 - **`Control.Parallel.Strategies`** — не установлен
+- **`:load`** — только в setup-ячейке, один раз, все модули одной командой; `:load` сбрасывает контекст импортов, поэтому все `import` — строго после него
 
 ### JupyterLab API
 - Все операции с файлами — через XHR API, не терминал
