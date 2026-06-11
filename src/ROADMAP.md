@@ -368,6 +368,41 @@ FoldableTraversable.ipynb: исправлена запись — 2 SVG (ft_folda
 
 ---
 
+## ✅ Фаза 15 — Библиотека категорного ядра src/lib (ветка categorical-core-lib, 2026-06-11)
+
+**Канонический источник:** https://github.com/darklordshish/SubjectiveModeling —
+cabal-пакет (33 теста законов, 2 примера: теория возможностей и субъективное
+моделирование). `src/lib/` здесь — **git-сабмодуль** этого репозитория (без копий
+и синк-скриптов). Модули лежат в `src/lib/src/*.hs`, ноутбуки грузят их через
+`:load ../lib/src/...`.
+
+Рабочий цикл обновления библиотеки:
+1. Правка в репозитории SubjectiveModeling (можно прямо в `src/lib` — это его клон),
+   `cabal test` или ghc-вариант из его README, commit + push в `main`.
+2. В курсе: `git submodule update --remote src/lib`, перезапуск ядра, Run All,
+   затем закоммитить новый указатель сабмодуля.
+После клонирования курса: `git submodule update --init`.
+
+Модули: Quantale (классы Lattice/Quantale, инстансы UnitInterval и Bool, θ, Γ),
+KanExtension (Lan/Ran, Pl/Bel, Йонеда, Isbell O ⊣ Spec), Bitopos (Скотт, интервальный
+билатис), Distribution (Semiring: возможность/вероятность/достижимость одной монадой),
+SubjectiveModel (слой Пытьева, residuation-кондиционирование).
+
+| Изменение | Статус |
+|-----------|--------|
+| src/lib — 5 модулей из канонического репо | ✅ |
+| SubjectiveModeling.ipynb: setup с `:load`, 4 legacy-ячейки → библиотека | ✅ |
+| SubjectiveModeling.ipynb: категорные вставки (билатис в р.2, Γ в р.4, residuation в р.7, честный Bel в р.14) | ✅ |
+| SubjectiveModeling.ipynb: новые разделы 17 (монада возможности) и 18 (обогащённая X + Isbell) | ✅ |
+| SubjectiveModeling.ipynb: compat-ячейка со старым plMeasure/belMeasure перед р.16 | ✅ |
+| Uncertainty.ipynb: setup с `:load`, lib-добавки в S4 и S7, мост из 9.x | ✅ |
+| Run All обоих: 17 + 14 кодовых ячеек, 0 ошибок | ✅ |
+
+Правило: `:load` — только в setup-ячейке, один раз, все модули одной командой;
+`:load` сбрасывает контекст импортов, поэтому все `import` — строго после него.
+
+---
+
 ## ⚠️ Критические правила (не нарушать никогда)
 
 ### IHaskell / GHC
@@ -382,6 +417,7 @@ FoldableTraversable.ipynb: исправлена запись — 2 SVG (ft_folda
 - **`forkIO + takeMVar` зависает** в IHaskell
 - **`Control.Concurrent.Async`** — не установлен
 - **`Control.Parallel.Strategies`** — не установлен
+- **`:load`** — только в setup-ячейке, один раз, все модули одной командой; `:load` сбрасывает контекст импортов, поэтому все `import` — строго после него
 
 ### JupyterLab API
 - Все операции с файлами — через XHR API, не терминал

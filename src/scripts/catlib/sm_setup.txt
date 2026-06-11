@@ -1,0 +1,21 @@
+:set -XOverloadedStrings
+:set -XScopedTypeVariables
+:set -XRankNTypes
+:set -XFlexibleInstances
+:set -XFlexibleContexts
+:set -XDeriveFunctor
+:set -XGeneralizedNewtypeDeriving
+:load ../lib/Quantale.hs ../lib/KanExtension.hs ../lib/Bitopos.hs ../lib/Distribution.hs ../lib/SubjectiveModel.hs
+import Quantale
+import KanExtension
+import Bitopos
+import Distribution
+import SubjectiveModel
+import Data.List (sortBy, nub, minimumBy, maximumBy)
+import Data.Ord (comparing, Down(..))
+import Data.Maybe (fromMaybe, mapMaybe)
+import qualified Data.Map.Strict as Map
+import Control.Monad (filterM)
+import System.IO (hSetBuffering, stdout, BufferMode(..))
+hSetBuffering stdout LineBuffering
+putStrLn "\x2705 SETUP OK: Subjective Modeling (Pyt'ev) + lib (Quantale/Kan/Bitopos/Distribution/SubjectiveModel)"

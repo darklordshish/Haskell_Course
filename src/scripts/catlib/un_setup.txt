@@ -1,0 +1,21 @@
+:set -XOverloadedStrings
+:set -XScopedTypeVariables
+:set -XRankNTypes
+:set -XFlexibleInstances
+:set -XFlexibleContexts
+:set -XDeriveFunctor
+:set -XGeneralizedNewtypeDeriving
+:set -XLambdaCase
+:load ../lib/Quantale.hs ../lib/KanExtension.hs ../lib/Bitopos.hs ../lib/Distribution.hs ../lib/SubjectiveModel.hs
+import Quantale
+import KanExtension
+import qualified Distribution as D
+import SubjectiveModel
+import Data.List (sortBy, nub, intercalate)
+import Data.Ord (comparing, Down(..))
+import Data.Maybe (fromMaybe, mapMaybe)
+import Data.Map.Strict (Map)
+import qualified Data.Map.Strict as Map
+import System.IO (hSetBuffering, stdout, BufferMode(..))
+hSetBuffering stdout LineBuffering
+putStrLn "\x2705 SETUP OK: Uncertainty & Randomness + lib"
