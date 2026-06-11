@@ -1,0 +1,37 @@
+{
+  "extensions": {
+    "OverloadedStrings": { "blurb": "строковые литералы любого типа IsString", "anchor": "overloadedstrings" },
+    "LambdaCase": { "blurb": "\\case вместо \\x -> case x of", "anchor": "lambdacase" },
+    "TupleSections": { "blurb": "частичное применение конструктора кортежа: (,5)", "anchor": "tuplesections" },
+    "ScopedTypeVariables": { "blurb": "переменные типа из сигнатуры видны в теле", "anchor": "scopedtypevariables" },
+    "RankNTypes": { "blurb": "forall внутри аргументов функций", "anchor": "rankntypes" },
+    "ExistentialQuantification": { "blurb": "скрытие типа за конструктором (forall в data)", "anchor": "existentialquantification" },
+    "FlexibleInstances": { "blurb": "инстансы для конкретных типов-применений", "anchor": "flexibleinstances" },
+    "FlexibleContexts": { "blurb": "произвольные ограничения в контекстах", "anchor": "flexiblecontexts" },
+    "TypeSynonymInstances": { "blurb": "инстансы для синонимов типов", "anchor": "flexibleinstances" },
+    "MultiParamTypeClasses": { "blurb": "классы с несколькими параметрами", "anchor": "multiparamtypeclasses" },
+    "FunctionalDependencies": { "blurb": "зависимости параметров класса: | m -> s", "anchor": "multiparamtypeclasses" },
+    "InstanceSigs": { "blurb": "сигнатуры методов прямо в instance", "anchor": "instancesigs" },
+    "DefaultSignatures": { "blurb": "default-реализации с другой сигнатурой", "anchor": "instancesigs" },
+    "DeriveFunctor": { "blurb": "deriving Functor", "anchor": "deriving" },
+    "DeriveFoldable": { "blurb": "deriving Foldable", "anchor": "deriving" },
+    "DeriveTraversable": { "blurb": "deriving Traversable", "anchor": "deriving" },
+    "DeriveGeneric": { "blurb": "deriving Generic для GHC.Generics", "anchor": "deriving" },
+    "GeneralizedNewtypeDeriving": { "blurb": "newtype наследует инстансы обёрнутого типа", "anchor": "deriving" },
+    "TypeOperators": { "blurb": "операторы на уровне типов: f :+: g", "anchor": "typeoperators" },
+    "TypeFamilies": { "blurb": "функции на уровне типов", "anchor": "typefamilies" },
+    "GADTs": { "blurb": "конструкторы с уточнёнными типами результата", "anchor": "gadts" },
+    "DataKinds": { "blurb": "типы поднимаются в сорта (kinds)", "anchor": "datakinds" },
+    "PolyKinds": { "blurb": "полиморфизм по сортам", "anchor": "datakinds" },
+    "Arrows": { "blurb": "proc-нотация для стрелок", "anchor": "arrows" },
+    "TemplateHaskell": { "blurb": "метапрограммирование: генерация кода при компиляции", "anchor": "templatehaskell" },
+    "QuasiQuotes": { "blurb": "встраиваемые DSL-литералы [q|...|]", "anchor": "templatehaskell" }
+  },
+  "packages": {
+    "Data.Map": "containers", "Data.Set": "containers",
+    "Data.Array": "array", "Data.Time": "time",
+    "Language.Haskell": "template-haskell", "System.Process": "process",
+    "_default": "base"
+  },
+  "libModules": ["Quantale", "KanExtension", "Bitopos", "Distribution", "SubjectiveModel"]
+}

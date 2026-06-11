@@ -8,12 +8,27 @@
 
 ```
 src/
-  notebooks/   — Jupyter-ноутбуки (.ipynb)
-  diagrams/    — SVG-диаграммы по темам
-  scripts/     — вспомогательные Python-скрипты
-  README.ipynb — стартовый ноутбук
-  ROADMAP.md   — план курса
+  notebooks/        — Jupyter-ноутбуки (.ipynb)
+  diagrams/         — SVG-диаграммы по темам
+  scripts/          — вспомогательные скрипты
+    deps/           — генерация шапок зависимостей
+      dictionary.json    — единый источник правды (расширения, пакеты, модули)
+      gen_headers.js     — генератор ячейки deps_header (идемпотентный)
+      build_extensions.js — сборка Extensions.ipynb
+  lib/              — git-сабмодуль: библиотека категорного ядра
+  README.ipynb      — стартовый ноутбук
+  ROADMAP.md        — план курса
 docker-compose.yml
+```
+
+**Начинать курс рекомендуется с `src/notebooks/Extensions.ipynb`** — нулевой ноутбук с обзором всех расширений GHC, используемых в курсе (26 расширений с пояснениями и примерами).
+
+## Шапки зависимостей
+
+Каждый ноутбук содержит автогенерируемую ячейку `deps_header` («📦 Зависимости») с перечнем пакетов, модулей `src/lib` и расширений GHC. После изменения setup-ячейки или импортов — перегенерировать:
+
+```bash
+node src/scripts/deps/gen_headers.js
 ```
 
 ## Запуск через Docker
