@@ -1,0 +1,62 @@
+<svg viewBox="0 0 880 1100" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Segoe UI', system-ui, sans-serif">
+<title>Course map</title>
+<desc>Metro-style map: gray base line, yellow structures, blue category theory, red practice. Interchange stations mix topics.</desc>
+<style>
+.st { font-size: 14px; font-weight: 450; fill: #0f172a; }
+.stb { font-size: 14px; font-weight: 650; fill: #0f172a; }
+.line-name { font-size: 11.5px; font-weight: 700; letter-spacing: .12em; }
+.sub { font-size: 11px; fill: #64748b; }
+.ln { fill: none; stroke-linecap: round; stroke-width: 7; }
+.stn { fill: #ffffff; stroke-width: 3.5; }
+</style>
+
+<path class="ln" stroke="#8a93a3" d="M350 96 V500"/>
+<path class="ln" stroke="#d9a441" d="M350 500 C350 560 150 540 150 600 V940 C150 1006 254 1014 341 976"/>
+<path class="ln" stroke="#5872c9" d="M350 500 V968"/>
+<path class="ln" stroke="#c4625f" d="M350 500 C350 560 570 540 570 600 V790"/>
+<text x="372" y="100" class="line-name" fill="#6b7484">BASE</text>
+<text x="150" y="572" class="line-name" fill="#b8862e" text-anchor="middle">STRUCTURES &amp; OPTICS</text>
+<text x="372" y="572" class="line-name" fill="#5872c9">CATEGORY THEORY</text>
+<text x="592" y="572" class="line-name" fill="#c4625f">PRACTICE</text>
+<text x="372" y="850" class="line-name" fill="#3d4f8f">TOPOSES &amp;</text>
+<text x="372" y="866" class="line-name" fill="#3d4f8f">UNCERTAINTY</text>
+<circle cx="350" cy="104" r="7" class="stn" stroke="#8a93a3"/><text x="328" y="109" text-anchor="end" class="st">Extensions</text>
+<circle cx="350" cy="152" r="7" class="stn" stroke="#8a93a3"/><text x="328" y="157" text-anchor="end" class="st">BaseHaskell</text>
+<circle cx="350" cy="200" r="7" class="stn" stroke="#8a93a3"/><text x="328" y="205" text-anchor="end" class="st">TypeAlgebra</text>
+<circle cx="350" cy="260" r="7" class="stn" stroke="#8a93a3"/><text x="328" y="265" text-anchor="end" class="st">FunctorHierarchy</text>
+<circle cx="350" cy="308" r="7" class="stn" stroke="#8a93a3"/><text x="328" y="313" text-anchor="end" class="st">FoldableTraversable</text>
+<circle cx="350" cy="368" r="7" class="stn" stroke="#8a93a3"/><text x="328" y="373" text-anchor="end" class="st">Monads</text>
+<circle cx="350" cy="412" r="7" class="stn" stroke="#8a93a3"/><text x="328" y="417" text-anchor="end" class="st">MonadTransformers</text>
+<circle cx="350" cy="456" r="7" class="stn" stroke="#8a93a3"/><text x="328" y="461" text-anchor="end" class="st">Comonads</text>
+<circle cx="350" cy="500" r="10" class="stn" stroke="#0f172a"/>
+<text x="324" y="494" text-anchor="end" class="stb">ComonadTransformers</text>
+<circle cx="150" cy="616" r="7" class="stn" stroke="#d9a441"/><text x="128" y="621" text-anchor="end" class="st">AlgebrasCoalgebras</text>
+<circle cx="150" cy="676" r="7" class="stn" stroke="#d9a441"/><text x="128" y="681" text-anchor="end" class="st">Profunctors</text>
+<circle cx="150" cy="736" r="7" class="stn" stroke="#d9a441"/><text x="128" y="741" text-anchor="end" class="st">Optics</text>
+<circle cx="150" cy="800" r="9" class="stn" stroke="#d9a441"/><circle cx="150" cy="800" r="4.5" fill="none" stroke="#5872c9" stroke-width="3"/><text x="128" y="805" text-anchor="end" class="stb">Arrows</text>
+<circle cx="350" cy="616" r="7" class="stn" stroke="#5872c9"/><text x="372" y="621" text-anchor="start" class="st">YonedaLemma</text>
+<circle cx="350" cy="676" r="7" class="stn" stroke="#5872c9"/><text x="372" y="681" text-anchor="start" class="st">Adjunctions</text>
+<circle cx="350" cy="736" r="7" class="stn" stroke="#5872c9"/><text x="372" y="741" text-anchor="start" class="st">KanExtensions</text>
+<circle cx="570" cy="616" r="7" class="stn" stroke="#c4625f"/><text x="592" y="621" text-anchor="start" class="st">MetaProgramming</text>
+<circle cx="570" cy="676" r="9" class="stn" stroke="#c4625f"/><circle cx="570" cy="676" r="4.5" fill="none" stroke="#8a93a3" stroke-width="3"/><text x="592" y="681" text-anchor="start" class="stb">Concurrency</text>
+<circle cx="570" cy="736" r="7" class="stn" stroke="#c4625f"/><text x="592" y="741" text-anchor="start" class="st">DistributedHaskell</text>
+<circle cx="570" cy="788" r="7" class="stn" stroke="#c4625f"/><text x="592" y="793" text-anchor="start" class="st">GPUHaskell</text><rect x="563" y="804" width="14" height="4.5" rx="2.25" fill="#c4625f"/>
+<circle cx="350" cy="858" r="7" class="stn" stroke="#5872c9"/><text x="328" y="863" text-anchor="end" class="st">Toposes</text>
+<circle cx="350" cy="912" r="9" class="stn" stroke="#5872c9"/><circle cx="350" cy="912" r="4.5" fill="none" stroke="#8a93a3" stroke-width="3"/><text x="328" y="917" text-anchor="end" class="stb">Uncertainty</text>
+<circle cx="350" cy="968" r="9" class="stn" stroke="#5872c9"/><circle cx="350" cy="968" r="4.5" fill="none" stroke="#d9a441" stroke-width="3"/><text x="372" y="973" text-anchor="start" class="stb">SubjectiveModeling</text><rect x="343" y="984" width="14" height="4.5" rx="2.25" fill="#5872c9"/>
+<g transform="translate(656 96)">
+<rect x="-18" y="-24" width="222" height="220" rx="12" fill="none" stroke="#e2e8f0"/>
+<text x="0" y="0" class="line-name" fill="#64748b">LEGEND</text>
+<g transform="translate(0 28)">
+<path class="ln" stroke="#8a93a3" stroke-width="5" d="M0 0 H30"/><text x="42" y="4" class="sub">base of the course</text>
+<path class="ln" stroke="#d9a441" stroke-width="5" d="M0 26 H30"/><text x="42" y="30" class="sub">structures &amp; optics</text>
+<path class="ln" stroke="#5872c9" stroke-width="5" d="M0 52 H30"/><text x="42" y="56" class="sub">category theory</text>
+<path class="ln" stroke="#c4625f" stroke-width="5" d="M0 78 H30"/><text x="42" y="82" class="sub">practice</text>
+<circle cx="15" cy="110" r="8" class="stn" stroke="#5872c9"/>
+<circle cx="15" cy="110" r="4" fill="none" stroke="#d9a441" stroke-width="2.5"/>
+<text x="42" y="114" class="sub">interchange = topic mix</text>
+<circle cx="15" cy="138" r="8" class="stn" stroke="#0f172a"/>
+<text x="42" y="142" class="sub">fork of the branches</text>
+<text x="0" y="170" class="sub">further along the line = harder</text>
+</g></g>
+</svg>
