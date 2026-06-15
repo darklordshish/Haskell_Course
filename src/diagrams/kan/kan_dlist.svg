@@ -9,12 +9,12 @@
 
 <!-- LEFT: slow -->
 <rect x="20" y="55" width="290" height="180" rx="8" fill="#f5e3e2" stroke="#c4625f" stroke-width="1.6"/>
-<text x="165" y="78" text-anchor="middle" font-size="13" fill="#a11" font-weight="bold">naive list: left-nested ++</text>
+<text x="165" y="78" text-anchor="middle" font-size="13" fill="#8f3f3c" font-weight="bold">naive list: left-nested ++</text>
 <text x="165" y="104" text-anchor="middle" font-size="13" fill="#8f3f3c">((a ++ b) ++ c) ++ d</text>
 <line x1="40" y1="118" x2="290" y2="118" stroke="#f5e3e2" stroke-width="1"/>
 <text x="165" y="140" text-anchor="middle" font-size="11" fill="#8f3f3c">each ++ copies the left list</text>
 <text x="165" y="158" text-anchor="middle" font-size="11" fill="#8f3f3c">again from scratch</text>
-<rect x="40" y="172" width="250" height="44" rx="5" fill="#f5e3e2" stroke="#a11"/>
+<rect x="40" y="172" width="250" height="44" rx="5" fill="#f5e3e2" stroke="#8f3f3c"/>
 <text x="165" y="190" text-anchor="middle" font-size="12" fill="#8f3f3c" font-weight="bold">total cost: O(n^2)</text>
 <text x="165" y="207" text-anchor="middle" font-size="10" fill="#8f3f3c">quadratic in number of pieces</text>
 

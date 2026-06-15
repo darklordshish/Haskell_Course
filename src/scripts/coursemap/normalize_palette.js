@@ -74,6 +74,9 @@ const MAP = {
   '#fff0f0': FAM.terracotta.tint, '#e7b3b3': FAM.terracotta.tint, '#f7d6d6': FAM.terracotta.tint,
   // teal/cyan -> индиго (ближе к синему)
   '#0e7490': FAM.indigo.base, '#0891b2': FAM.indigo.base, '#155e75': FAM.indigo.node, '#cffafe': FAM.indigo.tint,
+  // серые 3-значные (после разворота в 6) + тёмно-красный
+  '#555555': N.arrow, '#444444': N.text2, '#333333': N.text1, '#666666': N.arrow,
+  '#888888': N.arrow, '#999999': N.arrow, '#aaaaaa': N.border, '#aa1111': FAM.terracotta.node,
 };
 
 function hexToHsl(hex) {
@@ -114,8 +117,10 @@ for (const rel of files) {
   if (rel.endsWith('course_map.svg')) continue;
   const p = path.join(ROOT, rel);
   const orig = fs.readFileSync(p, 'utf8');
-  const out = orig.replace(/#[0-9a-fA-F]{6}\b/g, (m) => {
-    const lc = m.toLowerCase();
+  // (?<!&) — не цеплять numeric-entity (&#937; и т.п.); 3-значные разворачиваем в 6
+  const out = orig.replace(/(?<!&)#([0-9a-fA-F]{6}|[0-9a-fA-F]{3})\b/g, (m) => {
+    let lc = m.toLowerCase();
+    if (lc.length === 4) lc = '#' + lc[1] + lc[1] + lc[2] + lc[2] + lc[3] + lc[3];
     if (CANON.has(lc)) return lc;
     if (MAP[lc]) return MAP[lc];
     const fb = fallback(lc);
