@@ -77,6 +77,31 @@ saturated-tailwind на muted-семейство.
 Цвет стрелки — нейтраль `#8a93a3` по умолчанию либо база семейства по смыслу.
 Применяется только там, где морфизм реально mono/epi/iso/nat — не на каждой стрелке.
 
+**Кит маркеров (переиспользуемый, в `<defs>` каждого нового SVG).** Метки-`<marker>`
+с фиксированными id — родное средство SVG, рисуются в Jupyter (в чат-превью `<marker>`
+вырезается — это ограничение превью, не курса):
+
+```xml
+<defs>
+  <marker id="ah" markerWidth="10" markerHeight="8" refX="8" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.5 L0,7 z" fill="#8a93a3"/></marker>
+  <marker id="ah-epi" markerWidth="15" markerHeight="8" refX="13" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L9,3.5 L0,7 z M5,0 L14,3.5 L5,7 z" fill="#8a93a3"/></marker>
+  <marker id="ah-tail" markerWidth="10" markerHeight="8" refX="1" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M8,0 L1,3.5 L8,7" fill="none" stroke="#8a93a3" stroke-width="1.6"/></marker>
+</defs>
+```
+
+| Морфизм | Как рисовать |
+|---------|--------------|
+| `→` общий | `marker-end="url(#ah)"` |
+| `↣` mono | `marker-start="url(#ah-tail)" marker-end="url(#ah)"` |
+| `↠` epi | `marker-end="url(#ah-epi)"` |
+| `≅` iso | `marker-end="url(#ah)"` + текст `≅` над линией |
+| `⇒` nat | две параллельные линии + `marker-end="url(#ah)"` |
+
+Наконечники по умолчанию нейтральные; где нужен цветной — перекрашенная копия маркера.
+Кит хранится готовым блоком в шапке-правилах (`DesignShowcase.ipynb`) и упомянут в ROADMAP;
+в новый SVG просто копируется в `<defs>`. Спот-чек стрелок — в Jupyter или временной
+инлайн-копией наконечника (полигоном).
+
 ## Подход к нормализации
 
 `src/scripts/coursemap/normalize_palette.js` — детерминированный реколор всех
@@ -121,7 +146,8 @@ saturated-tailwind на muted-семейство.
 ## Документация
 
 - `DesignShowcase.ipynb`: секция «тёмная тема SVG — палитра» → переписать на светлый
-  muted-канон выше («в тон карте курса»); убрать «✅ решение: тёмные SVG».
+  muted-канон выше («в тон карте курса»); убрать «✅ решение: тёмные SVG». Добавить
+  кит маркеров и словарь стрелок как шапку-правила для будущих диаграмм.
 - `ROADMAP.md`: палитру в правилах заменить светлой; правило `&#NNNN;` смягчить;
   закрыть/удалить устаревший блок «Faza 6 — Ispravleniye SVG» (кириллицы 0, тёмного
   фона 0 — аудит неактуален). Добавить правило: «палитра диаграмм — единая светлая
