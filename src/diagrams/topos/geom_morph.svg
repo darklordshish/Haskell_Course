@@ -2,10 +2,10 @@
      font-family="monospace,Arial,sans-serif">
   <defs>
     <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5872c9"/>
     </marker>
     <marker id="arrG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#34d399"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3f9d77"/>
     </marker>
   </defs>
 
@@ -16,30 +16,30 @@
   <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Geometric Morphism: f* &#8904; f&#8314;</text>
 
   <!-- Topos E box -->
-  <rect x="50" y="100" width="170" height="60" rx="8" fill="#f1f5f9" stroke="#2563eb" stroke-width="2"/>
-  <text x="135" y="126" text-anchor="middle" font-size="15" font-weight="bold" fill="#2563eb">E</text>
-  <text x="135" y="148" text-anchor="middle" font-size="11" fill="#64748b">source topos</text>
+  <rect x="50" y="100" width="170" height="60" rx="8" fill="#f7f8fa" stroke="#5872c9" stroke-width="2"/>
+  <text x="135" y="126" text-anchor="middle" font-size="15" font-weight="bold" fill="#5872c9">E</text>
+  <text x="135" y="148" text-anchor="middle" font-size="11" fill="#8a93a3">source topos</text>
 
   <!-- Topos F box -->
-  <rect x="380" y="100" width="170" height="60" rx="8" fill="#f1f5f9" stroke="#34d399" stroke-width="2"/>
-  <text x="465" y="126" text-anchor="middle" font-size="15" font-weight="bold" fill="#34d399">F</text>
-  <text x="465" y="148" text-anchor="middle" font-size="11" fill="#64748b">target topos</text>
+  <rect x="380" y="100" width="170" height="60" rx="8" fill="#f7f8fa" stroke="#3f9d77" stroke-width="2"/>
+  <text x="465" y="126" text-anchor="middle" font-size="15" font-weight="bold" fill="#3f9d77">F</text>
+  <text x="465" y="148" text-anchor="middle" font-size="11" fill="#8a93a3">target topos</text>
 
   <!-- f* arrow: F -> E (inverse image, top arc) -->
-  <path d="M 378 118 Q 300 68 222 118" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arr)"/>
-  <text x="300" y="80" text-anchor="middle" font-size="12" fill="#2563eb">f* (inverse image) = Lan_f</text>
-  <text x="300" y="95" text-anchor="middle" font-size="10" fill="#64748b">left adjoint, preserves finite limits</text>
+  <path d="M 378 118 Q 300 68 222 118" fill="none" stroke="#5872c9" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="300" y="80" text-anchor="middle" font-size="12" fill="#5872c9">f* (inverse image) = Lan_f</text>
+  <text x="300" y="95" text-anchor="middle" font-size="10" fill="#8a93a3">left adjoint, preserves finite limits</text>
 
   <!-- f+ arrow: E -> F (direct image, bottom arc) -->
-  <path d="M 222 142 Q 300 192 378 142" fill="none" stroke="#34d399" stroke-width="2" marker-end="url(#arrG)"/>
-  <text x="300" y="180" text-anchor="middle" font-size="12" fill="#34d399">f&#8314; (direct image) = Ran_f</text>
-  <text x="300" y="195" text-anchor="middle" font-size="10" fill="#64748b">right adjoint</text>
+  <path d="M 222 142 Q 300 192 378 142" fill="none" stroke="#3f9d77" stroke-width="2" marker-end="url(#arrG)"/>
+  <text x="300" y="180" text-anchor="middle" font-size="12" fill="#3f9d77">f&#8314; (direct image) = Ran_f</text>
+  <text x="300" y="195" text-anchor="middle" font-size="10" fill="#8a93a3">right adjoint</text>
 
   <!-- Adjunction symbol -->
-  <text x="300" y="132" text-anchor="middle" font-size="18" font-weight="bold" fill="#a78bfa">&#8867;</text>
+  <text x="300" y="132" text-anchor="middle" font-size="18" font-weight="bold" fill="#8b6db5">&#8867;</text>
 
   <!-- Footer -->
-  <rect x="40" y="226" width="520" height="36" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="40" y="226" width="520" height="36" rx="8" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.2"/>
   <text x="300" y="241" text-anchor="middle" font-size="11" fill="#0f172a">Geom. morph. = (Lan_f, Ran_f) on sheaves</text>
-  <text x="300" y="255" text-anchor="middle" font-size="10" fill="#64748b">f* &#8867; f&#8314;  means  Hom_E(f*(G), H) &#8773; Hom_F(G, f&#8314;(H))</text>
+  <text x="300" y="255" text-anchor="middle" font-size="10" fill="#8a93a3">f* &#8867; f&#8314;  means  Hom_E(f*(G), H) &#8773; Hom_F(G, f&#8314;(H))</text>
 </svg>

@@ -3,13 +3,13 @@
   <rect width="860" height="440" fill="#ffffff" rx="8"/>
   <defs>
     <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5872c9"/>
     </marker>
     <marker id="arrg" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#34d399"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3f9d77"/>
     </marker>
     <marker id="arrp" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b6db5"/>
     </marker>
   </defs>
 
@@ -18,71 +18,71 @@
   </text>
 
   <!-- Poset X -->
-  <text x="120" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#64748b">X as poset</text>
-  <rect x="70" y="70" width="100" height="36" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5" rx="6"/>
-  <text x="120" y="88" text-anchor="middle" font-size="11" fill="#2563eb">OK</text>
-  <text x="120" y="101" text-anchor="middle" font-size="10" fill="#64748b">tau=0.2</text>
+  <text x="120" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#8a93a3">X as poset</text>
+  <rect x="70" y="70" width="100" height="36" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.5" rx="6"/>
+  <text x="120" y="88" text-anchor="middle" font-size="11" fill="#5872c9">OK</text>
+  <text x="120" y="101" text-anchor="middle" font-size="10" fill="#8a93a3">tau=0.2</text>
 
-  <rect x="20" y="148" width="100" height="36" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5" rx="6"/>
-  <text x="70" y="166" text-anchor="middle" font-size="11" fill="#2563eb">Warn</text>
-  <text x="70" y="179" text-anchor="middle" font-size="10" fill="#64748b">tau=0.6</text>
+  <rect x="20" y="148" width="100" height="36" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.5" rx="6"/>
+  <text x="70" y="166" text-anchor="middle" font-size="11" fill="#5872c9">Warn</text>
+  <text x="70" y="179" text-anchor="middle" font-size="10" fill="#8a93a3">tau=0.6</text>
 
-  <rect x="120" y="148" width="100" height="36" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5" rx="6"/>
-  <text x="170" y="166" text-anchor="middle" font-size="11" fill="#2563eb">Degrade</text>
-  <text x="170" y="179" text-anchor="middle" font-size="10" fill="#64748b">tau=0.8</text>
+  <rect x="120" y="148" width="100" height="36" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.5" rx="6"/>
+  <text x="170" y="166" text-anchor="middle" font-size="11" fill="#5872c9">Degrade</text>
+  <text x="170" y="179" text-anchor="middle" font-size="10" fill="#8a93a3">tau=0.8</text>
 
-  <rect x="70" y="226" width="100" height="36" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5" rx="6"/>
-  <text x="120" y="244" text-anchor="middle" font-size="11" fill="#2563eb">Fail</text>
-  <text x="120" y="257" text-anchor="middle" font-size="10" fill="#64748b">tau=1.0</text>
+  <rect x="70" y="226" width="100" height="36" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.5" rx="6"/>
+  <text x="120" y="244" text-anchor="middle" font-size="11" fill="#5872c9">Fail</text>
+  <text x="120" y="257" text-anchor="middle" font-size="10" fill="#8a93a3">tau=1.0</text>
 
   <!-- Poset order arrows -->
-  <line x1="95" y1="106" x2="70" y2="148" stroke="#2563eb" stroke-width="1" marker-end="url(#arr)"/>
-  <line x1="145" y1="106" x2="170" y2="148" stroke="#2563eb" stroke-width="1" marker-end="url(#arr)"/>
-  <line x1="70" y1="184" x2="100" y2="226" stroke="#2563eb" stroke-width="1" marker-end="url(#arr)"/>
-  <line x1="170" y1="184" x2="140" y2="226" stroke="#2563eb" stroke-width="1" marker-end="url(#arr)"/>
-  <text x="230" y="175" text-anchor="start" font-size="11" fill="#64748b">X(x,y) = [x&lt;=y]</text>
-  <text x="230" y="190" text-anchor="start" font-size="11" fill="#64748b">in [0,1]</text>
+  <line x1="95" y1="106" x2="70" y2="148" stroke="#5872c9" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="145" y1="106" x2="170" y2="148" stroke="#5872c9" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="70" y1="184" x2="100" y2="226" stroke="#5872c9" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="170" y1="184" x2="140" y2="226" stroke="#5872c9" stroke-width="1" marker-end="url(#arr)"/>
+  <text x="230" y="175" text-anchor="start" font-size="11" fill="#8a93a3">X(x,y) = [x&lt;=y]</text>
+  <text x="230" y="190" text-anchor="start" font-size="11" fill="#8a93a3">in [0,1]</text>
 
   <!-- Divider -->
   <line x1="290" y1="50" x2="290" y2="390" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,3"/>
 
   <!-- Bitopological approach -->
-  <text x="480" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#34d399">Bitopological</text>
-  <rect x="305" y="70" width="350" height="60" fill="#f0fdf4" stroke="#34d399" stroke-width="1" rx="6"/>
+  <text x="480" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#3f9d77">Bitopological</text>
+  <rect x="305" y="70" width="350" height="60" fill="#e9f4ee" stroke="#3f9d77" stroke-width="1" rx="6"/>
   <text x="480" y="88" text-anchor="middle" font-size="12" fill="#0f172a">T-up on X by tau: open sets = {x: tau(x)&gt;t}</text>
-  <text x="480" y="104" text-anchor="middle" font-size="11" fill="#64748b">{Fail} at t=0.8,  {Fail,Degrade} at t=0.6</text>
-  <text x="480" y="118" text-anchor="middle" font-size="11" fill="#64748b">{Fail,Degrade,Warn} at t=0.2,  X at t=0</text>
+  <text x="480" y="104" text-anchor="middle" font-size="11" fill="#8a93a3">{Fail} at t=0.8,  {Fail,Degrade} at t=0.6</text>
+  <text x="480" y="118" text-anchor="middle" font-size="11" fill="#8a93a3">{Fail,Degrade,Warn} at t=0.2,  X at t=0</text>
 
-  <rect x="305" y="140" width="350" height="60" fill="#f0fdf4" stroke="#34d399" stroke-width="1" rx="6"/>
+  <rect x="305" y="140" width="350" height="60" fill="#e9f4ee" stroke="#3f9d77" stroke-width="1" rx="6"/>
   <text x="480" y="158" text-anchor="middle" font-size="12" fill="#0f172a">Scott topology on X (from order):</text>
-  <text x="480" y="174" text-anchor="middle" font-size="11" fill="#64748b">upsets: {Fail}, {Warn,Fail}, {Degrade,Fail}, X</text>
-  <text x="480" y="190" text-anchor="middle" font-size="11" fill="#fb923c">&#x26A0; tau-topology != Scott topology on poset!</text>
+  <text x="480" y="174" text-anchor="middle" font-size="11" fill="#8a93a3">upsets: {Fail}, {Warn,Fail}, {Degrade,Fail}, X</text>
+  <text x="480" y="190" text-anchor="middle" font-size="11" fill="#d9a441">&#x26A0; tau-topology != Scott topology on poset!</text>
 
-  <rect x="305" y="210" width="350" height="60" fill="#f0fdf4" stroke="#34d399" stroke-width="1" rx="6"/>
+  <rect x="305" y="210" width="350" height="60" fill="#e9f4ee" stroke="#3f9d77" stroke-width="1" rx="6"/>
   <text x="480" y="228" text-anchor="middle" font-size="12" fill="#0f172a">Pl({Warn, Fail}) by tau-topology:</text>
-  <text x="480" y="244" text-anchor="middle" font-size="11" fill="#64748b">= sup(tau(Warn), tau(Fail)) = sup(0.6, 1.0) = 1.0</text>
-  <text x="480" y="260" text-anchor="middle" font-size="11" fill="#64748b">— does not account for order on X</text>
+  <text x="480" y="244" text-anchor="middle" font-size="11" fill="#8a93a3">= sup(tau(Warn), tau(Fail)) = sup(0.6, 1.0) = 1.0</text>
+  <text x="480" y="260" text-anchor="middle" font-size="11" fill="#8a93a3">— does not account for order on X</text>
 
   <!-- Kan approach -->
-  <text x="700" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#a78bfa">Enriched Kan</text>
-  <rect x="660" y="70" width="180" height="60" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
+  <text x="700" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#8b6db5">Enriched Kan</text>
+  <rect x="660" y="70" width="180" height="60" fill="#efeaf6" stroke="#8b6db5" stroke-width="1" rx="6"/>
   <text x="750" y="88" text-anchor="middle" font-size="11" fill="#0f172a">X(x,y) = [x&lt;=y] in [0,1]</text>
-  <text x="750" y="104" text-anchor="middle" font-size="11" fill="#64748b">not 0/1, but in [0,1]</text>
-  <text x="750" y="118" text-anchor="middle" font-size="11" fill="#64748b">(non-discrete V-cat.)</text>
+  <text x="750" y="104" text-anchor="middle" font-size="11" fill="#8a93a3">not 0/1, but in [0,1]</text>
+  <text x="750" y="118" text-anchor="middle" font-size="11" fill="#8a93a3">(non-discrete V-cat.)</text>
 
-  <rect x="660" y="140" width="180" height="60" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
+  <rect x="660" y="140" width="180" height="60" fill="#efeaf6" stroke="#8b6db5" stroke-width="1" rx="6"/>
   <text x="750" y="158" text-anchor="middle" font-size="11" fill="#0f172a">Lan_J tau (E) = coend</text>
-  <text x="750" y="174" text-anchor="middle" font-size="11" fill="#64748b">= sup_x min(J(x,E), tau(x))</text>
-  <text x="750" y="190" text-anchor="middle" font-size="11" fill="#64748b">where J(x,E) = sup_{e in E} X(x,e)</text>
+  <text x="750" y="174" text-anchor="middle" font-size="11" fill="#8a93a3">= sup_x min(J(x,E), tau(x))</text>
+  <text x="750" y="190" text-anchor="middle" font-size="11" fill="#8a93a3">where J(x,E) = sup_{e in E} X(x,e)</text>
 
-  <rect x="660" y="210" width="180" height="60" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
+  <rect x="660" y="210" width="180" height="60" fill="#efeaf6" stroke="#8b6db5" stroke-width="1" rx="6"/>
   <text x="750" y="228" text-anchor="middle" font-size="11" fill="#0f172a">Pl({Warn,Fail}) =</text>
-  <text x="750" y="244" text-anchor="middle" font-size="11" fill="#2563eb">accounts for homs X(x,e)</text>
-  <text x="750" y="260" text-anchor="middle" font-size="11" fill="#64748b">— order enters explicitly</text>
+  <text x="750" y="244" text-anchor="middle" font-size="11" fill="#5872c9">accounts for homs X(x,e)</text>
+  <text x="750" y="260" text-anchor="middle" font-size="11" fill="#8a93a3">— order enters explicitly</text>
 
   <!-- Result -->
-  <rect x="60" y="355" width="740" height="60" fill="#fef3c7" stroke="#fb923c" stroke-width="1.5" rx="6"/>
+  <rect x="60" y="355" width="740" height="60" fill="#f4e7cf" stroke="#d9a441" stroke-width="1.5" rx="6"/>
   <text x="430" y="373" text-anchor="middle" font-size="12" fill="#0f172a">Conclusion: when X is a non-discrete [0,1]-category, the approaches DIVERGE.</text>
   <text x="430" y="388" text-anchor="middle" font-size="12" fill="#0f172a">Bitopology sees only tau. Enriched Kan sees the structure X(x,y).</text>
-  <text x="430" y="403" text-anchor="middle" font-size="11" fill="#64748b">This is an open question from the status table in section 14.</text>
+  <text x="430" y="403" text-anchor="middle" font-size="11" fill="#8a93a3">This is an open question from the status table in section 14.</text>
 </svg>

@@ -1,52 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="660" height="320" viewBox="0 0 660 320" font-family="monospace,Arial,sans-serif">
 <defs>
   <marker id="tcn_a" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-    <polygon points="0 0, 10 3.5, 0 7" fill="#334466"/>
+    <polygon points="0 0, 10 3.5, 0 7" fill="#3a4a96"/>
   </marker>
 </defs>
 <rect width="660" height="320" fill="#ffffff"/>
 <text x="330" y="30" text-anchor="middle" font-size="15" fill="#0f172a" font-weight="bold">Connectives as classifying arrows (pullback squares)</text>
 
 <!-- ===== AND ===== -->
-<text x="165" y="62" text-anchor="middle" font-size="13" fill="#1a4488" font-weight="bold">Conjunction  and = chi&lt;true,true&gt;</text>
+<text x="165" y="62" text-anchor="middle" font-size="13" fill="#3a4a96" font-weight="bold">Conjunction  and = chi&lt;true,true&gt;</text>
 <text x="70"  y="92"  text-anchor="middle" font-size="14" fill="#0f172a">1</text>
 <text x="280" y="92"  text-anchor="middle" font-size="14" fill="#0f172a">1</text>
 <text x="55"  y="210" text-anchor="middle" font-size="13" fill="#0f172a">Omega x Omega</text>
 <text x="282" y="210" text-anchor="middle" font-size="14" fill="#0f172a">Omega</text>
 <!-- top arrow ! -->
-<line x1="85" y1="87" x2="268" y2="87" stroke="#334466" stroke-width="1.6" marker-end="url(#tcn_a)"/>
-<text x="178" y="79" text-anchor="middle" font-size="11" fill="#334466">!</text>
+<line x1="85" y1="87" x2="268" y2="87" stroke="#3a4a96" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<text x="178" y="79" text-anchor="middle" font-size="11" fill="#3a4a96">!</text>
 <!-- left arrow <true,true> down -->
-<line x1="70" y1="100" x2="70" y2="196" stroke="#2255cc" stroke-width="1.6" marker-end="url(#tcn_a)"/>
-<text x="74" y="152" text-anchor="start" font-size="10" fill="#2255cc">&lt;true,true&gt;</text>
+<line x1="70" y1="100" x2="70" y2="196" stroke="#3a4a96" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<text x="74" y="152" text-anchor="start" font-size="10" fill="#3a4a96">&lt;true,true&gt;</text>
 <!-- right arrow true down -->
-<line x1="282" y1="100" x2="282" y2="196" stroke="#16a34a" stroke-width="1.6" marker-end="url(#tcn_a)"/>
-<text x="288" y="152" text-anchor="start" font-size="11" fill="#16a34a">true</text>
+<line x1="282" y1="100" x2="282" y2="196" stroke="#3f9d77" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<text x="288" y="152" text-anchor="start" font-size="11" fill="#3f9d77">true</text>
 <!-- bottom arrow and -->
-<line x1="120" y1="205" x2="250" y2="205" stroke="#334466" stroke-width="1.8" marker-end="url(#tcn_a)"/>
-<text x="185" y="223" text-anchor="middle" font-size="12" fill="#1a4488" font-weight="bold">and</text>
+<line x1="120" y1="205" x2="250" y2="205" stroke="#3a4a96" stroke-width="1.8" marker-end="url(#tcn_a)"/>
+<text x="185" y="223" text-anchor="middle" font-size="12" fill="#3a4a96" font-weight="bold">and</text>
 <!-- PB corner -->
-<rect x="92" y="178" width="12" height="12" fill="none" stroke="#94a3b8" stroke-width="1"/>
+<rect x="92" y="178" width="12" height="12" fill="none" stroke="#8a93a3" stroke-width="1"/>
 
 <!-- divider -->
-<line x1="335" y1="50" x2="335" y2="300" stroke="#e2e8f0" stroke-width="1.2"/>
+<line x1="335" y1="50" x2="335" y2="300" stroke="#cbd5e1" stroke-width="1.2"/>
 
 <!-- ===== NEG ===== -->
-<text x="500" y="62" text-anchor="middle" font-size="13" fill="#7733aa" font-weight="bold">Negation  neg = chi(false)</text>
+<text x="500" y="62" text-anchor="middle" font-size="13" fill="#8b6db5" font-weight="bold">Negation  neg = chi(false)</text>
 <text x="410" y="92"  text-anchor="middle" font-size="14" fill="#0f172a">1</text>
 <text x="600" y="92"  text-anchor="middle" font-size="14" fill="#0f172a">1</text>
 <text x="410" y="210" text-anchor="middle" font-size="14" fill="#0f172a">Omega</text>
 <text x="600" y="210" text-anchor="middle" font-size="14" fill="#0f172a">Omega</text>
-<line x1="425" y1="87" x2="588" y2="87" stroke="#334466" stroke-width="1.6" marker-end="url(#tcn_a)"/>
-<text x="506" y="79" text-anchor="middle" font-size="11" fill="#334466">!</text>
-<line x1="410" y1="100" x2="410" y2="196" stroke="#7733aa" stroke-width="1.6" marker-end="url(#tcn_a)"/>
-<text x="414" y="152" text-anchor="start" font-size="11" fill="#7733aa">false</text>
-<line x1="600" y1="100" x2="600" y2="196" stroke="#16a34a" stroke-width="1.6" marker-end="url(#tcn_a)"/>
-<text x="606" y="152" text-anchor="start" font-size="11" fill="#16a34a">true</text>
-<line x1="440" y1="205" x2="575" y2="205" stroke="#334466" stroke-width="1.8" marker-end="url(#tcn_a)"/>
-<text x="507" y="223" text-anchor="middle" font-size="12" fill="#7733aa" font-weight="bold">neg</text>
-<rect x="423" y="178" width="12" height="12" fill="none" stroke="#94a3b8" stroke-width="1"/>
+<line x1="425" y1="87" x2="588" y2="87" stroke="#3a4a96" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<text x="506" y="79" text-anchor="middle" font-size="11" fill="#3a4a96">!</text>
+<line x1="410" y1="100" x2="410" y2="196" stroke="#8b6db5" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<text x="414" y="152" text-anchor="start" font-size="11" fill="#8b6db5">false</text>
+<line x1="600" y1="100" x2="600" y2="196" stroke="#3f9d77" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<text x="606" y="152" text-anchor="start" font-size="11" fill="#3f9d77">true</text>
+<line x1="440" y1="205" x2="575" y2="205" stroke="#3a4a96" stroke-width="1.8" marker-end="url(#tcn_a)"/>
+<text x="507" y="223" text-anchor="middle" font-size="12" fill="#8b6db5" font-weight="bold">neg</text>
+<rect x="423" y="178" width="12" height="12" fill="none" stroke="#8a93a3" stroke-width="1"/>
 
-<text x="330" y="280" text-anchor="middle" font-size="11" fill="#334466">S = chi^{-1}(true): the square is a pullback of true along the connective</text>
-<text x="330" y="298" text-anchor="middle" font-size="10" fill="#64748b">also: neg = (imp) . &lt;id, false&gt;</text>
+<text x="330" y="280" text-anchor="middle" font-size="11" fill="#3a4a96">S = chi^{-1}(true): the square is a pullback of true along the connective</text>
+<text x="330" y="298" text-anchor="middle" font-size="10" fill="#8a93a3">also: neg = (imp) . &lt;id, false&gt;</text>
 </svg>

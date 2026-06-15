@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" font-family="monospace,Arial,sans-serif">
 <defs>
   <marker id="oq_arr" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
-    <polygon points="0 0, 9 3.5, 0 7" fill="#94a3b8"/>
+    <polygon points="0 0, 9 3.5, 0 7" fill="#8a93a3"/>
   </marker>
 </defs>
 <rect width="640" height="360" fill="#ffffff"/>
 <text x="320" y="28" text-anchor="middle" font-size="15" fill="#0f172a" font-weight="bold">Optics power lattice</text>
-<text x="320" y="46" text-anchor="middle" font-size="11" fill="#556688">higher = more powerful (read+write, more foci)</text>
+<text x="320" y="46" text-anchor="middle" font-size="11" fill="#5872c9">higher = more powerful (read+write, more foci)</text>
 
 <!-- edges (drawn first, behind nodes) -->
 <line x1="320" y1="86"  x2="200" y2="126" stroke="#cbd5e1" stroke-width="1.5"/>
@@ -19,28 +19,28 @@
 <line x1="320" y1="286" x2="460" y2="316" stroke="#cbd5e1" stroke-width="1.5"/>
 
 <!-- Iso (top) -->
-<rect x="260" y="58" width="120" height="28" rx="6" fill="#fef3c7" stroke="#a16207" stroke-width="1.4"/>
-<text x="320" y="77" text-anchor="middle" font-size="12" fill="#7a4a06" font-weight="bold">Iso (s &#8596; a)</text>
+<rect x="260" y="58" width="120" height="28" rx="6" fill="#f4e7cf" stroke="#d9a441" stroke-width="1.4"/>
+<text x="320" y="77" text-anchor="middle" font-size="12" fill="#8a6418" font-weight="bold">Iso (s &#8596; a)</text>
 
 <!-- Lens / Prism -->
-<rect x="140" y="126" width="120" height="30" rx="6" fill="#dbeafe" stroke="#2255cc" stroke-width="1.4"/>
-<text x="200" y="146" text-anchor="middle" font-size="12" fill="#1a4488" font-weight="bold">Lens (1)</text>
-<rect x="380" y="126" width="120" height="30" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
-<text x="440" y="146" text-anchor="middle" font-size="12" fill="#14532d" font-weight="bold">Prism (0/1)</text>
+<rect x="140" y="126" width="120" height="30" rx="6" fill="#eef1fb" stroke="#3a4a96" stroke-width="1.4"/>
+<text x="200" y="146" text-anchor="middle" font-size="12" fill="#3a4a96" font-weight="bold">Lens (1)</text>
+<rect x="380" y="126" width="120" height="30" rx="6" fill="#e9f4ee" stroke="#3f9d77" stroke-width="1.4"/>
+<text x="440" y="146" text-anchor="middle" font-size="12" fill="#2f6f54" font-weight="bold">Prism (0/1)</text>
 
 <!-- AffineTraversal -->
-<rect x="240" y="196" width="160" height="30" rx="6" fill="#ede9fe" stroke="#7733aa" stroke-width="1.4"/>
-<text x="320" y="216" text-anchor="middle" font-size="12" fill="#5b21b6" font-weight="bold">AffineTraversal (0/1)</text>
+<rect x="240" y="196" width="160" height="30" rx="6" fill="#efeaf6" stroke="#8b6db5" stroke-width="1.4"/>
+<text x="320" y="216" text-anchor="middle" font-size="12" fill="#5f4a86" font-weight="bold">AffineTraversal (0/1)</text>
 
 <!-- Traversal -->
-<rect x="250" y="256" width="140" height="30" rx="6" fill="#cffafe" stroke="#0e7490" stroke-width="1.4"/>
-<text x="320" y="276" text-anchor="middle" font-size="12" fill="#155e75" font-weight="bold">Traversal (0..n)</text>
+<rect x="250" y="256" width="140" height="30" rx="6" fill="#eef1fb" stroke="#5872c9" stroke-width="1.4"/>
+<text x="320" y="276" text-anchor="middle" font-size="12" fill="#3a4a96" font-weight="bold">Traversal (0..n)</text>
 
 <!-- Fold / Setter / Getter -->
-<rect x="110" y="316" width="140" height="30" rx="6" fill="#f1f5f9" stroke="#334466" stroke-width="1.2"/>
-<text x="180" y="336" text-anchor="middle" font-size="11" fill="#334466">Fold (read 0..n)</text>
-<rect x="260" y="316" width="120" height="30" rx="6" fill="#f1f5f9" stroke="#334466" stroke-width="1.2"/>
-<text x="320" y="336" text-anchor="middle" font-size="11" fill="#334466">Getter (read 1)</text>
-<rect x="390" y="316" width="140" height="30" rx="6" fill="#f1f5f9" stroke="#334466" stroke-width="1.2"/>
-<text x="460" y="336" text-anchor="middle" font-size="11" fill="#334466">Setter (write)</text>
+<rect x="110" y="316" width="140" height="30" rx="6" fill="#f7f8fa" stroke="#3a4a96" stroke-width="1.2"/>
+<text x="180" y="336" text-anchor="middle" font-size="11" fill="#3a4a96">Fold (read 0..n)</text>
+<rect x="260" y="316" width="120" height="30" rx="6" fill="#f7f8fa" stroke="#3a4a96" stroke-width="1.2"/>
+<text x="320" y="336" text-anchor="middle" font-size="11" fill="#3a4a96">Getter (read 1)</text>
+<rect x="390" y="316" width="140" height="30" rx="6" fill="#f7f8fa" stroke="#3a4a96" stroke-width="1.2"/>
+<text x="460" y="336" text-anchor="middle" font-size="11" fill="#3a4a96">Setter (write)</text>
 </svg>

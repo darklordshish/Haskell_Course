@@ -1,80 +1,80 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="280" viewBox="0 0 600 280" font-family="monospace,Arial,sans-serif">
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#334466"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3a4a96"/>
     </marker>
     <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#2255cc"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3a4a96"/>
     </marker>
     <marker id="arrow-purple" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#7733aa"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b6db5"/>
     </marker>
     <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3f9d77"/>
     </marker>
   </defs>
 
   <!-- Background -->
   <rect width="600" height="280" fill="#ffffff"/>
-  <rect x="8" y="8" width="584" height="264" rx="8" ry="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="8" y="8" width="584" height="264" rx="8" ry="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
 
   <!-- Title -->
   <text x="300" y="32" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Markov chain = endo-kernel S -&gt; Dist S</text>
 
   <!-- State circles -->
   <!-- Sunny: left -->
-  <circle cx="120" cy="145" r="38" fill="#dbeafe" stroke="#2255cc" stroke-width="2"/>
-  <text x="120" y="141" text-anchor="middle" font-size="12" font-weight="bold" fill="#2255cc">Sunny</text>
-  <text x="120" y="156" text-anchor="middle" font-size="10" fill="#334466">s1</text>
+  <circle cx="120" cy="145" r="38" fill="#eef1fb" stroke="#3a4a96" stroke-width="2"/>
+  <text x="120" y="141" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a4a96">Sunny</text>
+  <text x="120" y="156" text-anchor="middle" font-size="10" fill="#3a4a96">s1</text>
 
   <!-- Cloudy: top right -->
-  <circle cx="350" cy="100" r="38" fill="#ede9fe" stroke="#7733aa" stroke-width="2"/>
-  <text x="350" y="96" text-anchor="middle" font-size="12" font-weight="bold" fill="#7733aa">Cloudy</text>
-  <text x="350" y="111" text-anchor="middle" font-size="10" fill="#334466">s2</text>
+  <circle cx="350" cy="100" r="38" fill="#efeaf6" stroke="#8b6db5" stroke-width="2"/>
+  <text x="350" y="96" text-anchor="middle" font-size="12" font-weight="bold" fill="#8b6db5">Cloudy</text>
+  <text x="350" y="111" text-anchor="middle" font-size="10" fill="#3a4a96">s2</text>
 
   <!-- Rainy: bottom right -->
-  <circle cx="350" cy="200" r="38" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
-  <text x="350" y="196" text-anchor="middle" font-size="12" font-weight="bold" fill="#16a34a">Rainy</text>
-  <text x="350" y="211" text-anchor="middle" font-size="10" fill="#334466">s3</text>
+  <circle cx="350" cy="200" r="38" fill="#e9f4ee" stroke="#3f9d77" stroke-width="2"/>
+  <text x="350" y="196" text-anchor="middle" font-size="12" font-weight="bold" fill="#3f9d77">Rainy</text>
+  <text x="350" y="211" text-anchor="middle" font-size="10" fill="#3a4a96">s3</text>
 
   <!-- Self-loop: Sunny -> Sunny -->
-  <path d="M 93 110 C 60 68, 20 68, 87 110" fill="none" stroke="#2255cc" stroke-width="1.8" marker-end="url(#arrow-blue)"/>
-  <text x="44" y="76" text-anchor="middle" font-size="10" fill="#2255cc">0.6</text>
+  <path d="M 93 110 C 60 68, 20 68, 87 110" fill="none" stroke="#3a4a96" stroke-width="1.8" marker-end="url(#arrow-blue)"/>
+  <text x="44" y="76" text-anchor="middle" font-size="10" fill="#3a4a96">0.6</text>
 
   <!-- Sunny -> Cloudy -->
-  <line x1="157" y1="128" x2="313" y2="107" stroke="#334466" stroke-width="1.8" marker-end="url(#arrow)"/>
-  <text x="232" y="107" text-anchor="middle" font-size="10" fill="#334466">0.3</text>
+  <line x1="157" y1="128" x2="313" y2="107" stroke="#3a4a96" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <text x="232" y="107" text-anchor="middle" font-size="10" fill="#3a4a96">0.3</text>
 
   <!-- Sunny -> Rainy -->
-  <line x1="156" y1="163" x2="313" y2="191" stroke="#334466" stroke-width="1.8" marker-end="url(#arrow)"/>
-  <text x="225" y="187" text-anchor="middle" font-size="10" fill="#334466">0.1</text>
+  <line x1="156" y1="163" x2="313" y2="191" stroke="#3a4a96" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <text x="225" y="187" text-anchor="middle" font-size="10" fill="#3a4a96">0.1</text>
 
   <!-- Cloudy -> Rainy -->
-  <line x1="350" y1="138" x2="350" y2="162" stroke="#7733aa" stroke-width="1.8" marker-end="url(#arrow-purple)"/>
-  <text x="360" y="154" text-anchor="start" font-size="10" fill="#7733aa">0.4</text>
+  <line x1="350" y1="138" x2="350" y2="162" stroke="#8b6db5" stroke-width="1.8" marker-end="url(#arrow-purple)"/>
+  <text x="360" y="154" text-anchor="start" font-size="10" fill="#8b6db5">0.4</text>
 
   <!-- Cloudy -> Sunny -->
-  <line x1="315" y1="115" x2="157" y2="135" stroke="#7733aa" stroke-width="1.8" marker-end="url(#arrow-purple)"/>
-  <text x="233" y="118" text-anchor="middle" font-size="10" fill="#7733aa">0.4</text>
+  <line x1="315" y1="115" x2="157" y2="135" stroke="#8b6db5" stroke-width="1.8" marker-end="url(#arrow-purple)"/>
+  <text x="233" y="118" text-anchor="middle" font-size="10" fill="#8b6db5">0.4</text>
 
   <!-- Cloudy self-loop (0.2) -->
-  <path d="M 383 72 C 420 40, 460 55, 388 78" fill="none" stroke="#7733aa" stroke-width="1.8" marker-end="url(#arrow-purple)"/>
-  <text x="430" y="50" text-anchor="middle" font-size="10" fill="#7733aa">0.2</text>
+  <path d="M 383 72 C 420 40, 460 55, 388 78" fill="none" stroke="#8b6db5" stroke-width="1.8" marker-end="url(#arrow-purple)"/>
+  <text x="430" y="50" text-anchor="middle" font-size="10" fill="#8b6db5">0.2</text>
 
   <!-- Rainy -> Sunny -->
-  <line x1="314" y1="210" x2="157" y2="163" stroke="#16a34a" stroke-width="1.8" marker-end="url(#arrow-green)"/>
-  <text x="230" y="202" text-anchor="middle" font-size="10" fill="#16a34a">0.5</text>
+  <line x1="314" y1="210" x2="157" y2="163" stroke="#3f9d77" stroke-width="1.8" marker-end="url(#arrow-green)"/>
+  <text x="230" y="202" text-anchor="middle" font-size="10" fill="#3f9d77">0.5</text>
 
   <!-- Rainy -> Cloudy -->
-  <line x1="350" y1="162" x2="350" y2="138" stroke="#16a34a" stroke-width="1.8" marker-end="url(#arrow-green)"/>
-  <text x="364" y="147" text-anchor="start" font-size="10" fill="#16a34a">0.5</text>
+  <line x1="350" y1="162" x2="350" y2="138" stroke="#3f9d77" stroke-width="1.8" marker-end="url(#arrow-green)"/>
+  <text x="364" y="147" text-anchor="start" font-size="10" fill="#3f9d77">0.5</text>
 
   <!-- Side note box -->
-  <rect x="440" y="155" width="148" height="52" rx="5" ry="5" fill="#fefce8" stroke="#ca8a04" stroke-width="1.2"/>
-  <text x="514" y="172" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#92400e">Stationary dist:</text>
+  <rect x="440" y="155" width="148" height="52" rx="5" ry="5" fill="#f4e7cf" stroke="#d9a441" stroke-width="1.2"/>
+  <text x="514" y="172" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#8a6418">Stationary dist:</text>
   <text x="514" y="186" text-anchor="middle" font-size="9" fill="#0f172a">pi P = pi</text>
   <text x="514" y="199" text-anchor="middle" font-size="9" fill="#0f172a">SUM pi_i = 1</text>
 
   <!-- Legend note -->
-  <text x="300" y="268" text-anchor="middle" font-size="9" fill="#64748b">Transition probs on each row sum to 1. Self-loop shown for s1 (Sunny).</text>
+  <text x="300" y="268" text-anchor="middle" font-size="9" fill="#8a93a3">Transition probs on each row sum to 1. Self-loop shown for s1 (Sunny).</text>
 </svg>

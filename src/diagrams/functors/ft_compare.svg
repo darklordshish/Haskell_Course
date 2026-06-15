@@ -1,46 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" font-family="monospace,Arial,sans-serif">
   <defs>
     <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5872c9"/>
     </marker>
   </defs>
   <rect width="720" height="300" fill="#ffffff" rx="8"/>
-  <text x="360" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#334155">Categorical Summary</text>
+  <text x="360" y="26" text-anchor="middle" font-size="15" font-weight="bold" fill="#475569">Categorical Summary</text>
 
   <!-- FOLDABLE box -->
-  <rect x="30" y="42" width="300" height="220" rx="8" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="180" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e40af">FOLDABLE</text>
-  <rect x="50" y="74" width="260" height="32" rx="5" fill="#dbeafe"/>
-  <text x="180" y="94" text-anchor="middle" font-size="12" fill="#1e40af">t a -&gt; b</text>
-  <text x="180" y="114" text-anchor="middle" font-size="10" fill="#94a3b8">lose structure</text>
-  <text x="180" y="132" text-anchor="middle" font-size="10" fill="#94a3b8">foldMap :: (a-&gt;m) -&gt; t a -&gt; m</text>
-  <text x="180" y="150" text-anchor="middle" font-size="10" fill="#64748b">Monadic: no</text>
-  <text x="180" y="166" text-anchor="middle" font-size="10" fill="#64748b">Needs: Foldable</text>
-  <text x="180" y="184" text-anchor="middle" font-size="10" fill="#94a3b8">foldr = catamorphism</text>
-  <text x="180" y="200" text-anchor="middle" font-size="10" fill="#94a3b8">(destroys structure)</text>
-  <text x="180" y="218" text-anchor="middle" font-size="10" fill="#94a3b8">unfoldr = anamorphism</text>
-  <text x="180" y="236" text-anchor="middle" font-size="10" fill="#64748b">(builds structure)</text>
-  <text x="180" y="252" text-anchor="middle" font-size="9" fill="#2563eb">read-only</text>
+  <rect x="30" y="42" width="300" height="220" rx="8" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.5"/>
+  <text x="180" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#3a4a96">FOLDABLE</text>
+  <rect x="50" y="74" width="260" height="32" rx="5" fill="#eef1fb"/>
+  <text x="180" y="94" text-anchor="middle" font-size="12" fill="#3a4a96">t a -&gt; b</text>
+  <text x="180" y="114" text-anchor="middle" font-size="10" fill="#8a93a3">lose structure</text>
+  <text x="180" y="132" text-anchor="middle" font-size="10" fill="#8a93a3">foldMap :: (a-&gt;m) -&gt; t a -&gt; m</text>
+  <text x="180" y="150" text-anchor="middle" font-size="10" fill="#8a93a3">Monadic: no</text>
+  <text x="180" y="166" text-anchor="middle" font-size="10" fill="#8a93a3">Needs: Foldable</text>
+  <text x="180" y="184" text-anchor="middle" font-size="10" fill="#8a93a3">foldr = catamorphism</text>
+  <text x="180" y="200" text-anchor="middle" font-size="10" fill="#8a93a3">(destroys structure)</text>
+  <text x="180" y="218" text-anchor="middle" font-size="10" fill="#8a93a3">unfoldr = anamorphism</text>
+  <text x="180" y="236" text-anchor="middle" font-size="10" fill="#8a93a3">(builds structure)</text>
+  <text x="180" y="252" text-anchor="middle" font-size="9" fill="#5872c9">read-only</text>
 
   <!-- TRAVERSABLE box -->
-  <rect x="390" y="42" width="300" height="220" rx="8" fill="#f1f5f9" stroke="#34d399" stroke-width="1.5"/>
-  <text x="540" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#065f46">TRAVERSABLE</text>
-  <rect x="410" y="74" width="260" height="32" rx="5" fill="#d1fae5"/>
-  <text x="540" y="94" text-anchor="middle" font-size="12" fill="#065f46">t a -&gt; f (t b)</text>
-  <text x="540" y="114" text-anchor="middle" font-size="10" fill="#94a3b8">keep structure + effect</text>
-  <text x="540" y="132" text-anchor="middle" font-size="10" fill="#94a3b8">traverse :: (a-&gt;f b) -&gt; t a -&gt; f (t b)</text>
-  <text x="540" y="150" text-anchor="middle" font-size="10" fill="#64748b">Monadic: yes (mapM)</text>
-  <text x="540" y="166" text-anchor="middle" font-size="10" fill="#64748b">Needs: Functor + Foldable</text>
-  <text x="540" y="184" text-anchor="middle" font-size="10" fill="#94a3b8">sequenceA :: t (f a) -&gt; f (t a)</text>
-  <text x="540" y="200" text-anchor="middle" font-size="10" fill="#94a3b8">(permutation of effects)</text>
-  <text x="540" y="218" text-anchor="middle" font-size="10" fill="#94a3b8">every Traversable is Foldable</text>
-  <text x="540" y="236" text-anchor="middle" font-size="10" fill="#64748b">converse is false</text>
-  <text x="540" y="252" text-anchor="middle" font-size="9" fill="#34d399">read + write</text>
+  <rect x="390" y="42" width="300" height="220" rx="8" fill="#f7f8fa" stroke="#3f9d77" stroke-width="1.5"/>
+  <text x="540" y="64" text-anchor="middle" font-size="14" font-weight="bold" fill="#2f6f54">TRAVERSABLE</text>
+  <rect x="410" y="74" width="260" height="32" rx="5" fill="#e9f4ee"/>
+  <text x="540" y="94" text-anchor="middle" font-size="12" fill="#2f6f54">t a -&gt; f (t b)</text>
+  <text x="540" y="114" text-anchor="middle" font-size="10" fill="#8a93a3">keep structure + effect</text>
+  <text x="540" y="132" text-anchor="middle" font-size="10" fill="#8a93a3">traverse :: (a-&gt;f b) -&gt; t a -&gt; f (t b)</text>
+  <text x="540" y="150" text-anchor="middle" font-size="10" fill="#8a93a3">Monadic: yes (mapM)</text>
+  <text x="540" y="166" text-anchor="middle" font-size="10" fill="#8a93a3">Needs: Functor + Foldable</text>
+  <text x="540" y="184" text-anchor="middle" font-size="10" fill="#8a93a3">sequenceA :: t (f a) -&gt; f (t a)</text>
+  <text x="540" y="200" text-anchor="middle" font-size="10" fill="#8a93a3">(permutation of effects)</text>
+  <text x="540" y="218" text-anchor="middle" font-size="10" fill="#8a93a3">every Traversable is Foldable</text>
+  <text x="540" y="236" text-anchor="middle" font-size="10" fill="#8a93a3">converse is false</text>
+  <text x="540" y="252" text-anchor="middle" font-size="9" fill="#3f9d77">read + write</text>
 
   <!-- Arrow -->
-  <line x1="330" y1="152" x2="390" y2="152" stroke="#a78bfa" stroke-width="2" marker-end="url(#arr)"/>
-  <text x="360" y="146" text-anchor="middle" font-size="9" fill="#a78bfa">stronger</text>
+  <line x1="330" y1="152" x2="390" y2="152" stroke="#8b6db5" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="360" y="146" text-anchor="middle" font-size="9" fill="#8b6db5">stronger</text>
 
   <!-- Bottom border -->
-  <text x="360" y="292" text-anchor="middle" font-size="9" fill="#64748b">Law: fmap f = runIdentity . traverse (Identity . f)</text>
+  <text x="360" y="292" text-anchor="middle" font-size="9" fill="#8a93a3">Law: fmap f = runIdentity . traverse (Identity . f)</text>
 </svg>

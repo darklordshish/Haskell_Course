@@ -2,10 +2,10 @@
      font-family="monospace,Arial,sans-serif">
   <defs>
     <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5872c9"/>
     </marker>
     <marker id="arrP" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b6db5"/>
     </marker>
   </defs>
 
@@ -16,25 +16,25 @@
   <text x="360" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Axioms of Elementary Topos</text>
 
   <!-- Ax.1 box -->
-  <rect x="20" y="48" width="205" height="88" rx="8" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.8"/>
-  <text x="122" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#2563eb">Ax.1  Finite limits</text>
+  <rect x="20" y="48" width="205" height="88" rx="8" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.8"/>
+  <text x="122" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#5872c9">Ax.1  Finite limits</text>
   <text x="122" y="90" text-anchor="middle" font-size="11" fill="#0f172a">Terminal object: 1</text>
   <text x="122" y="108" text-anchor="middle" font-size="11" fill="#0f172a">Products: A&#215;B</text>
-  <text x="122" y="126" text-anchor="middle" font-size="11" fill="#64748b">Pullbacks</text>
+  <text x="122" y="126" text-anchor="middle" font-size="11" fill="#8a93a3">Pullbacks</text>
 
   <!-- Ax.2 box -->
-  <rect x="258" y="48" width="205" height="88" rx="8" fill="#f1f5f9" stroke="#34d399" stroke-width="1.8"/>
-  <text x="360" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#34d399">Ax.2  Power objects</text>
+  <rect x="258" y="48" width="205" height="88" rx="8" fill="#f7f8fa" stroke="#3f9d77" stroke-width="1.8"/>
+  <text x="360" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#3f9d77">Ax.2  Power objects</text>
   <text x="360" y="92" text-anchor="middle" font-size="10" fill="#0f172a">Hom(A&#215;B, C)</text>
   <text x="360" y="108" text-anchor="middle" font-size="10" fill="#0f172a">&#8773; Hom(A, C^B)</text>
-  <text x="360" y="126" text-anchor="middle" font-size="10" fill="#64748b">Cartesian closed</text>
+  <text x="360" y="126" text-anchor="middle" font-size="10" fill="#8a93a3">Cartesian closed</text>
 
   <!-- Ax.3 box -->
-  <rect x="496" y="48" width="205" height="88" rx="8" fill="#f1f5f9" stroke="#a78bfa" stroke-width="1.8"/>
-  <text x="598" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#a78bfa">Ax.3  Classifier &#937;</text>
+  <rect x="496" y="48" width="205" height="88" rx="8" fill="#f7f8fa" stroke="#8b6db5" stroke-width="1.8"/>
+  <text x="598" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#8b6db5">Ax.3  Classifier &#937;</text>
   <text x="598" y="92" text-anchor="middle" font-size="10" fill="#0f172a">Hom(A, &#937;) &#8773; Sub(A)</text>
   <text x="598" y="110" text-anchor="middle" font-size="10" fill="#0f172a">true: 1 &#8594; &#937;</text>
-  <text x="598" y="128" text-anchor="middle" font-size="10" fill="#64748b">Subobject classifier</text>
+  <text x="598" y="128" text-anchor="middle" font-size="10" fill="#8a93a3">Subobject classifier</text>
 
   <!-- Pullback square label -->
   <text x="190" y="168" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Pullback (defining &#937;):</text>
@@ -43,33 +43,33 @@
   <text x="300" y="215" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">S</text>
   <text x="460" y="215" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">1</text>
   <text x="300" y="310" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">A</text>
-  <text x="460" y="310" text-anchor="middle" font-size="16" font-weight="bold" fill="#a78bfa">&#937;</text>
+  <text x="460" y="310" text-anchor="middle" font-size="16" font-weight="bold" fill="#8b6db5">&#937;</text>
 
   <!-- Pullback arrows -->
   <line x1="313" y1="208" x2="447" y2="208" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="380" y="200" text-anchor="middle" font-size="11" fill="#64748b">!_S</text>
+  <text x="380" y="200" text-anchor="middle" font-size="11" fill="#8a93a3">!_S</text>
 
   <line x1="300" y1="220" x2="300" y2="296" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr)"/>
   <text x="284" y="262" text-anchor="middle" font-size="11" fill="#0f172a">m</text>
 
-  <line x1="460" y1="220" x2="460" y2="296" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrP)"/>
-  <text x="476" y="262" text-anchor="middle" font-size="11" fill="#a78bfa">true</text>
+  <line x1="460" y1="220" x2="460" y2="296" stroke="#8b6db5" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <text x="476" y="262" text-anchor="middle" font-size="11" fill="#8b6db5">true</text>
 
-  <line x1="313" y1="303" x2="447" y2="303" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arrP)"/>
-  <text x="380" y="320" text-anchor="middle" font-size="11" fill="#a78bfa">&#967;_m</text>
+  <line x1="313" y1="303" x2="447" y2="303" stroke="#8b6db5" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <text x="380" y="320" text-anchor="middle" font-size="11" fill="#8b6db5">&#967;_m</text>
 
   <!-- Corner mark at S -->
   <rect x="309" y="217" width="12" height="12" fill="none" stroke="#0f172a" stroke-width="1.2"/>
 
   <!-- Examples panel -->
-  <rect x="520" y="165" width="180" height="120" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="520" y="165" width="180" height="120" rx="8" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.2"/>
   <text x="610" y="185" text-anchor="middle" font-size="12" font-weight="bold" fill="#0f172a">Examples</text>
   <text x="530" y="205" font-size="11" fill="#0f172a">Set:  &#937; = {F, T}</text>
   <text x="530" y="222" font-size="11" fill="#0f172a">Sh(X): &#937; = Open(-)</text>
   <text x="530" y="239" font-size="11" fill="#0f172a">[C,Set]: &#937; = Sub</text>
-  <text x="530" y="258" font-size="11" fill="#a78bfa">BiTopos: &#937;&#8314; and &#937;&#8315;</text>
+  <text x="530" y="258" font-size="11" fill="#8b6db5">BiTopos: &#937;&#8314; and &#937;&#8315;</text>
 
   <!-- Footer -->
-  <rect x="20" y="330" width="680" height="22" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="360" y="345" text-anchor="middle" font-size="10" fill="#64748b">An elementary topos satisfies all three axioms simultaneously</text>
+  <rect x="20" y="330" width="680" height="22" rx="5" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="360" y="345" text-anchor="middle" font-size="10" fill="#8a93a3">An elementary topos satisfies all three axioms simultaneously</text>
 </svg>

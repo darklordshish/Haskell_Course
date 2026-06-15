@@ -1,28 +1,3 @@
-# План: Фаза A — унификация палитры диаграмм
-
-> **For agentic workers:** REQUIRED SUB-SKILL: superpowers:executing-plans. Спека: `docs/superpowers/specs/2026-06-12-diagram-palette-unification-design.md` (только Фаза A — палитра; Фаза B — стрелки — отдельным планом).
-
-**Goal:** Привести все `src/diagrams/**/*.svg` к единой приглушённой светлой палитре «в тон карте курса».
-
-**Architecture:** Детерминированный node-реколор `normalize_palette.js`: явная таблица для частых цветов + HSL-фолбэк (бакет по hue → семейство, снап по светлоте → узел/база/тинт), отчёт об остатке вне канона. 4 тёмно-коллажных файла — вручную. Нейтральная slate-шкала уже консистентна — её сохраняем, нормализуем в основном акценты (saturated→muted). `course_map.svg` не трогаем.
-
-**Tech Stack:** Node.js; визуальная проверка — в Jupyter (контейнер поднят, bind-mount `src`).
-
-**Канон (из спеки):** нейтрали `#0f172a/#475569/#8a93a3/#cbd5e1/#f7f8fa/#ffffff`; семейства узел/база/тинт: индиго `#3a4a96/#5872c9/#eef1fb`, шалфей `#2f6f54/#3f9d77/#e9f4ee`, лаванда `#5f4a86/#8b6db5/#efeaf6`, охра `#8a6418/#d9a441/#f4e7cf`, терракота `#8f3f3c/#c4625f/#f5e3e2`.
-
----
-
-### Task 0: Ветка
-
-- [ ] `git checkout master; git pull; git checkout -b diagram-palette`
-
-### Task 1: Скрипт нормализации
-
-**Files:** Create `src/scripts/coursemap/normalize_palette.js`
-
-- [ ] Записать скрипт (UTF-8 без BOM):
-
-```js
 // normalize_palette.js [--check] — реколор src/diagrams/**/*.svg к единой светлой палитре.
 // course_map.svg исключён. ASCII-инвариант сохраняется. Идемпотентен.
 const fs = require('fs'), path = require('path'), cp = require('child_process');
@@ -99,6 +74,7 @@ const MAP = {
   '#fff0f0': FAM.terracotta.tint, '#e7b3b3': FAM.terracotta.tint, '#f7d6d6': FAM.terracotta.tint,
   // teal/cyan -> индиго (ближе к синему)
   '#0e7490': FAM.indigo.base, '#0891b2': FAM.indigo.base, '#155e75': FAM.indigo.node, '#cffafe': FAM.indigo.tint,
+  // серые 3-значные (после разворота в 6) + тёмно-красный
   '#555555': N.arrow, '#444444': N.text2, '#333333': N.text1, '#666666': N.arrow,
   '#888888': N.arrow, '#999999': N.arrow, '#aaaaaa': N.border, '#aa1111': FAM.terracotta.node,
 };
@@ -151,6 +127,7 @@ for (const rel of files) {
     (leftover[lc] = leftover[lc] || 0); leftover[lc]++;
     return fb;
   });
+  // guard: реколор меняет только hex, поэтому падаем лишь если ВНЕСли новый не-ASCII
   const na = t => (t.replace(/&#\d+;/g, '').match(/[^\x00-\x7F]/g) || []).length;
   if (na(out) > na(orig)) { console.error('ВНЕСён не-ASCII в ' + rel); process.exit(1); }
   if (out !== orig) { changed++; if (!checkOnly) fs.writeFileSync(p, out); }
@@ -161,39 +138,3 @@ if (tail.length) {
   console.log('\nфолбэком (не в явной таблице) — проверить ' + tail.length + ' цветов:');
   console.log(tail.map(([c,n]) => n + '  ' + c).join('\n'));
 }
-```
-
-- [ ] Проверка синтаксиса: `node -e "require('./src/scripts/coursemap/normalize_palette.js')"` упадёт на записи — поэтому только просмотр в Task 2.
-
-### Task 2: Прогон и сходимость
-
-- [ ] `node src/scripts/coursemap/normalize_palette.js --check` → печатает число к изменению + список «фолбэком». Изучить список: цвета, попавшие во фолбэк, но с риском неверного тона — добавить в `MAP` явными строками. Повторять `--check` пока список фолбэка не станет коротким/безопасным.
-- [ ] Боевой прогон: `node src/scripts/coursemap/normalize_palette.js` → `changed: N`.
-- [ ] Идемпотентность: повторный прогон → `changed: 0`.
-- [ ] Палитра сошлась: `node` — собрать все hex по `src/diagrams/**` кроме course_map, убедиться, что вне канона (нейтрали+15 акцентов+#fff/#000) осталось ≈0; распечатать остаток.
-- [ ] **Спот-чек в Jupyter**: открыть `/files/diagrams/<...>.svg` для 6–8 файлов из разных папок (monads, kan, topos, optics, uncertainty, algebras) — глазами подтвердить читаемость (текст на тинтах тёмный, на узлах белый, фон белый).
-- [ ] Commit: `git add src/scripts/coursemap/normalize_palette.js src/diagrams; git commit -m "diagrams: единая светлая палитра (normalize_palette.js)"`
-
-### Task 3: Ручные тёмно-коллажные файлы
-
-**Files:** Modify `src/diagrams/haskell/{gpu_landscape,conc_landscape,dist_landscape}.svg`, `src/diagrams/topos/topos_libraries.svg`
-
-- [ ] Для каждого: открыть, найти тёмные карточки (`fill="#1a2744"`/`#222233`/`#2c3e6e`/`#3d2b7a` и пр.) и светлый текст на них. Перекрасить: карточка → тинт семейства по смыслу (или `#f7f8fa`), обводка → база семейства, текст внутри → тёмный (`#0f172a`/тон семейства). Фон → `#ffffff`. Стрелки → `#8a93a3`.
-- [ ] После правки каждого: `node -e "JSON... "` не нужен (это SVG) — проверить well-formed: файл содержит `</svg>`, только ASCII (кроме `&#NNNN;`).
-- [ ] Спот-чек этих 4 в Jupyter.
-- [ ] Commit: `git add src/diagrams/haskell src/diagrams/topos/topos_libraries.svg; git commit -m "diagrams: ручная переделка тёмных коллажей под канон"`
-
-### Task 4: Документация
-
-**Files:** Modify `src/notebooks/DesignShowcase.ipynb`, `src/ROADMAP.md`
-
-- [ ] `DesignShowcase.ipynb`: ячейку «🌑 Тёмная тема SVG — палитра» заменить на светлый канон (таблица нейтралей + 5 семейств узел/база/тинт); ячейку с «✅ решение: тёмные SVG» — на «светлая, в тон карте курса». Добавить markdown-ячейку «Кит маркеров стрелок» с блоком `<defs>` и таблицей применения (mono/epi/iso/nat) из спеки. Правка — node-скриптом по id ячеек или через поиск подстроки; `JSON.stringify(nb,null,1)+'\n'`, ensure_ascii не требуется (Jupyter), но проверить JSON-валидность.
-- [ ] `ROADMAP.md`: в «Критические правила → SVG/палитра» заменить тёмную палитру на светлый канон; смягчить правило про `&#NNNN;` (numeric-entity для матсимволов разрешены — ASCII-безопасны и рендерятся); удалить/закрыть устаревший блок «Faza 6 — Ispravleniye SVG-diagramm» (кириллицы 0, тёмного фона 0). Добавить: «палитра диаграмм нормализуется `src/scripts/coursemap/normalize_palette.js`; новые диаграммы — по киту маркеров из DesignShowcase».
-- [ ] Commit: `git add src/notebooks/DesignShowcase.ipynb src/ROADMAP.md; git commit -m "docs: светлый канон палитры + кит стрелок, закрыт устаревший SVG-аудит"`
-
-### Task 5: Верификация и финиш
-
-- [ ] Повторный `node src/scripts/coursemap/normalize_palette.js` → `changed: 0` (идемпотентность).
-- [ ] ASCII-инвариант: ни одного non-ASCII (кроме `&#NNNN;`) во всех diagrams SVG.
-- [ ] `git status` чист (кроме `? src/lib`).
-- [ ] superpowers:finishing-a-development-branch — merge в master по выбору пользователя.

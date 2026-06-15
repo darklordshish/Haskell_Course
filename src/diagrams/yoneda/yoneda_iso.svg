@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="700" height="300" font-family="monospace,Arial,sans-serif">
   <defs>
-    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#2563eb"/></marker>
-    <marker id="arr2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#34d399"/></marker>
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#5872c9"/></marker>
+    <marker id="arr2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#3f9d77"/></marker>
   </defs>
   <rect width="700" height="300" fill="#ffffff" rx="8"/>
   <text x="350" y="35" text-anchor="middle" font-size="16" fill="#0f172a" font-weight="bold">Yoneda Isomorphism</text>
-  <rect x="40" y="60" width="250" height="140" rx="10" fill="#f1f5f9" stroke="#2563eb" stroke-width="2"/>
-  <text x="165" y="90" text-anchor="middle" font-size="13" fill="#2563eb" font-weight="bold">Yoneda F a</text>
+  <rect x="40" y="60" width="250" height="140" rx="10" fill="#f7f8fa" stroke="#5872c9" stroke-width="2"/>
+  <text x="165" y="90" text-anchor="middle" font-size="13" fill="#5872c9" font-weight="bold">Yoneda F a</text>
   <text x="165" y="115" text-anchor="middle" font-size="12" fill="#0f172a">forall b. (a -&gt; b) -&gt; F b</text>
-  <text x="165" y="188" text-anchor="middle" font-size="10" fill="#64748b">natural transformation</text>
-  <rect x="415" y="60" width="250" height="140" rx="10" fill="#f1f5f9" stroke="#34d399" stroke-width="2"/>
-  <text x="540" y="90" text-anchor="middle" font-size="13" fill="#34d399" font-weight="bold">F a</text>
+  <text x="165" y="188" text-anchor="middle" font-size="10" fill="#8a93a3">natural transformation</text>
+  <rect x="415" y="60" width="250" height="140" rx="10" fill="#f7f8fa" stroke="#3f9d77" stroke-width="2"/>
+  <text x="540" y="90" text-anchor="middle" font-size="13" fill="#3f9d77" font-weight="bold">F a</text>
   <text x="540" y="120" text-anchor="middle" font-size="12" fill="#0f172a">value of functor at point a</text>
-  <text x="540" y="188" text-anchor="middle" font-size="10" fill="#64748b">concrete value</text>
-  <line x1="290" y1="115" x2="415" y2="115" stroke="#34d399" stroke-width="2" marker-end="url(#arr2)"/>
-  <text x="353" y="107" text-anchor="middle" font-size="11" fill="#34d399">fromYoneda</text>
-  <line x1="415" y1="145" x2="290" y2="145" stroke="#2563eb" stroke-width="2" marker-end="url(#arr)"/>
-  <text x="353" y="163" text-anchor="middle" font-size="11" fill="#2563eb">toYoneda</text>
-  <text x="350" y="240" text-anchor="middle" font-size="20" fill="#a78bfa">&#8771;</text>
-  <text x="350" y="270" text-anchor="middle" font-size="12" fill="#64748b">Yoneda F a ~ F a (type isomorphism)</text>
-  <text x="350" y="290" text-anchor="middle" font-size="10" fill="#64748b">runYoneda (toYoneda fa) id = fa</text>
+  <text x="540" y="188" text-anchor="middle" font-size="10" fill="#8a93a3">concrete value</text>
+  <line x1="290" y1="115" x2="415" y2="115" stroke="#3f9d77" stroke-width="2" marker-end="url(#arr2)"/>
+  <text x="353" y="107" text-anchor="middle" font-size="11" fill="#3f9d77">fromYoneda</text>
+  <line x1="415" y1="145" x2="290" y2="145" stroke="#5872c9" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="353" y="163" text-anchor="middle" font-size="11" fill="#5872c9">toYoneda</text>
+  <text x="350" y="240" text-anchor="middle" font-size="20" fill="#8b6db5">&#8771;</text>
+  <text x="350" y="270" text-anchor="middle" font-size="12" fill="#8a93a3">Yoneda F a ~ F a (type isomorphism)</text>
+  <text x="350" y="290" text-anchor="middle" font-size="10" fill="#8a93a3">runYoneda (toYoneda fa) id = fa</text>
 </svg>

@@ -1,40 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="620" height="375" font-family="monospace,Arial,sans-serif">
 <defs>
-<marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/></marker>
-<marker id="arrO" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#fb923c"/></marker>
-<marker id="arrP" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/></marker>
-<marker id="arrG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#34d399"/></marker>
+<marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#5872c9"/></marker>
+<marker id="arrO" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#d9a441"/></marker>
+<marker id="arrP" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#8b6db5"/></marker>
+<marker id="arrG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#3f9d77"/></marker>
 </defs>
 <rect width="620" height="375" fill="#ffffff" rx="8"/>
 <text x="310" y="27" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f172a">Scott Topologies: tau induces a bitopology on X</text>
-<rect x="195" y="45" width="230" height="68" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
-<text x="310" y="67" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563eb">[0,1]</text>
-<text x="245" y="87" text-anchor="middle" font-size="11" font-weight="bold" fill="#fb923c">T-up: (t,1]</text>
-<text x="375" y="87" text-anchor="middle" font-size="11" font-weight="bold" fill="#34d399">T-down: [0,t)</text>
-<text x="310" y="105" text-anchor="middle" font-size="9" fill="#64748b">ascending / descending order</text>
-<rect x="40" y="168" width="175" height="64" rx="8" fill="#f0fdf4" stroke="#34d399" stroke-width="2"/>
-<text x="127" y="192" text-anchor="middle" font-size="13" font-weight="bold" fill="#34d399">X = {a, b, c}</text>
-<text x="127" y="209" text-anchor="middle" font-size="9" fill="#64748b">tau: a=1.0, b=0.6, c=0.3</text>
-<line x1="200" y1="188" x2="232" y2="113" stroke="#2563eb" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr)"/>
-<text x="182" y="162" text-anchor="middle" font-size="12" fill="#2563eb">tau</text>
-<rect x="28" y="278" width="190" height="64" rx="8" fill="#fff7ed" stroke="#fb923c" stroke-width="1.5"/>
-<text x="123" y="298" text-anchor="middle" font-size="11" font-weight="bold" fill="#fb923c">T-up on X (for Pl)</text>
-<text x="123" y="314" text-anchor="middle" font-size="9" fill="#fb923c">{x: tau(x)&gt;t} = open sets</text>
-<text x="123" y="330" text-anchor="middle" font-size="9" fill="#fb923c">Pl(E) = Int(E) = sup_{x in E} tau(x)</text>
-<rect x="240" y="278" width="195" height="64" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
-<text x="337" y="298" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">T-down on X (for Bel)</text>
-<text x="337" y="314" text-anchor="middle" font-size="9" fill="#2563eb">{x: tau(x)&lt;t} = open sets</text>
-<text x="337" y="330" text-anchor="middle" font-size="9" fill="#2563eb">Bel(E) = Cl(E) = inf_{x not in E} tauBar(x)</text>
-<line x1="127" y1="232" x2="100" y2="278" stroke="#fb923c" stroke-width="1.8" marker-end="url(#arrO)"/>
-<line x1="127" y1="232" x2="290" y2="278" stroke="#2563eb" stroke-width="1.8" marker-end="url(#arr)"/>
-<rect x="452" y="168" width="152" height="174" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+<rect x="195" y="45" width="230" height="68" rx="8" fill="#eef1fb" stroke="#5872c9" stroke-width="2"/>
+<text x="310" y="67" text-anchor="middle" font-size="14" font-weight="bold" fill="#5872c9">[0,1]</text>
+<text x="245" y="87" text-anchor="middle" font-size="11" font-weight="bold" fill="#d9a441">T-up: (t,1]</text>
+<text x="375" y="87" text-anchor="middle" font-size="11" font-weight="bold" fill="#3f9d77">T-down: [0,t)</text>
+<text x="310" y="105" text-anchor="middle" font-size="9" fill="#8a93a3">ascending / descending order</text>
+<rect x="40" y="168" width="175" height="64" rx="8" fill="#e9f4ee" stroke="#3f9d77" stroke-width="2"/>
+<text x="127" y="192" text-anchor="middle" font-size="13" font-weight="bold" fill="#3f9d77">X = {a, b, c}</text>
+<text x="127" y="209" text-anchor="middle" font-size="9" fill="#8a93a3">tau: a=1.0, b=0.6, c=0.3</text>
+<line x1="200" y1="188" x2="232" y2="113" stroke="#5872c9" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+<text x="182" y="162" text-anchor="middle" font-size="12" fill="#5872c9">tau</text>
+<rect x="28" y="278" width="190" height="64" rx="8" fill="#f4e7cf" stroke="#d9a441" stroke-width="1.5"/>
+<text x="123" y="298" text-anchor="middle" font-size="11" font-weight="bold" fill="#d9a441">T-up on X (for Pl)</text>
+<text x="123" y="314" text-anchor="middle" font-size="9" fill="#d9a441">{x: tau(x)&gt;t} = open sets</text>
+<text x="123" y="330" text-anchor="middle" font-size="9" fill="#d9a441">Pl(E) = Int(E) = sup_{x in E} tau(x)</text>
+<rect x="240" y="278" width="195" height="64" rx="8" fill="#eef1fb" stroke="#5872c9" stroke-width="1.5"/>
+<text x="337" y="298" text-anchor="middle" font-size="11" font-weight="bold" fill="#5872c9">T-down on X (for Bel)</text>
+<text x="337" y="314" text-anchor="middle" font-size="9" fill="#5872c9">{x: tau(x)&lt;t} = open sets</text>
+<text x="337" y="330" text-anchor="middle" font-size="9" fill="#5872c9">Bel(E) = Cl(E) = inf_{x not in E} tauBar(x)</text>
+<line x1="127" y1="232" x2="100" y2="278" stroke="#d9a441" stroke-width="1.8" marker-end="url(#arrO)"/>
+<line x1="127" y1="232" x2="290" y2="278" stroke="#5872c9" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="452" y="168" width="152" height="174" rx="8" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.5"/>
 <text x="528" y="190" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">Example E = {a,b}</text>
 <text x="528" y="212" text-anchor="middle" font-size="10" fill="#0f172a">Pl(E) = sup(1.0, 0.6)</text>
-<text x="528" y="230" text-anchor="middle" font-size="12" font-weight="bold" fill="#fb923c">= 1.0</text>
+<text x="528" y="230" text-anchor="middle" font-size="12" font-weight="bold" fill="#d9a441">= 1.0</text>
 <text x="528" y="254" text-anchor="middle" font-size="10" fill="#0f172a">Bel(E) = inf(tauBar(c))</text>
 <text x="528" y="270" text-anchor="middle" font-size="10" fill="#0f172a">= inf(1-0.3) = 0.7</text>
-<text x="528" y="288" text-anchor="middle" font-size="12" font-weight="bold" fill="#2563eb">= 0.7</text>
-<text x="528" y="312" text-anchor="middle" font-size="9" fill="#64748b">uncert. = Pl - Bel</text>
-<text x="528" y="327" text-anchor="middle" font-size="9" fill="#64748b">= 1.0 - 0.7 = 0.3</text>
-<text x="310" y="368" text-anchor="middle" font-size="10" fill="#64748b">tau: X-&gt;[0,1] uniquely defines the bitopology (X, T-up, T-down)</text>
+<text x="528" y="288" text-anchor="middle" font-size="12" font-weight="bold" fill="#5872c9">= 0.7</text>
+<text x="528" y="312" text-anchor="middle" font-size="9" fill="#8a93a3">uncert. = Pl - Bel</text>
+<text x="528" y="327" text-anchor="middle" font-size="9" fill="#8a93a3">= 1.0 - 0.7 = 0.3</text>
+<text x="310" y="368" text-anchor="middle" font-size="10" fill="#8a93a3">tau: X-&gt;[0,1] uniquely defines the bitopology (X, T-up, T-down)</text>
 </svg>

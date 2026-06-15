@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="220" viewBox="0 0 560 220" font-family="monospace,Arial,sans-serif">
   <rect width="560" height="220" fill="#ffffff" rx="12"/>
-  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#64748b">T1 (T2 m) a -- stack structure</text>
+  <text x="280" y="28" text-anchor="middle" font-size="15" fill="#8a93a3">T1 (T2 m) a -- stack structure</text>
 
   <!-- Outer block T1 -->
-  <rect x="30" y="50" width="500" height="140" rx="8" fill="#f1f5f9" stroke="#2563eb" stroke-width="2"/>
-  <text x="50" y="75" font-size="14" fill="#2563eb" font-weight="bold">T1  (outer)</text>
-  <text x="50" y="95" font-size="11" fill="#94a3b8">on T1 failure -- all T2 and m contents are lost</text>
+  <rect x="30" y="50" width="500" height="140" rx="8" fill="#f7f8fa" stroke="#5872c9" stroke-width="2"/>
+  <text x="50" y="75" font-size="14" fill="#5872c9" font-weight="bold">T1  (outer)</text>
+  <text x="50" y="95" font-size="11" fill="#8a93a3">on T1 failure -- all T2 and m contents are lost</text>
 
   <!-- Inner block T2 -->
-  <rect x="70" y="108" width="420" height="65" rx="6" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-  <text x="90" y="133" font-size="14" fill="#059669" font-weight="bold">T2  (inner)</text>
-  <text x="90" y="153" font-size="11" fill="#94a3b8">on T1 failure -- survives; on T2 failure -- m is preserved</text>
+  <rect x="70" y="108" width="420" height="65" rx="6" fill="#ffffff" stroke="#3f9d77" stroke-width="2"/>
+  <text x="90" y="133" font-size="14" fill="#3f9d77" font-weight="bold">T2  (inner)</text>
+  <text x="90" y="153" font-size="11" fill="#8a93a3">on T1 failure -- survives; on T2 failure -- m is preserved</text>
 
   <!-- Hint -->
-  <text x="50" y="200" font-size="12" fill="#ea580c">Rule: read the stack from outside in -- this is the order of loss on failure</text>
+  <text x="50" y="200" font-size="12" fill="#d9a441">Rule: read the stack from outside in -- this is the order of loss on failure</text>
 </svg>

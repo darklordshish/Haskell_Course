@@ -2,39 +2,39 @@
 <rect width="400" height="380" fill="#ffffff" rx="8"/>
 
 <!-- Title -->
-<text x="200" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#334155">Monad Transformer Stack</text>
+<text x="200" y="28" text-anchor="middle" font-size="14" font-weight="bold" fill="#475569">Monad Transformer Stack</text>
 
 <!-- ReaderT -->
-<rect x="20" y="45" width="360" height="50" fill="#dbeafe" stroke="#2563eb" stroke-width="2" rx="6"/>
-<text x="200" y="68" text-anchor="middle" font-size="12" font-weight="bold" fill="#1e40af">ReaderT Config</text>
-<text x="200" y="85" text-anchor="middle" font-size="10" fill="#64748b">ask, asks, local</text>
+<rect x="20" y="45" width="360" height="50" fill="#eef1fb" stroke="#5872c9" stroke-width="2" rx="6"/>
+<text x="200" y="68" text-anchor="middle" font-size="12" font-weight="bold" fill="#3a4a96">ReaderT Config</text>
+<text x="200" y="85" text-anchor="middle" font-size="10" fill="#8a93a3">ask, asks, local</text>
 
 <!-- StateT -->
-<rect x="35" y="105" width="330" height="50" fill="#d1fae5" stroke="#34d399" stroke-width="2" rx="6"/>
-<text x="200" y="128" text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46">StateT AppState</text>
-<text x="200" y="145" text-anchor="middle" font-size="10" fill="#64748b">get, put, modify</text>
+<rect x="35" y="105" width="330" height="50" fill="#e9f4ee" stroke="#3f9d77" stroke-width="2" rx="6"/>
+<text x="200" y="128" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f6f54">StateT AppState</text>
+<text x="200" y="145" text-anchor="middle" font-size="10" fill="#8a93a3">get, put, modify</text>
 
 <!-- WriterT -->
-<rect x="50" y="165" width="300" height="50" fill="#fef3c7" stroke="#fb923c" stroke-width="2" rx="6"/>
-<text x="200" y="188" text-anchor="middle" font-size="12" font-weight="bold" fill="#92400e">WriterT [Log]</text>
-<text x="200" y="205" text-anchor="middle" font-size="10" fill="#64748b">tell, listen, pass</text>
+<rect x="50" y="165" width="300" height="50" fill="#f4e7cf" stroke="#d9a441" stroke-width="2" rx="6"/>
+<text x="200" y="188" text-anchor="middle" font-size="12" font-weight="bold" fill="#8a6418">WriterT [Log]</text>
+<text x="200" y="205" text-anchor="middle" font-size="10" fill="#8a93a3">tell, listen, pass</text>
 
 <!-- ExceptT -->
-<rect x="65" y="225" width="270" height="50" fill="#fee2e2" stroke="#f43f5e" stroke-width="2" rx="6"/>
-<text x="200" y="248" text-anchor="middle" font-size="12" font-weight="bold" fill="#9f1239">ExceptT AppError</text>
-<text x="200" y="265" text-anchor="middle" font-size="10" fill="#64748b">throwE, catchE</text>
+<rect x="65" y="225" width="270" height="50" fill="#f5e3e2" stroke="#c4625f" stroke-width="2" rx="6"/>
+<text x="200" y="248" text-anchor="middle" font-size="12" font-weight="bold" fill="#8f3f3c">ExceptT AppError</text>
+<text x="200" y="265" text-anchor="middle" font-size="10" fill="#8a93a3">throwE, catchE</text>
 
 <!-- IO -->
-<rect x="80" y="285" width="240" height="50" fill="#ede9fe" stroke="#a78bfa" stroke-width="2" rx="6"/>
-<text x="200" y="308" text-anchor="middle" font-size="12" font-weight="bold" fill="#5b21b6">IO</text>
-<text x="200" y="325" text-anchor="middle" font-size="10" fill="#64748b">liftIO, base effects</text>
+<rect x="80" y="285" width="240" height="50" fill="#efeaf6" stroke="#8b6db5" stroke-width="2" rx="6"/>
+<text x="200" y="308" text-anchor="middle" font-size="12" font-weight="bold" fill="#5f4a86">IO</text>
+<text x="200" y="325" text-anchor="middle" font-size="10" fill="#8a93a3">liftIO, base effects</text>
 
 <!-- lift labels -->
-<text x="10" y="80" font-size="9" fill="#64748b">lift</text>
-<text x="10" y="140" font-size="9" fill="#64748b">lift</text>
-<text x="10" y="200" font-size="9" fill="#64748b">lift</text>
-<text x="10" y="260" font-size="9" fill="#64748b">liftIO</text>
+<text x="10" y="80" font-size="9" fill="#8a93a3">lift</text>
+<text x="10" y="140" font-size="9" fill="#8a93a3">lift</text>
+<text x="10" y="200" font-size="9" fill="#8a93a3">lift</text>
+<text x="10" y="260" font-size="9" fill="#8a93a3">liftIO</text>
 
 <!-- run footer -->
-<text x="200" y="365" text-anchor="middle" font-size="9" fill="#64748b">run: runReaderT . runStateT . runWriterT . runExceptT</text>
+<text x="200" y="365" text-anchor="middle" font-size="9" fill="#8a93a3">run: runReaderT . runStateT . runWriterT . runExceptT</text>
 </svg>

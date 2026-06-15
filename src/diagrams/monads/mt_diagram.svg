@@ -2,21 +2,21 @@
 <rect width="480" height="280" fill="#ffffff" rx="8"/>
 
 <!-- Outer: transformer t m a -->
-<rect x="30" y="30" width="420" height="220" fill="#e0f2fe" stroke="#2563eb" stroke-width="2" rx="10"/>
-<text x="240" y="55" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e40af">t m a  (transformer)</text>
+<rect x="30" y="30" width="420" height="220" fill="#eef1fb" stroke="#5872c9" stroke-width="2" rx="10"/>
+<text x="240" y="55" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a4a96">t m a  (transformer)</text>
 
 <!-- Middle: base monad m a -->
-<rect x="80" y="80" width="320" height="140" fill="#dcfce7" stroke="#34d399" stroke-width="2" rx="8"/>
-<text x="240" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#065f46">m a  (base monad)</text>
+<rect x="80" y="80" width="320" height="140" fill="#e9f4ee" stroke="#3f9d77" stroke-width="2" rx="8"/>
+<text x="240" y="105" text-anchor="middle" font-size="12" font-weight="bold" fill="#2f6f54">m a  (base monad)</text>
 
 <!-- Inner: value a -->
-<rect x="170" y="125" width="140" height="60" fill="#fef3c7" stroke="#fb923c" stroke-width="2" rx="6"/>
-<text x="240" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">a</text>
-<text x="240" y="170" text-anchor="middle" font-size="10" fill="#64748b">(value)</text>
+<rect x="170" y="125" width="140" height="60" fill="#f4e7cf" stroke="#d9a441" stroke-width="2" rx="6"/>
+<text x="240" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill="#8a6418">a</text>
+<text x="240" y="170" text-anchor="middle" font-size="10" fill="#8a93a3">(value)</text>
 
 <!-- lift label -->
-<text x="22" y="145" font-size="10" font-weight="bold" fill="#64748b">lift</text>
+<text x="22" y="145" font-size="10" font-weight="bold" fill="#8a93a3">lift</text>
 
 <!-- Footer -->
-<text x="240" y="265" text-anchor="middle" font-size="10" fill="#64748b">lift :: m a -&gt; t m a   (monad morphism)</text>
+<text x="240" y="265" text-anchor="middle" font-size="10" fill="#8a93a3">lift :: m a -&gt; t m a   (monad morphism)</text>
 </svg>

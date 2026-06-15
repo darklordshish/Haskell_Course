@@ -1,69 +1,69 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="700" height="380" viewBox="0 0 700 380">
 <defs>
   <marker id="arrex" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-    <polygon points="0 0, 10 3.5, 0 7" fill="#334466"/>
+    <polygon points="0 0, 10 3.5, 0 7" fill="#3a4a96"/>
   </marker>
   <marker id="arrGex" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-    <polygon points="0 0, 10 3.5, 0 7" fill="#228844"/>
+    <polygon points="0 0, 10 3.5, 0 7" fill="#3f9d77"/>
   </marker>
   <marker id="arrBex" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-    <polygon points="0 0, 10 3.5, 0 7" fill="#2255cc"/>
+    <polygon points="0 0, 10 3.5, 0 7" fill="#3a4a96"/>
   </marker>
 </defs>
 <rect width="700" height="380" fill="#ffffff" rx="10"/>
-<text x="350" y="30" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="15" fill="#1a2a6a" font-weight="bold">Concrete examples: Ran g Id &#8773; right adjoint</text>
-<text x="350" y="50" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#556688">examples with g = Just, g = [], g = Left</text>
+<text x="350" y="30" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="15" fill="#3a4a96" font-weight="bold">Concrete examples: Ran g Id &#8773; right adjoint</text>
+<text x="350" y="50" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#5872c9">examples with g = Just, g = [], g = Left</text>
 
 <!-- Example 1: Ran Just Id ~= Maybe -->
-<rect x="15" y="65" width="210" height="130" rx="8" fill="#dbeafe" stroke="#2255aa" stroke-width="1.5"/>
-<text x="120" y="87" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#1a3a88" font-weight="bold">Ran Just Id &#8773; Maybe</text>
-<text x="120" y="106" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#334466">forall b.(a -&gt; Maybe b) -&gt; b</text>
-<text x="120" y="122" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#334466">if a = Nothing: &#8709;</text>
-<text x="120" y="137" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#334466">if a = Just x: apply x</text>
-<rect x="25" y="150" width="190" height="36" rx="5" fill="#bfdbfe" stroke="#113366"/>
-<text x="120" y="165" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#1a3a88">toMaybe :: Ran Just Id a -&gt; Maybe a</text>
-<text x="120" y="179" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#1a3a88">toMaybe r = runRan r Just</text>
+<rect x="15" y="65" width="210" height="130" rx="8" fill="#eef1fb" stroke="#3a4a96" stroke-width="1.5"/>
+<text x="120" y="87" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#3a4a96" font-weight="bold">Ran Just Id &#8773; Maybe</text>
+<text x="120" y="106" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#3a4a96">forall b.(a -&gt; Maybe b) -&gt; b</text>
+<text x="120" y="122" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#3a4a96">if a = Nothing: &#8709;</text>
+<text x="120" y="137" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#3a4a96">if a = Just x: apply x</text>
+<rect x="25" y="150" width="190" height="36" rx="5" fill="#eef1fb" stroke="#3a4a96"/>
+<text x="120" y="165" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#3a4a96">toMaybe :: Ran Just Id a -&gt; Maybe a</text>
+<text x="120" y="179" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#3a4a96">toMaybe r = runRan r Just</text>
 
 <!-- Example 2: Ran (:[]) Id ~= [] -->
-<rect x="245" y="65" width="210" height="130" rx="8" fill="#dcfce7" stroke="#226633" stroke-width="1.5"/>
-<text x="350" y="87" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#144422" font-weight="bold">Ran (:[]) Id &#8773; []</text>
-<text x="350" y="106" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#226633">forall b.(a -&gt; [b]) -&gt; b</text>
-<text x="350" y="122" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#226633">encodes a list via</text>
-<text x="350" y="137" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#226633">universal mapping</text>
-<rect x="255" y="150" width="190" height="36" rx="5" fill="#bbf7d0" stroke="#113322"/>
-<text x="350" y="165" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#144422">toList :: Ran (:[]) Id a -&gt; [a]</text>
-<text x="350" y="179" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#144422">toList r = runRan r (:[])</text>
+<rect x="245" y="65" width="210" height="130" rx="8" fill="#e9f4ee" stroke="#2f6f54" stroke-width="1.5"/>
+<text x="350" y="87" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#2f6f54" font-weight="bold">Ran (:[]) Id &#8773; []</text>
+<text x="350" y="106" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#2f6f54">forall b.(a -&gt; [b]) -&gt; b</text>
+<text x="350" y="122" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#2f6f54">encodes a list via</text>
+<text x="350" y="137" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#2f6f54">universal mapping</text>
+<rect x="255" y="150" width="190" height="36" rx="5" fill="#e9f4ee" stroke="#2f6f54"/>
+<text x="350" y="165" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#2f6f54">toList :: Ran (:[]) Id a -&gt; [a]</text>
+<text x="350" y="179" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#2f6f54">toList r = runRan r (:[])</text>
 
 <!-- Example 3: Ran (Left) Id ~= Either -->
-<rect x="475" y="65" width="210" height="130" rx="8" fill="#ede9fe" stroke="#662288" stroke-width="1.5"/>
-<text x="580" y="87" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#4422aa" font-weight="bold">Ran Left Id &#8773; Either</text>
-<text x="580" y="106" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#553388">forall b.(a-&gt;Either e b)-&gt;b</text>
-<text x="580" y="122" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#553388">Left = error, Right = value</text>
-<text x="580" y="137" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#553388">&#8773; Either e a</text>
-<rect x="485" y="150" width="190" height="36" rx="5" fill="#ddd6fe" stroke="#441166"/>
-<text x="580" y="165" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#4422aa">toEither :: Ran Left Id a</text>
-<text x="580" y="179" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#4422aa">        -&gt; Either e a</text>
+<rect x="475" y="65" width="210" height="130" rx="8" fill="#efeaf6" stroke="#5f4a86" stroke-width="1.5"/>
+<text x="580" y="87" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#5f4a86" font-weight="bold">Ran Left Id &#8773; Either</text>
+<text x="580" y="106" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#5f4a86">forall b.(a-&gt;Either e b)-&gt;b</text>
+<text x="580" y="122" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#5f4a86">Left = error, Right = value</text>
+<text x="580" y="137" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#5f4a86">&#8773; Either e a</text>
+<rect x="485" y="150" width="190" height="36" rx="5" fill="#efeaf6" stroke="#5f4a86"/>
+<text x="580" y="165" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#5f4a86">toEither :: Ran Left Id a</text>
+<text x="580" y="179" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#5f4a86">        -&gt; Either e a</text>
 
 <!-- Bottom: Lan examples -->
-<rect x="15" y="215" width="670" height="145" rx="8" fill="#f1f5f9" stroke="#333366" stroke-width="1.5"/>
-<text x="350" y="237" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="13" fill="#1a2a6a" font-weight="bold">Left Kan: Lan g Id &#8773; left adjoint</text>
-<line x1="15" y1="248" x2="685" y2="248" stroke="#ccddee" stroke-width="1"/>
+<rect x="15" y="215" width="670" height="145" rx="8" fill="#f7f8fa" stroke="#3a4a96" stroke-width="1.5"/>
+<text x="350" y="237" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="13" fill="#3a4a96" font-weight="bold">Left Kan: Lan g Id &#8773; left adjoint</text>
+<line x1="15" y1="248" x2="685" y2="248" stroke="#eef1fb" stroke-width="1"/>
 <!-- 3 columns -->
-<text x="120" y="268" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#2233aa">Lan Just Id</text>
-<text x="120" y="284" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#2233aa">&#8773; Maybe (left adj.)</text>
-<text x="120" y="300" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#334488">forall b.</text>
-<text x="120" y="314" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#334488">(Maybe b -&gt; a, b)</text>
-<text x="120" y="348" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#334488">fst: Nothing/Just</text>
-<line x1="233" y1="250" x2="233" y2="358" stroke="#ccddee" stroke-width="1"/>
-<text x="350" y="268" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#116633">Lan (:[]) Id</text>
-<text x="350" y="284" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#116633">&#8773; [] (left adj. via free)</text>
-<text x="350" y="300" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#226644">forall b.</text>
-<text x="350" y="314" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#226644">([b]-&gt;a, b)</text>
-<text x="350" y="348" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#226644">free structure</text>
-<line x1="467" y1="250" x2="467" y2="358" stroke="#ccddee" stroke-width="1"/>
-<text x="580" y="268" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#774422">Lan fst Id</text>
-<text x="580" y="284" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#774422">&#8773; (,) e (free with e)</text>
-<text x="580" y="300" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#885533">forall b.</text>
-<text x="580" y="314" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#885533">((e,b)-&gt;a, b)</text>
-<text x="580" y="348" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#885533">coproduct</text>
+<text x="120" y="268" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#5872c9">Lan Just Id</text>
+<text x="120" y="284" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#5872c9">&#8773; Maybe (left adj.)</text>
+<text x="120" y="300" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#3a4a96">forall b.</text>
+<text x="120" y="314" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#3a4a96">(Maybe b -&gt; a, b)</text>
+<text x="120" y="348" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#3a4a96">fst: Nothing/Just</text>
+<line x1="233" y1="250" x2="233" y2="358" stroke="#eef1fb" stroke-width="1"/>
+<text x="350" y="268" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#2f6f54">Lan (:[]) Id</text>
+<text x="350" y="284" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#2f6f54">&#8773; [] (left adj. via free)</text>
+<text x="350" y="300" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#3f9d77">forall b.</text>
+<text x="350" y="314" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#3f9d77">([b]-&gt;a, b)</text>
+<text x="350" y="348" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#3f9d77">free structure</text>
+<line x1="467" y1="250" x2="467" y2="358" stroke="#eef1fb" stroke-width="1"/>
+<text x="580" y="268" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#8a6418">Lan fst Id</text>
+<text x="580" y="284" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#8a6418">&#8773; (,) e (free with e)</text>
+<text x="580" y="300" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#8a6418">forall b.</text>
+<text x="580" y="314" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#8a6418">((e,b)-&gt;a, b)</text>
+<text x="580" y="348" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#8a6418">coproduct</text>
 </svg>

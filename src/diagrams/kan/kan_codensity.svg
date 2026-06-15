@@ -1,41 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="360" viewBox="0 0 680 360" font-family="monospace,Arial,sans-serif">
 <defs>
   <marker id="arrc" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-    <polygon points="0 0, 10 3.5, 0 7" fill="#ccaa00"/>
+    <polygon points="0 0, 10 3.5, 0 7" fill="#d9a441"/>
   </marker>
 </defs>
 <rect width="680" height="360" fill="#ffffff" rx="10"/>
-<text x="340" y="32" text-anchor="middle" font-size="15" fill="#1a2a6a" font-weight="bold">Codensity: CPS transform and optimization</text>
+<text x="340" y="32" text-anchor="middle" font-size="15" fill="#3a4a96" font-weight="bold">Codensity: CPS transform and optimization</text>
 
 <!-- Left: naive list -->
-<rect x="20" y="52" width="300" height="150" rx="8" fill="#fee2e2" stroke="#994444" stroke-width="1.5"/>
-<text x="170" y="78"  text-anchor="middle" font-size="13" fill="#991111" font-weight="bold">Naive list assembly</text>
-<text x="170" y="102" text-anchor="middle" font-size="11" fill="#882222">foldl (++) [] [[1],...,[n]]</text>
-<text x="170" y="122" text-anchor="middle" font-size="11" fill="#882222">= (...([] ++ [1]) ++ [2]) ++ [n]</text>
-<text x="170" y="146" text-anchor="middle" font-size="11" fill="#882222">left-nested: rebuilds left arg</text>
-<rect x="95" y="162" width="150" height="28" rx="5" fill="#fbcaca" stroke="#991111"/>
-<text x="170" y="181" text-anchor="middle" font-size="13" fill="#991111" font-weight="bold">=&gt; O(n^2)</text>
+<rect x="20" y="52" width="300" height="150" rx="8" fill="#f5e3e2" stroke="#c4625f" stroke-width="1.5"/>
+<text x="170" y="78"  text-anchor="middle" font-size="13" fill="#8f3f3c" font-weight="bold">Naive list assembly</text>
+<text x="170" y="102" text-anchor="middle" font-size="11" fill="#8f3f3c">foldl (++) [] [[1],...,[n]]</text>
+<text x="170" y="122" text-anchor="middle" font-size="11" fill="#8f3f3c">= (...([] ++ [1]) ++ [2]) ++ [n]</text>
+<text x="170" y="146" text-anchor="middle" font-size="11" fill="#8f3f3c">left-nested: rebuilds left arg</text>
+<rect x="95" y="162" width="150" height="28" rx="5" fill="#f5e3e2" stroke="#8f3f3c"/>
+<text x="170" y="181" text-anchor="middle" font-size="13" fill="#8f3f3c" font-weight="bold">=&gt; O(n^2)</text>
 
 <!-- Arrow -->
-<line x1="324" y1="125" x2="354" y2="125" stroke="#ccaa00" stroke-width="2.5" marker-end="url(#arrc)"/>
-<text x="339" y="116" text-anchor="middle" font-size="11" fill="#886600">codensity</text>
-<text x="339" y="142" text-anchor="middle" font-size="11" fill="#886600">/ DList</text>
+<line x1="324" y1="125" x2="354" y2="125" stroke="#d9a441" stroke-width="2.5" marker-end="url(#arrc)"/>
+<text x="339" y="116" text-anchor="middle" font-size="11" fill="#d9a441">codensity</text>
+<text x="339" y="142" text-anchor="middle" font-size="11" fill="#d9a441">/ DList</text>
 
 <!-- Right: DList/Codensity -->
-<rect x="358" y="52" width="302" height="150" rx="8" fill="#dcfce7" stroke="#226644" stroke-width="1.5"/>
-<text x="509" y="78"  text-anchor="middle" font-size="13" fill="#144422" font-weight="bold">DList = Codensity []</text>
-<text x="509" y="102" text-anchor="middle" font-size="11" fill="#226633">type DList a = [a] -&gt; [a]</text>
-<text x="509" y="122" text-anchor="middle" font-size="11" fill="#226633">singleton x = (x:) ; toList f = f []</text>
-<text x="509" y="146" text-anchor="middle" font-size="11" fill="#226633">append f g = f . g  (right-assoc)</text>
-<rect x="434" y="162" width="150" height="28" rx="5" fill="#bbf7d0" stroke="#144422"/>
-<text x="509" y="181" text-anchor="middle" font-size="13" fill="#144422" font-weight="bold">=&gt; O(n)</text>
+<rect x="358" y="52" width="302" height="150" rx="8" fill="#e9f4ee" stroke="#3f9d77" stroke-width="1.5"/>
+<text x="509" y="78"  text-anchor="middle" font-size="13" fill="#2f6f54" font-weight="bold">DList = Codensity []</text>
+<text x="509" y="102" text-anchor="middle" font-size="11" fill="#2f6f54">type DList a = [a] -&gt; [a]</text>
+<text x="509" y="122" text-anchor="middle" font-size="11" fill="#2f6f54">singleton x = (x:) ; toList f = f []</text>
+<text x="509" y="146" text-anchor="middle" font-size="11" fill="#2f6f54">append f g = f . g  (right-assoc)</text>
+<rect x="434" y="162" width="150" height="28" rx="5" fill="#e9f4ee" stroke="#2f6f54"/>
+<text x="509" y="181" text-anchor="middle" font-size="13" fill="#2f6f54" font-weight="bold">=&gt; O(n)</text>
 
 <!-- Bottom: general pattern -->
-<rect x="20" y="225" width="640" height="120" rx="8" fill="#f1f5f9" stroke="#334477" stroke-width="1.5"/>
-<text x="340" y="247" text-anchor="middle" font-size="13" fill="#1a2a6a" font-weight="bold">General pattern: Codensity monad</text>
-<text x="340" y="268" text-anchor="middle" font-size="12" fill="#334466">liftCodensity :: m a -&gt; Codensity m a</text>
-<text x="340" y="285" text-anchor="middle" font-size="12" fill="#334466">liftCodensity m = Codensity (m &gt;&gt;=)</text>
-<text x="340" y="302" text-anchor="middle" font-size="12" fill="#334466">lowerCodensity :: Monad m =&gt; Codensity m a -&gt; m a</text>
-<text x="340" y="319" text-anchor="middle" font-size="12" fill="#334466">lowerCodensity m = runCodensity m return</text>
-<text x="340" y="337" text-anchor="middle" font-size="11" fill="#556688">-- monad changes, but semantics preserved: lift . lower = id</text>
+<rect x="20" y="225" width="640" height="120" rx="8" fill="#f7f8fa" stroke="#3a4a96" stroke-width="1.5"/>
+<text x="340" y="247" text-anchor="middle" font-size="13" fill="#3a4a96" font-weight="bold">General pattern: Codensity monad</text>
+<text x="340" y="268" text-anchor="middle" font-size="12" fill="#3a4a96">liftCodensity :: m a -&gt; Codensity m a</text>
+<text x="340" y="285" text-anchor="middle" font-size="12" fill="#3a4a96">liftCodensity m = Codensity (m &gt;&gt;=)</text>
+<text x="340" y="302" text-anchor="middle" font-size="12" fill="#3a4a96">lowerCodensity :: Monad m =&gt; Codensity m a -&gt; m a</text>
+<text x="340" y="319" text-anchor="middle" font-size="12" fill="#3a4a96">lowerCodensity m = runCodensity m return</text>
+<text x="340" y="337" text-anchor="middle" font-size="11" fill="#5872c9">-- monad changes, but semantics preserved: lift . lower = id</text>
 </svg>
