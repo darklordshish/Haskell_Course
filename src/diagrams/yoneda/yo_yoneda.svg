@@ -35,7 +35,9 @@
   <!-- Isomorphism -->
   <text x="370" y="158" text-anchor="middle" font-size="28" fill="#3f9d77">~</text>
   <text x="370" y="176" text-anchor="middle" font-size="10" fill="#3f9d77">isomorphism</text>
-  <line x1="330" y1="150" x2="420" y2="150" stroke="#3f9d77" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="335" y1="150" x2="405" y2="150" stroke="#3f9d77" stroke-width="2" stroke-dasharray="5,3"/>
+  <polygon points="414,150 405,145 405,155" fill="#3f9d77"/>
+  <polygon points="326,150 335,145 335,155" fill="#3f9d77"/>
 
   <!-- Right: Functor F -->
   <rect x="420" y="50" width="300" height="200" rx="8" fill="#f7f8fa" stroke="#3f9d77" stroke-width="1.5"/>
