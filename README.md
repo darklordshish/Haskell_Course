@@ -10,11 +10,15 @@
 src/
   notebooks/        — Jupyter-ноутбуки (.ipynb)
   diagrams/         — SVG-диаграммы по темам
+    notebooks/course_map.svg — карта курса (схема метро), генерируется
   scripts/          — вспомогательные скрипты
     deps/           — генерация шапок зависимостей
       dictionary.json    — единый источник правды (расширения, пакеты, модули)
       gen_headers.js     — генератор ячейки deps_header (идемпотентный)
       build_extensions.js — сборка Extensions.ipynb
+    coursemap/      — карта курса
+      build_map.js       — генератор notebooks/course_map.svg (схема метро)
+      restructure_readme.js — перестройка README.ipynb по модулям
   lib/              — git-сабмодуль: библиотека категорного ядра
   README.ipynb      — стартовый ноутбук
   ROADMAP.md        — план курса
@@ -22,6 +26,24 @@ docker-compose.yml
 ```
 
 **Начинать курс рекомендуется с `src/notebooks/Extensions.ipynb`** — нулевой ноутбук с обзором всех расширений GHC, используемых в курсе (26 расширений с пояснениями и примерами).
+
+## Структура курса
+
+Курс выстроен модулями; внутри модуля — усложнение. Ствол проходится по порядку, после `ComonadTransformers` ветки можно изучать в любом порядке (карта курса — `src/notebooks/course_map.svg`):
+
+- **0. Старт** — Extensions, BaseHaskell, TypeAlgebra
+- **I. Функторы** — FunctorHierarchy, FoldableTraversable
+- **II. Эффекты** — Monads, MonadTransformers, Comonads, ComonadTransformers
+- **III. Структуры и оптики** — AlgebrasCoalgebras, Profunctors, Optics, Arrows
+- **IV. Теория категорий** — YonedaLemma, Adjunctions, KanExtensions
+- **V. Практика** — MetaProgramming, Concurrency, DistributedHaskell, GPUHaskell
+- **VI. Топосы и неопределённость** — Toposes, Uncertainty, SubjectiveModeling
+
+Карта генерируется и не правится руками:
+
+```bash
+node src/scripts/coursemap/build_map.js
+```
 
 ## Шапки зависимостей
 
