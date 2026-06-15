@@ -31,6 +31,10 @@
     "Data.Map": "containers", "Data.Set": "containers",
     "Data.Array": "array", "Data.Time": "time",
     "Language.Haskell": "template-haskell", "System.Process": "process",
+    "Control.Concurrent.STM": "stm", "Control.Monad.Trans": "transformers",
+    "Control.Monad.Reader": "mtl", "Control.Monad.Writer": "mtl",
+    "Control.Monad.State": "mtl", "Control.Monad.RWS": "mtl",
+    "Control.Monad.Cont": "mtl", "Control.Monad.Error": "mtl",
     "_default": "base"
   },
   "libModules": ["Quantale", "KanExtension", "Bitopos", "Distribution", "SubjectiveModel"]
