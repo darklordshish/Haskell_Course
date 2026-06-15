@@ -107,11 +107,12 @@ FoldableTraversable.ipynb: исправлена запись — 2 SVG (ft_folda
 
 ---
 
-## Faza 6 -- Ispravleniye SVG-diagramm (v plane)
+## ✅ Faza 6 — Унификация палитры SVG (закрыто 2026-06-12, ветка diagram-palette)
 
-> Audit pokazal: bolshinstvo SVG sozdany v starom stile (bez #0f172a, s temnym fonom)
-> i narushayut pravilo ASCII-only (kirillica pryamo v SVG XML).
-> Nuzhno peresozdanie ~50 SVG v 9 papkakh.
+> Аудит 2026-06-12 (96 SVG): кириллицы в SVG — 0, тёмного фона — 0. Старый план
+> неактуален. Выполнено: все диаграммы приведены к единой светлой палитре «в тон
+> карте» скриптом `src/scripts/coursemap/normalize_palette.js` (+ 4 тёмных коллажа
+> вручную). Стрелочная семантика (mono/epi/iso/nat) — отдельной Фазой B.
 
 ### 6.1 topos/ -- vse 11 SVG (kiriллица + staryy stil)
 - Status: PLAN
@@ -475,9 +476,9 @@ Arrows → модуль III. Файлы ноутбуков не переимен
 - Кэш — `?_=${Date.now()}`
 - SVG по адресу `/files/filename.svg`, в markdown — `![alt](filename.svg)`
 - Ctrl+S после каждого этапа
-- SVG: нельзя использовать unicode entities с кириллицей
 - Унификация структуры: все содержательные ноутбуки имеют SETUP + deps_header + NAV (правило записи ноутбуков — `ensure_ascii=True`, см. выше)
-- SVG: unicode-entities (`&#NNNN;`) разрывают XML-парсер — использовать только ASCII-текст в SVG
+- SVG: текст — только ASCII; матсимволы (≅, →, Ω, η…) — через **numeric-entity** `&#NNNN;` (это ASCII-безопасно и корректно рендерится). Нельзя: кириллица в SVG и именованные entity (`&nbsp;` → используй `&#160;`)
+- SVG-палитра: единая светлая «в тон карте» (см. DesignShowcase); нормализуется `src/scripts/coursemap/normalize_palette.js`; новые диаграммы — по киту маркеров стрелок из DesignShowcase
 
 ### SVG
 - `&nbsp;` — невалидный XML, использовать `&#160;`
@@ -488,7 +489,7 @@ Arrows → модуль III. Файлы ноутбуков не переимен
 ## 🎨 Правила унификации дизайна (введено 2026-05-31)
 
 > Выбранный стиль: **B — Интерактивный**. Весёлый, живой, с визуальными якорями.
-> Диаграммы: **тёмная тема** (dark mode, единая палитра).
+> Диаграммы: **светлая тема, «в тон карте курса»** (единая приглушённая палитра, см. DesignShowcase).
 
 ### Язык написания
 
