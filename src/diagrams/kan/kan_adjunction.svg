@@ -1,74 +1,74 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="700" height="420" viewBox="0 0 700 420">
 <defs>
   <marker id="arrd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-    <polygon points="0 0, 10 3.5, 0 7" fill="#334466"/>
+    <polygon points="0 0, 10 3.5, 0 7" fill="#3a4a96"/>
   </marker>
   <marker id="arrRd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-    <polygon points="0 0, 10 3.5, 0 7" fill="#cc4444"/>
+    <polygon points="0 0, 10 3.5, 0 7" fill="#c4625f"/>
   </marker>
   <marker id="arrGd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-    <polygon points="0 0, 10 3.5, 0 7" fill="#228844"/>
+    <polygon points="0 0, 10 3.5, 0 7" fill="#3f9d77"/>
   </marker>
   <marker id="arrOd" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-    <polygon points="0 0, 10 3.5, 0 7" fill="#cc7700"/>
+    <polygon points="0 0, 10 3.5, 0 7" fill="#d9a441"/>
   </marker>
 </defs>
 <rect width="700" height="420" fill="#ffffff" rx="10"/>
-<text x="350" y="32" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="16" fill="#1a2a6a" font-weight="bold">Adjunctions via Kan Extensions: f &#8867; g</text>
+<text x="350" y="32" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="16" fill="#3a4a96" font-weight="bold">Adjunctions via Kan Extensions: f &#8867; g</text>
 
 <!-- Left column: Adjunction -->
-<rect x="20" y="55" width="300" height="150" rx="8" fill="#dbeafe" stroke="#2255aa" stroke-width="1.5"/>
-<text x="170" y="78" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="14" fill="#1a3a88" font-weight="bold">Adjunction f &#8867; g</text>
-<text x="170" y="100" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#334466">Hom(f A, B) &#8773; Hom(A, g B)</text>
+<rect x="20" y="55" width="300" height="150" rx="8" fill="#eef1fb" stroke="#3a4a96" stroke-width="1.5"/>
+<text x="170" y="78" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="14" fill="#3a4a96" font-weight="bold">Adjunction f &#8867; g</text>
+<text x="170" y="100" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#3a4a96">Hom(f A, B) &#8773; Hom(A, g B)</text>
 <!-- f arrow C->D -->
-<rect x="50" y="115" width="60" height="36" rx="6" fill="#bfdbfe" stroke="#4477bb" stroke-width="1.5"/>
-<text x="80" y="138" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="16" fill="#1a3a88">C</text>
-<rect x="210" y="115" width="60" height="36" rx="6" fill="#bfdbfe" stroke="#4477bb" stroke-width="1.5"/>
-<text x="240" y="138" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="16" fill="#1a3a88">D</text>
-<line x1="113" y1="133" x2="205" y2="133" stroke="#cc4444" stroke-width="2" marker-end="url(#arrRd)"/>
-<line x1="205" y1="143" x2="113" y2="143" stroke="#228844" stroke-width="2" marker-end="url(#arrGd)"/>
-<text x="159" y="127" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#cc4444">f</text>
-<text x="159" y="158" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#228844">g</text>
-<text x="170" y="185" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#335577">forgetful &#8897; free</text>
-<text x="170" y="198" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#335577">unit &#951; : Id &#8658; g&#183;f, counit &#949; : f&#183;g &#8658; Id</text>
+<rect x="50" y="115" width="60" height="36" rx="6" fill="#eef1fb" stroke="#5872c9" stroke-width="1.5"/>
+<text x="80" y="138" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="16" fill="#3a4a96">C</text>
+<rect x="210" y="115" width="60" height="36" rx="6" fill="#eef1fb" stroke="#5872c9" stroke-width="1.5"/>
+<text x="240" y="138" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="16" fill="#3a4a96">D</text>
+<line x1="113" y1="133" x2="205" y2="133" stroke="#c4625f" stroke-width="2" marker-end="url(#arrRd)"/>
+<line x1="205" y1="143" x2="113" y2="143" stroke="#3f9d77" stroke-width="2" marker-end="url(#arrGd)"/>
+<text x="159" y="127" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#c4625f">f</text>
+<text x="159" y="158" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#3f9d77">g</text>
+<text x="170" y="185" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#3a4a96">forgetful &#8897; free</text>
+<text x="170" y="198" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#3a4a96">unit &#951; : Id &#8658; g&#183;f, counit &#949; : f&#183;g &#8658; Id</text>
 
 <!-- Right column: Kan -->
-<rect x="380" y="55" width="300" height="150" rx="8" fill="#dcfce7" stroke="#226633" stroke-width="1.5"/>
-<text x="530" y="78" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="14" fill="#144422" font-weight="bold">Via Kan:</text>
-<rect x="400" y="92" width="260" height="34" rx="5" fill="#bbf7d0" stroke="#336644"/>
-<text x="530" y="114" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="13" fill="#145533">Ran f Id &#8773; g</text>
-<rect x="400" y="136" width="260" height="34" rx="5" fill="#fef9c3" stroke="#aa8800"/>
-<text x="530" y="158" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="13" fill="#664400">Lan g Id &#8773; f</text>
-<text x="530" y="192" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#335544">right adjoint = right Kan of Id along f</text>
-<text x="530" y="205" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#335544">left adjoint = left Kan of Id along g</text>
+<rect x="380" y="55" width="300" height="150" rx="8" fill="#e9f4ee" stroke="#2f6f54" stroke-width="1.5"/>
+<text x="530" y="78" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="14" fill="#2f6f54" font-weight="bold">Via Kan:</text>
+<rect x="400" y="92" width="260" height="34" rx="5" fill="#e9f4ee" stroke="#2f6f54"/>
+<text x="530" y="114" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="13" fill="#2f6f54">Ran f Id &#8773; g</text>
+<rect x="400" y="136" width="260" height="34" rx="5" fill="#f4e7cf" stroke="#d9a441"/>
+<text x="530" y="158" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="13" fill="#8a6418">Lan g Id &#8773; f</text>
+<text x="530" y="192" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#2f6f54">right adjoint = right Kan of Id along f</text>
+<text x="530" y="205" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#2f6f54">left adjoint = left Kan of Id along g</text>
 
 <!-- Equivalence arrow -->
-<line x1="323" y1="130" x2="375" y2="130" stroke="#ccaa00" stroke-width="2" marker-end="url(#arrd)"/>
-<text x="349" y="122" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="13" fill="#886600">&#8773;</text>
+<line x1="323" y1="130" x2="375" y2="130" stroke="#d9a441" stroke-width="2" marker-end="url(#arrd)"/>
+<text x="349" y="122" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="13" fill="#d9a441">&#8773;</text>
 
 <!-- Bottom: Monad from adjunction -->
-<rect x="20" y="240" width="300" height="130" rx="8" fill="#ede9fe" stroke="#664499" stroke-width="1.5"/>
-<text x="170" y="263" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="14" fill="#4422aa" font-weight="bold">Monad from adjunction</text>
-<text x="170" y="284" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#5533aa">T = g &#183; f : C &#8594; C</text>
-<text x="170" y="304" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#4422aa">return = &#951; : Id &#8658; g&#183;f</text>
-<text x="170" y="320" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#4422aa">join = g&#183;&#949;&#183;f : g&#183;f&#183;g&#183;f &#8658; g&#183;f</text>
-<text x="170" y="344" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#6655aa">-- example: Maybe = Ran Just Id</text>
-<text x="170" y="358" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#6655aa">-- [] = Lan singleton Id</text>
+<rect x="20" y="240" width="300" height="130" rx="8" fill="#efeaf6" stroke="#5f4a86" stroke-width="1.5"/>
+<text x="170" y="263" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="14" fill="#5f4a86" font-weight="bold">Monad from adjunction</text>
+<text x="170" y="284" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#5f4a86">T = g &#183; f : C &#8594; C</text>
+<text x="170" y="304" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#5f4a86">return = &#951; : Id &#8658; g&#183;f</text>
+<text x="170" y="320" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#5f4a86">join = g&#183;&#949;&#183;f : g&#183;f&#183;g&#183;f &#8658; g&#183;f</text>
+<text x="170" y="344" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#8b6db5">-- example: Maybe = Ran Just Id</text>
+<text x="170" y="358" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#8b6db5">-- [] = Lan singleton Id</text>
 
 <!-- Bottom right: Codensity -->
-<rect x="380" y="240" width="300" height="130" rx="8" fill="#dbeafe" stroke="#224477" stroke-width="1.5"/>
-<text x="530" y="263" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="14" fill="#1a3a88" font-weight="bold">Codensity = monad</text>
-<text x="530" y="284" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#2244aa">Codensity f &#8773; Ran f f</text>
-<text x="530" y="304" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#334477">-- any functor &#8594; monad</text>
-<text x="530" y="320" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#334477">newtype Codensity f a =</text>
-<text x="530" y="336" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#334477">  Cod { forall b.(a-&gt;f b)-&gt;f b }</text>
-<text x="530" y="354" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#334477">-- improves monad asymptotics</text>
+<rect x="380" y="240" width="300" height="130" rx="8" fill="#eef1fb" stroke="#3a4a96" stroke-width="1.5"/>
+<text x="530" y="263" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="14" fill="#3a4a96" font-weight="bold">Codensity = monad</text>
+<text x="530" y="284" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="12" fill="#5872c9">Codensity f &#8773; Ran f f</text>
+<text x="530" y="304" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#3a4a96">-- any functor &#8594; monad</text>
+<text x="530" y="320" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#3a4a96">newtype Codensity f a =</text>
+<text x="530" y="336" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#3a4a96">  Cod { forall b.(a-&gt;f b)-&gt;f b }</text>
+<text x="530" y="354" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="11" fill="#3a4a96">-- improves monad asymptotics</text>
 
 <!-- Bottom middle: arrow showing connection -->
-<line x1="323" y1="305" x2="375" y2="305" stroke="#884499" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arrd)"/>
-<text x="349" y="297" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#664488">Ran f f</text>
+<line x1="323" y1="305" x2="375" y2="305" stroke="#8b6db5" stroke-width="1.8" stroke-dasharray="5,3" marker-end="url(#arrd)"/>
+<text x="349" y="297" text-anchor="middle" font-family="monospace,Arial,sans-serif" font-size="10" fill="#5f4a86">Ran f f</text>
 
 <!-- Title top connection -->
-<line x1="170" y1="207" x2="170" y2="236" stroke="#664499" stroke-width="1.5"/>
-<line x1="530" y1="207" x2="530" y2="236" stroke="#226633" stroke-width="1.5"/>
+<line x1="170" y1="207" x2="170" y2="236" stroke="#5f4a86" stroke-width="1.5"/>
+<line x1="530" y1="207" x2="530" y2="236" stroke="#2f6f54" stroke-width="1.5"/>
 </svg>

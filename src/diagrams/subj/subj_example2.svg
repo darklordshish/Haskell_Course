@@ -3,13 +3,13 @@
   <rect width="860" height="420" fill="#ffffff" rx="8"/>
   <defs>
     <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5872c9"/>
     </marker>
     <marker id="arrg" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#34d399"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3f9d77"/>
     </marker>
     <marker id="arrp" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b6db5"/>
     </marker>
   </defs>
 
@@ -18,70 +18,70 @@
   </text>
 
   <!-- X nodes -->
-  <text x="80" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#64748b">X</text>
-  <rect x="30" y="70" width="100" height="36" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5" rx="6"/>
-  <text x="80" y="93" text-anchor="middle" font-size="12" fill="#2563eb">temp=low</text>
-  <text x="140" y="91" text-anchor="start" font-size="11" fill="#64748b">tau=0.9</text>
+  <text x="80" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#8a93a3">X</text>
+  <rect x="30" y="70" width="100" height="36" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.5" rx="6"/>
+  <text x="80" y="93" text-anchor="middle" font-size="12" fill="#5872c9">temp=low</text>
+  <text x="140" y="91" text-anchor="start" font-size="11" fill="#8a93a3">tau=0.9</text>
 
-  <rect x="30" y="118" width="100" height="36" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5" rx="6"/>
-  <text x="80" y="141" text-anchor="middle" font-size="12" fill="#2563eb">temp=med</text>
-  <text x="140" y="139" text-anchor="start" font-size="11" fill="#64748b">tau=0.5</text>
+  <rect x="30" y="118" width="100" height="36" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.5" rx="6"/>
+  <text x="80" y="141" text-anchor="middle" font-size="12" fill="#5872c9">temp=med</text>
+  <text x="140" y="139" text-anchor="start" font-size="11" fill="#8a93a3">tau=0.5</text>
 
-  <rect x="30" y="166" width="100" height="36" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5" rx="6"/>
-  <text x="80" y="189" text-anchor="middle" font-size="12" fill="#2563eb">vib=low</text>
-  <text x="140" y="187" text-anchor="start" font-size="11" fill="#64748b">tau=0.7</text>
+  <rect x="30" y="166" width="100" height="36" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.5" rx="6"/>
+  <text x="80" y="189" text-anchor="middle" font-size="12" fill="#5872c9">vib=low</text>
+  <text x="140" y="187" text-anchor="start" font-size="11" fill="#8a93a3">tau=0.7</text>
 
-  <rect x="30" y="214" width="100" height="36" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5" rx="6"/>
-  <text x="80" y="237" text-anchor="middle" font-size="12" fill="#2563eb">vib=high</text>
-  <text x="140" y="235" text-anchor="start" font-size="11" fill="#64748b">tau=0.3</text>
+  <rect x="30" y="214" width="100" height="36" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.5" rx="6"/>
+  <text x="80" y="237" text-anchor="middle" font-size="12" fill="#5872c9">vib=high</text>
+  <text x="140" y="235" text-anchor="start" font-size="11" fill="#8a93a3">tau=0.3</text>
 
   <!-- phi arrows -->
-  <line x1="135" y1="88" x2="290" y2="110" stroke="#2563eb" stroke-width="1.2" marker-end="url(#arr)"/>
-  <line x1="135" y1="136" x2="290" y2="115" stroke="#2563eb" stroke-width="1.2" marker-end="url(#arr)"/>
-  <line x1="135" y1="184" x2="290" y2="200" stroke="#2563eb" stroke-width="1.2" marker-end="url(#arr)"/>
-  <line x1="135" y1="232" x2="290" y2="205" stroke="#2563eb" stroke-width="1.2" marker-end="url(#arr)"/>
-  <text x="210" y="148" text-anchor="middle" font-size="13" fill="#64748b">phi</text>
+  <line x1="135" y1="88" x2="290" y2="110" stroke="#5872c9" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="135" y1="136" x2="290" y2="115" stroke="#5872c9" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="135" y1="184" x2="290" y2="200" stroke="#5872c9" stroke-width="1.2" marker-end="url(#arr)"/>
+  <line x1="135" y1="232" x2="290" y2="205" stroke="#5872c9" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="210" y="148" text-anchor="middle" font-size="13" fill="#8a93a3">phi</text>
 
   <!-- Y nodes -->
-  <text x="340" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#64748b">Y</text>
-  <rect x="290" y="90" width="100" height="36" fill="#f1f5f9" stroke="#34d399" stroke-width="1.5" rx="6"/>
-  <text x="340" y="113" text-anchor="middle" font-size="12" fill="#34d399">Normal</text>
-  <rect x="290" y="185" width="100" height="36" fill="#f1f5f9" stroke="#34d399" stroke-width="1.5" rx="6"/>
-  <text x="340" y="208" text-anchor="middle" font-size="12" fill="#34d399">Fault</text>
+  <text x="340" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#8a93a3">Y</text>
+  <rect x="290" y="90" width="100" height="36" fill="#f7f8fa" stroke="#3f9d77" stroke-width="1.5" rx="6"/>
+  <text x="340" y="113" text-anchor="middle" font-size="12" fill="#3f9d77">Normal</text>
+  <rect x="290" y="185" width="100" height="36" fill="#f7f8fa" stroke="#3f9d77" stroke-width="1.5" rx="6"/>
+  <text x="340" y="208" text-anchor="middle" font-size="12" fill="#3f9d77">Fault</text>
 
   <!-- Divider -->
   <line x1="420" y1="50" x2="420" y2="380" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,3"/>
 
   <!-- Bitopological approach -->
-  <text x="570" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#34d399">Bitopological</text>
-  <rect x="435" y="70" width="270" height="64" fill="#f0fdf4" stroke="#34d399" stroke-width="1" rx="6"/>
+  <text x="570" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#3f9d77">Bitopological</text>
+  <rect x="435" y="70" width="270" height="64" fill="#e9f4ee" stroke="#3f9d77" stroke-width="1" rx="6"/>
   <text x="570" y="88" text-anchor="middle" font-size="12" fill="#0f172a">Topology T-up on X by tau:</text>
-  <text x="570" y="104" text-anchor="middle" font-size="11" fill="#64748b">{temp=low} at t=0.7,  {temp=low,vib=low} at t=0.5</text>
-  <text x="570" y="120" text-anchor="middle" font-size="11" fill="#64748b">{X\vib=high} at t=0.3,  X at t=0</text>
-  <rect x="435" y="144" width="270" height="50" fill="#f0fdf4" stroke="#34d399" stroke-width="1" rx="6"/>
+  <text x="570" y="104" text-anchor="middle" font-size="11" fill="#8a93a3">{temp=low} at t=0.7,  {temp=low,vib=low} at t=0.5</text>
+  <text x="570" y="120" text-anchor="middle" font-size="11" fill="#8a93a3">{X\vib=high} at t=0.3,  X at t=0</text>
+  <rect x="435" y="144" width="270" height="50" fill="#e9f4ee" stroke="#3f9d77" stroke-width="1" rx="6"/>
   <text x="570" y="162" text-anchor="middle" font-size="12" fill="#0f172a">Direct image topology phi_*(T-up):</text>
-  <text x="570" y="178" text-anchor="middle" font-size="11" fill="#64748b">non-trivial, openness must be verified</text>
-  <rect x="435" y="204" width="270" height="50" fill="#f0fdf4" stroke="#34d399" stroke-width="1" rx="6"/>
+  <text x="570" y="178" text-anchor="middle" font-size="11" fill="#8a93a3">non-trivial, openness must be verified</text>
+  <rect x="435" y="204" width="270" height="50" fill="#e9f4ee" stroke="#3f9d77" stroke-width="1" rx="6"/>
   <text x="570" y="222" text-anchor="middle" font-size="12" fill="#0f172a">Pl_Y(Normal) via phi_*(T-up):</text>
-  <text x="570" y="238" text-anchor="middle" font-size="11" fill="#64748b">requires computing the direct image</text>
+  <text x="570" y="238" text-anchor="middle" font-size="11" fill="#8a93a3">requires computing the direct image</text>
 
   <!-- Kan approach -->
-  <text x="760" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#a78bfa">Kan Extension</text>
-  <rect x="720" y="70" width="120" height="36" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
+  <text x="760" y="60" text-anchor="middle" font-size="13" font-weight="bold" fill="#8b6db5">Kan Extension</text>
+  <rect x="720" y="70" width="120" height="36" fill="#efeaf6" stroke="#8b6db5" stroke-width="1" rx="6"/>
   <text x="780" y="88" text-anchor="middle" font-size="11" fill="#0f172a">Lan_phi tau (y)</text>
-  <text x="780" y="101" text-anchor="middle" font-size="10" fill="#64748b">= coend over X</text>
-  <rect x="720" y="116" width="120" height="50" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
+  <text x="780" y="101" text-anchor="middle" font-size="10" fill="#8a93a3">= coend over X</text>
+  <rect x="720" y="116" width="120" height="50" fill="#efeaf6" stroke="#8b6db5" stroke-width="1" rx="6"/>
   <text x="780" y="134" text-anchor="middle" font-size="11" fill="#0f172a">= sup_{phi(x)=y}</text>
   <text x="780" y="150" text-anchor="middle" font-size="11" fill="#0f172a">tau(x)</text>
-  <rect x="720" y="176" width="120" height="50" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
-  <text x="780" y="193" text-anchor="middle" font-size="11" fill="#2563eb">Normal:</text>
+  <rect x="720" y="176" width="120" height="50" fill="#efeaf6" stroke="#8b6db5" stroke-width="1" rx="6"/>
+  <text x="780" y="193" text-anchor="middle" font-size="11" fill="#5872c9">Normal:</text>
   <text x="780" y="209" text-anchor="middle" font-size="11" fill="#0f172a">sup(0.9, 0.5) = 0.9</text>
-  <rect x="720" y="236" width="120" height="50" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1" rx="6"/>
-  <text x="780" y="253" text-anchor="middle" font-size="11" fill="#2563eb">Fault:</text>
+  <rect x="720" y="236" width="120" height="50" fill="#efeaf6" stroke="#8b6db5" stroke-width="1" rx="6"/>
+  <text x="780" y="253" text-anchor="middle" font-size="11" fill="#5872c9">Fault:</text>
   <text x="780" y="269" text-anchor="middle" font-size="11" fill="#0f172a">sup(0.7, 0.3) = 0.7</text>
 
   <!-- Result -->
-  <rect x="100" y="345" width="660" height="50" fill="#fef3c7" stroke="#fb923c" stroke-width="1.5" rx="6"/>
+  <rect x="100" y="345" width="660" height="50" fill="#f4e7cf" stroke="#d9a441" stroke-width="1.5" rx="6"/>
   <text x="430" y="363" text-anchor="middle" font-size="12" fill="#0f172a">Conclusion: the formula from section 3 (tau-tilde) is exactly Lan_phi tau.</text>
   <text x="430" y="380" text-anchor="middle" font-size="12" fill="#0f172a">Kan gives it automatically; the bitopological approach requires additional work.</text>
 </svg>

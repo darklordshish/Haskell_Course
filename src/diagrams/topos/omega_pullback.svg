@@ -2,10 +2,10 @@
      font-family="monospace,Arial,sans-serif">
   <defs>
     <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5872c9"/>
     </marker>
     <marker id="arrP" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b6db5"/>
     </marker>
   </defs>
 
@@ -17,59 +17,59 @@
 
   <!-- Pullback square nodes -->
   <!-- S top-left -->
-  <rect x="80" y="60" width="70" height="38" rx="6" fill="#2563eb" stroke="#1d4ed8" stroke-width="1.5"/>
+  <rect x="80" y="60" width="70" height="38" rx="6" fill="#5872c9" stroke="#3a4a96" stroke-width="1.5"/>
   <text x="115" y="84" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">S</text>
 
   <!-- 1 top-right -->
-  <rect x="280" y="60" width="70" height="38" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="280" y="60" width="70" height="38" rx="6" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="315" y="84" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">1</text>
 
   <!-- A bottom-left -->
-  <rect x="80" y="200" width="70" height="38" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="80" y="200" width="70" height="38" rx="6" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="115" y="224" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">A</text>
 
   <!-- Omega bottom-right -->
-  <rect x="280" y="200" width="70" height="38" rx="6" fill="#a78bfa" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="280" y="200" width="70" height="38" rx="6" fill="#8b6db5" stroke="#8b6db5" stroke-width="1.5"/>
   <text x="315" y="224" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">&#937;</text>
 
   <!-- Arrows -->
   <!-- S -> 1 (top) -->
-  <line x1="152" y1="79" x2="278" y2="79" stroke="#2563eb" stroke-width="1.8" marker-end="url(#arr)"/>
-  <text x="215" y="70" text-anchor="middle" font-size="11" fill="#64748b">!_S</text>
+  <line x1="152" y1="79" x2="278" y2="79" stroke="#5872c9" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="215" y="70" text-anchor="middle" font-size="11" fill="#8a93a3">!_S</text>
 
   <!-- S -> A (left, mono m) -->
-  <line x1="115" y1="100" x2="115" y2="198" stroke="#2563eb" stroke-width="1.8" marker-end="url(#arr)"/>
-  <text x="96" y="154" text-anchor="middle" font-size="11" fill="#2563eb">m</text>
+  <line x1="115" y1="100" x2="115" y2="198" stroke="#5872c9" stroke-width="1.8" marker-end="url(#arr)"/>
+  <text x="96" y="154" text-anchor="middle" font-size="11" fill="#5872c9">m</text>
 
   <!-- 1 -> Omega (right, true) -->
-  <line x1="315" y1="100" x2="315" y2="198" stroke="#a78bfa" stroke-width="1.8" marker-end="url(#arrP)"/>
-  <text x="334" y="154" text-anchor="middle" font-size="11" fill="#a78bfa">true</text>
+  <line x1="315" y1="100" x2="315" y2="198" stroke="#8b6db5" stroke-width="1.8" marker-end="url(#arrP)"/>
+  <text x="334" y="154" text-anchor="middle" font-size="11" fill="#8b6db5">true</text>
 
   <!-- A -> Omega (bottom, chi_m) -->
-  <line x1="152" y1="219" x2="278" y2="219" stroke="#a78bfa" stroke-width="1.8" marker-end="url(#arrP)"/>
-  <text x="215" y="238" text-anchor="middle" font-size="11" fill="#a78bfa">&#967;_m</text>
+  <line x1="152" y1="219" x2="278" y2="219" stroke="#8b6db5" stroke-width="1.8" marker-end="url(#arrP)"/>
+  <text x="215" y="238" text-anchor="middle" font-size="11" fill="#8b6db5">&#967;_m</text>
 
   <!-- Corner mark at S (pullback corner) -->
-  <rect x="125" y="100" width="13" height="13" fill="none" stroke="#2563eb" stroke-width="1.3"/>
+  <rect x="125" y="100" width="13" height="13" fill="none" stroke="#5872c9" stroke-width="1.3"/>
 
   <!-- Examples panel -->
-  <rect x="390" y="55" width="98" height="190" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="390" y="55" width="98" height="190" rx="8" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.2"/>
   <text x="439" y="75" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">Examples</text>
   <line x1="395" y1="80" x2="483" y2="80" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="398" y="96" font-size="10" font-weight="bold" fill="#2563eb">Set:</text>
+  <text x="398" y="96" font-size="10" font-weight="bold" fill="#5872c9">Set:</text>
   <text x="398" y="111" font-size="10" fill="#0f172a">&#937; = {F, T}</text>
-  <text x="398" y="126" font-size="9" fill="#64748b">&#967;_S(a)=T &#8660; a&#8712;S</text>
+  <text x="398" y="126" font-size="9" fill="#8a93a3">&#967;_S(a)=T &#8660; a&#8712;S</text>
   <line x1="395" y1="133" x2="483" y2="133" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="398" y="148" font-size="10" font-weight="bold" fill="#34d399">Sh(X):</text>
+  <text x="398" y="148" font-size="10" font-weight="bold" fill="#3f9d77">Sh(X):</text>
   <text x="398" y="163" font-size="9" fill="#0f172a">&#937;(U)=Open(U)</text>
-  <text x="398" y="178" font-size="9" fill="#64748b">true_U = U</text>
+  <text x="398" y="178" font-size="9" fill="#8a93a3">true_U = U</text>
   <line x1="395" y1="185" x2="483" y2="185" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="398" y="200" font-size="10" font-weight="bold" fill="#a78bfa">Subj.:</text>
+  <text x="398" y="200" font-size="10" font-weight="bold" fill="#8b6db5">Subj.:</text>
   <text x="398" y="215" font-size="9" fill="#0f172a">&#937; = [0,1]</text>
-  <text x="398" y="230" font-size="9" fill="#64748b">&#964;: X &#8594; [0,1]</text>
+  <text x="398" y="230" font-size="9" fill="#8a93a3">&#964;: X &#8594; [0,1]</text>
 
   <!-- Footer -->
-  <rect x="20" y="268" width="460" height="38" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="20" y="268" width="460" height="38" rx="6" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.2"/>
   <text x="250" y="283" text-anchor="middle" font-size="11" fill="#0f172a">&#967;_m: A &#8594; &#937;  is the unique characteristic map</text>
-  <text x="250" y="298" text-anchor="middle" font-size="10" fill="#64748b">m: S &#8618; A is a mono  &#8660;  pullback of true along &#967;_m</text>
+  <text x="250" y="298" text-anchor="middle" font-size="10" fill="#8a93a3">m: S &#8618; A is a mono  &#8660;  pullback of true along &#967;_m</text>
 </svg>

@@ -117,7 +117,7 @@ function famOfHue(h) {
   if (h >= 345 || h < 18) return 'terracotta';
   if (h < 70) return 'ochre';
   if (h < 175) return 'sage';
-  if (h < 260) return 'indigo';
+  if (h < 248) return 'indigo';
   return 'lavender';
 }
 function fallback(hex) {
@@ -147,7 +147,8 @@ for (const rel of files) {
     (leftover[lc] = leftover[lc] || 0); leftover[lc]++;
     return fb;
   });
-  if (/[^\x00-\x7F]/.test(out.replace(/&#\d+;/g, ''))) { console.error('NON-ASCII в ' + rel); process.exit(1); }
+  const na = t => (t.replace(/&#\d+;/g, '').match(/[^\x00-\x7F]/g) || []).length;
+  if (na(out) > na(orig)) { console.error('ВНЕСён не-ASCII в ' + rel); process.exit(1); }
   if (out !== orig) { changed++; if (!checkOnly) fs.writeFileSync(p, out); }
 }
 console.log((checkOnly ? 'would change: ' : 'changed: ') + changed + ' / ' + files.length);

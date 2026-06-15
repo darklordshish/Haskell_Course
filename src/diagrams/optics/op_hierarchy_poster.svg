@@ -4,7 +4,7 @@
 <text x="450" y="32" text-anchor="middle" font-size="18" fill="#0f172a" font-weight="bold">Optics hierarchy</text>
 
 <!-- header -->
-<rect x="20" y="48" width="860" height="32" fill="#334466"/>
+<rect x="20" y="48" width="860" height="32" fill="#3a4a96"/>
 <text x="95"  y="69" text-anchor="middle" font-size="12" fill="#ffffff" font-weight="bold">Optic</text>
 <text x="250" y="69" text-anchor="middle" font-size="12" fill="#ffffff" font-weight="bold">Focus</text>
 <text x="470" y="69" text-anchor="middle" font-size="12" fill="#ffffff" font-weight="bold">Read</text>
@@ -13,85 +13,85 @@
 <text x="790" y="69" text-anchor="middle" font-size="12" fill="#ffffff" font-weight="bold">Encoding</text>
 
 <!-- rows -->
-<rect x="20" y="80"  width="860" height="36" fill="#fef3c7" stroke="#94a3b8" stroke-width="0.6"/>
+<rect x="20" y="80"  width="860" height="36" fill="#f4e7cf" stroke="#8a93a3" stroke-width="0.6"/>
 <text x="95"  y="103" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Iso</text>
-<text x="250" y="103" text-anchor="middle" font-size="11" fill="#334466">s &#8596; a</text>
-<text x="470" y="103" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="560" y="103" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="660" y="103" text-anchor="middle" font-size="11" fill="#334466">1 (iso)</text>
-<text x="790" y="103" text-anchor="middle" font-size="11" fill="#334466">Exchange</text>
+<text x="250" y="103" text-anchor="middle" font-size="11" fill="#3a4a96">s &#8596; a</text>
+<text x="470" y="103" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="560" y="103" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="660" y="103" text-anchor="middle" font-size="11" fill="#3a4a96">1 (iso)</text>
+<text x="790" y="103" text-anchor="middle" font-size="11" fill="#3a4a96">Exchange</text>
 
-<rect x="20" y="116" width="860" height="36" fill="#dbeafe" stroke="#94a3b8" stroke-width="0.6"/>
+<rect x="20" y="116" width="860" height="36" fill="#eef1fb" stroke="#8a93a3" stroke-width="0.6"/>
 <text x="95"  y="139" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Lens</text>
-<text x="250" y="139" text-anchor="middle" font-size="11" fill="#334466">product field</text>
-<text x="470" y="139" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="560" y="139" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="660" y="139" text-anchor="middle" font-size="11" fill="#334466">exactly 1</text>
-<text x="790" y="139" text-anchor="middle" font-size="11" fill="#334466">Strong</text>
+<text x="250" y="139" text-anchor="middle" font-size="11" fill="#3a4a96">product field</text>
+<text x="470" y="139" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="560" y="139" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="660" y="139" text-anchor="middle" font-size="11" fill="#3a4a96">exactly 1</text>
+<text x="790" y="139" text-anchor="middle" font-size="11" fill="#3a4a96">Strong</text>
 
-<rect x="20" y="152" width="860" height="36" fill="#dcfce7" stroke="#94a3b8" stroke-width="0.6"/>
+<rect x="20" y="152" width="860" height="36" fill="#e9f4ee" stroke="#8a93a3" stroke-width="0.6"/>
 <text x="95"  y="175" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Prism</text>
-<text x="250" y="175" text-anchor="middle" font-size="11" fill="#334466">sum branch</text>
-<text x="470" y="175" text-anchor="middle" font-size="11" fill="#334466">preview</text>
-<text x="560" y="175" text-anchor="middle" font-size="11" fill="#334466">review</text>
-<text x="660" y="175" text-anchor="middle" font-size="11" fill="#334466">0 or 1</text>
-<text x="790" y="175" text-anchor="middle" font-size="11" fill="#334466">Choice</text>
+<text x="250" y="175" text-anchor="middle" font-size="11" fill="#3a4a96">sum branch</text>
+<text x="470" y="175" text-anchor="middle" font-size="11" fill="#3a4a96">preview</text>
+<text x="560" y="175" text-anchor="middle" font-size="11" fill="#3a4a96">review</text>
+<text x="660" y="175" text-anchor="middle" font-size="11" fill="#3a4a96">0 or 1</text>
+<text x="790" y="175" text-anchor="middle" font-size="11" fill="#3a4a96">Choice</text>
 
-<rect x="20" y="188" width="860" height="36" fill="#ede9fe" stroke="#94a3b8" stroke-width="0.6"/>
+<rect x="20" y="188" width="860" height="36" fill="#efeaf6" stroke="#8a93a3" stroke-width="0.6"/>
 <text x="95"  y="211" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">AffineTrav.</text>
-<text x="250" y="211" text-anchor="middle" font-size="11" fill="#334466">0/1 in any s</text>
-<text x="470" y="211" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="560" y="211" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="660" y="211" text-anchor="middle" font-size="11" fill="#334466">0 or 1</text>
-<text x="790" y="211" text-anchor="middle" font-size="11" fill="#334466">Strong+Choice</text>
+<text x="250" y="211" text-anchor="middle" font-size="11" fill="#3a4a96">0/1 in any s</text>
+<text x="470" y="211" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="560" y="211" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="660" y="211" text-anchor="middle" font-size="11" fill="#3a4a96">0 or 1</text>
+<text x="790" y="211" text-anchor="middle" font-size="11" fill="#3a4a96">Strong+Choice</text>
 
-<rect x="20" y="224" width="860" height="36" fill="#cffafe" stroke="#94a3b8" stroke-width="0.6"/>
+<rect x="20" y="224" width="860" height="36" fill="#eef1fb" stroke="#8a93a3" stroke-width="0.6"/>
 <text x="95"  y="247" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Traversal</text>
-<text x="250" y="247" text-anchor="middle" font-size="11" fill="#334466">many values</text>
-<text x="470" y="247" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="560" y="247" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="660" y="247" text-anchor="middle" font-size="11" fill="#334466">0..n</text>
-<text x="790" y="247" text-anchor="middle" font-size="11" fill="#334466">Applicative</text>
+<text x="250" y="247" text-anchor="middle" font-size="11" fill="#3a4a96">many values</text>
+<text x="470" y="247" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="560" y="247" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="660" y="247" text-anchor="middle" font-size="11" fill="#3a4a96">0..n</text>
+<text x="790" y="247" text-anchor="middle" font-size="11" fill="#3a4a96">Applicative</text>
 
-<rect x="20" y="260" width="860" height="36" fill="#f1f5f9" stroke="#94a3b8" stroke-width="0.6"/>
+<rect x="20" y="260" width="860" height="36" fill="#f7f8fa" stroke="#8a93a3" stroke-width="0.6"/>
 <text x="95"  y="283" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Fold</text>
-<text x="250" y="283" text-anchor="middle" font-size="11" fill="#334466">many (RO)</text>
-<text x="470" y="283" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="560" y="283" text-anchor="middle" font-size="11" fill="#334466">no</text>
-<text x="660" y="283" text-anchor="middle" font-size="11" fill="#334466">0..n</text>
-<text x="790" y="283" text-anchor="middle" font-size="11" fill="#334466">Const</text>
+<text x="250" y="283" text-anchor="middle" font-size="11" fill="#3a4a96">many (RO)</text>
+<text x="470" y="283" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="560" y="283" text-anchor="middle" font-size="11" fill="#3a4a96">no</text>
+<text x="660" y="283" text-anchor="middle" font-size="11" fill="#3a4a96">0..n</text>
+<text x="790" y="283" text-anchor="middle" font-size="11" fill="#3a4a96">Const</text>
 
-<rect x="20" y="296" width="860" height="36" fill="#f1f5f9" stroke="#94a3b8" stroke-width="0.6"/>
+<rect x="20" y="296" width="860" height="36" fill="#f7f8fa" stroke="#8a93a3" stroke-width="0.6"/>
 <text x="95"  y="319" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Getter</text>
-<text x="250" y="319" text-anchor="middle" font-size="11" fill="#334466">one (RO)</text>
-<text x="470" y="319" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="560" y="319" text-anchor="middle" font-size="11" fill="#334466">no</text>
-<text x="660" y="319" text-anchor="middle" font-size="11" fill="#334466">1</text>
-<text x="790" y="319" text-anchor="middle" font-size="11" fill="#334466">Const</text>
+<text x="250" y="319" text-anchor="middle" font-size="11" fill="#3a4a96">one (RO)</text>
+<text x="470" y="319" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="560" y="319" text-anchor="middle" font-size="11" fill="#3a4a96">no</text>
+<text x="660" y="319" text-anchor="middle" font-size="11" fill="#3a4a96">1</text>
+<text x="790" y="319" text-anchor="middle" font-size="11" fill="#3a4a96">Const</text>
 
-<rect x="20" y="332" width="860" height="36" fill="#f1f5f9" stroke="#94a3b8" stroke-width="0.6"/>
+<rect x="20" y="332" width="860" height="36" fill="#f7f8fa" stroke="#8a93a3" stroke-width="0.6"/>
 <text x="95"  y="355" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Setter</text>
-<text x="250" y="355" text-anchor="middle" font-size="11" fill="#334466">modify</text>
-<text x="470" y="355" text-anchor="middle" font-size="11" fill="#334466">no</text>
-<text x="560" y="355" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="660" y="355" text-anchor="middle" font-size="11" fill="#334466">0..n</text>
-<text x="790" y="355" text-anchor="middle" font-size="11" fill="#334466">Identity</text>
+<text x="250" y="355" text-anchor="middle" font-size="11" fill="#3a4a96">modify</text>
+<text x="470" y="355" text-anchor="middle" font-size="11" fill="#3a4a96">no</text>
+<text x="560" y="355" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="660" y="355" text-anchor="middle" font-size="11" fill="#3a4a96">0..n</text>
+<text x="790" y="355" text-anchor="middle" font-size="11" fill="#3a4a96">Identity</text>
 
-<rect x="20" y="368" width="860" height="36" fill="#fde9d3" stroke="#94a3b8" stroke-width="0.6"/>
+<rect x="20" y="368" width="860" height="36" fill="#f4e7cf" stroke="#8a93a3" stroke-width="0.6"/>
 <text x="95"  y="391" text-anchor="middle" font-size="12" fill="#0f172a" font-weight="bold">Grate</text>
-<text x="250" y="391" text-anchor="middle" font-size="11" fill="#334466">coexponential</text>
-<text x="470" y="391" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="560" y="391" text-anchor="middle" font-size="11" fill="#334466">yes</text>
-<text x="660" y="391" text-anchor="middle" font-size="11" fill="#334466">n</text>
-<text x="790" y="391" text-anchor="middle" font-size="11" fill="#334466">Closed</text>
+<text x="250" y="391" text-anchor="middle" font-size="11" fill="#3a4a96">coexponential</text>
+<text x="470" y="391" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="560" y="391" text-anchor="middle" font-size="11" fill="#3a4a96">yes</text>
+<text x="660" y="391" text-anchor="middle" font-size="11" fill="#3a4a96">n</text>
+<text x="790" y="391" text-anchor="middle" font-size="11" fill="#3a4a96">Closed</text>
 
 <!-- borders + separators -->
-<rect x="20" y="48" width="860" height="356" fill="none" stroke="#334466" stroke-width="1.4"/>
-<line x1="170" y1="48" x2="170" y2="404" stroke="#94a3b8" stroke-width="0.6"/>
-<line x1="420" y1="48" x2="420" y2="404" stroke="#94a3b8" stroke-width="0.6"/>
-<line x1="520" y1="48" x2="520" y2="404" stroke="#94a3b8" stroke-width="0.6"/>
-<line x1="610" y1="48" x2="610" y2="404" stroke="#94a3b8" stroke-width="0.6"/>
-<line x1="710" y1="48" x2="710" y2="404" stroke="#94a3b8" stroke-width="0.6"/>
+<rect x="20" y="48" width="860" height="356" fill="none" stroke="#3a4a96" stroke-width="1.4"/>
+<line x1="170" y1="48" x2="170" y2="404" stroke="#8a93a3" stroke-width="0.6"/>
+<line x1="420" y1="48" x2="420" y2="404" stroke="#8a93a3" stroke-width="0.6"/>
+<line x1="520" y1="48" x2="520" y2="404" stroke="#8a93a3" stroke-width="0.6"/>
+<line x1="610" y1="48" x2="610" y2="404" stroke="#8a93a3" stroke-width="0.6"/>
+<line x1="710" y1="48" x2="710" y2="404" stroke="#8a93a3" stroke-width="0.6"/>
 
-<text x="450" y="426" text-anchor="middle" font-size="11" fill="#334466">all optics: forall p. C p =&gt; p a b -&gt; p s t   (the class C picks the optic)</text>
+<text x="450" y="426" text-anchor="middle" font-size="11" fill="#3a4a96">all optics: forall p. C p =&gt; p a b -&gt; p s t   (the class C picks the optic)</text>
 </svg>

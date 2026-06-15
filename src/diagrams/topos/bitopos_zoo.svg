@@ -2,7 +2,7 @@
      font-family="monospace,Arial,sans-serif">
   <defs>
     <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5872c9"/>
     </marker>
   </defs>
 
@@ -15,53 +15,53 @@
   <!-- Row 1: four topos examples -->
 
   <!-- Set -->
-  <rect x="18" y="50" width="148" height="74" rx="8" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.8"/>
-  <text x="92" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563eb">Set</text>
+  <rect x="18" y="50" width="148" height="74" rx="8" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.8"/>
+  <text x="92" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#5872c9">Set</text>
   <text x="92" y="93" text-anchor="middle" font-size="11" fill="#0f172a">&#937; = {F, T}</text>
-  <text x="92" y="110" text-anchor="middle" font-size="10" fill="#64748b">classical logic</text>
+  <text x="92" y="110" text-anchor="middle" font-size="10" fill="#8a93a3">classical logic</text>
 
   <!-- Sh(X) -->
-  <rect x="184" y="50" width="148" height="74" rx="8" fill="#f1f5f9" stroke="#34d399" stroke-width="1.8"/>
-  <text x="258" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#34d399">Sh(X)</text>
+  <rect x="184" y="50" width="148" height="74" rx="8" fill="#f7f8fa" stroke="#3f9d77" stroke-width="1.8"/>
+  <text x="258" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#3f9d77">Sh(X)</text>
   <text x="258" y="93" text-anchor="middle" font-size="11" fill="#0f172a">&#937; = Open(-)</text>
-  <text x="258" y="110" text-anchor="middle" font-size="10" fill="#64748b">intuitionistic</text>
+  <text x="258" y="110" text-anchor="middle" font-size="10" fill="#8a93a3">intuitionistic</text>
 
   <!-- [C, Set] -->
-  <rect x="350" y="50" width="148" height="74" rx="8" fill="#f1f5f9" stroke="#a78bfa" stroke-width="1.8"/>
-  <text x="424" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#a78bfa">[C, Set]</text>
+  <rect x="350" y="50" width="148" height="74" rx="8" fill="#f7f8fa" stroke="#8b6db5" stroke-width="1.8"/>
+  <text x="424" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#8b6db5">[C, Set]</text>
   <text x="424" y="93" text-anchor="middle" font-size="11" fill="#0f172a">presheaves</text>
-  <text x="424" y="110" text-anchor="middle" font-size="10" fill="#64748b">&#937; = Sub functor</text>
+  <text x="424" y="110" text-anchor="middle" font-size="10" fill="#8a93a3">&#937; = Sub functor</text>
 
   <!-- BG -->
-  <rect x="516" y="50" width="164" height="74" rx="8" fill="#f1f5f9" stroke="#fb923c" stroke-width="1.8"/>
-  <text x="598" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#fb923c">BG (groups)</text>
+  <rect x="516" y="50" width="164" height="74" rx="8" fill="#f7f8fa" stroke="#d9a441" stroke-width="1.8"/>
+  <text x="598" y="74" text-anchor="middle" font-size="14" font-weight="bold" fill="#d9a441">BG (groups)</text>
   <text x="598" y="93" text-anchor="middle" font-size="11" fill="#0f172a">G-sets</text>
-  <text x="598" y="110" text-anchor="middle" font-size="10" fill="#64748b">equivariant logic</text>
+  <text x="598" y="110" text-anchor="middle" font-size="10" fill="#8a93a3">equivariant logic</text>
 
   <!-- Arrows down -->
-  <line x1="92"  y1="124" x2="185" y2="188" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="258" y1="124" x2="228" y2="188" stroke="#34d399" stroke-width="1.5" marker-end="url(#arr)"/>
-  <line x1="424" y1="124" x2="440" y2="188" stroke="#a78bfa" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="92"  y1="124" x2="185" y2="188" stroke="#5872c9" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="258" y1="124" x2="228" y2="188" stroke="#3f9d77" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="424" y1="124" x2="440" y2="188" stroke="#8b6db5" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- Row 2: BiTopos examples -->
 
   <!-- BiTopos(Set) -->
-  <rect x="80" y="192" width="248" height="82" rx="8" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.8"/>
-  <text x="204" y="216" text-anchor="middle" font-size="13" font-weight="bold" fill="#2563eb">BiTopos(Set)</text>
+  <rect x="80" y="192" width="248" height="82" rx="8" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.8"/>
+  <text x="204" y="216" text-anchor="middle" font-size="13" font-weight="bold" fill="#5872c9">BiTopos(Set)</text>
   <text x="204" y="236" text-anchor="middle" font-size="11" fill="#0f172a">&#937;&#8314; = {F,T},  &#937;&#8315; = {F,T}</text>
-  <text x="204" y="254" text-anchor="middle" font-size="10" fill="#64748b">4-valued logic</text>
+  <text x="204" y="254" text-anchor="middle" font-size="10" fill="#8a93a3">4-valued logic</text>
 
   <!-- BiTopos([0,1]) = Pytiev -->
-  <rect x="368" y="192" width="270" height="82" rx="8" fill="#f1f5f9" stroke="#fb923c" stroke-width="1.8"/>
-  <text x="503" y="216" text-anchor="middle" font-size="13" font-weight="bold" fill="#fb923c">BiTopos([0,1]) = Pytev</text>
+  <rect x="368" y="192" width="270" height="82" rx="8" fill="#f7f8fa" stroke="#d9a441" stroke-width="1.8"/>
+  <text x="503" y="216" text-anchor="middle" font-size="13" font-weight="bold" fill="#d9a441">BiTopos([0,1]) = Pytev</text>
   <text x="503" y="236" text-anchor="middle" font-size="11" fill="#0f172a">&#937;&#8314; = Pl = Lan_J(&#964;)</text>
   <text x="503" y="254" text-anchor="middle" font-size="11" fill="#0f172a">&#937;&#8315; = Bel = Ran_J(&#964;)</text>
 
   <!-- Arrow label -->
-  <text x="350" y="175" text-anchor="middle" font-size="11" fill="#64748b" font-style="italic">one classifier &#8594; two = two truth worlds</text>
+  <text x="350" y="175" text-anchor="middle" font-size="11" fill="#8a93a3" font-style="italic">one classifier &#8594; two = two truth worlds</text>
 
   <!-- Footer -->
-  <rect x="18" y="300" width="664" height="44" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="18" y="300" width="664" height="44" rx="8" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.2"/>
   <text x="350" y="319" text-anchor="middle" font-size="11" fill="#0f172a" font-weight="bold">Key insight:</text>
-  <text x="350" y="337" text-anchor="middle" font-size="11" fill="#64748b">Splitting one classifier &#937; into &#937;&#8314; and &#937;&#8315; gives two truth worlds (belief / plausibility)</text>
+  <text x="350" y="337" text-anchor="middle" font-size="11" fill="#8a93a3">Splitting one classifier &#937; into &#937;&#8314; and &#937;&#8315; gives two truth worlds (belief / plausibility)</text>
 </svg>

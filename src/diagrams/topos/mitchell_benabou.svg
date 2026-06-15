@@ -2,13 +2,13 @@
      font-family="monospace,Arial,sans-serif">
   <defs>
     <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5872c9"/>
     </marker>
     <marker id="arrG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#34d399"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3f9d77"/>
     </marker>
     <marker id="arrP" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b6db5"/>
     </marker>
   </defs>
 
@@ -19,34 +19,34 @@
   <text x="280" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#0f172a">Mitchell-Benabou Internal Language</text>
 
   <!-- Topos circle (top center) -->
-  <circle cx="280" cy="100" r="42" fill="#2563eb" stroke="#1d4ed8" stroke-width="1.5"/>
+  <circle cx="280" cy="100" r="42" fill="#5872c9" stroke="#3a4a96" stroke-width="1.5"/>
   <text x="280" y="96" text-anchor="middle" font-size="13" font-weight="bold" fill="#ffffff">Topos</text>
-  <text x="280" y="113" text-anchor="middle" font-size="10" fill="#bfdbfe">category</text>
+  <text x="280" y="113" text-anchor="middle" font-size="10" fill="#eef1fb">category</text>
 
   <!-- Types circle (bottom left) -->
-  <circle cx="110" cy="220" r="42" fill="#f1f5f9" stroke="#34d399" stroke-width="2"/>
-  <text x="110" y="216" text-anchor="middle" font-size="13" font-weight="bold" fill="#34d399">Types</text>
-  <text x="110" y="233" text-anchor="middle" font-size="10" fill="#64748b">objects</text>
+  <circle cx="110" cy="220" r="42" fill="#f7f8fa" stroke="#3f9d77" stroke-width="2"/>
+  <text x="110" y="216" text-anchor="middle" font-size="13" font-weight="bold" fill="#3f9d77">Types</text>
+  <text x="110" y="233" text-anchor="middle" font-size="10" fill="#8a93a3">objects</text>
 
   <!-- Logic circle (bottom right) -->
-  <circle cx="450" cy="220" r="42" fill="#f1f5f9" stroke="#a78bfa" stroke-width="2"/>
-  <text x="450" y="216" text-anchor="middle" font-size="13" font-weight="bold" fill="#a78bfa">Logic</text>
-  <text x="450" y="233" text-anchor="middle" font-size="10" fill="#64748b">predicates</text>
+  <circle cx="450" cy="220" r="42" fill="#f7f8fa" stroke="#8b6db5" stroke-width="2"/>
+  <text x="450" y="216" text-anchor="middle" font-size="13" font-weight="bold" fill="#8b6db5">Logic</text>
+  <text x="450" y="233" text-anchor="middle" font-size="10" fill="#8a93a3">predicates</text>
 
   <!-- Arrow: Topos -> Types -->
-  <line x1="244" y1="134" x2="146" y2="184" stroke="#34d399" stroke-width="1.8" marker-end="url(#arrG)"/>
-  <text x="180" y="152" text-anchor="middle" font-size="10" fill="#34d399">Objects = Types</text>
+  <line x1="244" y1="134" x2="146" y2="184" stroke="#3f9d77" stroke-width="1.8" marker-end="url(#arrG)"/>
+  <text x="180" y="152" text-anchor="middle" font-size="10" fill="#3f9d77">Objects = Types</text>
 
   <!-- Arrow: Topos -> Logic -->
-  <line x1="316" y1="134" x2="414" y2="184" stroke="#a78bfa" stroke-width="1.8" marker-end="url(#arrP)"/>
-  <text x="378" y="152" text-anchor="middle" font-size="10" fill="#a78bfa">A&#8594;&#937; = Predicates</text>
+  <line x1="316" y1="134" x2="414" y2="184" stroke="#8b6db5" stroke-width="1.8" marker-end="url(#arrP)"/>
+  <text x="378" y="152" text-anchor="middle" font-size="10" fill="#8b6db5">A&#8594;&#937; = Predicates</text>
 
   <!-- Arrow: Types -> Logic (dashed) -->
-  <line x1="152" y1="228" x2="408" y2="228" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr)"/>
-  <text x="280" y="222" text-anchor="middle" font-size="10" fill="#2563eb">Terms = Morphisms</text>
+  <line x1="152" y1="228" x2="408" y2="228" stroke="#5872c9" stroke-width="1.5" stroke-dasharray="6,3" marker-end="url(#arr)"/>
+  <text x="280" y="222" text-anchor="middle" font-size="10" fill="#5872c9">Terms = Morphisms</text>
 
   <!-- Center note box -->
-  <rect x="196" y="248" width="168" height="42" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.2"/>
+  <rect x="196" y="248" width="168" height="42" rx="6" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.2"/>
   <text x="280" y="264" text-anchor="middle" font-size="10" fill="#0f172a">&#960;: &#915;&#215;A &#8594; &#915; (projection)</text>
-  <text x="280" y="280" text-anchor="middle" font-size="10" fill="#64748b">&#8704;x.P = Ran_&#960;(P),  &#8707;x.P = Lan_&#960;(P)</text>
+  <text x="280" y="280" text-anchor="middle" font-size="10" fill="#8a93a3">&#8704;x.P = Ran_&#960;(P),  &#8707;x.P = Lan_&#960;(P)</text>
 </svg>

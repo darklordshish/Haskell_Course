@@ -2,10 +2,10 @@
      font-family="monospace,Arial,sans-serif">
   <defs>
     <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5872c9"/>
     </marker>
     <marker id="arrP" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#a78bfa"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#8b6db5"/>
     </marker>
   </defs>
 
@@ -17,42 +17,42 @@
 
   <!-- Nodes -->
   <!-- {*} top-left -->
-  <rect x="50" y="65" width="64" height="36" rx="6" fill="#f1f5f9" stroke="#2563eb" stroke-width="1.5"/>
-  <text x="82" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#2563eb">{*}</text>
+  <rect x="50" y="65" width="64" height="36" rx="6" fill="#f7f8fa" stroke="#5872c9" stroke-width="1.5"/>
+  <text x="82" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#5872c9">{*}</text>
 
   <!-- 1 top-right -->
-  <rect x="200" y="65" width="64" height="36" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="200" y="65" width="64" height="36" rx="6" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="232" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f172a">1</text>
 
   <!-- Omega bottom-right -->
-  <rect x="200" y="165" width="64" height="36" rx="6" fill="#a78bfa" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="200" y="165" width="64" height="36" rx="6" fill="#8b6db5" stroke="#8b6db5" stroke-width="1.5"/>
   <text x="232" y="188" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">&#937;</text>
 
   <!-- A bottom-left -->
-  <rect x="50" y="165" width="64" height="36" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="50" y="165" width="64" height="36" rx="6" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.5"/>
   <text x="82" y="188" text-anchor="middle" font-size="14" font-weight="bold" fill="#0f172a">A</text>
 
   <!-- Arrows -->
   <!-- {*} -> 1 -->
-  <line x1="116" y1="83" x2="198" y2="83" stroke="#2563eb" stroke-width="1.6" marker-end="url(#arr)"/>
-  <text x="157" y="75" text-anchor="middle" font-size="10" fill="#64748b">!</text>
+  <line x1="116" y1="83" x2="198" y2="83" stroke="#5872c9" stroke-width="1.6" marker-end="url(#arr)"/>
+  <text x="157" y="75" text-anchor="middle" font-size="10" fill="#8a93a3">!</text>
 
   <!-- {*} -> A -->
-  <line x1="82" y1="103" x2="82" y2="163" stroke="#2563eb" stroke-width="1.6" marker-end="url(#arr)"/>
-  <text x="64" y="138" text-anchor="middle" font-size="10" fill="#2563eb">m</text>
+  <line x1="82" y1="103" x2="82" y2="163" stroke="#5872c9" stroke-width="1.6" marker-end="url(#arr)"/>
+  <text x="64" y="138" text-anchor="middle" font-size="10" fill="#5872c9">m</text>
 
   <!-- 1 -> Omega (true) -->
-  <line x1="232" y1="103" x2="232" y2="163" stroke="#a78bfa" stroke-width="1.6" marker-end="url(#arrP)"/>
-  <text x="250" y="138" text-anchor="middle" font-size="10" fill="#a78bfa">true</text>
+  <line x1="232" y1="103" x2="232" y2="163" stroke="#8b6db5" stroke-width="1.6" marker-end="url(#arrP)"/>
+  <text x="250" y="138" text-anchor="middle" font-size="10" fill="#8b6db5">true</text>
 
   <!-- A -> Omega (chi) -->
-  <line x1="116" y1="183" x2="198" y2="183" stroke="#a78bfa" stroke-width="1.6" marker-end="url(#arrP)"/>
-  <text x="157" y="200" text-anchor="middle" font-size="10" fill="#a78bfa">&#967;</text>
+  <line x1="116" y1="183" x2="198" y2="183" stroke="#8b6db5" stroke-width="1.6" marker-end="url(#arrP)"/>
+  <text x="157" y="200" text-anchor="middle" font-size="10" fill="#8b6db5">&#967;</text>
 
   <!-- Pullback corner mark -->
-  <rect x="92" y="103" width="11" height="11" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+  <rect x="92" y="103" width="11" height="11" fill="none" stroke="#5872c9" stroke-width="1.2"/>
 
   <!-- Verification note -->
-  <rect x="30" y="218" width="340" height="24" rx="5" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="200" y="234" text-anchor="middle" font-size="10" fill="#64748b">Verified: {*} &#8594; 1 &#8594; &#937; with true and &#967; forms a pullback</text>
+  <rect x="30" y="218" width="340" height="24" rx="5" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="200" y="234" text-anchor="middle" font-size="10" fill="#8a93a3">Verified: {*} &#8594; 1 &#8594; &#937; with true and &#967; forms a pullback</text>
 </svg>

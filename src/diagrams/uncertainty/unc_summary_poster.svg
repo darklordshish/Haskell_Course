@@ -8,24 +8,24 @@
 
   <!-- Column widths: 160 | 170 | 180 | 175 | 215 = 900 -->
   <!-- Header row -->
-  <rect x="0" y="38" width="160" height="34" fill="#334466"/>
-  <rect x="160" y="38" width="170" height="34" fill="#334466"/>
-  <rect x="330" y="38" width="180" height="34" fill="#334466"/>
-  <rect x="510" y="38" width="175" height="34" fill="#334466"/>
-  <rect x="685" y="38" width="215" height="34" fill="#334466"/>
-  <text x="80"  y="59" text-anchor="middle" font-size="11" font-weight="bold" fill="#e2e8f0">Uncertainty</text>
-  <text x="245" y="59" text-anchor="middle" font-size="11" font-weight="bold" fill="#e2e8f0">Category</text>
-  <text x="420" y="59" text-anchor="middle" font-size="11" font-weight="bold" fill="#e2e8f0">Endofunctor / Enrichment</text>
-  <text x="597" y="59" text-anchor="middle" font-size="11" font-weight="bold" fill="#e2e8f0">Composition</text>
-  <text x="792" y="59" text-anchor="middle" font-size="11" font-weight="bold" fill="#e2e8f0">Measure</text>
+  <rect x="0" y="38" width="160" height="34" fill="#3a4a96"/>
+  <rect x="160" y="38" width="170" height="34" fill="#3a4a96"/>
+  <rect x="330" y="38" width="180" height="34" fill="#3a4a96"/>
+  <rect x="510" y="38" width="175" height="34" fill="#3a4a96"/>
+  <rect x="685" y="38" width="215" height="34" fill="#3a4a96"/>
+  <text x="80"  y="59" text-anchor="middle" font-size="11" font-weight="bold" fill="#cbd5e1">Uncertainty</text>
+  <text x="245" y="59" text-anchor="middle" font-size="11" font-weight="bold" fill="#cbd5e1">Category</text>
+  <text x="420" y="59" text-anchor="middle" font-size="11" font-weight="bold" fill="#cbd5e1">Endofunctor / Enrichment</text>
+  <text x="597" y="59" text-anchor="middle" font-size="11" font-weight="bold" fill="#cbd5e1">Composition</text>
+  <text x="792" y="59" text-anchor="middle" font-size="11" font-weight="bold" fill="#cbd5e1">Measure</text>
 
   <!-- Row heights: each row 58px, 7 rows = 406, total = 38+34+406 = 478 -> use 56px rows to fit 460 -->
   <!-- Row 1 (y=72) slate: Functor -->
-  <rect x="0"   y="72" width="160" height="54" fill="#e8ecf0"/>
-  <rect x="160" y="72" width="170" height="54" fill="#e8ecf0"/>
-  <rect x="330" y="72" width="180" height="54" fill="#e8ecf0"/>
-  <rect x="510" y="72" width="175" height="54" fill="#e8ecf0"/>
-  <rect x="685" y="72" width="215" height="54" fill="#e8ecf0"/>
+  <rect x="0"   y="72" width="160" height="54" fill="#eef1fb"/>
+  <rect x="160" y="72" width="170" height="54" fill="#eef1fb"/>
+  <rect x="330" y="72" width="180" height="54" fill="#eef1fb"/>
+  <rect x="510" y="72" width="175" height="54" fill="#eef1fb"/>
+  <rect x="685" y="72" width="215" height="54" fill="#eef1fb"/>
   <text x="80"  y="90" text-anchor="middle" font-size="10" font-weight="bold" fill="#0f172a">Functor</text>
   <text x="80"  y="105" text-anchor="middle" font-size="10" fill="#0f172a">(Maybe/Either/[])</text>
   <text x="245" y="97" text-anchor="middle" font-size="10" fill="#0f172a">Hask</text>
@@ -34,11 +34,11 @@
   <text x="792" y="97" text-anchor="middle" font-size="10" fill="#0f172a">-- (none)</text>
 
   <!-- Row 2 (y=126) blue: Dist -->
-  <rect x="0"   y="126" width="160" height="54" fill="#dbeafe"/>
-  <rect x="160" y="126" width="170" height="54" fill="#dbeafe"/>
-  <rect x="330" y="126" width="180" height="54" fill="#dbeafe"/>
-  <rect x="510" y="126" width="175" height="54" fill="#dbeafe"/>
-  <rect x="685" y="126" width="215" height="54" fill="#dbeafe"/>
+  <rect x="0"   y="126" width="160" height="54" fill="#eef1fb"/>
+  <rect x="160" y="126" width="170" height="54" fill="#eef1fb"/>
+  <rect x="330" y="126" width="180" height="54" fill="#eef1fb"/>
+  <rect x="510" y="126" width="175" height="54" fill="#eef1fb"/>
+  <rect x="685" y="126" width="215" height="54" fill="#eef1fb"/>
   <text x="80"  y="144" text-anchor="middle" font-size="10" font-weight="bold" fill="#0f172a">Dist (discrete)</text>
   <text x="245" y="144" text-anchor="middle" font-size="10" fill="#0f172a">Kleisli(Dist)</text>
   <text x="245" y="159" text-anchor="middle" font-size="10" fill="#0f172a">~= FinStoch</text>
@@ -47,11 +47,11 @@
   <text x="792" y="152" text-anchor="middle" font-size="10" fill="#0f172a">SUM p = 1</text>
 
   <!-- Row 3 (y=180) blue: Giry -->
-  <rect x="0"   y="180" width="160" height="54" fill="#bfdbfe"/>
-  <rect x="160" y="180" width="170" height="54" fill="#bfdbfe"/>
-  <rect x="330" y="180" width="180" height="54" fill="#bfdbfe"/>
-  <rect x="510" y="180" width="175" height="54" fill="#bfdbfe"/>
-  <rect x="685" y="180" width="215" height="54" fill="#bfdbfe"/>
+  <rect x="0"   y="180" width="160" height="54" fill="#eef1fb"/>
+  <rect x="160" y="180" width="170" height="54" fill="#eef1fb"/>
+  <rect x="330" y="180" width="180" height="54" fill="#eef1fb"/>
+  <rect x="510" y="180" width="175" height="54" fill="#eef1fb"/>
+  <rect x="685" y="180" width="215" height="54" fill="#eef1fb"/>
   <text x="80"  y="211" text-anchor="middle" font-size="10" font-weight="bold" fill="#0f172a">Giry</text>
   <text x="245" y="204" text-anchor="middle" font-size="10" fill="#0f172a">Kleisli(G)</text>
   <text x="245" y="219" text-anchor="middle" font-size="10" fill="#0f172a">on Meas</text>
@@ -61,11 +61,11 @@
   <text x="792" y="211" text-anchor="middle" font-size="10" fill="#0f172a">measure mu</text>
 
   <!-- Row 4 (y=234) purple: Fuzzy -->
-  <rect x="0"   y="234" width="160" height="54" fill="#ede9fe"/>
-  <rect x="160" y="234" width="170" height="54" fill="#ede9fe"/>
-  <rect x="330" y="234" width="180" height="54" fill="#ede9fe"/>
-  <rect x="510" y="234" width="175" height="54" fill="#ede9fe"/>
-  <rect x="685" y="234" width="215" height="54" fill="#ede9fe"/>
+  <rect x="0"   y="234" width="160" height="54" fill="#efeaf6"/>
+  <rect x="160" y="234" width="170" height="54" fill="#efeaf6"/>
+  <rect x="330" y="234" width="180" height="54" fill="#efeaf6"/>
+  <rect x="510" y="234" width="175" height="54" fill="#efeaf6"/>
+  <rect x="685" y="234" width="215" height="54" fill="#efeaf6"/>
   <text x="80"  y="265" text-anchor="middle" font-size="10" font-weight="bold" fill="#0f172a">Fuzzy</text>
   <text x="245" y="258" text-anchor="middle" font-size="10" fill="#0f172a">enriched</text>
   <text x="245" y="273" text-anchor="middle" font-size="10" fill="#0f172a">over [0,1]</text>
@@ -75,11 +75,11 @@
   <text x="792" y="265" text-anchor="middle" font-size="10" fill="#0f172a">degree mu</text>
 
   <!-- Row 5 (y=288) purple: Modal -->
-  <rect x="0"   y="288" width="160" height="54" fill="#ddd6fe"/>
-  <rect x="160" y="288" width="170" height="54" fill="#ddd6fe"/>
-  <rect x="330" y="288" width="180" height="54" fill="#ddd6fe"/>
-  <rect x="510" y="288" width="175" height="54" fill="#ddd6fe"/>
-  <rect x="685" y="288" width="215" height="54" fill="#ddd6fe"/>
+  <rect x="0"   y="288" width="160" height="54" fill="#efeaf6"/>
+  <rect x="160" y="288" width="170" height="54" fill="#efeaf6"/>
+  <rect x="330" y="288" width="180" height="54" fill="#efeaf6"/>
+  <rect x="510" y="288" width="175" height="54" fill="#efeaf6"/>
+  <rect x="685" y="288" width="215" height="54" fill="#efeaf6"/>
   <text x="80"  y="319" text-anchor="middle" font-size="10" font-weight="bold" fill="#0f172a">Modal</text>
   <text x="245" y="312" text-anchor="middle" font-size="10" fill="#0f172a">Kripke</text>
   <text x="245" y="327" text-anchor="middle" font-size="10" fill="#0f172a">(W,R)</text>
@@ -90,11 +90,11 @@
   <text x="792" y="319" text-anchor="middle" font-size="10" fill="#0f172a">qualitative</text>
 
   <!-- Row 6 (y=342) purple: Markov -->
-  <rect x="0"   y="342" width="160" height="54" fill="#c4b5fd"/>
-  <rect x="160" y="342" width="170" height="54" fill="#c4b5fd"/>
-  <rect x="330" y="342" width="180" height="54" fill="#c4b5fd"/>
-  <rect x="510" y="342" width="175" height="54" fill="#c4b5fd"/>
-  <rect x="685" y="342" width="215" height="54" fill="#c4b5fd"/>
+  <rect x="0"   y="342" width="160" height="54" fill="#efeaf6"/>
+  <rect x="160" y="342" width="170" height="54" fill="#efeaf6"/>
+  <rect x="330" y="342" width="180" height="54" fill="#efeaf6"/>
+  <rect x="510" y="342" width="175" height="54" fill="#efeaf6"/>
+  <rect x="685" y="342" width="215" height="54" fill="#efeaf6"/>
   <text x="80"  y="373" text-anchor="middle" font-size="10" font-weight="bold" fill="#0f172a">Markov</text>
   <text x="245" y="366" text-anchor="middle" font-size="10" fill="#0f172a">endo</text>
   <text x="245" y="381" text-anchor="middle" font-size="10" fill="#0f172a">Kleisli(Dist)</text>
@@ -104,11 +104,11 @@
   <text x="792" y="381" text-anchor="middle" font-size="10" fill="#0f172a">pi P = pi</text>
 
   <!-- Row 7 (y=396) green: Possibility -->
-  <rect x="0"   y="396" width="160" height="54" fill="#dcfce7"/>
-  <rect x="160" y="396" width="170" height="54" fill="#dcfce7"/>
-  <rect x="330" y="396" width="180" height="54" fill="#dcfce7"/>
-  <rect x="510" y="396" width="175" height="54" fill="#dcfce7"/>
-  <rect x="685" y="396" width="215" height="54" fill="#dcfce7"/>
+  <rect x="0"   y="396" width="160" height="54" fill="#e9f4ee"/>
+  <rect x="160" y="396" width="170" height="54" fill="#e9f4ee"/>
+  <rect x="330" y="396" width="180" height="54" fill="#e9f4ee"/>
+  <rect x="510" y="396" width="175" height="54" fill="#e9f4ee"/>
+  <rect x="685" y="396" width="215" height="54" fill="#e9f4ee"/>
   <text x="80"  y="414" text-anchor="middle" font-size="10" font-weight="bold" fill="#0f172a">Possibility</text>
   <text x="80"  y="429" text-anchor="middle" font-size="10" fill="#0f172a">(Pyt'ev)</text>
   <text x="245" y="414" text-anchor="middle" font-size="10" fill="#0f172a">L=([0,1],</text>
@@ -120,26 +120,26 @@
   <text x="792" y="429" text-anchor="middle" font-size="10" fill="#0f172a">N=inf tauBar</text>
 
   <!-- Grid lines: vertical -->
-  <line x1="160" y1="38" x2="160" y2="450" stroke="#334466" stroke-width="1"/>
-  <line x1="330" y1="38" x2="330" y2="450" stroke="#334466" stroke-width="1"/>
-  <line x1="510" y1="38" x2="510" y2="450" stroke="#334466" stroke-width="1"/>
-  <line x1="685" y1="38" x2="685" y2="450" stroke="#334466" stroke-width="1"/>
+  <line x1="160" y1="38" x2="160" y2="450" stroke="#3a4a96" stroke-width="1"/>
+  <line x1="330" y1="38" x2="330" y2="450" stroke="#3a4a96" stroke-width="1"/>
+  <line x1="510" y1="38" x2="510" y2="450" stroke="#3a4a96" stroke-width="1"/>
+  <line x1="685" y1="38" x2="685" y2="450" stroke="#3a4a96" stroke-width="1"/>
 
   <!-- Grid lines: horizontal -->
-  <line x1="0" y1="38"  x2="900" y2="38"  stroke="#334466" stroke-width="1.5"/>
-  <line x1="0" y1="72"  x2="900" y2="72"  stroke="#334466" stroke-width="1.5"/>
-  <line x1="0" y1="126" x2="900" y2="126" stroke="#334466" stroke-width="1"/>
-  <line x1="0" y1="180" x2="900" y2="180" stroke="#334466" stroke-width="1"/>
-  <line x1="0" y1="234" x2="900" y2="234" stroke="#334466" stroke-width="1"/>
-  <line x1="0" y1="288" x2="900" y2="288" stroke="#334466" stroke-width="1"/>
-  <line x1="0" y1="342" x2="900" y2="342" stroke="#334466" stroke-width="1"/>
-  <line x1="0" y1="396" x2="900" y2="396" stroke="#334466" stroke-width="1"/>
-  <line x1="0" y1="450" x2="900" y2="450" stroke="#334466" stroke-width="1.5"/>
+  <line x1="0" y1="38"  x2="900" y2="38"  stroke="#3a4a96" stroke-width="1.5"/>
+  <line x1="0" y1="72"  x2="900" y2="72"  stroke="#3a4a96" stroke-width="1.5"/>
+  <line x1="0" y1="126" x2="900" y2="126" stroke="#3a4a96" stroke-width="1"/>
+  <line x1="0" y1="180" x2="900" y2="180" stroke="#3a4a96" stroke-width="1"/>
+  <line x1="0" y1="234" x2="900" y2="234" stroke="#3a4a96" stroke-width="1"/>
+  <line x1="0" y1="288" x2="900" y2="288" stroke="#3a4a96" stroke-width="1"/>
+  <line x1="0" y1="342" x2="900" y2="342" stroke="#3a4a96" stroke-width="1"/>
+  <line x1="0" y1="396" x2="900" y2="396" stroke="#3a4a96" stroke-width="1"/>
+  <line x1="0" y1="450" x2="900" y2="450" stroke="#3a4a96" stroke-width="1.5"/>
 
   <!-- Outer border -->
-  <rect x="0" y="0" width="900" height="460" fill="none" stroke="#334466" stroke-width="2"/>
+  <rect x="0" y="0" width="900" height="460" fill="none" stroke="#3a4a96" stroke-width="2"/>
 
   <!-- Legend strip at bottom -->
-  <rect x="0" y="450" width="900" height="10" fill="#f8fafc"/>
-  <rect x="0" y="450" width="900" height="10" fill="none" stroke="#334466" stroke-width="1"/>
+  <rect x="0" y="450" width="900" height="10" fill="#ffffff"/>
+  <rect x="0" y="450" width="900" height="10" fill="none" stroke="#3a4a96" stroke-width="1"/>
 </svg>

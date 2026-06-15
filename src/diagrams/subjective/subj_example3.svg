@@ -2,7 +2,7 @@
      font-family="monospace,Arial,sans-serif">
   <defs>
     <marker id="garr" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L8,3 z" fill="#94a3b8"/>
+      <path d="M0,0 L0,6 L8,3 z" fill="#8a93a3"/>
     </marker>
   </defs>
 
@@ -10,152 +10,152 @@
   <text x="460" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="#0f172a">Example 3 (Complex): X — Poset, [0,1]-enriched Category</text>
 
   <!-- ===== Left: Hasse diagram of poset ===== -->
-  <rect x="20" y="45" width="210" height="385" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="125" y="67" text-anchor="middle" font-size="12" font-weight="bold" fill="#64748b">Poset X (Hasse)</text>
-  <text x="125" y="83" text-anchor="middle" font-size="10" fill="#64748b">OK &lt;= Warn &lt;= Fail</text>
-  <text x="125" y="97" text-anchor="middle" font-size="10" fill="#64748b">OK &lt;= Degrade &lt;= Fail</text>
+  <rect x="20" y="45" width="210" height="385" rx="8" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="125" y="67" text-anchor="middle" font-size="12" font-weight="bold" fill="#8a93a3">Poset X (Hasse)</text>
+  <text x="125" y="83" text-anchor="middle" font-size="10" fill="#8a93a3">OK &lt;= Warn &lt;= Fail</text>
+  <text x="125" y="97" text-anchor="middle" font-size="10" fill="#8a93a3">OK &lt;= Degrade &lt;= Fail</text>
 
   <!-- nodes -->
-  <rect x="75" y="110" width="100" height="36" rx="5" fill="#fef9c3" stroke="#eab308" stroke-width="2"/>
-  <text x="125" y="125" text-anchor="middle" font-size="12" fill="#713f12">Fail</text>
-  <text x="125" y="139" text-anchor="middle" font-size="10" fill="#a16207">tau = 1.0</text>
+  <rect x="75" y="110" width="100" height="36" rx="5" fill="#f4e7cf" stroke="#d9a441" stroke-width="2"/>
+  <text x="125" y="125" text-anchor="middle" font-size="12" fill="#8a6418">Fail</text>
+  <text x="125" y="139" text-anchor="middle" font-size="10" fill="#d9a441">tau = 1.0</text>
 
-  <rect x="40" y="180" width="80" height="36" rx="5" fill="#fee2e2" stroke="#ef4444" stroke-width="1.5"/>
-  <text x="80" y="195" text-anchor="middle" font-size="11" fill="#991b1b">Warn</text>
-  <text x="80" y="209" text-anchor="middle" font-size="10" fill="#dc2626">tau = 0.6</text>
+  <rect x="40" y="180" width="80" height="36" rx="5" fill="#f5e3e2" stroke="#c4625f" stroke-width="1.5"/>
+  <text x="80" y="195" text-anchor="middle" font-size="11" fill="#8f3f3c">Warn</text>
+  <text x="80" y="209" text-anchor="middle" font-size="10" fill="#c4625f">tau = 0.6</text>
 
-  <rect x="130" y="180" width="84" height="36" rx="5" fill="#fde68a" stroke="#f59e0b" stroke-width="1.5"/>
-  <text x="172" y="195" text-anchor="middle" font-size="11" fill="#78350f">Degrade</text>
-  <text x="172" y="209" text-anchor="middle" font-size="10" fill="#d97706">tau = 0.8</text>
+  <rect x="130" y="180" width="84" height="36" rx="5" fill="#f4e7cf" stroke="#d9a441" stroke-width="1.5"/>
+  <text x="172" y="195" text-anchor="middle" font-size="11" fill="#8a6418">Degrade</text>
+  <text x="172" y="209" text-anchor="middle" font-size="10" fill="#d9a441">tau = 0.8</text>
 
-  <rect x="75" y="250" width="100" height="36" rx="5" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
-  <text x="125" y="265" text-anchor="middle" font-size="12" fill="#065f46">OK</text>
-  <text x="125" y="279" text-anchor="middle" font-size="10" fill="#059669">tau = 0.2</text>
+  <rect x="75" y="250" width="100" height="36" rx="5" fill="#e9f4ee" stroke="#3f9d77" stroke-width="2"/>
+  <text x="125" y="265" text-anchor="middle" font-size="12" fill="#2f6f54">OK</text>
+  <text x="125" y="279" text-anchor="middle" font-size="10" fill="#3f9d77">tau = 0.2</text>
 
   <!-- Hasse edges (OK -> Warn/Degrade -> Fail) -->
-  <line x1="95" y1="250" x2="82" y2="216" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#garr)"/>
-  <line x1="150" y1="250" x2="168" y2="216" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#garr)"/>
-  <line x1="92" y1="180" x2="108" y2="146" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#garr)"/>
-  <line x1="160" y1="180" x2="142" y2="146" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#garr)"/>
+  <line x1="95" y1="250" x2="82" y2="216" stroke="#8a93a3" stroke-width="1.5" marker-end="url(#garr)"/>
+  <line x1="150" y1="250" x2="168" y2="216" stroke="#8a93a3" stroke-width="1.5" marker-end="url(#garr)"/>
+  <line x1="92" y1="180" x2="108" y2="146" stroke="#8a93a3" stroke-width="1.5" marker-end="url(#garr)"/>
+  <line x1="160" y1="180" x2="142" y2="146" stroke="#8a93a3" stroke-width="1.5" marker-end="url(#garr)"/>
 
   <!-- monotone check -->
-  <rect x="36" y="320" width="178" height="92" rx="5" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="125" y="340" text-anchor="middle" font-size="10" font-weight="bold" fill="#64748b">tau is monotone</text>
-  <text x="125" y="360" text-anchor="middle" font-size="10" fill="#059669">0.2 &lt;= 0.6 &lt;= 1.0  OK</text>
-  <text x="125" y="378" text-anchor="middle" font-size="10" fill="#059669">0.2 &lt;= 0.8 &lt;= 1.0  OK</text>
-  <text x="125" y="398" text-anchor="middle" font-size="9" fill="#64748b">order-preserving map</text>
+  <rect x="36" y="320" width="178" height="92" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="125" y="340" text-anchor="middle" font-size="10" font-weight="bold" fill="#8a93a3">tau is monotone</text>
+  <text x="125" y="360" text-anchor="middle" font-size="10" fill="#3f9d77">0.2 &lt;= 0.6 &lt;= 1.0  OK</text>
+  <text x="125" y="378" text-anchor="middle" font-size="10" fill="#3f9d77">0.2 &lt;= 0.8 &lt;= 1.0  OK</text>
+  <text x="125" y="398" text-anchor="middle" font-size="9" fill="#8a93a3">order-preserving map</text>
 
   <!-- ===== Middle: [0,1]-enriched structure ===== -->
-  <rect x="248" y="45" width="250" height="385" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="373" y="67" text-anchor="middle" font-size="12" font-weight="bold" fill="#64748b">[0,1]-Enriched Category</text>
-  <text x="373" y="86" text-anchor="middle" font-size="10" fill="#7c3aed">Hom(a,b) = tau(b) if a&lt;=b, else 0</text>
+  <rect x="248" y="45" width="250" height="385" rx="8" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="373" y="67" text-anchor="middle" font-size="12" font-weight="bold" fill="#8a93a3">[0,1]-Enriched Category</text>
+  <text x="373" y="86" text-anchor="middle" font-size="10" fill="#8b6db5">Hom(a,b) = tau(b) if a&lt;=b, else 0</text>
 
   <!-- Hom table 4x4 -->
-  <rect x="262" y="98" width="224" height="150" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="262" y="98" width="224" height="150" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
   <text x="292" y="117" text-anchor="middle" font-size="9" font-weight="bold" fill="#0f172a">a \ b</text>
-  <text x="346" y="117" text-anchor="middle" font-size="9" font-weight="bold" fill="#059669">OK</text>
-  <text x="390" y="117" text-anchor="middle" font-size="9" font-weight="bold" fill="#dc2626">Warn</text>
-  <text x="434" y="117" text-anchor="middle" font-size="9" font-weight="bold" fill="#d97706">Degr</text>
-  <text x="472" y="117" text-anchor="middle" font-size="9" font-weight="bold" fill="#a16207">Fail</text>
-  <line x1="270" y1="123" x2="478" y2="123" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="346" y="117" text-anchor="middle" font-size="9" font-weight="bold" fill="#3f9d77">OK</text>
+  <text x="390" y="117" text-anchor="middle" font-size="9" font-weight="bold" fill="#c4625f">Warn</text>
+  <text x="434" y="117" text-anchor="middle" font-size="9" font-weight="bold" fill="#d9a441">Degr</text>
+  <text x="472" y="117" text-anchor="middle" font-size="9" font-weight="bold" fill="#d9a441">Fail</text>
+  <line x1="270" y1="123" x2="478" y2="123" stroke="#cbd5e1" stroke-width="1"/>
 
   <!-- row OK -->
-  <text x="292" y="142" text-anchor="middle" font-size="9" fill="#059669">OK</text>
+  <text x="292" y="142" text-anchor="middle" font-size="9" fill="#3f9d77">OK</text>
   <text x="346" y="142" text-anchor="middle" font-size="9" fill="#0f172a">0.2</text>
   <text x="390" y="142" text-anchor="middle" font-size="9" fill="#0f172a">0.6</text>
   <text x="434" y="142" text-anchor="middle" font-size="9" fill="#0f172a">0.8</text>
   <text x="472" y="142" text-anchor="middle" font-size="9" fill="#0f172a">1.0</text>
   <!-- row Warn -->
-  <text x="292" y="164" text-anchor="middle" font-size="9" fill="#dc2626">Warn</text>
-  <text x="346" y="164" text-anchor="middle" font-size="9" fill="#94a3b8">0</text>
+  <text x="292" y="164" text-anchor="middle" font-size="9" fill="#c4625f">Warn</text>
+  <text x="346" y="164" text-anchor="middle" font-size="9" fill="#8a93a3">0</text>
   <text x="390" y="164" text-anchor="middle" font-size="9" fill="#0f172a">0.6</text>
-  <text x="434" y="164" text-anchor="middle" font-size="9" fill="#94a3b8">0</text>
+  <text x="434" y="164" text-anchor="middle" font-size="9" fill="#8a93a3">0</text>
   <text x="472" y="164" text-anchor="middle" font-size="9" fill="#0f172a">1.0</text>
   <!-- row Degrade -->
-  <text x="292" y="186" text-anchor="middle" font-size="9" fill="#d97706">Degr</text>
-  <text x="346" y="186" text-anchor="middle" font-size="9" fill="#94a3b8">0</text>
-  <text x="390" y="186" text-anchor="middle" font-size="9" fill="#94a3b8">0</text>
+  <text x="292" y="186" text-anchor="middle" font-size="9" fill="#d9a441">Degr</text>
+  <text x="346" y="186" text-anchor="middle" font-size="9" fill="#8a93a3">0</text>
+  <text x="390" y="186" text-anchor="middle" font-size="9" fill="#8a93a3">0</text>
   <text x="434" y="186" text-anchor="middle" font-size="9" fill="#0f172a">0.8</text>
   <text x="472" y="186" text-anchor="middle" font-size="9" fill="#0f172a">1.0</text>
   <!-- row Fail -->
-  <text x="292" y="208" text-anchor="middle" font-size="9" fill="#a16207">Fail</text>
-  <text x="346" y="208" text-anchor="middle" font-size="9" fill="#94a3b8">0</text>
-  <text x="390" y="208" text-anchor="middle" font-size="9" fill="#94a3b8">0</text>
-  <text x="434" y="208" text-anchor="middle" font-size="9" fill="#94a3b8">0</text>
+  <text x="292" y="208" text-anchor="middle" font-size="9" fill="#d9a441">Fail</text>
+  <text x="346" y="208" text-anchor="middle" font-size="9" fill="#8a93a3">0</text>
+  <text x="390" y="208" text-anchor="middle" font-size="9" fill="#8a93a3">0</text>
+  <text x="434" y="208" text-anchor="middle" font-size="9" fill="#8a93a3">0</text>
   <text x="472" y="208" text-anchor="middle" font-size="9" fill="#0f172a">1.0</text>
 
-  <line x1="270" y1="222" x2="478" y2="222" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="373" y="238" text-anchor="middle" font-size="9" fill="#64748b">diagonal = tau(x); off-diag per order</text>
+  <line x1="270" y1="222" x2="478" y2="222" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="373" y="238" text-anchor="middle" font-size="9" fill="#8a93a3">diagonal = tau(x); off-diag per order</text>
 
   <!-- composition box -->
-  <rect x="262" y="262" width="224" height="150" rx="5" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
-  <text x="373" y="282" text-anchor="middle" font-size="10" font-weight="bold" fill="#5b21b6">V-functor law</text>
-  <text x="373" y="304" text-anchor="middle" font-size="10" fill="#5b21b6">Composition (tensor = *):</text>
-  <text x="373" y="322" text-anchor="middle" font-size="10" fill="#5b21b6">Hom(a,c) &gt;= Hom(a,b) * Hom(b,c)</text>
-  <text x="373" y="346" text-anchor="middle" font-size="10" fill="#5b21b6">Identity: Hom(a,a) = tau(a)</text>
-  <text x="373" y="370" text-anchor="middle" font-size="10" fill="#64748b">tau preserves the enrichment,</text>
-  <text x="373" y="386" text-anchor="middle" font-size="10" fill="#64748b">i.e. tau is a V-functor X -> [0,1]</text>
-  <text x="373" y="404" text-anchor="middle" font-size="9" fill="#7c3aed">(V = [0,1] with min/max)</text>
+  <rect x="262" y="262" width="224" height="150" rx="5" fill="#efeaf6" stroke="#8b6db5" stroke-width="1.5"/>
+  <text x="373" y="282" text-anchor="middle" font-size="10" font-weight="bold" fill="#5f4a86">V-functor law</text>
+  <text x="373" y="304" text-anchor="middle" font-size="10" fill="#5f4a86">Composition (tensor = *):</text>
+  <text x="373" y="322" text-anchor="middle" font-size="10" fill="#5f4a86">Hom(a,c) &gt;= Hom(a,b) * Hom(b,c)</text>
+  <text x="373" y="346" text-anchor="middle" font-size="10" fill="#5f4a86">Identity: Hom(a,a) = tau(a)</text>
+  <text x="373" y="370" text-anchor="middle" font-size="10" fill="#8a93a3">tau preserves the enrichment,</text>
+  <text x="373" y="386" text-anchor="middle" font-size="10" fill="#8a93a3">i.e. tau is a V-functor X -> [0,1]</text>
+  <text x="373" y="404" text-anchor="middle" font-size="9" fill="#8b6db5">(V = [0,1] with min/max)</text>
 
   <!-- ===== Right: Scott topology + Kan ===== -->
-  <rect x="516" y="45" width="384" height="385" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1.5"/>
-  <text x="708" y="67" text-anchor="middle" font-size="12" font-weight="bold" fill="#64748b">Scott Topology + Kan Extension</text>
+  <rect x="516" y="45" width="384" height="385" rx="8" fill="#f7f8fa" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="708" y="67" text-anchor="middle" font-size="12" font-weight="bold" fill="#8a93a3">Scott Topology + Kan Extension</text>
 
   <!-- Scott topology box -->
-  <rect x="528" y="80" width="180" height="150" rx="5" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
-  <text x="618" y="98" text-anchor="middle" font-size="10" font-weight="bold" fill="#1e40af">Scott topology on X</text>
-  <text x="618" y="114" text-anchor="middle" font-size="9" fill="#2563eb">open = upward closed:</text>
-  <text x="618" y="127" text-anchor="middle" font-size="9" fill="#2563eb">a in U, a&lt;=b =&gt; b in U</text>
-  <text x="618" y="148" text-anchor="middle" font-size="9" fill="#1e40af">{Fail}, {Warn,Fail},</text>
-  <text x="618" y="161" text-anchor="middle" font-size="9" fill="#1e40af">{Degr,Fail},</text>
-  <text x="618" y="174" text-anchor="middle" font-size="9" fill="#1e40af">{Warn,Degr,Fail}, X, {}</text>
+  <rect x="528" y="80" width="180" height="150" rx="5" fill="#eef1fb" stroke="#5872c9" stroke-width="1"/>
+  <text x="618" y="98" text-anchor="middle" font-size="10" font-weight="bold" fill="#3a4a96">Scott topology on X</text>
+  <text x="618" y="114" text-anchor="middle" font-size="9" fill="#5872c9">open = upward closed:</text>
+  <text x="618" y="127" text-anchor="middle" font-size="9" fill="#5872c9">a in U, a&lt;=b =&gt; b in U</text>
+  <text x="618" y="148" text-anchor="middle" font-size="9" fill="#3a4a96">{Fail}, {Warn,Fail},</text>
+  <text x="618" y="161" text-anchor="middle" font-size="9" fill="#3a4a96">{Degr,Fail},</text>
+  <text x="618" y="174" text-anchor="middle" font-size="9" fill="#3a4a96">{Warn,Degr,Fail}, X, {}</text>
   <text x="618" y="198" text-anchor="middle" font-size="9" fill="#0f172a">Pl(E) = sup tau on E</text>
   <text x="618" y="214" text-anchor="middle" font-size="9" fill="#0f172a">Bel(E) = inf tau on E</text>
 
   <!-- Kan box -->
-  <rect x="720" y="80" width="168" height="150" rx="5" fill="#ede9fe" stroke="#a78bfa" stroke-width="1"/>
-  <text x="804" y="98" text-anchor="middle" font-size="10" font-weight="bold" fill="#5b21b6">Kan via V-enrichment</text>
-  <text x="804" y="116" text-anchor="middle" font-size="9" fill="#7c3aed">Lan_J tau (E) = coend</text>
-  <text x="804" y="132" text-anchor="middle" font-size="9" fill="#7c3aed">= sup Hom(Jx,E)*tau(x)</text>
-  <text x="804" y="150" text-anchor="middle" font-size="9" fill="#7c3aed">poset: Hom = indicator</text>
-  <text x="804" y="166" text-anchor="middle" font-size="9" fill="#7c3aed">=&gt; = sup tau on E</text>
+  <rect x="720" y="80" width="168" height="150" rx="5" fill="#efeaf6" stroke="#8b6db5" stroke-width="1"/>
+  <text x="804" y="98" text-anchor="middle" font-size="10" font-weight="bold" fill="#5f4a86">Kan via V-enrichment</text>
+  <text x="804" y="116" text-anchor="middle" font-size="9" fill="#8b6db5">Lan_J tau (E) = coend</text>
+  <text x="804" y="132" text-anchor="middle" font-size="9" fill="#8b6db5">= sup Hom(Jx,E)*tau(x)</text>
+  <text x="804" y="150" text-anchor="middle" font-size="9" fill="#8b6db5">poset: Hom = indicator</text>
+  <text x="804" y="166" text-anchor="middle" font-size="9" fill="#8b6db5">=&gt; = sup tau on E</text>
   <text x="804" y="198" text-anchor="middle" font-size="10" fill="#0f172a">Lan(E) = Pl(E)</text>
-  <text x="804" y="214" text-anchor="middle" font-size="9" font-weight="bold" fill="#7c3aed">bitopos = Kan !</text>
+  <text x="804" y="214" text-anchor="middle" font-size="9" font-weight="bold" fill="#8b6db5">bitopos = Kan !</text>
 
   <!-- Computed values -->
   <text x="708" y="252" text-anchor="middle" font-size="11" font-weight="bold" fill="#0f172a">Computed values on key subsets</text>
-  <rect x="528" y="262" width="360" height="118" rx="5" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="588" y="280" text-anchor="middle" font-size="9" font-weight="bold" fill="#64748b">E</text>
-  <text x="688" y="280" text-anchor="middle" font-size="9" font-weight="bold" fill="#64748b">Pl=sup</text>
-  <text x="760" y="280" text-anchor="middle" font-size="9" font-weight="bold" fill="#64748b">Bel=inf</text>
-  <text x="838" y="280" text-anchor="middle" font-size="9" font-weight="bold" fill="#7c3aed">Kan=Pl</text>
-  <line x1="538" y1="286" x2="878" y2="286" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="528" y="262" width="360" height="118" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="588" y="280" text-anchor="middle" font-size="9" font-weight="bold" fill="#8a93a3">E</text>
+  <text x="688" y="280" text-anchor="middle" font-size="9" font-weight="bold" fill="#8a93a3">Pl=sup</text>
+  <text x="760" y="280" text-anchor="middle" font-size="9" font-weight="bold" fill="#8a93a3">Bel=inf</text>
+  <text x="838" y="280" text-anchor="middle" font-size="9" font-weight="bold" fill="#8b6db5">Kan=Pl</text>
+  <line x1="538" y1="286" x2="878" y2="286" stroke="#cbd5e1" stroke-width="1"/>
 
-  <text x="588" y="304" text-anchor="middle" font-size="9" fill="#059669">{OK}</text>
+  <text x="588" y="304" text-anchor="middle" font-size="9" fill="#3f9d77">{OK}</text>
   <text x="688" y="304" text-anchor="middle" font-size="9" fill="#0f172a">0.2</text>
   <text x="760" y="304" text-anchor="middle" font-size="9" fill="#0f172a">0.2</text>
-  <text x="838" y="304" text-anchor="middle" font-size="9" font-weight="bold" fill="#7c3aed">0.2</text>
+  <text x="838" y="304" text-anchor="middle" font-size="9" font-weight="bold" fill="#8b6db5">0.2</text>
 
-  <text x="588" y="324" text-anchor="middle" font-size="9" fill="#dc2626">{Warn,Fail}</text>
+  <text x="588" y="324" text-anchor="middle" font-size="9" fill="#c4625f">{Warn,Fail}</text>
   <text x="688" y="324" text-anchor="middle" font-size="9" fill="#0f172a">1.0</text>
   <text x="760" y="324" text-anchor="middle" font-size="9" fill="#0f172a">0.6</text>
-  <text x="838" y="324" text-anchor="middle" font-size="9" font-weight="bold" fill="#7c3aed">1.0</text>
+  <text x="838" y="324" text-anchor="middle" font-size="9" font-weight="bold" fill="#8b6db5">1.0</text>
 
-  <text x="588" y="344" text-anchor="middle" font-size="9" fill="#d97706">{OK,Degr,Fail}</text>
+  <text x="588" y="344" text-anchor="middle" font-size="9" fill="#d9a441">{OK,Degr,Fail}</text>
   <text x="688" y="344" text-anchor="middle" font-size="9" fill="#0f172a">1.0</text>
   <text x="760" y="344" text-anchor="middle" font-size="9" fill="#0f172a">0.2</text>
-  <text x="838" y="344" text-anchor="middle" font-size="9" font-weight="bold" fill="#7c3aed">1.0</text>
+  <text x="838" y="344" text-anchor="middle" font-size="9" font-weight="bold" fill="#8b6db5">1.0</text>
 
   <text x="588" y="364" text-anchor="middle" font-size="9" fill="#0f172a">X (all)</text>
   <text x="688" y="364" text-anchor="middle" font-size="9" fill="#0f172a">1.0</text>
   <text x="760" y="364" text-anchor="middle" font-size="9" fill="#0f172a">0.2</text>
-  <text x="838" y="364" text-anchor="middle" font-size="9" font-weight="bold" fill="#7c3aed">1.0</text>
+  <text x="838" y="364" text-anchor="middle" font-size="9" font-weight="bold" fill="#8b6db5">1.0</text>
 
   <!-- key insight (inside panel) -->
-  <rect x="528" y="388" width="360" height="36" rx="5" fill="#f0fdf4" stroke="#059669" stroke-width="1.5"/>
-  <text x="708" y="404" text-anchor="middle" font-size="9" fill="#065f46">Scott-topology Pl coincides with Kan; Bel needs lower sets.</text>
-  <text x="708" y="418" text-anchor="middle" font-size="9" font-weight="bold" fill="#059669">Enriched Hom unifies poset order with [0,1]-measure.</text>
+  <rect x="528" y="388" width="360" height="36" rx="5" fill="#e9f4ee" stroke="#3f9d77" stroke-width="1.5"/>
+  <text x="708" y="404" text-anchor="middle" font-size="9" fill="#2f6f54">Scott-topology Pl coincides with Kan; Bel needs lower sets.</text>
+  <text x="708" y="418" text-anchor="middle" font-size="9" font-weight="bold" fill="#3f9d77">Enriched Hom unifies poset order with [0,1]-measure.</text>
 
   <!-- footer -->
-  <text x="460" y="452" text-anchor="middle" font-size="10" fill="#64748b">X as [0,1]-enriched category: tau is a V-functor; Kan extension = Pl of the Scott topology on the poset</text>
+  <text x="460" y="452" text-anchor="middle" font-size="10" fill="#8a93a3">X as [0,1]-enriched category: tau is a V-functor; Kan extension = Pl of the Scott topology on the poset</text>
 </svg>

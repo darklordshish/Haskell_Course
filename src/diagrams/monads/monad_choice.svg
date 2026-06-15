@@ -1,51 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="700" height="290" font-family="monospace,Arial,sans-serif">
   <rect width="700" height="290" fill="#ffffff" rx="8"/>
-  <text x="350" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">When to use which monad?</text>
+  <text x="350" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#475569">When to use which monad?</text>
 
   <!-- Headers -->
-  <rect x="10" y="36" width="380" height="26" rx="4" fill="#dbeafe"/>
-  <text x="200" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Need...</text>
-  <rect x="400" y="36" width="290" height="26" rx="4" fill="#dbeafe"/>
-  <text x="545" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#2563eb">Use</text>
+  <rect x="10" y="36" width="380" height="26" rx="4" fill="#eef1fb"/>
+  <text x="200" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#5872c9">Need...</text>
+  <rect x="400" y="36" width="290" height="26" rx="4" fill="#eef1fb"/>
+  <text x="545" y="53" text-anchor="middle" font-size="11" font-weight="bold" fill="#5872c9">Use</text>
 
   <!-- Rows -->
-  <rect x="10" y="68" width="380" height="24" rx="3" fill="#f1f5f9"/>
-  <text x="20" y="84" font-size="10" fill="#334155">Safe access / lookup</text>
-  <rect x="400" y="68" width="290" height="24" rx="3" fill="#f1f5f9"/>
-  <text x="410" y="84" font-size="10" font-weight="bold" fill="#2563eb">Maybe</text>
+  <rect x="10" y="68" width="380" height="24" rx="3" fill="#f7f8fa"/>
+  <text x="20" y="84" font-size="10" fill="#475569">Safe access / lookup</text>
+  <rect x="400" y="68" width="290" height="24" rx="3" fill="#f7f8fa"/>
+  <text x="410" y="84" font-size="10" font-weight="bold" fill="#5872c9">Maybe</text>
 
-  <rect x="10" y="96" width="380" height="24" rx="3" fill="#e0f2fe"/>
-  <text x="20" y="112" font-size="10" fill="#334155">Error handling with info</text>
-  <rect x="400" y="96" width="290" height="24" rx="3" fill="#e0f2fe"/>
-  <text x="410" y="112" font-size="10" font-weight="bold" fill="#2563eb">Either e</text>
+  <rect x="10" y="96" width="380" height="24" rx="3" fill="#eef1fb"/>
+  <text x="20" y="112" font-size="10" fill="#475569">Error handling with info</text>
+  <rect x="400" y="96" width="290" height="24" rx="3" fill="#eef1fb"/>
+  <text x="410" y="112" font-size="10" font-weight="bold" fill="#5872c9">Either e</text>
 
-  <rect x="10" y="124" width="380" height="24" rx="3" fill="#f1f5f9"/>
-  <text x="20" y="140" font-size="10" fill="#334155">Backtracking / combinatorics</text>
-  <rect x="400" y="124" width="290" height="24" rx="3" fill="#f1f5f9"/>
-  <text x="410" y="140" font-size="10" font-weight="bold" fill="#2563eb">[] (List)</text>
+  <rect x="10" y="124" width="380" height="24" rx="3" fill="#f7f8fa"/>
+  <text x="20" y="140" font-size="10" fill="#475569">Backtracking / combinatorics</text>
+  <rect x="400" y="124" width="290" height="24" rx="3" fill="#f7f8fa"/>
+  <text x="410" y="140" font-size="10" font-weight="bold" fill="#5872c9">[] (List)</text>
 
-  <rect x="10" y="152" width="380" height="24" rx="3" fill="#e0f2fe"/>
-  <text x="20" y="168" font-size="10" fill="#334155">Side effects / IO</text>
-  <rect x="400" y="152" width="290" height="24" rx="3" fill="#e0f2fe"/>
-  <text x="410" y="168" font-size="10" font-weight="bold" fill="#2563eb">IO</text>
+  <rect x="10" y="152" width="380" height="24" rx="3" fill="#eef1fb"/>
+  <text x="20" y="168" font-size="10" fill="#475569">Side effects / IO</text>
+  <rect x="400" y="152" width="290" height="24" rx="3" fill="#eef1fb"/>
+  <text x="410" y="168" font-size="10" font-weight="bold" fill="#5872c9">IO</text>
 
-  <rect x="10" y="180" width="380" height="24" rx="3" fill="#f1f5f9"/>
-  <text x="20" y="196" font-size="10" fill="#334155">Mutable state (pure)</text>
-  <rect x="400" y="180" width="290" height="24" rx="3" fill="#f1f5f9"/>
-  <text x="410" y="196" font-size="10" font-weight="bold" fill="#059669">State s</text>
+  <rect x="10" y="180" width="380" height="24" rx="3" fill="#f7f8fa"/>
+  <text x="20" y="196" font-size="10" fill="#475569">Mutable state (pure)</text>
+  <rect x="400" y="180" width="290" height="24" rx="3" fill="#f7f8fa"/>
+  <text x="410" y="196" font-size="10" font-weight="bold" fill="#3f9d77">State s</text>
 
-  <rect x="10" y="208" width="380" height="24" rx="3" fill="#e0f2fe"/>
-  <text x="20" y="224" font-size="10" fill="#334155">Configuration / environment</text>
-  <rect x="400" y="208" width="290" height="24" rx="3" fill="#e0f2fe"/>
-  <text x="410" y="224" font-size="10" font-weight="bold" fill="#059669">Reader r</text>
+  <rect x="10" y="208" width="380" height="24" rx="3" fill="#eef1fb"/>
+  <text x="20" y="224" font-size="10" fill="#475569">Configuration / environment</text>
+  <rect x="400" y="208" width="290" height="24" rx="3" fill="#eef1fb"/>
+  <text x="410" y="224" font-size="10" font-weight="bold" fill="#3f9d77">Reader r</text>
 
-  <rect x="10" y="236" width="380" height="24" rx="3" fill="#f1f5f9"/>
-  <text x="20" y="252" font-size="10" fill="#334155">Log / metrics accumulation</text>
-  <rect x="400" y="236" width="290" height="24" rx="3" fill="#f1f5f9"/>
-  <text x="410" y="252" font-size="10" font-weight="bold" fill="#059669">Writer w</text>
+  <rect x="10" y="236" width="380" height="24" rx="3" fill="#f7f8fa"/>
+  <text x="20" y="252" font-size="10" fill="#475569">Log / metrics accumulation</text>
+  <rect x="400" y="236" width="290" height="24" rx="3" fill="#f7f8fa"/>
+  <text x="410" y="252" font-size="10" font-weight="bold" fill="#3f9d77">Writer w</text>
 
-  <rect x="10" y="264" width="380" height="20" rx="3" fill="#e0f2fe"/>
-  <text x="20" y="278" font-size="10" fill="#334155">All at once: Read + Write + State</text>
-  <rect x="400" y="264" width="290" height="20" rx="3" fill="#e0f2fe"/>
-  <text x="410" y="278" font-size="10" font-weight="bold" fill="#b45309">RWS</text>
+  <rect x="10" y="264" width="380" height="20" rx="3" fill="#eef1fb"/>
+  <text x="20" y="278" font-size="10" fill="#475569">All at once: Read + Write + State</text>
+  <rect x="400" y="264" width="290" height="20" rx="3" fill="#eef1fb"/>
+  <text x="410" y="278" font-size="10" font-weight="bold" fill="#8a6418">RWS</text>
 </svg>

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="740" height="350" viewBox="0 0 740 350" font-family="monospace,Arial,sans-serif">
   <defs>
     <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5872c9"/>
     </marker>
   </defs>
   <rect width="740" height="350" fill="#ffffff" rx="8"/>
@@ -10,60 +10,60 @@
   <text x="370" y="28" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Optics Hierarchy in Haskell</text>
 
   <!-- Iso at top (green) -->
-  <rect x="305" y="45" width="130" height="50" rx="8" fill="#f0fdf4" stroke="#34d399" stroke-width="2"/>
+  <rect x="305" y="45" width="130" height="50" rx="8" fill="#e9f4ee" stroke="#3f9d77" stroke-width="2"/>
   <text x="370" y="66" text-anchor="middle" font-size="13" font-weight="bold" fill="#0f172a">Iso</text>
-  <text x="370" y="83" text-anchor="middle" font-size="10" fill="#34d399">s &#8596; a (isomorphism)</text>
+  <text x="370" y="83" text-anchor="middle" font-size="10" fill="#3f9d77">s &#8596; a (isomorphism)</text>
 
   <!-- Arrow from Iso to Lens -->
-  <line x1="330" y1="95" x2="200" y2="130" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="330" y1="95" x2="200" y2="130" stroke="#5872c9" stroke-width="1.5" marker-end="url(#arr)"/>
   <!-- Arrow from Iso to Prism -->
-  <line x1="410" y1="95" x2="540" y2="130" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="410" y1="95" x2="540" y2="130" stroke="#5872c9" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- Lens (blue) -->
-  <rect x="100" y="130" width="200" height="60" rx="8" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
-  <text x="200" y="151" text-anchor="middle" font-size="13" font-weight="bold" fill="#2563eb">Lens</text>
-  <text x="200" y="167" text-anchor="middle" font-size="10" fill="#2563eb">view, set, over</text>
-  <text x="200" y="182" text-anchor="middle" font-size="9" fill="#64748b">product types (fields)</text>
+  <rect x="100" y="130" width="200" height="60" rx="8" fill="#eef1fb" stroke="#5872c9" stroke-width="2"/>
+  <text x="200" y="151" text-anchor="middle" font-size="13" font-weight="bold" fill="#5872c9">Lens</text>
+  <text x="200" y="167" text-anchor="middle" font-size="10" fill="#5872c9">view, set, over</text>
+  <text x="200" y="182" text-anchor="middle" font-size="9" fill="#8a93a3">product types (fields)</text>
 
   <!-- Prism (orange) -->
-  <rect x="440" y="130" width="200" height="60" rx="8" fill="#fff7ed" stroke="#fb923c" stroke-width="2"/>
-  <text x="540" y="151" text-anchor="middle" font-size="13" font-weight="bold" fill="#fb923c">Prism</text>
-  <text x="540" y="167" text-anchor="middle" font-size="10" fill="#fb923c">preview, review</text>
-  <text x="540" y="182" text-anchor="middle" font-size="9" fill="#64748b">sum types (variants)</text>
+  <rect x="440" y="130" width="200" height="60" rx="8" fill="#f4e7cf" stroke="#d9a441" stroke-width="2"/>
+  <text x="540" y="151" text-anchor="middle" font-size="13" font-weight="bold" fill="#d9a441">Prism</text>
+  <text x="540" y="167" text-anchor="middle" font-size="10" fill="#d9a441">preview, review</text>
+  <text x="540" y="182" text-anchor="middle" font-size="9" fill="#8a93a3">sum types (variants)</text>
 
   <!-- Arrow from Lens to Traversal -->
-  <line x1="240" y1="190" x2="310" y2="228" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="240" y1="190" x2="310" y2="228" stroke="#5872c9" stroke-width="1.5" marker-end="url(#arr)"/>
   <!-- Arrow from Prism to Traversal -->
-  <line x1="500" y1="190" x2="430" y2="228" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="500" y1="190" x2="430" y2="228" stroke="#5872c9" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- Traversal (amber) -->
-  <rect x="250" y="228" width="240" height="55" rx="8" fill="#fff7ed" stroke="#fb923c" stroke-width="2"/>
-  <text x="370" y="249" text-anchor="middle" font-size="13" font-weight="bold" fill="#fb923c">Traversal</text>
-  <text x="370" y="265" text-anchor="middle" font-size="10" fill="#fb923c">toListOf, traverseOf</text>
-  <text x="370" y="279" text-anchor="middle" font-size="9" fill="#64748b">many foci (Traversable)</text>
+  <rect x="250" y="228" width="240" height="55" rx="8" fill="#f4e7cf" stroke="#d9a441" stroke-width="2"/>
+  <text x="370" y="249" text-anchor="middle" font-size="13" font-weight="bold" fill="#d9a441">Traversal</text>
+  <text x="370" y="265" text-anchor="middle" font-size="10" fill="#d9a441">toListOf, traverseOf</text>
+  <text x="370" y="279" text-anchor="middle" font-size="9" fill="#8a93a3">many foci (Traversable)</text>
 
   <!-- Arrow from Traversal to Fold -->
-  <line x1="320" y1="283" x2="260" y2="305" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="320" y1="283" x2="260" y2="305" stroke="#5872c9" stroke-width="1.5" marker-end="url(#arr)"/>
   <!-- Arrow from Traversal to Setter -->
-  <line x1="420" y1="283" x2="480" y2="305" stroke="#2563eb" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="420" y1="283" x2="480" y2="305" stroke="#5872c9" stroke-width="1.5" marker-end="url(#arr)"/>
 
   <!-- Fold (subtle) -->
-  <rect x="170" y="305" width="140" height="32" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
-  <text x="240" y="325" text-anchor="middle" font-size="11" fill="#64748b">Fold (read-only)</text>
+  <rect x="170" y="305" width="140" height="32" rx="6" fill="#f7f8fa" stroke="#8a93a3" stroke-width="1.5"/>
+  <text x="240" y="325" text-anchor="middle" font-size="11" fill="#8a93a3">Fold (read-only)</text>
 
   <!-- Setter (subtle) -->
-  <rect x="430" y="305" width="140" height="32" rx="6" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5"/>
-  <text x="500" y="325" text-anchor="middle" font-size="11" fill="#64748b">Setter (write-only)</text>
+  <rect x="430" y="305" width="140" height="32" rx="6" fill="#f7f8fa" stroke="#8a93a3" stroke-width="1.5"/>
+  <text x="500" y="325" text-anchor="middle" font-size="11" fill="#8a93a3">Setter (write-only)</text>
 
   <!-- Van Laarhoven box (purple, left) -->
-  <rect x="20" y="45" width="270" height="70" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.5"/>
-  <text x="155" y="67" text-anchor="middle" font-size="10" font-weight="bold" fill="#a78bfa">Van Laarhoven (types)</text>
-  <text x="155" y="84" text-anchor="middle" font-size="9" fill="#a78bfa">Lens s t a b = forall f.</text>
-  <text x="155" y="100" text-anchor="middle" font-size="9" fill="#a78bfa">(a -&gt; f b) -&gt; s -&gt; f t</text>
+  <rect x="20" y="45" width="270" height="70" rx="6" fill="#efeaf6" stroke="#8b6db5" stroke-width="1.5"/>
+  <text x="155" y="67" text-anchor="middle" font-size="10" font-weight="bold" fill="#8b6db5">Van Laarhoven (types)</text>
+  <text x="155" y="84" text-anchor="middle" font-size="9" fill="#8b6db5">Lens s t a b = forall f.</text>
+  <text x="155" y="100" text-anchor="middle" font-size="9" fill="#8b6db5">(a -&gt; f b) -&gt; s -&gt; f t</text>
 
   <!-- Profunctor box (purple, right) -->
-  <rect x="450" y="45" width="270" height="70" rx="6" fill="#f5f3ff" stroke="#a78bfa" stroke-width="1.5"/>
-  <text x="585" y="67" text-anchor="middle" font-size="10" font-weight="bold" fill="#a78bfa">Profunctor (unified)</text>
-  <text x="585" y="84" text-anchor="middle" font-size="9" fill="#a78bfa">type Optic p s t a b =</text>
-  <text x="585" y="100" text-anchor="middle" font-size="9" fill="#a78bfa">p a b -&gt; p s t</text>
+  <rect x="450" y="45" width="270" height="70" rx="6" fill="#efeaf6" stroke="#8b6db5" stroke-width="1.5"/>
+  <text x="585" y="67" text-anchor="middle" font-size="10" font-weight="bold" fill="#8b6db5">Profunctor (unified)</text>
+  <text x="585" y="84" text-anchor="middle" font-size="9" fill="#8b6db5">type Optic p s t a b =</text>
+  <text x="585" y="100" text-anchor="middle" font-size="9" fill="#8b6db5">p a b -&gt; p s t</text>
 </svg>
