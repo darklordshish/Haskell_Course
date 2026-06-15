@@ -424,6 +424,29 @@ SubjectiveModel (слой Пытьева, residuation-кондициониров
 
 ---
 
+## ✅ Фаза 17 — Модульная структура курса + карта-метро (ветка course-map, 2026-06-12)
+
+Путеводитель `README.ipynb` перестроен из линейного списка в модульную структуру
+(модули 0–VI, нумерация 0.1–VI.3); ASCII-«граф зависимостей» заменён на SVG-карту
+курса в стиле схемы метро. Перестановки: FoldableTraversable → модуль I (до монад);
+комонады → конец модуля II; Adjunctions ↔ KanExtensions (сопряжения до Кана);
+Arrows → модуль III. Файлы ноутбуков не переименовывались.
+
+Инструменты (`src/scripts/coursemap/`): `build_map.js` — генератор `course_map.svg`
+(ASCII-only внутри SVG; база — серая линия, ветки — цветные, гибриды — пересадки
+с двумя кольцами, «дальше по линии — сложнее»); `restructure_readme.js` — разовая
+перестройка README.ipynb (идемпотентна).
+
+| Изменение | Статус |
+|-----------|--------|
+| build_map.js + course_map.svg (схема метро, 23 станции) | ✅ |
+| README.ipynb — содержание/карточки/сводная по модулям 0–VI | ✅ |
+| Пререквизиты: Adjunctions ← Yoneda, Kan ← Adjunctions, F&T ← FunctorHierarchy | ✅ |
+| NAV-ссылки Adjunctions/KanExtensions под новый порядок | ✅ |
+| ROADMAP + README.md | ✅ |
+
+---
+
 ## ⚠️ Критические правила (не нарушать никогда)
 
 ### IHaskell / GHC
@@ -440,6 +463,7 @@ SubjectiveModel (слой Пытьева, residuation-кондициониров
 - **`Control.Parallel.Strategies`** — не установлен
 - **`:load`** — только в setup-ячейке, один раз, все модули одной командой; `:load` сбрасывает контекст импортов, поэтому все `import` — строго после него
 - Ячейка `deps_header` генерируется `src/scripts/deps/gen_headers.js` — руками не править; после изменения setup-ячейки или импортов перегенерировать
+- `course_map.svg` генерируется `src/scripts/coursemap/build_map.js` — руками не править (ASCII-only внутри SVG)
 
 ### JupyterLab API
 - Все операции с файлами — через XHR API, не терминал
