@@ -161,14 +161,11 @@ const mapIdx = rest.findIndex(c => c.id === 'a5550535');
 nb.cells = [...rest.slice(0, mapIdx + 1), ...cards, ...rest.slice(mapIdx + 1)];
 
 // ---- Op 7: удаления ----
-const junk = new Set(['0133db59', '7c6a38c6-6527-486f-ba4d-0681e2a9215f',
-  '4cf97f25-1c5b-43fe', '5bcaaf35-689c-42ca', '8fa55df1-4252-46fa']);
-nb.cells = nb.cells.filter(c => {
-  if (c.id === '0133db59') return false; // граф
-  const after = true;
+// Удаляем ASCII-граф (id 0133db59) и хвостовые пустышки (пустые ячейки или одинокий «##»).
+nb.cells = nb.cells.filter((c, i) => {
+  if (c.id === '0133db59') return false; // граф зависимостей
   const s = get(c).trim();
-  // хвостовые пустышки: markdown/raw/code без контента
-  return !((s === '' || s === '##') && nb.cells.indexOf(c) > 5);
+  return !((s === '' || s === '##') && i > 5);
 });
 
 fs.writeFileSync(P, JSON.stringify(nb, null, 1) + '\n');
