@@ -16,8 +16,10 @@ src/
       dictionary.json    — единый источник правды (расширения, пакеты, модули)
       gen_headers.js     — генератор ячейки deps_header (идемпотентный)
       build_extensions.js — сборка Extensions.ipynb
-    coursemap/      — карта курса
+    coursemap/      — карта курса и навигация
+      course_order.js    — единый порядок курса (модули 0–VI)
       build_map.js       — генератор notebooks/course_map.svg (схема метро)
+      gen_nav.js         — генератор NAV-ячеек ноутбуков (идемпотентный)
       restructure_readme.js — перестройка README.ipynb по модулям
   lib/              — git-сабмодуль: библиотека категорного ядра
   README.ipynb      — стартовый ноутбук

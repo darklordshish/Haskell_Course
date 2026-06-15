@@ -444,6 +444,7 @@ Arrows → модуль III. Файлы ноутбуков не переимен
 | Пререквизиты: Adjunctions ← Yoneda, Kan ← Adjunctions, F&T ← FunctorHierarchy | ✅ |
 | NAV-ссылки Adjunctions/KanExtensions под новый порядок | ✅ |
 | ROADMAP + README.md | ✅ |
+| NAV генерируется из course_order.js (gen_nav.js) — вся цепочка согласована | ✅ |
 
 ---
 
@@ -464,6 +465,7 @@ Arrows → модуль III. Файлы ноутбуков не переимен
 - **`:load`** — только в setup-ячейке, один раз, все модули одной командой; `:load` сбрасывает контекст импортов, поэтому все `import` — строго после него
 - Ячейка `deps_header` генерируется `src/scripts/deps/gen_headers.js` — руками не править; после изменения setup-ячейки или импортов перегенерировать
 - `course_map.svg` генерируется `src/scripts/coursemap/build_map.js` — руками не править (ASCII-only внутри SVG)
+- NAV-ячейки ноутбуков генерируются `src/scripts/coursemap/gen_nav.js` из `course_order.js` (единый порядок) — руками не править; при изменении порядка курса править `course_order.js` и перегенерировать
 
 ### JupyterLab API
 - Все операции с файлами — через XHR API, не терминал
