@@ -49,10 +49,12 @@
   <line x1="313" y1="208" x2="447" y2="208" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr)"/>
   <text x="380" y="200" text-anchor="middle" font-size="11" fill="#8a93a3">!_S</text>
 
-  <line x1="300" y1="220" x2="300" y2="296" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="300" y1="226" x2="300" y2="296" stroke="#0f172a" stroke-width="1.5" marker-end="url(#arr)"/>
+  <polyline points="296,220 300,226 304,220" fill="none" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="284" y="262" text-anchor="middle" font-size="11" fill="#0f172a">m</text>
 
-  <line x1="460" y1="220" x2="460" y2="296" stroke="#8b6db5" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <line x1="460" y1="226" x2="460" y2="296" stroke="#8b6db5" stroke-width="1.5" marker-end="url(#arrP)"/>
+  <polyline points="456,220 460,226 464,220" fill="none" stroke="#8b6db5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="476" y="262" text-anchor="middle" font-size="11" fill="#8b6db5">true</text>
 
   <line x1="313" y1="303" x2="447" y2="303" stroke="#8b6db5" stroke-width="1.5" marker-end="url(#arrP)"/>

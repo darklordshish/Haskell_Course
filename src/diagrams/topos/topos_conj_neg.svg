@@ -17,10 +17,12 @@
 <line x1="85" y1="87" x2="268" y2="87" stroke="#3a4a96" stroke-width="1.6" marker-end="url(#tcn_a)"/>
 <text x="178" y="79" text-anchor="middle" font-size="11" fill="#3a4a96">!</text>
 <!-- left arrow <true,true> down -->
-<line x1="70" y1="100" x2="70" y2="196" stroke="#3a4a96" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<line x1="70" y1="106" x2="70" y2="196" stroke="#3a4a96" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<polyline points="66,100 70,106 74,100" fill="none" stroke="#3a4a96" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="74" y="152" text-anchor="start" font-size="10" fill="#3a4a96">&lt;true,true&gt;</text>
 <!-- right arrow true down -->
-<line x1="282" y1="100" x2="282" y2="196" stroke="#3f9d77" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<line x1="282" y1="106" x2="282" y2="196" stroke="#3f9d77" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<polyline points="278,100 282,106 286,100" fill="none" stroke="#3f9d77" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="288" y="152" text-anchor="start" font-size="11" fill="#3f9d77">true</text>
 <!-- bottom arrow and -->
 <line x1="120" y1="205" x2="250" y2="205" stroke="#3a4a96" stroke-width="1.8" marker-end="url(#tcn_a)"/>
@@ -39,9 +41,11 @@
 <text x="600" y="210" text-anchor="middle" font-size="14" fill="#0f172a">Omega</text>
 <line x1="425" y1="87" x2="588" y2="87" stroke="#3a4a96" stroke-width="1.6" marker-end="url(#tcn_a)"/>
 <text x="506" y="79" text-anchor="middle" font-size="11" fill="#3a4a96">!</text>
-<line x1="410" y1="100" x2="410" y2="196" stroke="#8b6db5" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<line x1="410" y1="106" x2="410" y2="196" stroke="#8b6db5" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<polyline points="406,100 410,106 414,100" fill="none" stroke="#8b6db5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="414" y="152" text-anchor="start" font-size="11" fill="#8b6db5">false</text>
-<line x1="600" y1="100" x2="600" y2="196" stroke="#3f9d77" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<line x1="600" y1="106" x2="600" y2="196" stroke="#3f9d77" stroke-width="1.6" marker-end="url(#tcn_a)"/>
+<polyline points="596,100 600,106 604,100" fill="none" stroke="#3f9d77" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="606" y="152" text-anchor="start" font-size="11" fill="#3f9d77">true</text>
 <line x1="440" y1="205" x2="575" y2="205" stroke="#3a4a96" stroke-width="1.8" marker-end="url(#tcn_a)"/>
 <text x="507" y="223" text-anchor="middle" font-size="12" fill="#8b6db5" font-weight="bold">neg</text>

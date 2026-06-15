@@ -38,11 +38,13 @@
   <text x="215" y="70" text-anchor="middle" font-size="11" fill="#8a93a3">!_S</text>
 
   <!-- S -> A (left, mono m) -->
-  <line x1="115" y1="100" x2="115" y2="198" stroke="#5872c9" stroke-width="1.8" marker-end="url(#arr)"/>
+  <line x1="115" y1="106" x2="115" y2="198" stroke="#5872c9" stroke-width="1.8" marker-end="url(#arr)"/>
+  <polyline points="111,100 115,106 119,100" fill="none" stroke="#5872c9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="96" y="154" text-anchor="middle" font-size="11" fill="#5872c9">m</text>
 
   <!-- 1 -> Omega (right, true) -->
-  <line x1="315" y1="100" x2="315" y2="198" stroke="#8b6db5" stroke-width="1.8" marker-end="url(#arrP)"/>
+  <line x1="315" y1="106" x2="315" y2="198" stroke="#8b6db5" stroke-width="1.8" marker-end="url(#arrP)"/>
+  <polyline points="311,100 315,106 319,100" fill="none" stroke="#8b6db5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
   <text x="334" y="154" text-anchor="middle" font-size="11" fill="#8b6db5">true</text>
 
   <!-- A -> Omega (bottom, chi_m) -->
