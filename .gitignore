@@ -8,3 +8,12 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Linux trash
+.Trash-*/
+
+# GHC build artifacts
+*.hi
+*.o
+*.dyn_hi
+*.dyn_o
