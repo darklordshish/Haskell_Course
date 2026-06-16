@@ -1,0 +1,23 @@
+-- Ковариантный функтор: fmap сохраняет направление стрелки (a->b  даёт  Fa->Fb).
+exCov :: Maybe Int
+exCov = fmap (+1) (Just 10)   -- Just 11
+
+-- Контравариантный функтор: contramap обращает направление (a->b  даёт  Fb->Fa).
+-- (Data.Functor.Contravariant может отсутствовать в старом GHC -- объявим класс локально.)
+class Contravariant f where
+  contramap :: (a -> b) -> f b -> f a
+
+newtype Predicate a = Predicate { runPred :: a -> Bool }
+
+instance Contravariant Predicate where
+  contramap g (Predicate p) = Predicate (p . g)
+
+isEven :: Predicate Int
+isEven = Predicate even
+
+-- предикат на Int тянется на String через  length :: String -> Int  (обращение стрелки)
+lenEven :: Predicate String
+lenEven = contramap length isEven
+
+-- (Just 11, "hello"->длина 5 нечётна, "hi"->длина 2 чётна)
+(exCov, runPred lenEven "hello", runPred lenEven "hi")
