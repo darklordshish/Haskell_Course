@@ -1,0 +1,51 @@
+---
+
+<a id="dual-kan"></a>
+## Расширения Кана: Lan / Ran (движок)
+
+**Идея.** Дан функтор `F : C → D` и функтор `K : C → C'`. Расширения Кана продолжают `F` вдоль `K` до функтора `C' → D` — наилучшим образом *слева* (`Lan`) и *справа* (`Ran`). Это зеркальная пара относительно `C^op` и одновременно **движок** всего словаря.
+
+**Универсальное свойство (сопряжения с пред-композицией `−∘K`):**
+
+`Lan_K ⊣ (−∘K) ⊣ Ran_K`, то есть естественные изоморфизмы
+- `Nat(Lan_K F, G) ≅ Nat(F, G∘K)` — единица `η : F ⇒ (Lan_K F)∘K`;
+- `Nat(G, Ran_K F) ≅ Nat(G∘K, F)` — коединица `ε : (Ran_K F)∘K ⇒ F`.
+
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="290" viewBox="0 0 600 290" font-family="system-ui, sans-serif">
+<rect width="600" height="290" fill="#ffffff" rx="8"/>
+<text x="150" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#3a4a96">Left Kan extension (Lan)</text>
+<text x="450" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#2f6f54">Right Kan extension (Ran)</text>
+<g font-size="13" fill="#0f172a">
+<rect x="62" y="48" width="34" height="26" rx="8" fill="#fff" stroke="#5872c9" stroke-width="2"/><text x="79" y="66" text-anchor="middle">C</text>
+<rect x="202" y="48" width="40" height="26" rx="8" fill="#fff" stroke="#5872c9" stroke-width="2"/><text x="222" y="66" text-anchor="middle">C'</text>
+<rect x="133" y="150" width="34" height="26" rx="8" fill="#fff" stroke="#5872c9" stroke-width="2"/><text x="150" y="168" text-anchor="middle">D</text>
+</g>
+<line x1="98" y1="61" x2="191" y2="61" stroke="#8a93a3" stroke-width="2"/><polygon points="197,61 188,57 188,65" fill="#8a93a3"/><text x="148" y="53" text-anchor="middle" font-size="11" fill="#475569">K</text>
+<line x1="83" y1="76" x2="140" y2="141" stroke="#8a93a3" stroke-width="2"/><polygon points="145,147 134,144 142,137" fill="#8a93a3"/><text x="98" y="118" text-anchor="middle" font-size="11" fill="#475569">F</text>
+<line x1="219" y1="76" x2="162" y2="141" stroke="#5872c9" stroke-width="2.2" stroke-dasharray="5,3"/><polygon points="155,147 158,137 166,144" fill="#5872c9"/><text x="206" y="114" text-anchor="middle" font-size="11" font-weight="700" fill="#3a4a96">Lan</text>
+<text x="150" y="108" text-anchor="middle" font-size="12" fill="#3a4a96">&#951; &#8658;</text>
+<text x="150" y="208" text-anchor="middle" font-size="10" fill="#8a93a3">Lan &#8867; (&#8722;&#8728;K)</text>
+<text x="150" y="223" text-anchor="middle" font-size="9.5" fill="#8a93a3">Nat(Lan F, G) &#8773; Nat(F, G&#8728;K)</text>
+<g font-size="13" fill="#0f172a">
+<rect x="362" y="48" width="34" height="26" rx="8" fill="#fff" stroke="#3f9d77" stroke-width="2"/><text x="379" y="66" text-anchor="middle">C</text>
+<rect x="502" y="48" width="40" height="26" rx="8" fill="#fff" stroke="#3f9d77" stroke-width="2"/><text x="522" y="66" text-anchor="middle">C'</text>
+<rect x="433" y="150" width="34" height="26" rx="8" fill="#fff" stroke="#3f9d77" stroke-width="2"/><text x="450" y="168" text-anchor="middle">D</text>
+</g>
+<line x1="398" y1="61" x2="491" y2="61" stroke="#8a93a3" stroke-width="2"/><polygon points="497,61 488,57 488,65" fill="#8a93a3"/><text x="448" y="53" text-anchor="middle" font-size="11" fill="#475569">K</text>
+<line x1="383" y1="76" x2="440" y2="141" stroke="#8a93a3" stroke-width="2"/><polygon points="445,147 434,144 442,137" fill="#8a93a3"/><text x="398" y="118" text-anchor="middle" font-size="11" fill="#475569">F</text>
+<line x1="519" y1="76" x2="462" y2="141" stroke="#3f9d77" stroke-width="2.2" stroke-dasharray="5,3"/><polygon points="455,147 458,137 466,144" fill="#3f9d77"/><text x="506" y="114" text-anchor="middle" font-size="11" font-weight="700" fill="#2f6f54">Ran</text>
+<text x="450" y="108" text-anchor="middle" font-size="12" fill="#2f6f54">&#8656; &#949;</text>
+<text x="450" y="208" text-anchor="middle" font-size="10" fill="#8a93a3">(&#8722;&#8728;K) &#8867; Ran</text>
+<text x="450" y="223" text-anchor="middle" font-size="9.5" fill="#8a93a3">Nat(G, Ran F) &#8773; Nat(G&#8728;K, F)</text>
+<line x1="80" y1="248" x2="520" y2="248" stroke="#e2e8f0"/>
+<text x="300" y="266" text-anchor="middle" font-size="10.5" fill="#8a93a3">mirror in C^op:  (Lan_K F)^op &#8773; Ran_(K^op)(F^op)</text>
+<text x="300" y="282" text-anchor="middle" font-size="10" fill="#8a93a3">the engine: limits, adjunctions, density/codensity are all Kan</text>
+</svg>
+
+**Зеркало `C^op`:** `Lan` и `Ran` — отражение друг друга: `(Lan_K F)^op ≅ Ran_(K^op)(F^op)`. Одна конструкция, два направления.
+
+**«Всё — расширение Кана».** Дальше выводим через этот движок: пределы/копределы — Кан вдоль `J → 1` (§ ниже), сопряжения — `Ran_F Id` / `Lan_G Id`, монада коплотности — `Ran f f`, комонада плотности — `Lan f f`.
+
+**В чём двойственность:** `Lan` (левое, копределоподобное) ↔ `Ran` (правое, пределоподобное) — зеркало относительно `C^op`.
+
+**Где в курсе:** [KanExtensions](KanExtensions.ipynb) — Lan/Ran, Codensity, плотность, «все концепции — расширения Кана».
