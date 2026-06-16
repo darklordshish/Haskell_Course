@@ -1,0 +1,21 @@
+-- В Hask (Set-подобная категория) mono ~ инъекция, epi ~ сюръекция.
+-- Категорное определение mono/epi -- через сократимость (см. markdown выше);
+-- здесь -- его "тень" на конечных типах.
+import Data.List (nub)
+
+-- инъективность: разные входы дают разные выходы
+injective :: Eq b => [a] -> (a -> b) -> Bool
+injective dom f = let ys = map f dom in length ys == length (nub ys)
+
+-- сюръективность: весь кодомен покрыт
+surjective :: Eq b => [a] -> [b] -> (a -> b) -> Bool
+surjective dom cod f = all (\y -> y `elem` map f dom) cod
+
+toInt :: Bool -> Int
+toInt b = if b then 1 else 0
+
+isPos :: Int -> Bool
+isPos n = n > 0
+
+-- (mono ~ injective, epi ~ surjective)
+(injective [False, True] toInt, surjective [-2, -1, 0, 1, 2] [False, True] isPos)
