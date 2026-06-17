@@ -38,7 +38,7 @@
 <text x="450" y="208" text-anchor="middle" font-size="10" fill="#8a93a3">(&#8722;&#8728;K) &#8867; Ran</text>
 <text x="450" y="223" text-anchor="middle" font-size="9.5" fill="#8a93a3">Nat(G, Ran F) &#8773; Nat(G&#8728;K, F)</text>
 <line x1="80" y1="248" x2="520" y2="248" stroke="#e2e8f0"/>
-<text x="300" y="266" text-anchor="middle" font-size="10.5" fill="#8a93a3">mirror in C^op:  (Lan_K F)^op &#8773; Ran_(K^op)(F^op)</text>
+<text x="300" y="266" text-anchor="middle" font-size="10.5" fill="#8a93a3">mirror in C^op:  Lan and Ran swap (left vs right Kan)</text>
 <text x="300" y="282" text-anchor="middle" font-size="10" fill="#8a93a3">the engine: limits, adjunctions, density/codensity are all Kan</text>
 </svg>
 
