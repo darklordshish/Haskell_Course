@@ -1,0 +1,31 @@
+-- Codensity m = Ran m m : МОНАДА на любом функторе m (даже если m — не монада!).
+newtype Codensity m a = Codensity { runCodensity :: forall b. (a -> m b) -> m b }
+
+instance Functor (Codensity m) where
+  fmap f (Codensity g) = Codensity (\k -> g (k . f))
+instance Applicative (Codensity m) where
+  pure a = Codensity (\k -> k a)                       -- единица  eta : a -> T a
+  Codensity f <*> Codensity g = Codensity (\k -> f (\h -> g (k . h)))
+instance Monad (Codensity m) where
+  Codensity g >>= f = Codensity (\k -> g (\a -> runCodensity (f a) k))   -- mu : T T a -> T a
+
+toCodensity :: Monad m => m a -> Codensity m a
+toCodensity m = Codensity (m >>=)
+fromCodensity :: Monad m => Codensity m a -> m a
+fromCodensity (Codensity g) = g return
+
+-- Density w = Lan w w : КОМОНАДА на любом функторе w (двойственно).
+data Density w a = forall b. Density (w b -> a) (w b)
+
+instance Functor (Density w) where
+  fmap f (Density g w) = Density (f . g) w
+extractD :: Density w a -> a                            -- коединица eps : D a -> a (extract)
+extractD (Density f w) = f w
+duplicateD :: Density w a -> Density w (Density w a)     -- delta : D a -> D D a
+duplicateD (Density f w) = Density (Density f) w
+
+demoCod = fromCodensity (do { x <- toCodensity (Just 7); toCodensity (Just (x + 1)) }) :: Maybe Int
+demoDen = ( extractD (Density sum [1, 2, 3 :: Int])
+          , extractD (extractD (duplicateD (Density sum [1, 2, 3 :: Int]))) )
+
+(demoCod, demoDen)

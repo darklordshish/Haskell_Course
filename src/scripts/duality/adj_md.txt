@@ -1,0 +1,77 @@
+---
+
+<a id="dual-adj"></a>
+## Сопряжения через Кан (F ⊣ G)
+
+**Идея.** Сопряжение `F ⊣ G` (`F : C → D` слева, `G : D → C` справа) — двойственная пара, выраженная **через движок Кана**: правый сопряжённый — это правое расширение тождества вдоль левого, левый — левое расширение тождества вдоль правого:
+- `G = Ran_F Id_C` (коединица `ε : G&#8728;F ⇒ Id`),
+- `F = Lan_G Id_D` (единица `η : Id ⇒ F&#8728;G`).
+
+Биекция `Hom_D(F a, b) ≅ Hom_C(a, G b)` — это универсальное свойство; в Haskell — `curry`/`uncurry` сопряжения `(−,s) ⊣ (s→)`.
+
+**Категорный уровень** (сопряжённый = расширение Кана тождества):
+
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="248" viewBox="0 0 600 248" font-family="system-ui, sans-serif">
+<rect width="600" height="248" fill="#ffffff" rx="8"/>
+<text x="150" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#2f6f54">G = Ran<tspan dy="3" font-size="9">F</tspan><tspan dy="-3"> Id</tspan></text>
+<text x="450" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#3a4a96">F = Lan<tspan dy="3" font-size="9">G</tspan><tspan dy="-3"> Id</tspan></text>
+<g font-size="13" fill="#0f172a">
+<rect x="62" y="48" width="34" height="26" rx="8" fill="#fff" stroke="#3f9d77" stroke-width="2"/><text x="79" y="66" text-anchor="middle">C</text>
+<rect x="206" y="48" width="34" height="26" rx="8" fill="#fff" stroke="#3f9d77" stroke-width="2"/><text x="223" y="66" text-anchor="middle">D</text>
+<rect x="133" y="150" width="34" height="26" rx="8" fill="#fff" stroke="#3f9d77" stroke-width="2"/><text x="150" y="168" text-anchor="middle">C</text>
+</g>
+<line x1="98" y1="61" x2="200" y2="61" stroke="#8a93a3" stroke-width="2"/><polygon points="206,61 197,57 197,65" fill="#8a93a3"/><text x="150" y="53" text-anchor="middle" font-size="11" fill="#475569">F</text>
+<line x1="83" y1="76" x2="140" y2="141" stroke="#8a93a3" stroke-width="2"/><polygon points="145,147 134,144 142,137" fill="#8a93a3"/><text x="96" y="118" text-anchor="middle" font-size="11" fill="#475569">Id</text>
+<line x1="216" y1="76" x2="162" y2="141" stroke="#3f9d77" stroke-width="2.2" stroke-dasharray="5,3"/><polygon points="155,147 158,137 166,144" fill="#3f9d77"/><text x="206" y="114" text-anchor="middle" font-size="11" font-weight="700" fill="#2f6f54">G</text>
+<text x="150" y="108" text-anchor="middle" font-size="12" fill="#2f6f54">&#8656; &#949;</text>
+<text x="150" y="206" text-anchor="middle" font-size="9.5" fill="#8a93a3">&#949; : G&#8728;F &#8658; Id&#8341;</text>
+<g font-size="13" fill="#0f172a">
+<rect x="362" y="48" width="34" height="26" rx="8" fill="#fff" stroke="#5872c9" stroke-width="2"/><text x="379" y="66" text-anchor="middle">D</text>
+<rect x="506" y="48" width="34" height="26" rx="8" fill="#fff" stroke="#5872c9" stroke-width="2"/><text x="523" y="66" text-anchor="middle">C</text>
+<rect x="433" y="150" width="34" height="26" rx="8" fill="#fff" stroke="#5872c9" stroke-width="2"/><text x="450" y="168" text-anchor="middle">D</text>
+</g>
+<line x1="398" y1="61" x2="500" y2="61" stroke="#8a93a3" stroke-width="2"/><polygon points="506,61 497,57 497,65" fill="#8a93a3"/><text x="450" y="53" text-anchor="middle" font-size="11" fill="#475569">G</text>
+<line x1="383" y1="76" x2="440" y2="141" stroke="#8a93a3" stroke-width="2"/><polygon points="445,147 434,144 442,137" fill="#8a93a3"/><text x="396" y="118" text-anchor="middle" font-size="11" fill="#475569">Id</text>
+<line x1="516" y1="76" x2="462" y2="141" stroke="#5872c9" stroke-width="2.2" stroke-dasharray="5,3"/><polygon points="455,147 458,137 466,144" fill="#5872c9"/><text x="506" y="114" text-anchor="middle" font-size="11" font-weight="700" fill="#3a4a96">F</text>
+<text x="450" y="108" text-anchor="middle" font-size="12" fill="#3a4a96">&#951; &#8658;</text>
+<text x="450" y="206" text-anchor="middle" font-size="9.5" fill="#8a93a3">&#951; : Id&#8332; &#8658; F&#8728;G</text>
+<line x1="80" y1="224" x2="520" y2="224" stroke="#e2e8f0"/>
+<text x="300" y="240" text-anchor="middle" font-size="10.5" fill="#8a93a3">F &#8867; G : Hom(F a, b) &#8773; Hom(a, G b)  &#183;  adjoints are Kan extensions of Id</text>
+</svg>
+
+**Объектный уровень — универсальная стрелка.** Единица `η_a : a → G(F a)` **универсальна**: для любого `b` и `f : a → G b` существует **единственный** `g : F a → b` с `G g &#8728; η_a = f`. Коединица `ε_b : F(G b) → b` couniversal дуально: любой `g : F a → b` даёт единственный `f : a → G b` с `ε_b &#8728; F f = g`.
+
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="216" viewBox="0 0 680 216" font-family="system-ui, sans-serif">
+<rect width="680" height="216" fill="#ffffff" rx="8"/>
+<text x="150" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#3a4a96">Unit:  &#951;<tspan dy="2" font-size="8">a</tspan><tspan dy="-2"> : a &#8594; G(F a)  universal</tspan></text>
+<text x="525" y="20" text-anchor="middle" font-size="12" font-weight="700" fill="#2f6f54">Counit:  &#949;<tspan dy="2" font-size="8">b</tspan><tspan dy="-2"> : F(G b) &#8594; b  couniversal</tspan></text>
+<text x="100" y="37" text-anchor="middle" font-size="9" fill="#8a93a3">in C</text>
+<text x="257" y="37" text-anchor="middle" font-size="9" fill="#8a93a3">in D</text>
+<text x="462" y="37" text-anchor="middle" font-size="9" fill="#8a93a3">in D</text>
+<text x="621" y="37" text-anchor="middle" font-size="9" fill="#8a93a3">in C</text>
+<rect x="40" y="46" width="30" height="24" rx="8" fill="#fff" stroke="#475569" stroke-width="2"/><text x="55" y="63" text-anchor="middle" font-size="13" fill="#0f172a">a</text>
+<rect x="138" y="44" width="52" height="28" rx="9" fill="#fff" stroke="#5872c9" stroke-width="2.5"/><text x="164" y="63" text-anchor="middle" font-size="12" fill="#3a4a96" font-weight="700">G F a</text>
+<rect x="142" y="150" width="44" height="26" rx="8" fill="#fff" stroke="#475569" stroke-width="2"/><text x="164" y="168" text-anchor="middle" font-size="13" fill="#0f172a">G b</text>
+<line x1="70" y1="58" x2="132" y2="58" stroke="#5872c9" stroke-width="2.4"/><polygon points="138,58 129,54 129,62" fill="#5872c9"/><text x="100" y="50" text-anchor="middle" font-size="10.5" font-weight="700" fill="#3a4a96">&#951;<tspan dy="2" font-size="8">a</tspan></text>
+<line x1="55" y1="70" x2="147" y2="149" stroke="#8a93a3" stroke-width="1.7"/><polygon points="151,152 141,150 144,143" fill="#8a93a3"/><text x="80" y="124" text-anchor="middle" font-size="10.5" fill="#475569">f</text>
+<line x1="164" y1="72" x2="164" y2="146" stroke="#8a93a3" stroke-width="1.7"/><polygon points="164,150 160,141 168,141" fill="#8a93a3"/><text x="181" y="114" text-anchor="middle" font-size="10.5" fill="#475569">G g</text>
+<rect x="236" y="44" width="42" height="28" rx="9" fill="#fff" stroke="#475569" stroke-width="2"/><text x="257" y="63" text-anchor="middle" font-size="13" fill="#0f172a">F a</text>
+<rect x="242" y="150" width="30" height="26" rx="8" fill="#fff" stroke="#475569" stroke-width="2"/><text x="257" y="168" text-anchor="middle" font-size="13" fill="#0f172a">b</text>
+<line x1="257" y1="72" x2="257" y2="146" stroke="#5872c9" stroke-width="2" stroke-dasharray="5,3"/><polygon points="257,150 253,141 261,141" fill="#5872c9"/><text x="271" y="114" text-anchor="middle" font-size="10.5" font-weight="700" fill="#3a4a96">g</text>
+<line x1="350" y1="42" x2="350" y2="182" stroke="#e2e8f0"/>
+<rect x="400" y="44" width="42" height="28" rx="9" fill="#fff" stroke="#475569" stroke-width="2"/><text x="421" y="63" text-anchor="middle" font-size="13" fill="#0f172a">F a</text>
+<rect x="498" y="44" width="52" height="28" rx="9" fill="#fff" stroke="#3f9d77" stroke-width="2.5"/><text x="524" y="63" text-anchor="middle" font-size="12" fill="#2f6f54" font-weight="700">F G b</text>
+<rect x="509" y="150" width="30" height="26" rx="8" fill="#fff" stroke="#475569" stroke-width="2"/><text x="524" y="168" text-anchor="middle" font-size="13" fill="#0f172a">b</text>
+<line x1="442" y1="58" x2="492" y2="58" stroke="#8a93a3" stroke-width="1.7"/><polygon points="498,58 489,54 489,62" fill="#8a93a3"/><text x="468" y="50" text-anchor="middle" font-size="10.5" fill="#475569">F f</text>
+<line x1="421" y1="72" x2="513" y2="149" stroke="#8a93a3" stroke-width="1.7"/><polygon points="517,152 507,150 510,143" fill="#8a93a3"/><text x="446" y="124" text-anchor="middle" font-size="10.5" fill="#475569">g</text>
+<line x1="524" y1="72" x2="524" y2="146" stroke="#3f9d77" stroke-width="2.4"/><polygon points="524,150 520,141 528,141" fill="#3f9d77"/><text x="541" y="114" text-anchor="middle" font-size="10.5" font-weight="700" fill="#2f6f54">&#949;<tspan dy="2" font-size="8">b</tspan></text>
+<rect x="606" y="46" width="30" height="24" rx="8" fill="#fff" stroke="#475569" stroke-width="2"/><text x="621" y="63" text-anchor="middle" font-size="13" fill="#0f172a">a</text>
+<rect x="599" y="150" width="44" height="26" rx="8" fill="#fff" stroke="#475569" stroke-width="2"/><text x="621" y="168" text-anchor="middle" font-size="13" fill="#0f172a">G b</text>
+<line x1="621" y1="72" x2="621" y2="146" stroke="#3f9d77" stroke-width="2" stroke-dasharray="5,3"/><polygon points="621,150 617,141 625,141" fill="#3f9d77"/><text x="635" y="114" text-anchor="middle" font-size="10.5" font-weight="700" fill="#2f6f54">f</text>
+<line x1="60" y1="194" x2="620" y2="194" stroke="#e2e8f0"/>
+<text x="340" y="210" text-anchor="middle" font-size="10" fill="#8a93a3">dashed = unique mediator (g in D, f in C); its image (G g, F f) completes the triangle  &#183;  mirror = C^op</text>
+</svg>
+
+**В чём двойственность:** единица `η` ↔ коединица `ε`, левый `F` ↔ правый `G` — обращение стрелок (`C^op`); на уровне Кана `Lan_G Id ↔ Ran_F Id`. Сопряжение в `C` ↔ сопряжение `G^op ⊣ F^op` в `C^op`.
+
+**Где в курсе:** [Adjunctions](Adjunctions.ipynb) — `curry`/`uncurry`, единица/коединица, треугольные тождества; [KanExtensions](KanExtensions.ipynb) — сопряжённый как `Ran_F Id` / `Lan_G Id`.

@@ -1,0 +1,46 @@
+---
+
+<a id="dual-monoepi"></a>
+## Мономорфизм &#8611; / Эпиморфизм &#8608; (примитив)
+
+**Идея.** Чистая `C^op`-двойственность: мономорфизм в `C` — это в точности эпиморфизм в `C^op` (и наоборот). Базовые понятия на языке стрелок; расширениями Кана **не** порождаются.
+
+**Определение (через сократимость, в любой категории).** Пусть `f : a → b`.
+- `f` — **мономорфизм** (`a &#8611; b`), если он *лево-сократим*: из `f∘g = f∘h` следует `g = h`.
+- `f` — **эпиморфизм** (`a &#8608; b`), если он *право-сократим*: из `g∘f = h∘f` следует `g = h`.
+
+Одно переходит в другое **обращением всех стрелок** — это и есть двойственность.
+
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="215" viewBox="0 0 560 215" font-family="system-ui, sans-serif">
+<rect width="560" height="215" fill="#ffffff" rx="8"/>
+<text x="150" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#3a4a96">Monomorphism &#8611;</text>
+<text x="410" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#2f6f54">Epimorphism &#8608;</text>
+<circle cx="95" cy="100" r="18" fill="#fff" stroke="#5872c9" stroke-width="3"/><text x="95" y="105" text-anchor="middle" font-size="14" fill="#0f172a">a</text>
+<circle cx="205" cy="100" r="18" fill="#fff" stroke="#5872c9" stroke-width="3"/><text x="205" y="105" text-anchor="middle" font-size="14" fill="#0f172a">b</text>
+<line x1="124" y1="100" x2="180" y2="100" stroke="#5872c9" stroke-width="2.4"/>
+<polyline points="117,94 124,100 117,106" fill="none" stroke="#5872c9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="186,100 177,95 177,105" fill="#5872c9"/>
+<text x="152" y="91" text-anchor="middle" font-size="12" fill="#3a4a96">f</text>
+<text x="150" y="150" text-anchor="middle" font-size="11" fill="#475569">left-cancellable</text>
+<text x="150" y="166" text-anchor="middle" font-size="10" fill="#8a93a3">(in Set: injective)</text>
+<circle cx="355" cy="100" r="18" fill="#fff" stroke="#3f9d77" stroke-width="3"/><text x="355" y="105" text-anchor="middle" font-size="14" fill="#0f172a">a</text>
+<circle cx="465" cy="100" r="18" fill="#fff" stroke="#3f9d77" stroke-width="3"/><text x="465" y="105" text-anchor="middle" font-size="14" fill="#0f172a">b</text>
+<line x1="378" y1="100" x2="438" y2="100" stroke="#3f9d77" stroke-width="2.4"/>
+<polygon points="446,100 436,95 436,105" fill="#3f9d77"/>
+<polygon points="439,100 429,95 429,105" fill="#3f9d77"/>
+<text x="410" y="91" text-anchor="middle" font-size="12" fill="#2f6f54">f</text>
+<text x="410" y="150" text-anchor="middle" font-size="11" fill="#475569">right-cancellable</text>
+<text x="410" y="166" text-anchor="middle" font-size="10" fill="#8a93a3">(in Set: surjective)</text>
+<line x1="80" y1="186" x2="480" y2="186" stroke="#e2e8f0"/>
+<text x="280" y="204" text-anchor="middle" font-size="10.5" fill="#8a93a3">epi in C  =  mono in C^op   (reverse all arrows)</text>
+</svg>
+
+**Тонкость — почему НЕ «инъекция/сюръекция».** Инъективность/сюръективность — *точечные* понятия (нужны глобальные элементы `1 → X`), осмысленны лишь в конкретных / вполне-точечных (well-pointed) категориях:
+- `mono ⟹ инъективна на точках` — **всегда** (представимый `Hom(1,−)` сохраняет мономорфизмы); обратное (`инъективна на точках ⟹ mono`) — только если `1` является генератором (как в **Set**).
+- `epi ⟺ сюръекция` — связь ещё слабее: `Hom(1,−)` **не** сохраняет эпиморфизмы. Совпадают в **Set** (с аксиомой выбора), в общем случае — нет.
+
+Поэтому определение даём через сократимость, а инъекцию/сюръекцию — лишь как «тень» в Set.
+
+**В чём двойственность:** `mono` и `epi` — зеркало друг друга относительно `C ⇄ C^op` (обращение стрелок).
+
+**Где в курсе:** [Toposes](Toposes.ipynb) — классификатор подобъектов `s &#8611; Ω`: мономорфизмы = подобъекты.

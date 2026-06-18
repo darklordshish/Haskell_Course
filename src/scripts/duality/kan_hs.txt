@@ -1,0 +1,22 @@
+-- Левое (Lan) и правое (Ran) расширения Кана как типы Haskell:
+--   Lan: существует b  (экзистенциал);  Ran: для всех b  (forall)
+data    Lan g h a = forall b. Lan (g b -> a) (h b)
+newtype Ran g h a = Ran { runRan :: forall b. (a -> g b) -> h b }
+
+instance Functor (Lan g h) where
+  fmap f (Lan k hb) = Lan (f . k) hb
+
+instance Functor (Ran g h) where
+  fmap f (Ran r) = Ran (\k -> r (k . f))
+
+-- Частный случай Ran f f -- монада коплотности (Codensity); превью раздела monad/comonad.
+newtype Codensity m a = Codensity (forall b. (a -> m b) -> m b)
+
+toCod :: Monad m => m a -> Codensity m a
+toCod ma = Codensity (ma >>=)
+
+fromCod :: Monad m => Codensity m a -> m a
+fromCod (Codensity r) = r return
+
+-- round-trip через Codensity (= Ran Maybe Maybe): Just 7
+fromCod (toCod (Just 7)) :: Maybe Int

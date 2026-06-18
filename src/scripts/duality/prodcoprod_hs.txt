@@ -1,0 +1,15 @@
+-- Произведение a*b = (a, b): проекции fst/snd, медиатор (&&&) = <f,g>.
+-- Копроизведение a+b = Either a b: инъекции Left/Right, медиатор either = [f,g].
+
+-- product: для f : x -> a и g : x -> b существует ЕДИНСТВЕННЫЙ <f,g> : x -> (a,b)
+mediateProd :: (x -> a) -> (x -> b) -> x -> (a, b)
+mediateProd f g z = (f z, g z)
+
+-- coproduct (двойственно): для f : a -> x и g : b -> x существует [f,g] : Either a b -> x
+mediateCoprod :: (a -> x) -> (b -> x) -> Either a b -> x
+mediateCoprod = either
+
+demoProd   = mediateProd (+1) even (10 :: Int)
+demoCoprod = mediateCoprod show (\b -> if b then "Y" else "N") (Right True :: Either Int Bool)
+
+(demoProd, demoCoprod)

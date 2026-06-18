@@ -1,0 +1,25 @@
+-- Предел = универсальный конус, копредел = универсальный коконус.
+-- На конкретной диаграмме из двух объектов (Int, Bool):
+--   предел   = произведение (Int, Bool) с проекциями (конус),
+--   копредел = сумма Either Int Bool с инъекциями (коконус).
+
+-- универсальный конус: проекции произведения
+prj1 :: (Int, Bool) -> Int
+prj1 = fst
+prj2 :: (Int, Bool) -> Bool
+prj2 = snd
+
+-- любой конус (f, g) пропускается через предел ЕДИНСТВЕННЫМ медиатором <f, g>
+mediateCone :: (x -> Int) -> (x -> Bool) -> x -> (Int, Bool)
+mediateCone f g x = (f x, g x)
+
+-- двойственно: универсальный коконус -- инъекции суммы, медиатор [f, g]
+injL :: Int -> Either Int Bool
+injL = Left
+injR :: Bool -> Either Int Bool
+injR = Right
+mediateCocone :: (Int -> y) -> (Bool -> y) -> Either Int Bool -> y
+mediateCocone = either
+
+-- демо: медиатор конуса даёт пару; медиатор коконуса разбирает сумму
+(mediateCone (+1) (> 0) (5 :: Int), mediateCocone show (\b -> if b then "yes" else "no") (Left 7 :: Either Int Bool))

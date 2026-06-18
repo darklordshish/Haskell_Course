@@ -1,0 +1,15 @@
+-- Уравнитель f,g : a -> b в Set: подобъект e = { x | f x = g x } (включение eq : e -> a).
+-- Любой h : x -> a с f.h = g.h пропускается единственным u : x -> e (eq.u = h).
+equalizer :: Eq b => (a -> b) -> (a -> b) -> [a] -> [a]
+equalizer f g = filter (\x -> f x == g x)
+
+-- Коуравнитель (двойственно): фактор q объекта b, склеивающий f x ~ g x (coeq : b -> q).
+-- Любой k : b -> x с k.f = k.g пропускается единственным u : q -> x.
+coequalizer :: Eq b => (a -> b) -> (a -> b) -> [a] -> b -> b
+coequalizer f g pts = \y -> foldr glue y [ (f x, g x) | x <- pts ]
+  where glue (u, v) z = if z == v then u else z   -- представители v склеиваем в u
+
+demoEqu   = equalizer (`mod` 2) (`mod` 3) [0 .. 6 :: Int]
+demoCoequ = map (coequalizer (const True) (const False) [()]) [True, False]
+
+(demoEqu, demoCoequ)

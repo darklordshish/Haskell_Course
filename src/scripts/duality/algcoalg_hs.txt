@@ -1,0 +1,28 @@
+-- F-алгебра:  f a -> a ;  F-коалгебра:  a -> f a  (обращение стрелки структуры).
+type Algebra   f a = f a -> a
+type Coalgebra f a = a -> f a
+
+-- неподвижная точка эндофунктора: носитель начальной алгебры / финальной коалгебры
+newtype Fix f = In { out :: f (Fix f) }
+
+-- единственный гомоморфизм ИЗ начальной алгебры (catamorphism / fold)
+cata :: Functor f => Algebra f a -> Fix f -> a
+cata alg = alg . fmap (cata alg) . out
+
+-- единственный гомоморфизм В финальную коалгебру (anamorphism / unfold)
+ana :: Functor f => Coalgebra f a -> a -> Fix f
+ana coalg = In . fmap (ana coalg) . coalg
+
+-- пример эндофунктора: натуральные числа
+data NatF r = ZeroF | SuccF r deriving (Functor, Show)
+
+toInt :: Algebra NatF Int        -- F a -> a
+toInt ZeroF     = 0
+toInt (SuccF n) = n + 1
+
+fromInt :: Coalgebra NatF Int     -- a -> F a
+fromInt 0 = ZeroF
+fromInt n = SuccF (n - 1)
+
+-- ana строит Nat из 5, cata сворачивает обратно -> 5
+cata toInt (ana fromInt 5)

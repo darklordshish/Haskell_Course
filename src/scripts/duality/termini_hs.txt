@@ -1,0 +1,12 @@
+import Data.Void (Void, absurd)
+
+-- Начальный объект 0 = Void: ЕДИНСТВЕННАЯ стрелка в любой тип a.
+fromInitial :: Void -> a
+fromInitial = absurd
+
+-- Терминальный объект 1 = (): ЕДИНСТВЕННАЯ стрелка из любого типа a.
+toTerminal :: a -> ()
+toTerminal _ = ()
+
+-- демо единственности: куда ни шли -- результат один и тот же ()
+(toTerminal (42 :: Int), toTerminal "hi")
