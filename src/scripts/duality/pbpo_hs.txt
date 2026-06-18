@@ -1,0 +1,18 @@
+-- Pullback a x_c b = { (x,y) | f x = g y } : предел кослияния  a --f--> c <--g-- b.
+-- Проекции p1 = fst, p2 = snd; любой согласованный (q1,q2) пропускается единственным u.
+pullback :: Eq c => (a -> c) -> (b -> c) -> [a] -> [b] -> [(a, b)]
+pullback f g as bs = [ (x, y) | x <- as, y <- bs, f x == g y ]
+
+-- Pushout (двойственно): копредел слияния  b <--f-- a --g--> c.
+-- Фактор b + c (инъекции i1 = Left, i2 = Right), склеивающий f s ~ g s для s из a.
+pushout :: Eq c => (a -> b) -> (a -> c) -> [a] -> Either b c -> Either b c
+pushout f g pts = norm
+  where norm (Right y) = case [ f s | s <- pts, g s == y ] of
+                           (b : _) -> Left b      -- склеиваем g s в f s
+                           []      -> Right y
+        norm e         = e
+
+demoPB = pullback (`mod` 2) (`mod` 2) [1, 2, 3 :: Int] [4, 5 :: Int]
+demoPO = map (pushout (const (1 :: Int)) (const 'x') [()]) [Left 1, Right 'x', Right 'y']
+
+(demoPB, demoPO)
