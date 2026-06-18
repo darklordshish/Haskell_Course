@@ -60,17 +60,18 @@ const tocRows = [
   ['Ковариантный', 'Контравариантный', 'C&#8594;D vs C^op&#8594;D', 'нет', 'FunctorHierarchy', 'variance'],
   ['Алгебра F a&#8594;a', 'Коалгебра a&#8594;F a', 'неподвижные точки эндофунктора', 'нет', 'AlgebrasCoalgebras', 'algcoalg'],
   ['Lan (левое)', 'Ran (правое)', 'движок: зеркало C^op', 'сам Кан', 'KanExtensions', 'kan'],
-  ['Копредел', 'Предел', 'colim=Lan, lim=Ran вдоль J&#8594;1', 'да', 'KanExtensions', 'limcolim'],
-  ['Начальный', 'Терминальный', 'J = &#8709;', 'да', 'TypeAlgebra', 'termini'],
-  ['Копроизведение +', 'Произведение &#215;', 'J = пара точек', 'да', 'TypeAlgebra', 'prodcoprod'],
-  ['Коуравнитель', 'Уравнитель', 'J = параллельная пара', 'да', 'AlgebrasCoalgebras', 'equ'],
-  ['Pushout', 'Pullback', 'J = спан / коспан', 'да', 'Toposes', 'pbpo'],
+  ['Предел', 'Копредел', 'lim=Ran, colim=Lan вдоль J&#8594;1', 'да', 'KanExtensions', 'limcolim'],
+  ['Терминальный', 'Начальный', 'J = &#8709;', 'да', 'TypeAlgebra', 'termini'],
+  ['Произведение &#215;', 'Копроизведение +', 'J = пара точек', 'да', 'TypeAlgebra', 'prodcoprod'],
+  ['Уравнитель', 'Коуравнитель', 'J = параллельная пара', 'да', 'AlgebrasCoalgebras', 'equ'],
+  ['Pullback', 'Pushout', 'J = коспан / спан', 'да', 'Toposes', 'pbpo'],
   ['Левый сопряжённый', 'Правый сопряжённый', 'F=Lan_G Id, G=Ran_F Id', 'да', 'Adjunctions', 'adj'],
-  ['Комонада', 'Монада', 'Density=Lan f f, Codensity=Ran f f', 'да', 'Comonads', 'monadcomonad'],
+  ['Монада', 'Комонада', 'Codensity=Ran f f, Density=Lan f f', 'да', 'Monads', 'monadcomonad'],
 ];
 let toc = `## 📌 Сводная таблица\n\n| Конструкция | Двойственная | Идея | Через Кан? | Где в курсе | &#8594; |\n|---|---|---|---|---|---|\n`;
 for (const [a, b, idea, kan, course, slug] of tocRows)
   toc += `| ${a} | ${b} | ${idea} | ${kan} | ${course} | [&#8594;](#dual-${slug}) |\n`;
+toc += `\n_Левая колонка — прямая конструкция, правая — двойственная (приставка «co-» = обращение стрелок в \`C^op\`). Пары Lan/Ran и левый/правый сопряжённый **симметричны**: ни одна не «co-» другой._`;
 cells.push(md('dual_toc', toc));
 
 // стаб-ячейки разделов
