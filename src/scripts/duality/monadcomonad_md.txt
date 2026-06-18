@@ -23,7 +23,7 @@
 <line x1="98" y1="61" x2="200" y2="61" stroke="#8a93a3" stroke-width="2"/><polygon points="206,61 197,57 197,65" fill="#8a93a3"/><text x="150" y="53" text-anchor="middle" font-size="11" fill="#475569">f</text>
 <line x1="83" y1="76" x2="140" y2="141" stroke="#8a93a3" stroke-width="2"/><polygon points="145,147 134,144 142,137" fill="#8a93a3"/><text x="96" y="118" text-anchor="middle" font-size="11" fill="#475569">f</text>
 <line x1="216" y1="76" x2="162" y2="141" stroke="#5872c9" stroke-width="2.2" stroke-dasharray="5,3"/><polygon points="155,147 158,137 166,144" fill="#5872c9"/><text x="208" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#3a4a96">Lan<tspan dy="3" font-size="8">f</tspan><tspan dy="-3"> f</tspan></text>
-<text x="150" y="108" text-anchor="middle" font-size="12" fill="#3a4a96">&#951; &#8658;</text>
+<text x="150" y="108" text-anchor="middle" font-size="12" fill="#3a4a96">&#949; &#8658;</text>
 <text x="150" y="206" text-anchor="middle" font-size="9.5" fill="#8a93a3">&#949; : D &#8658; Id  (extract)</text>
 <g font-size="13" fill="#0f172a">
 <rect x="362" y="48" width="34" height="26" rx="8" fill="#fff" stroke="#3f9d77" stroke-width="2"/><text x="379" y="66" text-anchor="middle">C</text>
@@ -33,7 +33,7 @@
 <line x1="398" y1="61" x2="500" y2="61" stroke="#8a93a3" stroke-width="2"/><polygon points="506,61 497,57 497,65" fill="#8a93a3"/><text x="450" y="53" text-anchor="middle" font-size="11" fill="#475569">f</text>
 <line x1="383" y1="76" x2="440" y2="141" stroke="#8a93a3" stroke-width="2"/><polygon points="445,147 434,144 442,137" fill="#8a93a3"/><text x="396" y="118" text-anchor="middle" font-size="11" fill="#475569">f</text>
 <line x1="516" y1="76" x2="462" y2="141" stroke="#3f9d77" stroke-width="2.2" stroke-dasharray="5,3"/><polygon points="455,147 458,137 466,144" fill="#3f9d77"/><text x="508" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#2f6f54">Ran<tspan dy="3" font-size="8">f</tspan><tspan dy="-3"> f</tspan></text>
-<text x="450" y="108" text-anchor="middle" font-size="12" fill="#2f6f54">&#8656; &#949;</text>
+<text x="450" y="108" text-anchor="middle" font-size="12" fill="#2f6f54">&#8656; &#951;</text>
 <text x="450" y="206" text-anchor="middle" font-size="9.5" fill="#8a93a3">&#951; : Id &#8658; T  (return)</text>
 <line x1="80" y1="222" x2="520" y2="222" stroke="#e2e8f0"/>
 <text x="300" y="238" text-anchor="middle" font-size="10.5" fill="#8a93a3">extend f along itself: Lan = density comonad, Ran = codensity monad</text>
