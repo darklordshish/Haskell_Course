@@ -1,0 +1,18 @@
+-- Сопряжение (-, s) -| (s ->) : левый F a = (a, s), правый G b = s -> b.
+-- Биекция Hom_D(F a, b) ~ Hom_C(a, G b) — это в точности curry / uncurry.
+leftAdj :: ((a, s) -> b) -> (a -> s -> b)    -- транспонирование влево  = curry
+leftAdj = curry
+
+rightAdj :: (a -> s -> b) -> ((a, s) -> b)   -- транспонирование вправо = uncurry
+rightAdj = uncurry
+
+eta :: a -> s -> (a, s)        -- единица   eta : a -> G (F a)   (универсальная стрелка)
+eta a s = (a, s)
+
+eps :: (s -> b, s) -> b        -- коединица eps : F (G b) -> b   (вычисление, couniversal)
+eps (f, s) = f s
+
+demoAdj = (leftAdj (\(n, s) -> n + length s) 10 "abc", rightAdj (\n s -> n + length s) (10, "abc"))
+demoTri = (eta (7 :: Int) "xy", eps (length, "abcd"))
+
+(demoAdj, demoTri)
