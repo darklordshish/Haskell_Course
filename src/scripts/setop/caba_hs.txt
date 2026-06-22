@@ -7,7 +7,7 @@ preimage :: Eq b => (a -> b) -> [a] -> [b] -> [a]
 preimage f dom s = [ x | x <- dom, f x `elem` s ]
 
 setA = [0,1,2,3] :: [Int]
-f x = even x                       -- f : A -> B = Bool
+f = even :: Int -> Bool            -- f : A -> B
 
 inter xs ys = [x | x <- xs, x `elem` ys]
 union' xs ys = nub (xs ++ ys)
