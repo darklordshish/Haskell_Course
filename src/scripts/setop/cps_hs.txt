@@ -1,0 +1,24 @@
+newtype Op r a = Op { runOp :: a -> r }
+contramapOp :: (a -> b) -> Op r b -> Op r a
+contramapOp f (Op g) = Op (g . f)
+
+newtype Cont r a = Cont { runCont :: (a -> r) -> r }
+instance Functor (Cont r) where
+  fmap f (Cont c) = Cont (\k -> c (k . f))
+instance Applicative (Cont r) where
+  pure a = Cont (\k -> k a)
+  Cont f <*> Cont x = Cont (\k -> f (\g -> x (k . g)))
+instance Monad (Cont r) where
+  Cont c >>= f = Cont (\k -> c (\a -> runCont (f a) k))
+
+unit :: a -> Cont r a
+unit = pure
+
+adult = Op (>= (18 :: Int)) :: Op Bool Int
+byLen = contramapOp length adult :: Op Bool String
+
+demoEval  = runCont (do { x <- unit 7; unit (x + 1) }) id :: Int
+demoAdult = runOp adult 20
+demoLen   = runOp byLen "hello, world"
+
+(demoEval, demoAdult, demoLen)
