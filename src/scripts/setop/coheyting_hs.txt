@@ -1,0 +1,40 @@
+-- Конечная топология: открытые = up-sets цепи 1<2<3 (Alexandrov).
+-- Открытые дают алгебру Гейтинга, замкнутые — ко-Гейтинга.
+universe = [1,2,3] :: [Int]
+opens = [ [], [3], [2,3], [1,2,3] ] :: [[Int]]
+
+subset :: [Int] -> [Int] -> Bool
+subset xs ys = all (`elem` ys) xs
+
+complement :: [Int] -> [Int]
+complement s = [ x | x <- universe, x `notElem` s ]
+
+interior :: [Int] -> [Int]
+interior s = sort (nub (concat [ o | o <- opens, o `subset` s ]))
+
+closure :: [Int] -> [Int]
+closure s = complement (interior (complement s))
+
+hImpl :: [Int] -> [Int] -> [Int]
+hImpl a b = interior (nub (complement a ++ b))
+
+hNot :: [Int] -> [Int]
+hNot a = hImpl a []
+
+cSub :: [Int] -> [Int] -> [Int]
+cSub a b = closure [ x | x <- a, x `notElem` b ]
+
+cNot :: [Int] -> [Int]
+cNot a = cSub universe a
+
+boundary :: [Int] -> [Int]
+boundary a = [ x | x <- a, x `elem` cNot a ]
+
+oa = [3] :: [Int]
+ca = [1,2] :: [Int]
+heytNot   = hNot oa
+heytMeet  = [ x | x <- oa, x `elem` heytNot ]
+coheytNot = cNot ca
+coheytBd  = boundary ca
+
+(heytNot, heytMeet, coheytNot, coheytBd)
