@@ -1,0 +1,29 @@
+-- Контравариантный powerset: f : a -> b даёт прообраз f^{-1} : 2^b -> 2^a.
+-- f^{-1} — гомоморфизм булевых алгебр (сохраняет пересечение/объединение/дополнение).
+powerset :: [a] -> [[a]]
+powerset = subsequences
+
+preimage :: Eq b => (a -> b) -> [a] -> [b] -> [a]
+preimage f dom s = [ x | x <- dom, f x `elem` s ]
+
+setA = [0,1,2,3] :: [Int]
+f x = even x                       -- f : A -> B = Bool
+
+inter xs ys = [x | x <- xs, x `elem` ys]
+union' xs ys = nub (xs ++ ys)
+
+s1 = [True]; s2 = [False]
+checkInter = sort (preimage f setA (inter s1 s2))
+           == sort (inter (preimage f setA s1) (preimage f setA s2))
+checkUnion = sort (preimage f setA (union' s1 s2))
+           == sort (union' (preimage f setA s1) (preimage f setA s2))
+
+-- стрелка Set^op как предикат-трансформер: предикат на b -> предикат на a
+newtype Op r a = Op { runOp :: a -> r }
+contramapOp :: (a -> b) -> Op r b -> Op r a
+contramapOp f (Op g) = Op (g . f)
+
+adult = Op (>= (18 :: Int)) :: Op Bool Int
+byLen = contramapOp length adult :: Op Bool String   -- предикат на строках через length
+
+(preimage f setA [True], checkInter, checkUnion, runOp adult 20, runOp byLen "hi")
