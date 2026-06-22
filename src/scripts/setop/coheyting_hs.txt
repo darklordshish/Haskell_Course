@@ -25,7 +25,7 @@ cSub :: [Int] -> [Int] -> [Int]
 cSub a b = closure [ x | x <- a, x `notElem` b ]
 
 cNot :: [Int] -> [Int]
-cNot a = cSub universe a
+cNot = cSub universe
 
 boundary :: [Int] -> [Int]
 boundary a = [ x | x <- a, x `elem` cNot a ]
