@@ -11,11 +11,11 @@ injective dom f = let ys = map f dom in length ys == length (nub ys)
 surjective :: Eq b => [a] -> [b] -> (a -> b) -> Bool
 surjective dom cod f = all (\y -> y `elem` map f dom) cod
 
-toInt :: Bool -> Int
-toInt b = if b then 1 else 0
+boolToInt :: Bool -> Int
+boolToInt b = if b then 1 else 0
 
 isPos :: Int -> Bool
 isPos n = n > 0
 
 -- (mono ~ injective, epi ~ surjective)
-(injective [False, True] toInt, surjective [-2, -1, 0, 1, 2] [False, True] isPos)
+(injective [False, True] boolToInt, surjective [-2, -1, 0, 1, 2] [False, True] isPos)
