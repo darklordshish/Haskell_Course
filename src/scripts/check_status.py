@@ -1,14 +1,16 @@
-import json, os
+import json, os, re
 
-nbs = [
-    'BaseHaskell', 'TypeAlgebra', 'FunctorHierarchy', 'Monads', 'MonadTransformers',
-    'Comonads', 'FoldableTraversable', 'AlgebrasCoalgebras', 'Profunctors', 'Optics',
-    'YonedaLemma', 'KanExtensions', 'Adjunctions', 'MetaProgramming',
-    'Concurrency', 'DistributedHaskell', 'GPUHaskell'
-]
+# Список ноутбуков — из единого источника правды coursemap/course_order.js
+# (тот же порядок, что у навигации и карты курса). Руками здесь не дублируем.
+ROOT = os.path.dirname(os.path.abspath(__file__))
+NB_DIR = os.path.normpath(os.path.join(ROOT, '..', 'notebooks'))
+ORDER_JS = os.path.join(ROOT, 'coursemap', 'course_order.js')
+
+with open(ORDER_JS, encoding='utf-8') as f:
+    nbs = re.findall(r"file:\s*'([^']+)'", f.read())
 
 for nb_name in nbs:
-    path = f'{nb_name}.ipynb'
+    path = os.path.join(NB_DIR, f'{nb_name}.ipynb')
     if not os.path.exists(path):
         print(f'MISSING: {nb_name}')
         continue
