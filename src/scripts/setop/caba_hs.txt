@@ -1,0 +1,52 @@
+-- Contravariant powerset: f : a -> b yields preimage f_inv : 2^b -> 2^a.
+-- f_inv is a boolean algebra homomorphism (preserves intersection/union/complement).
+powerset :: [a] -> [[a]]
+powerset = subsequences
+
+preimage :: Eq b => (a -> b) -> [a] -> [b] -> [a]
+preimage fn dom s = [ x | x <- dom, fn x `elem` s ]
+
+setA :: [Int]
+setA = [0,1,2,3]
+
+fEven :: Int -> Bool
+fEven = even                       -- f : A -> B
+
+inter :: Eq a => [a] -> [a] -> [a]
+inter xs ys = [x | x <- xs, x `elem` ys]
+
+union' :: Eq a => [a] -> [a] -> [a]
+union' xs ys = nub (xs ++ ys)
+
+s1 :: [Bool]
+s1 = [True]
+s2 :: [Bool]
+s2 = [False]
+
+checkInter :: Bool
+checkInter = sort (preimage fEven setA (inter s1 s2)) == sort (inter (preimage fEven setA s1) (preimage fEven setA s2))
+
+checkUnion :: Bool
+checkUnion = sort (preimage fEven setA (union' s1 s2)) == sort (union' (preimage fEven setA s1) (preimage fEven setA s2))
+
+newtype Op r a = Op { runOp :: a -> r }
+
+contramapOp :: (a -> b) -> Op r b -> Op r a
+contramapOp g (Op h) = Op (h . g)
+
+adult :: Op Bool Int
+adult = Op (>= (18 :: Int))
+
+byLen :: Op Bool String
+byLen = contramapOp length adult
+
+demoPre :: [Int]
+demoPre = preimage fEven setA [True]
+
+demoA :: Bool
+demoA = runOp adult 20
+
+demoB :: Bool
+demoB = runOp byLen "hi"
+
+(demoPre, checkInter, checkUnion, demoA, demoB)

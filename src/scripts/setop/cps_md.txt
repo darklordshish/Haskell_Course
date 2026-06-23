@@ -1,0 +1,17 @@
+---
+
+<a id="setop-cps"></a>
+## C2-3. CPS-мост: Op, Cont, применения
+
+**Зеркало `Set^op` в Haskell — это CPS.** Контравариантный «функтор предикатов» `Op r a = a → r` тащит наблюдения против стрелок (как `f⁻¹`). Удвоив его, получаем **монаду двойного отрицания** — континуации: `Cont r a = (a → r) → r`. Это вычислительная тень `¬¬`: значение `a` оборачивается в «то, что отдаст `r`, если ему дать продолжение `a → r`». При `r = 2` это буквально двойной powerset (ветка A), при общем `r` — CPS-стиль, где вычисление идёт «наоборот».
+
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="180" viewBox="0 0 560 180" font-family="system-ui, sans-serif"><rect width="560" height="180" fill="#ffffff" rx="8"/><text x="150" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="#2f6f54">in Set / Hask</text><text x="420" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="#3a4a96">via (- &#8594; r): CPS</text><rect x="120" y="64" width="36" height="30" rx="8" fill="#fff" stroke="#3f9d77" stroke-width="2"/><text x="138" y="84" text-anchor="middle" font-size="14" fill="#0f172a">a</text><rect x="320" y="62" width="200" height="34" rx="9" fill="#fff" stroke="#5872c9" stroke-width="2"/><text x="420" y="84" text-anchor="middle" font-size="13" fill="#0f172a">(a &#8594; r) &#8594; r</text><line x1="156" y1="79" x2="314" y2="79" stroke="#475569" stroke-width="2"/><polygon points="320,79 311,75 311,83" fill="#475569"/><text x="236" y="71" text-anchor="middle" font-size="10.5" fill="#475569">unit  (double negation)</text><text x="280" y="156" text-anchor="middle" font-size="10" fill="#8a93a3">Op r a = a&#8594;r (contravariant);  Cont r a = (a&#8594;r)&#8594;r;  r=2: double powerset = computational &#172;&#172;</text></svg>
+
+**Где это всплывает.** CPS-преобразование в компиляторах; delimited continuations (`shift`/`reset`); Stone-двойственность в CS (профинитные моноиды, автоматы — Eilenberg/Stone); интуиция `Spec` в алгебраической геометрии; в базах данных (Спивак) инстансы схемы — функторы, а миграции данных `Σ ⊣ Δ ⊣ Π` живут на стрелках схем.
+
+**Подводные камни.**
+- `Set^op ≃ CABA` требует **полноты и атомарности**: для произвольных булевых алгебр получается не `Set`, а Stone-пространства — бесконечный случай теряет «множественность».
+- Тип-ответ `r` важен: разные `r` дают разные монады `Cont r`; `r = 2` — булев/классический край, общий `r` — настоящий CPS.
+- `Set^op ≠ Set`: в нём **нет** функциональных пространств (не CCC), так что «программировать прямо в `Set^op`» нельзя — только через эту CPS-тень.
+
+Код ниже строит `Op` и монаду `Cont`, показывает единицу двойного отрицания и контравариантный предикат-трансформер.

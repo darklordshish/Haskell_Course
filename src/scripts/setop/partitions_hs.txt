@@ -1,0 +1,28 @@
+type Partition = [[Int]]
+
+norm :: Partition -> Partition
+norm = sort . map sort
+
+allPartitions :: [Int] -> [Partition]
+allPartitions [] = [[]]
+allPartitions (x:xs) = concatMap ins (allPartitions xs)
+  where ins p = ([x] : p) : [ (x : b) : rest | (b, rest) <- picks p ]
+        picks [] = []
+        picks (b:bs) = (b, bs) : [ (b', b : bs') | (b', bs') <- picks bs ]
+
+meetP :: Partition -> Partition -> Partition
+meetP a b = norm [ i | ba <- a, bb <- b, let i = [ x | x <- ba, x `elem` bb ], not (null i) ]
+
+joinP :: Partition -> Partition -> Partition
+joinP a b = norm (merge (nub (a ++ b)))
+  where merge bs = case [ (x, y) | x <- bs, y <- bs, x < y, any (`elem` y) x ] of
+                     []        -> bs
+                     ((x,y):_) -> merge (nub (x ++ y) : filter (\z -> z /= x && z /= y) bs)
+
+pa = [[1,2],[3]] :: Partition
+pb = [[1,3],[2]] :: Partition
+pc = [[2,3],[1]] :: Partition
+lhs = meetP pa (joinP pb pc)
+rhs = joinP (meetP pa pb) (meetP pa pc)
+
+(length (allPartitions [1,2,3]), norm lhs, norm rhs, norm lhs == norm rhs)
