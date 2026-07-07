@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="240" viewBox="0 0 470 240" font-family="system-ui, sans-serif">
+  <rect width="470" height="240" fill="#ffffff" rx="8"/>
+  <text x="235" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">Theorem:  &#923; &#8728; K = B,   &#923; iso of categories</text>
+  <rect x="190" y="46" width="90" height="28" rx="7" fill="#fff" stroke="#475569" stroke-width="2"/><text x="235" y="65" text-anchor="middle" font-size="12" fill="#0f172a">SubMod</text>
+  <rect x="57" y="165" width="96" height="28" rx="7" fill="#fff" stroke="#5872c9" stroke-width="2"/><text x="105" y="184" text-anchor="middle" font-size="12" fill="#0f172a">MaxMeas</text>
+  <rect x="322" y="165" width="100" height="28" rx="7" fill="#fff" stroke="#3f9d77" stroke-width="2"/><text x="372" y="184" text-anchor="middle" font-size="12" fill="#0f172a">ScottFilt</text>
+  <line x1="205" y1="76" x2="121" y2="156" stroke="#5872c9" stroke-width="2"/><polygon points="117,160 121,151 126,157" fill="#5872c9"/><text x="140" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#3a4a96">K = Lan<tspan dy="2" font-size="8">J</tspan></text>
+  <line x1="265" y1="76" x2="349" y2="156" stroke="#3f9d77" stroke-width="2"/><polygon points="353,160 344,157 349,151" fill="#3f9d77"/><text x="336" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#2f6f54">B = levels</text>
+  <line x1="163" y1="179" x2="312" y2="179" stroke="#475569" stroke-width="2"/><polygon points="318,179 309,175 309,183" fill="#475569"/><polygon points="157,179 166,175 166,183" fill="#475569"/><text x="238" y="170" text-anchor="middle" font-size="11" font-weight="700" fill="#475569">&#923;  &#8773;</text>
+  <text x="235" y="216" text-anchor="middle" font-size="10" fill="#8a93a3">&#923;(m) = level sets of m on singletons;  &#923;&#8315;&#185;(U)(E) = sup{ t : E &#8745; U<tspan dy="2" font-size="8">t</tspan><tspan dy="-2"> &#8800; &#8709; }</tspan></text>
+  <text x="235" y="231" text-anchor="middle" font-size="10" fill="#8a93a3">naturality = p.1.4:  tau &#8614; Lan<tspan dy="2" font-size="8">&#966;</tspan><tspan dy="-2"> tau (sup on fibers),  tauBar &#8614; Ran</tspan><tspan dy="2" font-size="8">&#966;</tspan><tspan dy="-2"> tauBar (inf on fibers)</tspan></text>
+</svg>
