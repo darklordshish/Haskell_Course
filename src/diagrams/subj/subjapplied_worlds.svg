@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" font-family="system-ui, sans-serif">
+  <rect width="720" height="300" fill="#ffffff" rx="8"/>
+  <text x="360" y="28" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">Four variants &#8594; three conjunction tensors &#8855;</text>
+  <text x="360" y="47" text-anchor="middle" font-size="10" fill="#8a93a3">sum is always max, so Pl, support, nulls stay invariant; only &#8855; (how evidence combines) varies</text>
+  <rect x="25" y="70" width="170" height="64" rx="8" fill="#eef1fb" stroke="#5872c9" stroke-width="2"/>
+  <text x="110" y="92" text-anchor="middle" font-size="12" font-weight="700" fill="#3a4a96">Lukasiewicz</text>
+  <text x="110" y="110" text-anchor="middle" font-size="10" fill="#0f172a">([0,1], max, &#8855;)</text>
+  <text x="110" y="126" text-anchor="middle" font-size="10" fill="#0f172a">a&#8855;b = max(0, a+b&#8722;1)</text>
+  <rect x="275" y="70" width="170" height="64" rx="8" fill="#ffffff" stroke="#475569" stroke-width="2"/>
+  <text x="360" y="92" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">Goguen</text>
+  <text x="360" y="110" text-anchor="middle" font-size="10" fill="#0f172a">([0,1], max, &#183;)</text>
+  <text x="360" y="126" text-anchor="middle" font-size="10" fill="#0f172a">a&#8855;b = a &#183; b</text>
+  <rect x="525" y="70" width="170" height="64" rx="8" fill="#ffffff" stroke="#3f9d77" stroke-width="2"/>
+  <text x="610" y="92" text-anchor="middle" font-size="12" font-weight="700" fill="#2f6f54">Godel</text>
+  <text x="610" y="110" text-anchor="middle" font-size="10" fill="#0f172a">([0,1], max, min)</text>
+  <text x="610" y="126" text-anchor="middle" font-size="10" fill="#0f172a">a&#8855;b = min(a, b)</text>
+  <line x1="110" y1="134" x2="110" y2="176" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="360" y1="134" x2="360" y2="176" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="610" y1="134" x2="610" y2="176" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="360" y="168" text-anchor="middle" font-size="10" fill="#8a93a3">P(a &#8743; b) as dependence varies</text>
+  <line x1="90" y1="182" x2="630" y2="182" stroke="#475569" stroke-width="2"/>
+  <polygon points="84,182 93,178 93,186" fill="#475569"/>
+  <polygon points="636,182 627,178 627,186" fill="#475569"/>
+  <circle cx="110" cy="182" r="4" fill="#5872c9"/>
+  <circle cx="360" cy="182" r="4" fill="#475569"/>
+  <circle cx="610" cy="182" r="4" fill="#3f9d77"/>
+  <text x="110" y="202" text-anchor="middle" font-size="10" font-weight="700" fill="#3a4a96">lower Frechet</text>
+  <text x="110" y="216" text-anchor="middle" font-size="9" fill="#8a93a3">worst-case dependence</text>
+  <text x="360" y="202" text-anchor="middle" font-size="10" font-weight="700" fill="#475569">independence</text>
+  <text x="360" y="216" text-anchor="middle" font-size="9" fill="#8a93a3">product</text>
+  <text x="610" y="202" text-anchor="middle" font-size="10" font-weight="700" fill="#2f6f54">upper Frechet</text>
+  <text x="610" y="216" text-anchor="middle" font-size="9" fill="#8a93a3">best-case dependence</text>
+  <text x="360" y="250" text-anchor="middle" font-size="10" fill="#8a93a3">every P(a &#8743; b) lies in [lower .. upper];  variant 2 = Godel + fixed points S (shares Godel's min)</text>
+  <text x="360" y="276" text-anchor="middle" font-size="10" fill="#0f172a">Bel-floor via involution: Luk internal, Godel external;  Goguen has none &#8594; tropical (min,+)</text>
+</svg>
