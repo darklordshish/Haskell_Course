@@ -1,4 +1,4 @@
-<svg viewBox="0 0 880 1100" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Segoe UI', system-ui, sans-serif">
+<svg viewBox="0 0 880 1080" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Segoe UI', system-ui, sans-serif">
 <title>Course map</title>
 <desc>Metro-style map: gray base line, yellow structures, blue category theory, red practice. Interchange stations mix topics.</desc>
 <style>
@@ -8,11 +8,13 @@
 .sub { font-size: 11px; fill: #64748b; }
 .ln { fill: none; stroke-linecap: round; stroke-width: 7; }
 .stn { fill: #ffffff; stroke-width: 3.5; }
+.stref { font-size: 13px; font-weight: 600; fill: #0f172a; }
+.lnref { fill: none; stroke: #8b80bf; stroke-width: 2.5; stroke-dasharray: 2 6; stroke-linecap: round; }
 </style>
 
 <path class="ln" stroke="#8a93a3" d="M350 96 V500"/>
 <path class="ln" stroke="#d9a441" d="M350 500 C350 560 150 540 150 600 V940 C150 1006 254 1014 341 976"/>
-<path class="ln" stroke="#5872c9" d="M350 500 V968"/>
+<path class="ln" stroke="#5872c9" d="M350 500 V1024"/>
 <path class="ln" stroke="#c4625f" d="M350 500 C350 560 570 540 570 600 V790"/>
 <text x="372" y="100" class="line-name" fill="#6b7484">BASE</text>
 <text x="150" y="572" class="line-name" fill="#b8862e" text-anchor="middle">STRUCTURES &amp; OPTICS</text>
@@ -43,9 +45,16 @@
 <circle cx="570" cy="788" r="7" class="stn" stroke="#c4625f"/><text x="592" y="793" text-anchor="start" class="st">GPUHaskell</text><rect x="563" y="804" width="14" height="4.5" rx="2.25" fill="#c4625f"/>
 <circle cx="350" cy="858" r="7" class="stn" stroke="#5872c9"/><text x="328" y="863" text-anchor="end" class="st">Toposes</text>
 <circle cx="350" cy="912" r="9" class="stn" stroke="#5872c9"/><circle cx="350" cy="912" r="4.5" fill="none" stroke="#8a93a3" stroke-width="3"/><text x="328" y="917" text-anchor="end" class="stb">Uncertainty</text>
-<circle cx="350" cy="968" r="9" class="stn" stroke="#5872c9"/><circle cx="350" cy="968" r="4.5" fill="none" stroke="#d9a441" stroke-width="3"/><text x="372" y="973" text-anchor="start" class="stb">SubjectiveModeling</text><rect x="343" y="984" width="14" height="4.5" rx="2.25" fill="#5872c9"/>
+<circle cx="350" cy="968" r="9" class="stn" stroke="#5872c9"/><circle cx="350" cy="968" r="4.5" fill="none" stroke="#d9a441" stroke-width="3"/><text x="328" y="973" text-anchor="end" class="stb">SubjectiveModeling</text>
+<circle cx="350" cy="1024" r="7" class="stn" stroke="#5872c9"/><text x="328" y="1029" text-anchor="end" class="st">SubjApplied</text><rect x="343" y="1040" width="14" height="4.5" rx="2.25" fill="#5872c9"/>
+<path class="lnref" d="M358.0 742.1 L492.8 844.6"/>
+<path class="lnref" d="M359.7 860.4 L531.3 902.8"/>
+<path class="lnref" d="M359.8 969.8 L461.1 988.4"/>
+<rect x="494" y="844" width="12" height="12" rx="3" fill="#ffffff" stroke="#8b80bf" stroke-width="3"/><text x="514" y="855" text-anchor="start" class="stref">Duality</text>
+<rect x="534" y="899" width="12" height="12" rx="3" fill="#ffffff" stroke="#8b80bf" stroke-width="3"/><text x="554" y="910" text-anchor="start" class="stref">SetOp</text>
+<rect x="464" y="984" width="12" height="12" rx="3" fill="#ffffff" stroke="#8b80bf" stroke-width="3"/><text x="484" y="995" text-anchor="start" class="stref">PytevIso</text>
 <g transform="translate(656 96)">
-<rect x="-18" y="-24" width="222" height="220" rx="12" fill="none" stroke="#e2e8f0"/>
+<rect x="-18" y="-24" width="222" height="250" rx="12" fill="none" stroke="#e2e8f0"/>
 <text x="0" y="0" class="line-name" fill="#64748b">LEGEND</text>
 <g transform="translate(0 28)">
 <path class="ln" stroke="#8a93a3" stroke-width="5" d="M0 0 H30"/><text x="42" y="4" class="sub">base of the course</text>
@@ -57,6 +66,8 @@
 <text x="42" y="114" class="sub">interchange = topic mix</text>
 <circle cx="15" cy="138" r="8" class="stn" stroke="#0f172a"/>
 <text x="42" y="142" class="sub">fork of the branches</text>
-<text x="0" y="170" class="sub">further along the line = harder</text>
+<rect x="9" y="160" width="12" height="12" rx="3" fill="none" stroke="#8b80bf" stroke-width="2.5"/>
+<text x="42" y="170" class="sub">reference (off-trunk siding)</text>
+<text x="0" y="198" class="sub">further along the line = harder</text>
 </g></g>
 </svg>

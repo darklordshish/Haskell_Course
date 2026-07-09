@@ -5,6 +5,7 @@ const OUT = path.join(__dirname, '..', '..', 'notebooks', 'course_map.svg');
 
 const C = { base: '#8a93a3', yellow: '#d9a441', yellowName: '#b8862e',
   blue: '#5872c9', blueDark: '#3d4f8f', red: '#c4625f',
+  ref: '#8b80bf', refName: '#6f63a8',
   hub: '#0f172a', text: '#0f172a', sub: '#64748b', bg: '#ffffff' };
 
 // y-координаты станций; пересадка: mix = цвет второго кольца; terminus: плашка
@@ -26,7 +27,14 @@ const red = [
 ];
 const finals = [
   { n: 'Toposes', y: 858 }, { n: 'Uncertainty', y: 912, mix: C.base },
-  { n: 'SubjectiveModeling', y: 968, mix: C.yellow, terminus: true, labelRight: true },
+  { n: 'SubjectiveModeling', y: 968, mix: C.yellow },
+  { n: 'SubjApplied', y: 1024, terminus: true }, // прикладное продолжение — на стволе
+];
+// справочники вне ствола — тупики (sidings) на пунктирном отводе от станции-якоря
+const refs = [
+  { n: 'Duality',  x: 500, y: 850, px: 350, py: 736 }, // <- KanExtensions
+  { n: 'SetOp',    x: 540, y: 905, px: 350, py: 858 }, // <- Toposes
+  { n: 'PytevIso', x: 470, y: 990, px: 350, py: 968 }, // <- SubjectiveModeling (сноска-доказательство)
 ];
 const TX = 350, YX = 150, RX = 570; // x ствола/жёлтой/красной
 
@@ -46,11 +54,23 @@ function station(x, st, color, side) {
   if (st.terminus) s += `<rect x="${x - 7}" y="${st.y + 16}" width="14" height="4.5" rx="2.25" fill="${color}"/>`;
   return s;
 }
+// пунктирный отвод от станции-якоря к тупику-справочнику (со сдвигом от контуров)
+function refStub(px, py, x, y) {
+  const dx = x - px, dy = y - py, L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L;
+  const x1 = (px + 10 * ux).toFixed(1), y1 = (py + 10 * uy).toFixed(1);
+  const x2 = (x - 9 * ux).toFixed(1), y2 = (y - 9 * uy).toFixed(1);
+  return `<path class="lnref" d="M${x1} ${y1} L${x2} ${y2}"/>`;
+}
+// станция-тупик: полый квадрат (отличается от кружков ствола)
+function refStation(r) {
+  return `<rect x="${r.x - 6}" y="${r.y - 6}" width="12" height="12" rx="3" fill="${C.bg}" stroke="${C.ref}" stroke-width="3"/>` +
+    `<text x="${r.x + 14}" y="${r.y + 5}" text-anchor="start" class="stref">${esc(r.n)}</text>`;
+}
 
 const body = `
 <path class="ln" stroke="${C.base}" d="M${TX} 96 V500"/>
 <path class="ln" stroke="${C.yellow}" d="M${TX} 500 C${TX} 560 ${YX} 540 ${YX} 600 V940 C${YX} 1006 254 1014 341 976"/>
-<path class="ln" stroke="${C.blue}" d="M${TX} 500 V968"/>
+<path class="ln" stroke="${C.blue}" d="M${TX} 500 V1024"/>
 <path class="ln" stroke="${C.red}" d="M${TX} 500 C${TX} 560 ${RX} 540 ${RX} 600 V790"/>
 <text x="${TX + 22}" y="100" class="line-name" fill="#6b7484">BASE</text>
 <text x="${YX}" y="572" class="line-name" fill="${C.yellowName}" text-anchor="middle">STRUCTURES &amp; OPTICS</text>
@@ -65,8 +85,10 @@ ${yellow.map(s => station(YX, s, C.yellow, 'left')).join('\n')}
 ${blue.map(s => station(TX, s, C.blue, 'right')).join('\n')}
 ${red.map(s => station(RX, s, C.red, 'right')).join('\n')}
 ${finals.map(s => station(TX, s, C.blue, 'left')).join('\n')}
+${refs.map(r => refStub(r.px, r.py, r.x, r.y)).join('\n')}
+${refs.map(refStation).join('\n')}
 <g transform="translate(656 96)">
-<rect x="-18" y="-24" width="222" height="220" rx="12" fill="none" stroke="#e2e8f0"/>
+<rect x="-18" y="-24" width="222" height="250" rx="12" fill="none" stroke="#e2e8f0"/>
 <text x="0" y="0" class="line-name" fill="${C.sub}">LEGEND</text>
 <g transform="translate(0 28)">
 <path class="ln" stroke="${C.base}" stroke-width="5" d="M0 0 H30"/><text x="42" y="4" class="sub">base of the course</text>
@@ -78,10 +100,12 @@ ${finals.map(s => station(TX, s, C.blue, 'left')).join('\n')}
 <text x="42" y="114" class="sub">interchange = topic mix</text>
 <circle cx="15" cy="138" r="8" class="stn" stroke="${C.hub}"/>
 <text x="42" y="142" class="sub">fork of the branches</text>
-<text x="0" y="170" class="sub">further along the line = harder</text>
+<rect x="9" y="160" width="12" height="12" rx="3" fill="none" stroke="${C.ref}" stroke-width="2.5"/>
+<text x="42" y="170" class="sub">reference (off-trunk siding)</text>
+<text x="0" y="198" class="sub">further along the line = harder</text>
 </g></g>`;
 
-const svg = `<svg viewBox="0 0 880 1100" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Segoe UI', system-ui, sans-serif">
+const svg = `<svg viewBox="0 0 880 1080" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Segoe UI', system-ui, sans-serif">
 <title>Course map</title>
 <desc>Metro-style map: gray base line, yellow structures, blue category theory, red practice. Interchange stations mix topics.</desc>
 <style>
@@ -91,6 +115,8 @@ const svg = `<svg viewBox="0 0 880 1100" xmlns="http://www.w3.org/2000/svg" role
 .sub { font-size: 11px; fill: ${C.sub}; }
 .ln { fill: none; stroke-linecap: round; stroke-width: 7; }
 .stn { fill: ${C.bg}; stroke-width: 3.5; }
+.stref { font-size: 13px; font-weight: 600; fill: ${C.text}; }
+.lnref { fill: none; stroke: ${C.ref}; stroke-width: 2.5; stroke-dasharray: 2 6; stroke-linecap: round; }
 </style>
 ${body}
 </svg>
