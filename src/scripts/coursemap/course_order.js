@@ -26,4 +26,5 @@ module.exports = [
   { file: 'Toposes',             title: 'Топосы' },
   { file: 'Uncertainty',         title: 'Неопределённость' },
   { file: 'SubjectiveModeling',  title: 'Субъективное моделирование' },
+  { file: 'SubjApplied',         title: 'Субъективное моделирование: приложения' },
 ];
